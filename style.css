@@ -1,0 +1,23 @@
+@layer cwf-bases, cwf-utilities, cwf-module;
+
+/* -------------------------------- External -------------------------------- */
+@import "modern-normalize/modern-normalize.css" layer(cwf-base);
+
+/* ---------------------------------- Bases --------------------------------- */
+@import "./style/bases/body.css";
+@import "./style/bases/root.css";
+
+/* -------------------------------- Utilities ------------------------------- */
+@import "./style/utilities/group.css";
+
+/* --------------------------------- Modules -------------------------------- */
+@import "./style/modules/alert.css";
+@import "./style/modules/button.css";
+@import "./style/modules/card.css";
+@import "./style/modules/input.css";
+@import "./style/modules/list.css";
+@import "./style/modules/nav.css";
+@import "./style/modules/pill.css";
+@import "./style/modules/table.css";
+@import "./style/modules/tag.css";
+@import "./style/modules/tile.css";

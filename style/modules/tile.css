@@ -1,0 +1,53 @@
+@layer cwf-modules {
+  .tile {
+    background-color: var(--tile-background-color, white);
+    border-color: var(--tile-border-color, DimGray);
+    border-left-color: var(--tile-border-color, DimGray);
+    border-radius: var(--tile-border-radius, 0);
+    border-style: var(--tile-border-style, solid);
+    border-width: var(--tile-border-width, 1px);
+    border-left-width: var(--tile-border-left-width, 4px);
+    display: var(--tile-display, flex);
+    flex-flow: var(--tile-flex-flow, column nowrap);
+    min-width: var(--tile-min-width, 0);
+    position: var(--tile-position, relative);
+    word-wrap: var(--tile-word-wrap, break-word);
+
+    & > * {
+      &:first-child {
+        border-top-left-radius: var(--tile-child-border-radius, 3px);
+        border-top-right-radius: var(--tile-child-border-radius, 3px);
+      }
+
+      &:last-child {
+        border-bottom-left-radius: var(--tile-child-border-radius, 3px);
+        border-bottom-right-radius: var(--tile-child-border-radius, 3px);
+      }
+    }
+
+    & .tile--header,
+    & .tile--body,
+    & .tile--footer {
+      padding: var(--tile-inner-padding-y, 1ch) var(--tile-inner-padding-x, 2ch);
+    }
+
+    & .tile--header {
+      background-color: var(--tile-header-background-color, white);
+      border-bottom-color: var(--tile-header-border-bottom-color, DimGray);
+      border-bottom-style: var(--tile-header-border-bottom-style, solid);
+      border-bottom-width: var(--tile-header-border-bottom-width, 1px);
+    }
+
+    & .tile--body {
+      flex: var(--tile-body-flex, 1 1 auto);
+    }
+
+    & .tile--footer {
+      background-color: var(--tile-footer-background-color, white);
+      border-top-color: var(--tile-footer-border-top-color, DimGray);
+      border-top-style: var(--tile-footer-border-top-style, solid);
+      border-top-width: var(--tile-footer-border-top-width, 1px);
+      margin-top: var(--tile-footer-margin-top, auto);
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@layer cwf-modules {
+  .table {
+    width: var(--table-width, 100%);
+    caption-side: var(--table-caption-side, bottom);
+    border-collapse: var(--table-border-collapse, collapse);
+
+    & td,
+    & th {
+      padding: var(--table-cell-padding-y, 1ch) var(--table-cell-padding-x, 2ch);
+      vertical-align: var(--table-cell-valign, top);
+      border-style: var(--table-cell-border-style, solid);
+      border-color: var(--table-cell-border-style, DimGray);
+      border-width: var(--table-cell-border-width, 0 0 1px 0);
+    }
+
+    & thead {
+      & tr {
+        background-color: var(--table-head-background-color, WhiteSmoke);
+
+        & > * {
+          border-width: var(--table-head-cell-border-width, 0 0 2px 0);
+        }
+      }
+    }
+
+    & tbody {
+      & tr {
+        background-color: var(--table-body-background-color, white);
+      }
+    }
+
+    & tfoot {
+      & tr {
+        background-color: var(--table-foot-background-color, WhiteSmoke);
+
+        & > * {
+          border-width: var(--table-foot-cell-border-width, 2px 0 1px 0);
+        }
+      }
+    }
+
+    &.table--bordered {
+      & td,
+      & th {
+        border-width: var(--table-cell-border-width, 1px);
+      }
+
+      & thead {
+        & tr {
+          & > * {
+            border-width: var(--table-head-cell-border-width, 1px 1px 2px 1px);
+          }
+        }
+      }
+
+      & tfoot {
+        & tr {
+          & > * {
+            border-width: var(--table-foot-cell-border-width, 2px 1px 1px 1px);
+          }
+        }
+      }
+    }
+
+    &.table--striped {
+      & tbody {
+        & tr {
+          &:nth-of-type(even) {
+            background-color: var(
+              --table-row-even-background-color,
+              WhiteSmoke
+            );
+          }
+
+          &:nth-of-type(odd) {
+            background-color: var(--table-row-odd-background-color, white);
+          }
+        }
+      }
+    }
+
+    &.table--hover {
+      & tbody {
+        & tr {
+          &:hover {
+            & > * {
+              background-color: var(
+                --table-row-hover-background-color,
+                LightGray
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}

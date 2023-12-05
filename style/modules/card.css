@@ -1,0 +1,51 @@
+@layer cwf-modules {
+  .card {
+    background-color: var(--card-background-color, white);
+    border-color: var(--card-border-color, DimGrey);
+    border-radius: var(--card-border-radius, 4px);
+    border-style: var(--card-border-style, solid);
+    border-width: var(--card-border-width, 1px);
+    display: var(--card-display, flex);
+    flex-flow: var(--card-flex-flow, column nowrap);
+    min-width: var(--card-min-width, 0);
+    position: var(--card-position, relative);
+    word-wrap: var(--card-word-wrap, break-word);
+
+    & > * {
+      &:first-child {
+        border-top-left-radius: var(--card-child-border-radius, 3px);
+        border-top-right-radius: var(--card-child-border-radius, 3px);
+      }
+
+      &:last-child {
+        border-bottom-left-radius: var(--card-child-border-radius, 3px);
+        border-bottom-right-radius: var(--card-child-border-radius, 3px);
+      }
+    }
+
+    & .card--header,
+    & .card--body,
+    & .card--footer {
+      padding: var(--card-inner-padding-y, 1ch) var(--card-inner-padding-x, 2ch);
+    }
+
+    & .card--header {
+      background-color: var(--card-header-background-color, white);
+      border-bottom-color: var(--card-header-border-bottom-color, DimGrey);
+      border-bottom-style: var(--card-header-border-bottom-style, solid);
+      border-bottom-width: var(--card-header-border-bottom-width, 1px);
+    }
+
+    & .card--body {
+      flex: var(--card-body-flex, 1 1 auto);
+    }
+
+    & .card--footer {
+      background-color: var(--card-footer-background-color, white);
+      border-top-color: var(--card-footer-border-top-color, DimGrey);
+      border-top-style: var(--card-footer-border-top-style, solid);
+      border-top-width: var(--card-footer-border-top-width, 1px);
+      margin-top: var(--card-footer-margin-top, auto);
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@layer cwf-modules {
+  .nav {
+    list-style: var(--nav-list-style, none);
+    margin: var(--nav-margin, 0);
+    padding: var(--nav-padding, 0);
+    align-items: var(--nav-align-items, center);
+    display: var(--nav-display, flex);
+    flex-flow: var(--nav-flex-flow, wrap row);
+    gap: var(--nav-gap, 0);
+    justify-content: var(--nav-justify-content, flex-start);
+    position: var(--nav-position, relative);
+
+    & .nav__item {
+      align-items: var(--nav__item-align-items, center);
+      background-color: var(--nav__item-background-color, transparent);
+      border-color: var(--nav__item-border-color, transparent);
+      border-radius: var(--nav__item-border-radius, 0);
+      border-style: var(--nav__item-border-style, solid);
+      border-width: var(--nav__item-border-width, 0);
+      box-shadow: var(--nav__item-box-shadow, none);
+      color: var(--nav__item-color, DimGrey);
+      cursor: var(--nav__item-cursor, pointer);
+      display: var(--nav__item-display, inline-flex);
+      font-family: var(--nav__item-font-family, system-ui);
+      font-weight: var(--nav__item-font-weight, 400);
+      gap: var(--nav__item-gap, 1ch);
+      justify-content: var(--nav__item-justify-content, center);
+      line-height: var(--nav__item-line-height, 1.15);
+      outline: var(--nav__item-outline, 0);
+      padding: var(--nav__item-padding-y, 1ch) var(--nav__item-padding-x, 2ch);
+      text-align: var(--nav__item-text-align, center);
+      text-decoration: var(--nav__item-text-decoration, none);
+      user-select: var(--nav__item-user-select, none);
+      vertical-align: var(--nav__item-vertical-align, middle);
+      white-space: var(--nav__item-white-space, nowrap);
+      width: var(--nav__item-width, auto);
+
+      &:hover {
+        border-color: var(--nav__item-hover-border-color, transparent);
+        color: var(--nav__item-hover-color, gray);
+      }
+
+      &:focus-visible {
+        border-color: var(--nav__item-focus-border-color, transparent);
+        color: var(--nav__item-focus-color, gray);
+      }
+
+      &:active {
+        border-color: var(--nav__item-active-border-color, transparent);
+        color: var(--nav__item-active-color, gray);
+      }
+    }
+
+    &.nav--stacked {
+      flex-flow: var(--nav-flex-flow, wrap column);
+      align-items: var(--nav-align-items, stretch);
+
+      & .nav__item {
+        justify-content: var(--nav__item-justify-content, flex-start);
+        width: var(--nav__item-width, 100%);
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@layer cwf-modules {
+  input,
+  textarea {
+    appearance: var(--input-appearance, auto);
+    border-color: var(--input-border-color, DimGrey);
+    border-radius: var(--input-border-radius, 4px);
+    border-style: var(--input-border-style, solid);
+    border-width: var(--input-border-width, 1px);
+    box-shadow: var(--input-box-shadow, none);
+    color: var(--input-color, DimGrey);
+    cursor: var(--input-cursor, auto);
+    font-family: var(--input-font-family, system-ui);
+    font-weight: var(--input-font-weight, 400);
+    height: var(--input-height, auto);
+    line-height: var(--input-line-height, 1.15);
+    outline: var(--input-outline, 0);
+    padding: var(--input-padding-y, 1ch) var(--input-padding-x, 2ch);
+    vertical-align: var(--input-vertical-align, initial);
+    width: var(--input-width, auto);
+
+    &:hover {
+      border-color: var(--input-hover-border-color, gray);
+      color: var(--input-hover-color, DimGrey);
+    }
+
+    &:focus-visible {
+      border-color: var(--input-focus-border-color, gray);
+      box-shadow: var(
+        --input-focus-box-shadow,
+        0 0 0 0.25em rgb(0 0 0 / 0.125)
+      );
+      color: var(--input-focus-color, DimGrey);
+    }
+
+    &[type="checkbox"],
+    &[type="radio"] {
+      appearance: var(--input-appearance, none);
+      background-size: var(--input-background-size, contain);
+      cursor: var(--input-cursor, pointer);
+      padding: var(--input-padding-y, 1ch) var(--input-padding-x, 1ch);
+      vertical-align: var(--input-vertical-align, top);
+
+      &:checked {
+        background-color: var(--input-background-color, DimGrey);
+      }
+
+      &:focus {
+        box-shadow: var(
+          --input-focus-box-shadow,
+          0 0 0 0.25em rgb(0 0 0 / 0.125)
+        );
+      }
+    }
+
+    &[type="checkbox"] {
+      &:checked {
+        background-image: var(
+          --input-checkbox-background-image,
+          url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e")
+        );
+      }
+    }
+
+    &[type="radio"] {
+      border-radius: var(--input-border-radius, 50%);
+
+      &:checked {
+        background-image: var(
+          --input-radio-background-image,
+          url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
+        );
+      }
+    }
+  }
+}

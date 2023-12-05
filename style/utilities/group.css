@@ -1,0 +1,11 @@
+@layer cwf-utilities {
+  .group {
+    align-items: var(--group-align-items, center);
+    display: var(--group-display, flex);
+    flex-flow: var(--group-flex-flow, wrap row);
+    gap: var(--group-gap, 1ch);
+    justify-content: var(--group-justify-content, flex-start);
+    margin: var(--group-margin, 0);
+    position: var(--group-position, relative);
+  }
+}

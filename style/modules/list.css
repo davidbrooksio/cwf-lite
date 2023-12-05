@@ -1,0 +1,9 @@
+@layer cwf-modules {
+  .list {
+    &.list--unstyled {
+      list-style: var(--list-list-style, none);
+      margin: var(--list-margin, 0);
+      padding: var(--list-padding, 0);
+    }
+  }
+}

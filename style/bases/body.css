@@ -1,0 +1,7 @@
+@layer cwf-bases {
+  body {
+    font-family: var(--body-font-family, system-ui);
+    font-size: var(--body-font-size, 1rem);
+    color: var(--body-color, DimGrey);
+  }
+}

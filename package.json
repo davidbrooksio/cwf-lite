@@ -1,0 +1,26 @@
+{
+  "name": "cwf-lite",
+  "version": "1.0.0",
+  "description": "The css lite claritas web framework",
+  "main": "index.js",
+  "author": "David Brooks <david.brooks@claritas-solutions.com>",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@3.6.3",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@cla-git01/srv/git/cwf-lite"
+  },
+  "devDependencies": {
+    "lightningcss": "^1.22.1",
+    "modern-normalize": "^2.0.0",
+    "postcss": "^8.4.32",
+    "postcss-preset-env": "^9.3.0",
+    "vite": "^5.0.5"
+  }
+}

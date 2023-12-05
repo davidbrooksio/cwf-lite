@@ -1,0 +1,26 @@
+@layer cwf-modules {
+  .alert {
+    background-color: var(--alert-background-color, WhiteSmoke);
+    border-color: var(--alert-border-color, DimGrey);
+    border-radius: var(--alert-border-radius, 4px);
+    border-style: var(--alert-border-style, solid);
+    border-width: var(--alert-border-width, 1px);
+    display: var(--alert-display, block);
+    min-width: var(--alert-min-width, 0);
+    padding: var(--alert-inner-padding-y, 1ch) var(--alert-inner-padding-x, 2ch);
+    position: var(--alert-position, relative);
+    word-wrap: var(--alert-word-wrap, break-word);
+
+    & > * {
+      &:first-child {
+        border-top-left-radius: var(--alert-child-border-radius, 3px);
+        border-top-right-radius: var(--alert-child-border-radius, 3px);
+      }
+
+      &:last-child {
+        border-bottom-left-radius: var(--alert-child-border-radius, 3px);
+        border-bottom-right-radius: var(--alert-child-border-radius, 3px);
+      }
+    }
+  }
+}
