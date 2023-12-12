@@ -1,5 +1,5 @@
 @layer cwf-utilities {
-  @each $value in (static, relative, absolute, fixed, sticky) {
+  @each $value in static, relative, absolute, fixed, sticky {
     .position--$(value) {
       position: $(value);
     }

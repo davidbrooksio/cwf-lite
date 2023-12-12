@@ -14,7 +14,7 @@
       grid-column-start: var(--column-grid-column-start);
       grid-column-end: var(--column-grid-column-end);
 
-      @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+      @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
         &.column--$(size) {
           --column-grid-column-end: span $(size);
         }
@@ -25,13 +25,13 @@
       }
 
       @media (min-width: 320px) {
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--smallmobile-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
           &.offset--mobile-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
@@ -39,13 +39,13 @@
       }
 
       @media (min-width: 576px) {
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--mobile-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
           &.offset--mobile-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
@@ -53,13 +53,13 @@
       }
 
       @media (min-width: 768px) {
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--tablet-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
           &.offset--tablet-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
@@ -67,13 +67,13 @@
       }
 
       @media (min-width: 1024px) {
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--desktop-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
           &.offset--desktop-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
@@ -81,13 +81,13 @@
       }
 
       @media (min-width: 1216px) {
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--widescreen-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
           &.offset--widescreen-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
@@ -95,13 +95,13 @@
       }
 
       @media (min-width: 1408px) {
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--fullhd-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
           &.offset--fullhd-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
@@ -131,7 +131,7 @@
         flex: var(--column-flex, 1 0 0%);
       }
 
-      @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+      @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
         &.column--$(size) {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, calc((100% / 12) * $(size)));
@@ -152,7 +152,7 @@
           flex: var(--column-flex, 1 0 0%);
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--smallmobile-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
@@ -174,7 +174,7 @@
           flex: var(--column-flex, 1 0 0%);
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--mobile-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
@@ -196,7 +196,7 @@
           flex: var(--column-flex, 1 0 0%);
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--tablet-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
@@ -218,7 +218,7 @@
           flex: var(--column-flex, 1 0 0%);
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--desktop-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
@@ -240,7 +240,7 @@
           flex: var(--column-flex, 1 0 0%);
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--widescreen-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
@@ -262,7 +262,7 @@
           flex: var(--column-flex, 1 0 0%);
         }
 
-        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--fullhd-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));

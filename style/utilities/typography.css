@@ -1,11 +1,11 @@
 @layer cwf-utilities {
-  @each $value in (serif, sans-serif, monospace, cursive, emoji) {
+  @each $value in serif, sans-serif, monospace, cursive, emoji {
     .font-family--$(value) {
       font-family: $(value);
     }
   }
 
-  @each $value in (left, right, center, justify) {
+  @each $value in left, right, center, justify {
     .text-align--$(value) {
       text-align: $(value);
     }
@@ -47,7 +47,7 @@
     }
   }
 
-  @each $value in (uppercase, lowercase, capitalize, none) {
+  @each $value in uppercase, lowercase, capitalize, none {
     .text-transform--$(value) {
       text-transform: $(value);
     }
@@ -89,7 +89,7 @@
     }
   }
 
-  @each $value in (normal, nowrap) {
+  @each $value in normal, nowrap {
     .white-space--$(value) {
       white-space: $(value);
     }
@@ -131,27 +131,8 @@
     }
   }
 
-  @each $value
-    in (
-      lighter,
-      bolder,
-      thin,
-      light,
-      normal,
-      medium,
-      semibold,
-      bold,
-      heavy,
-      black,
-      100,
-      300,
-      400,
-      500,
-      600,
-      700,
-      800,
-      900
-    )
+  @each $value in lighter, bolder, thin, light, normal, medium, semibold, bold,
+    heavy, black, 100, 300, 400, 500, 600, 700, 800, 900
   {
     .font-weight--$(value) {
       font-weight: $(value);
@@ -194,7 +175,7 @@
     }
   }
 
-  @each $value in (italic, oblique, normal) {
+  @each $value in italic, oblique, normal {
     .font-style--$(value) {
       font-style: $(value);
     }

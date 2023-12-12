@@ -1,5 +1,5 @@
 @layer cwf-utilities {
-  @each $value in (auto, hidden, visible, scroll) {
+  @each $value in auto, hidden, visible, scroll {
     .overflow--$(value) {
       overflow: $(value);
     }

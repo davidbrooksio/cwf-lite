@@ -1,5 +1,5 @@
 @layer cwf-utilities {
-  @each $value in (left, right, none) {
+  @each $value in left, right, none {
     .float--$(value) {
       float: $(value);
     }

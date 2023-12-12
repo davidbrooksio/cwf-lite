@@ -7,9 +7,9 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        postcssPresetEnv({ stage: 0 }),
         postcssEach({}),
         postcssCalc({}),
+        postcssPresetEnv({ stage: 0 }),
       ],
     },
   },

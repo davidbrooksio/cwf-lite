@@ -1,5 +1,5 @@
 @layer cwf-utilities {
-  @each $value in (row, column, row-reverse, column-reverse) {
+  @each $value in row, column, row-reverse, column-reverse {
     .flex-direction--$(value) {
       flex-direction: $(value);
     }
@@ -41,7 +41,7 @@
     }
   }
 
-  @each $value in (wrap, nowrap, wrap-reverse) {
+  @each $value in wrap, nowrap, wrap-reverse {
     .flex-wrap--$(value) {
       flex-wrap: $(value);
     }
@@ -83,8 +83,8 @@
     }
   }
 
-  @each $value
-    in (flex-start, flex-end, center, space-between, space-around, space-evenly)
+  @each $value in flex-start, flex-end, center, space-between, space-around,
+    space-evenly
   {
     .justify-content--$(value) {
       justify-content: $(value);
@@ -155,8 +155,8 @@
     }
   }
 
-  @each $value
-    in (flex-start, flex-end, center, space-between, space-around, stretch)
+  @each $value in flex-start, flex-end, center, space-between, space-around,
+    stretch
   {
     .align-content--$(value) {
       align-content: $(value);
@@ -227,7 +227,7 @@
     }
   }
 
-  @each $value in (auto, flex-start, flex-end, center, baseline, stretch) {
+  @each $value in auto, flex-start, flex-end, center, baseline, stretch {
     .align-items--$(value) {
       align-items: $(value);
     }

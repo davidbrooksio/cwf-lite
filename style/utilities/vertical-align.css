@@ -1,5 +1,5 @@
 @layer cwf-utilities {
-  @each $value in (baseline, top, middle, bottom, text-bottom, text-top) {
+  @each $value in baseline, top, middle, bottom, text-bottom, text-top {
     .vertical-align--$(value) {
       vertical-align: $(value);
     }
