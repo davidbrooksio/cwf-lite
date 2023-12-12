@@ -1,0 +1,32 @@
+@layer cwf-bases {
+  .container {
+    width: var(--container-width, 100%);
+    max-width: var(--container-max-width, 100vw);
+    margin-left: var(--container-margin-left, auto);
+    margin-right: var(--container-margin-right, auto);
+    padding-left: var(--container-padding-left, 1ch);
+    padding-right: var(--container-padding-right, 1ch);
+
+    &:not(.container--fluid) {
+      @media (min-width: 576px) {
+        max-width: var(--container-max-width, 516px);
+      }
+
+      @media (min-width: 768px) {
+        max-width: var(--container-max-width, 708px);
+      }
+
+      @media (min-width: 1024px) {
+        max-width: var(--container-max-width, 964px);
+      }
+
+      @media (min-width: 1216px) {
+        max-width: var(--container-max-width, 1156px);
+      }
+
+      @media (min-width: 1408px) {
+        max-width: var(--container-max-width, 1348px);
+      }
+    }
+  }
+}

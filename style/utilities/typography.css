@@ -1,0 +1,238 @@
+@layer cwf-utilities {
+  @each $value in (serif, sans-serif, monospace, cursive, emoji) {
+    .font-family--$(value) {
+      font-family: $(value);
+    }
+  }
+
+  @each $value in (left, right, center, justify) {
+    .text-align--$(value) {
+      text-align: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .text-align--smallmobile-$(value) {
+        text-align: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .text-align--mobile-$(value) {
+        text-align: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .text-align--tablet-$(value) {
+        text-align: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .text-align--desktop-$(value) {
+        text-align: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .text-align--widescreen-$(value) {
+        text-align: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .text-align--fullhd-$(value) {
+        text-align: $(value);
+      }
+    }
+  }
+
+  @each $value in (uppercase, lowercase, capitalize, none) {
+    .text-transform--$(value) {
+      text-transform: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .text-transform--smallmobile-$(value) {
+        text-transform: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .text-transform--mobile-$(value) {
+        text-transform: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .text-transform--tablet-$(value) {
+        text-transform: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .text-transform--desktop-$(value) {
+        text-transform: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .text-transform--widescreen-$(value) {
+        text-transform: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .text-transform--fullhd-$(value) {
+        text-transform: $(value);
+      }
+    }
+  }
+
+  @each $value in (normal, nowrap) {
+    .white-space--$(value) {
+      white-space: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .white-space--smallmobile-$(value) {
+        white-space: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .white-space--mobile-$(value) {
+        white-space: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .white-space--tablet-$(value) {
+        white-space: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .white-space--desktop-$(value) {
+        white-space: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .white-space--widescreen-$(value) {
+        white-space: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .white-space--fullhd-$(value) {
+        white-space: $(value);
+      }
+    }
+  }
+
+  @each $value
+    in (
+      lighter,
+      bolder,
+      thin,
+      light,
+      normal,
+      medium,
+      semibold,
+      bold,
+      heavy,
+      black,
+      100,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    )
+  {
+    .font-weight--$(value) {
+      font-weight: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .font-weight--smallmobile-$(value) {
+        font-weight: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .font-weight--mobile-$(value) {
+        font-weight: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .font-weight--tablet-$(value) {
+        font-weight: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .font-weight--desktop-$(value) {
+        font-weight: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .font-weight--widescreen-$(value) {
+        font-weight: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .font-weight--fullhd-$(value) {
+        font-weight: $(value);
+      }
+    }
+  }
+
+  @each $value in (italic, oblique, normal) {
+    .font-style--$(value) {
+      font-style: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .font-style--smallmobile-$(value) {
+        font-style: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .font-style--mobile-$(value) {
+        font-style: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .font-style--tablet-$(value) {
+        font-style: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .font-style--desktop-$(value) {
+        font-style: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .font-style--widescreen-$(value) {
+        font-style: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .font-style--fullhd-$(value) {
+        font-style: $(value);
+      }
+    }
+  }
+}

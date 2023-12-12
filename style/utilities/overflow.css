@@ -1,0 +1,99 @@
+@layer cwf-utilities {
+  @each $value in (auto, hidden, visible, scroll) {
+    .overflow--$(value) {
+      overflow: $(value);
+    }
+
+    .overflow-y--$(value) {
+      overflow-y: $(value);
+    }
+
+    .overflow-x--$(value) {
+      overflow-x: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .overflow--smallmobile-$(value) {
+        overflow: $(value);
+      }
+
+      .overflow-y--smallmobile-$(value) {
+        overflow-y: $(value);
+      }
+
+      .overflow-x--smallmobile-$(value) {
+        overflow-x: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .overflow--mobile-$(value) {
+        overflow: $(value);
+      }
+
+      .overflow-y--mobile-$(value) {
+        overflow-y: $(value);
+      }
+
+      .overflow-x--mobile-$(value) {
+        overflow-x: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .overflow--tablet-$(value) {
+        overflow: $(value);
+      }
+
+      .overflow-y--tablet-$(value) {
+        overflow-y: $(value);
+      }
+
+      .overflow-x--tablet-$(value) {
+        overflow-x: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .overflow--desktop-$(value) {
+        overflow: $(value);
+      }
+
+      .overflow-y--desktop-$(value) {
+        overflow-y: $(value);
+      }
+
+      .overflow-x--desktop-$(value) {
+        overflow-x: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .overflow--widescreen-$(value) {
+        overflow: $(value);
+      }
+
+      .overflow-y--widescreen-$(value) {
+        overflow-y: $(value);
+      }
+
+      .overflow-x--widescreen-$(value) {
+        overflow-x: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .overflow--fullhd-$(value) {
+        overflow: $(value);
+      }
+
+      .overflow-y--fullhd-$(value) {
+        overflow-y: $(value);
+      }
+
+      .overflow-x--fullhd-$(value) {
+        overflow-x: $(value);
+      }
+    }
+  }
+}

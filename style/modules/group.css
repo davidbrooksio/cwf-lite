@@ -1,4 +1,4 @@
-@layer cwf-utilities {
+@layer cwf-modules {
   .group {
     align-items: var(--group-align-items, center);
     display: var(--group-display, flex);

@@ -1,0 +1,349 @@
+@layer cwf-utilities {
+  .top--auto {
+    top: auto;
+  }
+
+  .top--100 {
+    top: 100%;
+  }
+
+  .top--0 {
+    top: 0;
+  }
+
+  .right--auto {
+    right: auto;
+  }
+
+  .right--100 {
+    right: 100%;
+  }
+
+  .right--0 {
+    right: 0;
+  }
+
+  .bottom--auto {
+    bottom: auto;
+  }
+
+  .bottom--100 {
+    bottom: 100%;
+  }
+
+  .bottom--0 {
+    bottom: 0;
+  }
+
+  .left--auto {
+    left: auto;
+  }
+
+  .left--100 {
+    left: 100%;
+  }
+
+  .left--0 {
+    left: 0;
+  }
+
+  @media (min-width: 320px) {
+    .top--smallmobile-auto {
+      top: auto;
+    }
+
+    .top--smallmobile-100 {
+      top: 100%;
+    }
+
+    .top--smallmobile-0 {
+      top: 0;
+    }
+
+    .right--smallmobile-auto {
+      right: auto;
+    }
+
+    .right--smallmobile-100 {
+      right: 100%;
+    }
+
+    .right--smallmobile-0 {
+      right: 0;
+    }
+
+    .bottom--smallmobile-auto {
+      bottom: auto;
+    }
+
+    .bottom--smallmobile-100 {
+      bottom: 100%;
+    }
+
+    .bottom--smallmobile-0 {
+      bottom: 0;
+    }
+
+    .left--smallmobile-auto {
+      left: auto;
+    }
+
+    .left--smallmobile-100 {
+      left: 100%;
+    }
+
+    .left--smallmobile-0 {
+      left: 0;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .top--mobile-auto {
+      top: auto;
+    }
+
+    .top--mobile-100 {
+      top: 100%;
+    }
+
+    .top--mobile-0 {
+      top: 0;
+    }
+
+    .right--mobile-auto {
+      right: auto;
+    }
+
+    .right--mobile-100 {
+      right: 100%;
+    }
+
+    .right--mobile-0 {
+      right: 0;
+    }
+
+    .bottom--mobile-auto {
+      bottom: auto;
+    }
+
+    .bottom--mobile-100 {
+      bottom: 100%;
+    }
+
+    .bottom--mobile-0 {
+      bottom: 0;
+    }
+
+    .left--mobile-auto {
+      left: auto;
+    }
+
+    .left--mobile-100 {
+      left: 100%;
+    }
+
+    .left--mobile-0 {
+      left: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .top--tablet-auto {
+      top: auto;
+    }
+
+    .top--tablet-100 {
+      top: 100%;
+    }
+
+    .top--tablet-0 {
+      top: 0;
+    }
+
+    .right--tablet-auto {
+      right: auto;
+    }
+
+    .right--tablet-100 {
+      right: 100%;
+    }
+
+    .right--tablet-0 {
+      right: 0;
+    }
+
+    .bottom--tablet-auto {
+      bottom: auto;
+    }
+
+    .bottom--tablet-100 {
+      bottom: 100%;
+    }
+
+    .bottom--tablet-0 {
+      bottom: 0;
+    }
+
+    .left--tablet-auto {
+      left: auto;
+    }
+
+    .left--tablet-100 {
+      left: 100%;
+    }
+
+    .left--tablet-0 {
+      left: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .top--desktop-auto {
+      top: auto;
+    }
+
+    .top--desktop-100 {
+      top: 100%;
+    }
+
+    .top--desktop-0 {
+      top: 0;
+    }
+
+    .right--desktop-auto {
+      right: auto;
+    }
+
+    .right--desktop-100 {
+      right: 100%;
+    }
+
+    .right--desktop-0 {
+      right: 0;
+    }
+
+    .bottom--desktop-auto {
+      bottom: auto;
+    }
+
+    .bottom--desktop-100 {
+      bottom: 100%;
+    }
+
+    .bottom--desktop-0 {
+      bottom: 0;
+    }
+
+    .left--desktop-auto {
+      left: auto;
+    }
+
+    .left--desktop-100 {
+      left: 100%;
+    }
+
+    .left--desktop-0 {
+      left: 0;
+    }
+  }
+
+  @media (min-width: 1216px) {
+    .top--widescreen-auto {
+      top: auto;
+    }
+
+    .top--widescreen-100 {
+      top: 100%;
+    }
+
+    .top--widescreen-0 {
+      top: 0;
+    }
+
+    .right--widescreen-auto {
+      right: auto;
+    }
+
+    .right--widescreen-100 {
+      right: 100%;
+    }
+
+    .right--widescreen-0 {
+      right: 0;
+    }
+
+    .bottom--widescreen-auto {
+      bottom: auto;
+    }
+
+    .bottom--widescreen-100 {
+      bottom: 100%;
+    }
+
+    .bottom--widescreen-0 {
+      bottom: 0;
+    }
+
+    .left--widescreen-auto {
+      left: auto;
+    }
+
+    .left--widescreen-100 {
+      left: 100%;
+    }
+
+    .left--widescreen-0 {
+      left: 0;
+    }
+  }
+
+  @media (min-width: 1408px) {
+    .top--fullhd-auto {
+      top: auto;
+    }
+
+    .top--fullhd-100 {
+      top: 100%;
+    }
+
+    .top--fullhd-0 {
+      top: 0;
+    }
+
+    .right--fullhd-auto {
+      right: auto;
+    }
+
+    .right--fullhd-100 {
+      right: 100%;
+    }
+
+    .right--fullhd-0 {
+      right: 0;
+    }
+
+    .bottom--fullhd-auto {
+      bottom: auto;
+    }
+
+    .bottom--fullhd-100 {
+      bottom: 100%;
+    }
+
+    .bottom--fullhd-0 {
+      bottom: 0;
+    }
+
+    .left--fullhd-auto {
+      left: auto;
+    }
+
+    .left--fullhd-100 {
+      left: 100%;
+    }
+
+    .left--fullhd-0 {
+      left: 0;
+    }
+  }
+}

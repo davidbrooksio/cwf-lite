@@ -9,6 +9,9 @@
     gap: var(--nav-gap, 0);
     justify-content: var(--nav-justify-content, flex-start);
     position: var(--nav-position, relative);
+    border-width: var(--nav-border-width, 0);
+    border-style: var(--nav-border-style, solid);
+    border-color: var(--nav-border-color, transparent);
 
     & .nav__item {
       align-items: var(--nav__item-align-items, center);
@@ -18,7 +21,7 @@
       border-style: var(--nav__item-border-style, solid);
       border-width: var(--nav__item-border-width, 0);
       box-shadow: var(--nav__item-box-shadow, none);
-      color: var(--nav__item-color, DimGrey);
+      color: var(--nav__item-color, DimGray);
       cursor: var(--nav__item-cursor, pointer);
       display: var(--nav__item-display, inline-flex);
       font-family: var(--nav__item-font-family, system-ui);
@@ -34,20 +37,24 @@
       vertical-align: var(--nav__item-vertical-align, middle);
       white-space: var(--nav__item-white-space, nowrap);
       width: var(--nav__item-width, auto);
+      margin: var(--nav__item-margin, 0);
 
       &:hover {
         border-color: var(--nav__item-hover-border-color, transparent);
         color: var(--nav__item-hover-color, gray);
+        background-color: var(--nav__item-background-color, WhiteSmoke);
       }
 
       &:focus-visible {
         border-color: var(--nav__item-focus-border-color, transparent);
         color: var(--nav__item-focus-color, gray);
+        background-color: var(--nav__item-background-color, WhiteSmoke);
       }
 
       &:active {
         border-color: var(--nav__item-active-border-color, transparent);
         color: var(--nav__item-active-color, gray);
+        background-color: var(--nav__item-background-color, WhiteSmoke);
       }
     }
 
@@ -58,6 +65,66 @@
       & .nav__item {
         justify-content: var(--nav__item-justify-content, flex-start);
         width: var(--nav__item-width, 100%);
+      }
+    }
+
+    &.nav--tabs {
+      &:not(:empty) {
+        border-width: var(--nav-border-width, 0 0 1px);
+        border-style: var(--nav-border-style, solid);
+        border-color: var(--nav-border-color, DimGray);
+        gap: var(--nav-gap, 1ch);
+        padding: var(--nav-padding, 0 1ch);
+      }
+
+      & .nav__item {
+        background-color: var(--nav__item-background-color, white);
+        margin: var(--nav__item-margin, 0 0 -1px);
+        border-color: var(--nav__item-border-color, DimGray);
+        border-radius: var(--nav__item-border-radius, 4px 4px 0 0);
+        border-style: var(--nav__item-border-style, solid);
+        border-width: var(--nav__item-border-width, 1px);
+
+        &:hover {
+          border-color: var(--nav__item-hover-border-color, gray);
+          color: var(--nav__item-hover-color, gray);
+          background-color: var(--nav__item-background-color, WhiteSmoke);
+        }
+
+        &:focus-visible {
+          border-color: var(--nav__item-focus-border-color, gray);
+          color: var(--nav__item-focus-color, gray);
+          background-color: var(--nav__item-background-color, WhiteSmoke);
+        }
+
+        &:active {
+          border-color: var(--nav__item-active-border-color, gray);
+          color: var(--nav__item-active-color, gray);
+          background-color: var(--nav__item-background-color, WhiteSmoke);
+        }
+
+        &[data-active="true"],
+        &.active {
+          border-width: var(--nav__item-border-width, 1px 1px 0 1px);
+
+          &:hover {
+            border-color: var(--nav__item-hover-border-color, DimGray);
+            color: var(--nav__item-hover-color, gray);
+            background-color: var(--nav__item-background-color, white);
+          }
+
+          &:focus-visible {
+            border-color: var(--nav__item-hover-border-color, DimGray);
+            color: var(--nav__item-hover-color, gray);
+            background-color: var(--nav__item-background-color, white);
+          }
+
+          &:active {
+            border-color: var(--nav__item-hover-border-color, DimGray);
+            color: var(--nav__item-hover-color, gray);
+            background-color: var(--nav__item-background-color, white);
+          }
+        }
       }
     }
   }

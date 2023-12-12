@@ -2,12 +2,12 @@
   input,
   textarea {
     appearance: var(--input-appearance, auto);
-    border-color: var(--input-border-color, DimGrey);
+    border-color: var(--input-border-color, DimGray);
     border-radius: var(--input-border-radius, 4px);
     border-style: var(--input-border-style, solid);
     border-width: var(--input-border-width, 1px);
     box-shadow: var(--input-box-shadow, none);
-    color: var(--input-color, DimGrey);
+    color: var(--input-color, DimGray);
     cursor: var(--input-cursor, auto);
     font-family: var(--input-font-family, system-ui);
     font-weight: var(--input-font-weight, 400);
@@ -20,7 +20,7 @@
 
     &:hover {
       border-color: var(--input-hover-border-color, gray);
-      color: var(--input-hover-color, DimGrey);
+      color: var(--input-hover-color, DimGray);
     }
 
     &:focus-visible {
@@ -29,7 +29,7 @@
         --input-focus-box-shadow,
         0 0 0 0.25em rgb(0 0 0 / 0.125)
       );
-      color: var(--input-focus-color, DimGrey);
+      color: var(--input-focus-color, DimGray);
     }
 
     &[type="checkbox"],
@@ -41,7 +41,7 @@
       vertical-align: var(--input-vertical-align, top);
 
       &:checked {
-        background-color: var(--input-background-color, DimGrey);
+        background-color: var(--input-background-color, DimGray);
       }
 
       &:focus {

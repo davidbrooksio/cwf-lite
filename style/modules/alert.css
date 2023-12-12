@@ -1,7 +1,7 @@
 @layer cwf-modules {
   .alert {
     background-color: var(--alert-background-color, WhiteSmoke);
-    border-color: var(--alert-border-color, DimGrey);
+    border-color: var(--alert-border-color, DimGray);
     border-radius: var(--alert-border-radius, 4px);
     border-style: var(--alert-border-style, solid);
     border-width: var(--alert-border-width, 1px);

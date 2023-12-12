@@ -995,8 +995,10 @@ __metadata:
     lightningcss: ^1.22.1
     modern-normalize: ^2.0.0
     postcss: ^8.4.32
+    postcss-calc: ^9.0.1
+    postcss-each: ^1.1.0
     postcss-preset-env: ^9.3.0
-    vite: ^5.0.5
+    vite: ^5.0.7
   languageName: unknown
   linkType: soft
 
@@ -1834,6 +1836,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-calc@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "postcss-calc@npm:9.0.1"
+  dependencies:
+    postcss-selector-parser: ^6.0.11
+    postcss-value-parser: ^4.2.0
+  peerDependencies:
+    postcss: ^8.2.2
+  checksum: 7327ed83bfec544ab8b3e38353baa72ff6d04378b856db4ad82dbd68ce0b73668867ef182b5d4025f9dd9aa9c64aacc50cd1bd9db8d8b51ccc4cb97866b9d72b
+  languageName: node
+  linkType: hard
+
 "postcss-clamp@npm:^4.1.0":
   version: 4.1.0
   resolution: "postcss-clamp@npm:4.1.0"
@@ -1941,6 +1955,17 @@ __metadata:
   peerDependencies:
     postcss: ^8.4
   checksum: c8bfa195bef375514c47042cd71f557b8f02060e689e496ec28e380d1b835d47edfcc73905bbc0a42a98a0e0c20919e21b51d213a184ca34fcfee911b0e2187c
+  languageName: node
+  linkType: hard
+
+"postcss-each@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "postcss-each@npm:1.1.0"
+  dependencies:
+    postcss-simple-vars: ^6.0.0
+  peerDependencies:
+    postcss: ^8.0.0
+  checksum: c4f0d8a40b9147da1af47360515446056e8cf5319396ace45b5837040b999317b643cb574ed73783787b21de5f5732bac5aecf64f9373adbb69151cca54de215
   languageName: node
   linkType: hard
 
@@ -2173,13 +2198,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:^6.0.10, postcss-selector-parser@npm:^6.0.13":
+"postcss-selector-parser@npm:^6.0.10, postcss-selector-parser@npm:^6.0.11, postcss-selector-parser@npm:^6.0.13":
   version: 6.0.13
   resolution: "postcss-selector-parser@npm:6.0.13"
   dependencies:
     cssesc: ^3.0.0
     util-deprecate: ^1.0.2
   checksum: f89163338a1ce3b8ece8e9055cd5a3165e79a15e1c408e18de5ad8f87796b61ec2d48a2902d179ae0c4b5de10fccd3a325a4e660596549b040bc5ad1b465f096
+  languageName: node
+  linkType: hard
+
+"postcss-simple-vars@npm:^6.0.0":
+  version: 6.0.3
+  resolution: "postcss-simple-vars@npm:6.0.3"
+  peerDependencies:
+    postcss: ^8.2.1
+  checksum: 66fd71dc8fc76fc994595132d3476ab37e8c691b69730b117bbd89e0a4c92ee195328f02f1fe3ca7019f413c4b53a1ef30108c802190f6b572e78c55cb9ee349
   languageName: node
   linkType: hard
 
@@ -2498,9 +2532,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.5":
-  version: 5.0.5
-  resolution: "vite@npm:5.0.5"
+"vite@npm:^5.0.7":
+  version: 5.0.7
+  resolution: "vite@npm:5.0.7"
   dependencies:
     esbuild: ^0.19.3
     fsevents: ~2.3.3
@@ -2534,7 +2568,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 8df70302934de39ad6fda4f28246e07850f849c2bd197b7af93615f5f39955be460dd19940a46ec5bf2adf81bc32b60985eb5990142212754c733eba4fe3bfa3
+  checksum: 18dcf69ccdb6d79d28c678dec4054ac92fd352fd8b2a1a1eb9512a7791d7036bc625bc1ee7c255edc940ad63ebbde8cc4407954e82c71dcbb70b1afeb345c267
   languageName: node
   linkType: hard
 

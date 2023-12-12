@@ -1,0 +1,111 @@
+@layer cwf-utilities {
+  .z-index--neg-1 {
+    z-index: -1;
+  }
+
+  .z-index--top {
+    z-index: 9999;
+  }
+
+  @media (min-width: 320px) {
+    .z-index--smallmobile-neg-1 {
+      z-index: -1;
+    }
+
+    .z-index--smallmobile-top {
+      z-index: 9999;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .z-index--mobile-neg-1 {
+      z-index: -1;
+    }
+
+    .z-index--mobile-top {
+      z-index: 9999;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .z-index--tablet-neg-1 {
+      z-index: -1;
+    }
+
+    .z-index--tablet-top {
+      z-index: 9999;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .z-index--desktop-neg-1 {
+      z-index: -1;
+    }
+
+    .z-index--desktop-top {
+      z-index: 9999;
+    }
+  }
+
+  @media (min-width: 1216px) {
+    .z-index--widescreen-neg-1 {
+      z-index: -1;
+    }
+
+    .z-index--widescreen-top {
+      z-index: 9999;
+    }
+  }
+
+  @media (min-width: 1408px) {
+    .z-index--fullhd-neg-1 {
+      z-index: -1;
+    }
+
+    .z-index--fullhd-top {
+      z-index: 9999;
+    }
+  }
+
+  @each $value in (0, 1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000) {
+    .z-index--$(value) {
+      z-index: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .z-index--smallmobile-$(value) {
+        z-index: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .z-index--mobile-$(value) {
+        z-index: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .z-index--tablet-$(value) {
+        z-index: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .z-index--desktop-$(value) {
+        z-index: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .z-index--widescreen-$(value) {
+        z-index: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .z-index--fullhd-$(value) {
+        z-index: $(value);
+      }
+    }
+  }
+}

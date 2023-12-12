@@ -1,0 +1,43 @@
+@layer cwf-utilities {
+  @each $value in (left, right, none) {
+    .float--$(value) {
+      float: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .float--smallmobile-$(value) {
+        float: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .float--mobile-$(value) {
+        float: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .float--tablet-$(value) {
+        float: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .float--desktop-$(value) {
+        float: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .float--widescreen-$(value) {
+        float: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .float--fullhd-$(value) {
+        float: $(value);
+      }
+    }
+  }
+}

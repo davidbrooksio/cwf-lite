@@ -1,0 +1,297 @@
+@layer cwf-utilities {
+  @each $count, $size in (1, 2, 3, 4, 5, 6, 7, 8, 9),
+    (0.25ch, 0.5ch, 0.75ch, 1.5ch, 2ch, 2.5ch, 3ch, 3.5ch, 4ch)
+  {
+    .margin--$(count) {
+      margin: $(size);
+    }
+
+    .margin-top--$(count) {
+      margin-top: $(size);
+    }
+
+    .margin-right--$(count) {
+      margin-right: $(size);
+    }
+
+    .margin-bottom--$(count) {
+      margin-bottom: $(size);
+    }
+
+    .margin-left--$(count) {
+      margin-left: $(size);
+    }
+
+    .margin--neg-$(count) {
+      margin: calc($(size) * -1);
+    }
+
+    .margin-top--neg-$(count) {
+      margin-top: calc($(size) * -1);
+    }
+
+    .margin-right--neg-$(count) {
+      margin-right: calc($(size) * -1);
+    }
+
+    .margin-bottom--neg-$(count) {
+      margin-bottom: calc($(size) * -1);
+    }
+
+    .margin-left--neg-$(count) {
+      margin-left: calc($(size) * -1);
+    }
+
+    @media (min-width: 320px) {
+      .margin--smallmobile-$(count) {
+        margin: $(size);
+      }
+
+      .margin-top--smallmobile-$(count) {
+        margin-top: $(size);
+      }
+
+      .margin-right--smallmobile-$(count) {
+        margin-right: $(size);
+      }
+
+      .margin-bottom--smallmobile-$(count) {
+        margin-bottom: $(size);
+      }
+
+      .margin-left--smallmobile-$(count) {
+        margin-left: $(size);
+      }
+
+      .margin--smallmobile-neg-$(count) {
+        margin: calc($(size) * -1);
+      }
+
+      .margin-top--smallmobile-neg-$(count) {
+        margin-top: calc($(size) * -1);
+      }
+
+      .margin-right--smallmobile-neg-$(count) {
+        margin-right: calc($(size) * -1);
+      }
+
+      .margin-bottom--smallmobile-neg-$(count) {
+        margin-bottom: calc($(size) * -1);
+      }
+
+      .margin-left--smallmobile-neg-$(count) {
+        margin-left: calc($(size) * -1);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .margin--mobile-$(count) {
+        margin: $(size);
+      }
+
+      .margin-top--mobile-$(count) {
+        margin-top: $(size);
+      }
+
+      .margin-right--mobile-$(count) {
+        margin-right: $(size);
+      }
+
+      .margin-bottom--mobile-$(count) {
+        margin-bottom: $(size);
+      }
+
+      .margin-left--mobile-$(count) {
+        margin-left: $(size);
+      }
+
+      .margin--mobile-neg-$(count) {
+        margin: calc($(size) * -1);
+      }
+
+      .margin-top--mobile-neg-$(count) {
+        margin-top: calc($(size) * -1);
+      }
+
+      .margin-right--mobile-neg-$(count) {
+        margin-right: calc($(size) * -1);
+      }
+
+      .margin-bottom--mobile-neg-$(count) {
+        margin-bottom: calc($(size) * -1);
+      }
+
+      .margin-left--mobile-neg-$(count) {
+        margin-left: calc($(size) * -1);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .margin--tablet-$(count) {
+        margin: $(size);
+      }
+
+      .margin-top--tablet-$(count) {
+        margin-top: $(size);
+      }
+
+      .margin-right--tablet-$(count) {
+        margin-right: $(size);
+      }
+
+      .margin-bottom--tablet-$(count) {
+        margin-bottom: $(size);
+      }
+
+      .margin-left--tablet-$(count) {
+        margin-left: $(size);
+      }
+
+      .margin--tablet-neg-$(count) {
+        margin: calc($(size) * -1);
+      }
+
+      .margin-top--tablet-neg-$(count) {
+        margin-top: calc($(size) * -1);
+      }
+
+      .margin-right--tablet-neg-$(count) {
+        margin-right: calc($(size) * -1);
+      }
+
+      .margin-bottom--tablet-neg-$(count) {
+        margin-bottom: calc($(size) * -1);
+      }
+
+      .margin-left--tablet-neg-$(count) {
+        margin-left: calc($(size) * -1);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .margin--desktop-$(count) {
+        margin: $(size);
+      }
+
+      .margin-top--desktop-$(count) {
+        margin-top: $(size);
+      }
+
+      .margin-right--desktop-$(count) {
+        margin-right: $(size);
+      }
+
+      .margin-bottom--desktop-$(count) {
+        margin-bottom: $(size);
+      }
+
+      .margin-left--desktop-$(count) {
+        margin-left: $(size);
+      }
+
+      .margin--desktop-neg-$(count) {
+        margin: calc($(size) * -1);
+      }
+
+      .margin-top--desktop-neg-$(count) {
+        margin-top: calc($(size) * -1);
+      }
+
+      .margin-right--desktop-neg-$(count) {
+        margin-right: calc($(size) * -1);
+      }
+
+      .margin-bottom--desktop-neg-$(count) {
+        margin-bottom: calc($(size) * -1);
+      }
+
+      .margin-left--desktop-neg-$(count) {
+        margin-left: calc($(size) * -1);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .margin--widescreen-$(count) {
+        margin: $(size);
+      }
+
+      .margin-top--widescreen-$(count) {
+        margin-top: $(size);
+      }
+
+      .margin-right--widescreen-$(count) {
+        margin-right: $(size);
+      }
+
+      .margin-bottom--widescreen-$(count) {
+        margin-bottom: $(size);
+      }
+
+      .margin-left--widescreen-$(count) {
+        margin-left: $(size);
+      }
+
+      .margin--widescreen-neg-$(count) {
+        margin: calc($(size) * -1);
+      }
+
+      .margin-top--widescreen-neg-$(count) {
+        margin-top: calc($(size) * -1);
+      }
+
+      .margin-right--widescreen-neg-$(count) {
+        margin-right: calc($(size) * -1);
+      }
+
+      .margin-bottom--widescreen-neg-$(count) {
+        margin-bottom: calc($(size) * -1);
+      }
+
+      .margin-left--widescreen-neg-$(count) {
+        margin-left: calc($(size) * -1);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .margin--fullhd-$(count) {
+        margin: $(size);
+      }
+
+      .margin-top--fullhd-$(count) {
+        margin-top: $(size);
+      }
+
+      .margin-right--fullhd-$(count) {
+        margin-right: $(size);
+      }
+
+      .margin-bottom--fullhd-$(count) {
+        margin-bottom: $(size);
+      }
+
+      .margin-left--fullhd-$(count) {
+        margin-left: $(size);
+      }
+
+      .margin--fullhd-neg-$(count) {
+        margin: calc($(size) * -1);
+      }
+
+      .margin-top--fullhd-neg-$(count) {
+        margin-top: calc($(size) * -1);
+      }
+
+      .margin-right--fullhd-neg-$(count) {
+        margin-right: calc($(size) * -1);
+      }
+
+      .margin-bottom--fullhd-neg-$(count) {
+        margin-bottom: calc($(size) * -1);
+      }
+
+      .margin-left--fullhd-neg-$(count) {
+        margin-left: calc($(size) * -1);
+      }
+    }
+  }
+}

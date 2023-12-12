@@ -1,0 +1,56 @@
+@layer cwf-utilities {
+  @each $value
+    in (
+      initial,
+      none,
+      inline,
+      inline-block,
+      block,
+      table-row,
+      table-cell,
+      flex,
+      inline-flex,
+      grid
+    )
+  {
+    .display--$(value) {
+      display: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .display--smallmobile-$(value) {
+        display: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .display--mobile-$(value) {
+        display: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .display--tablet-$(value) {
+        display: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .display--desktop-$(value) {
+        display: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .display--widescreen-$(value) {
+        display: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .display--fullhd-$(value) {
+        display: $(value);
+      }
+    }
+  }
+}

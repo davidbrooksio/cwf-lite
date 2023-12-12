@@ -2,12 +2,12 @@
   .button {
     align-items: var(--button-align-items, center);
     background-color: var(--button-background-color, white);
-    border-color: var(--button-border-color, DimGrey);
+    border-color: var(--button-border-color, DimGray);
     border-radius: var(--button-border-radius, 4px);
     border-style: var(--button-border-style, solid);
     border-width: var(--button-border-width, 1px);
     box-shadow: var(--button-box-shadow, none);
-    color: var(--button-color, DimGrey);
+    color: var(--button-color, DimGray);
     cursor: var(--button-cursor, pointer);
     display: var(--button-display, inline-flex);
     font-family: var(--button-font-family, system-ui);

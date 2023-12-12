@@ -1,0 +1,278 @@
+@layer cwf-bases {
+  .grid {
+    display: var(--grid-display, grid);
+    grid-template-rows: var(--grid-template-rows, repeat(var(--rows, 1), 1fr));
+    grid-template-columns: var(
+      --grid-template-columns,
+      repeat(var(--columns, 12), 1fr)
+    );
+
+    & > .column {
+      --column-grid-column-start: auto;
+      --column-grid-column-end: span 12;
+
+      grid-column-start: var(--column-grid-column-start);
+      grid-column-end: var(--column-grid-column-end);
+
+      @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        &.column--$(size) {
+          --column-grid-column-end: span $(size);
+        }
+
+        &.offset--$(size) {
+          --column-grid-column-start: $(size);
+        }
+      }
+
+      @media (min-width: 320px) {
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--smallmobile-$(size) {
+            --column-grid-column-end: span $(size);
+          }
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+          &.offset--mobile-$(size) {
+            --column-grid-column-start: calc($(size) + 1);
+          }
+        }
+      }
+
+      @media (min-width: 576px) {
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--mobile-$(size) {
+            --column-grid-column-end: span $(size);
+          }
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+          &.offset--mobile-$(size) {
+            --column-grid-column-start: calc($(size) + 1);
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--tablet-$(size) {
+            --column-grid-column-end: span $(size);
+          }
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+          &.offset--tablet-$(size) {
+            --column-grid-column-start: calc($(size) + 1);
+          }
+        }
+      }
+
+      @media (min-width: 1024px) {
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--desktop-$(size) {
+            --column-grid-column-end: span $(size);
+          }
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+          &.offset--desktop-$(size) {
+            --column-grid-column-start: calc($(size) + 1);
+          }
+        }
+      }
+
+      @media (min-width: 1216px) {
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--widescreen-$(size) {
+            --column-grid-column-end: span $(size);
+          }
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+          &.offset--widescreen-$(size) {
+            --column-grid-column-start: calc($(size) + 1);
+          }
+        }
+      }
+
+      @media (min-width: 1408px) {
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--fullhd-$(size) {
+            --column-grid-column-end: span $(size);
+          }
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) {
+          &.offset--fullhd-$(size) {
+            --column-grid-column-start: calc($(size) + 1);
+          }
+        }
+      }
+    }
+  }
+
+  .flex-grid {
+    display: var(--flex-grid-display, flex);
+    flex-flow: var(--flex-grid-flex-flow, wrap row);
+    margin-right: var(--flex-grid-margin-right, -1ch);
+    margin-left: var(--flex-grid-margin-left, -1ch);
+
+    & > .column {
+      width: var(--column-width, 100%);
+      max-width: var(--column-max-width, 100%);
+      padding-right: var(--column-padding-right, 1ch);
+      padding-left: var(--column-padding-left, 1ch);
+
+      &.column--auto {
+        flex: var(--column-flex, 0 0 auto);
+        width: var(--column-width, auto);
+      }
+
+      &.column--fit {
+        flex: var(--column-flex, 1 0 0%);
+      }
+
+      @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+        &.column--$(size) {
+          flex: var(--column-flex, 0 0 auto);
+          width: var(--column-width, calc((100% / 12) * $(size)));
+        }
+
+        &.offset--$(size) {
+          margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
+        }
+      }
+
+      @media (min-width: 320px) {
+        &.column--smallmobile-auto {
+          flex: var(--column-flex, 0 0 auto);
+          width: var(--column-width, auto);
+        }
+
+        &.column--smallmobile-fit {
+          flex: var(--column-flex, 1 0 0%);
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--smallmobile-$(size) {
+            flex: var(--column-flex, 0 0 auto);
+            width: var(--column-width, calc((100% / 12) * $(size)));
+          }
+
+          &.offset--smallmobile-$(size) {
+            margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
+          }
+        }
+      }
+
+      @media (min-width: 576px) {
+        &.column--mobile-auto {
+          flex: var(--column-flex, 0 0 auto);
+          width: var(--column-width, auto);
+        }
+
+        &.column--mobile-fit {
+          flex: var(--column-flex, 1 0 0%);
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--mobile-$(size) {
+            flex: var(--column-flex, 0 0 auto);
+            width: var(--column-width, calc((100% / 12) * $(size)));
+          }
+
+          &.offset--mobile-$(size) {
+            margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        &.column--tablet-auto {
+          flex: var(--column-flex, 0 0 auto);
+          width: var(--column-width, auto);
+        }
+
+        &.column--tablet-fit {
+          flex: var(--column-flex, 1 0 0%);
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--tablet-$(size) {
+            flex: var(--column-flex, 0 0 auto);
+            width: var(--column-width, calc((100% / 12) * $(size)));
+          }
+
+          &.offset--tablet-$(size) {
+            margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
+          }
+        }
+      }
+
+      @media (min-width: 1024px) {
+        &.column--desktop-auto {
+          flex: var(--column-flex, 0 0 auto);
+          width: var(--column-width, auto);
+        }
+
+        &.column--desktop-fit {
+          flex: var(--column-flex, 1 0 0%);
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--desktop-$(size) {
+            flex: var(--column-flex, 0 0 auto);
+            width: var(--column-width, calc((100% / 12) * $(size)));
+          }
+
+          &.offset--desktop-$(size) {
+            margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
+          }
+        }
+      }
+
+      @media (min-width: 1216px) {
+        &.column--widescreen-auto {
+          flex: var(--column-flex, 0 0 auto);
+          width: var(--column-width, auto);
+        }
+
+        &.column--widescreen-fit {
+          flex: var(--column-flex, 1 0 0%);
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--widescreen-$(size) {
+            flex: var(--column-flex, 0 0 auto);
+            width: var(--column-width, calc((100% / 12) * $(size)));
+          }
+
+          &.offset--widescreen-$(size) {
+            margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
+          }
+        }
+      }
+
+      @media (min-width: 1408px) {
+        &.column--fullhd-auto {
+          flex: var(--column-flex, 0 0 auto);
+          width: var(--column-width, auto);
+        }
+
+        &.column--fullhd-fit {
+          flex: var(--column-flex, 1 0 0%);
+        }
+
+        @each $size in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+          &.column--fullhd-$(size) {
+            flex: var(--column-flex, 0 0 auto);
+            width: var(--column-width, calc((100% / 12) * $(size)));
+          }
+
+          &.offset--fullhd-$(size) {
+            margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
+          }
+        }
+      }
+    }
+  }
+}

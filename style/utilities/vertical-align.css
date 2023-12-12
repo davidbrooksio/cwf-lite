@@ -1,0 +1,43 @@
+@layer cwf-utilities {
+  @each $value in (baseline, top, middle, bottom, text-bottom, text-top) {
+    .vertical-align--$(value) {
+      vertical-align: $(value);
+    }
+
+    @media (min-width: 320px) {
+      .vertical-align--smallmobile-$(value) {
+        vertical-align: $(value);
+      }
+    }
+
+    @media (min-width: 576px) {
+      .vertical-align--mobile-$(value) {
+        vertical-align: $(value);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .vertical-align--tablet-$(value) {
+        vertical-align: $(value);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .vertical-align--desktop-$(value) {
+        vertical-align: $(value);
+      }
+    }
+
+    @media (min-width: 1216px) {
+      .vertical-align--widescreen-$(value) {
+        vertical-align: $(value);
+      }
+    }
+
+    @media (min-width: 1408px) {
+      .vertical-align--fullhd-$(value) {
+        vertical-align: $(value);
+      }
+    }
+  }
+}
