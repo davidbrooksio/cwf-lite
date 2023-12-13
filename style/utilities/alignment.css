@@ -5,37 +5,37 @@
     }
 
     @media (min-width: 320px) {
-      .flex-direction--smallmobile-$(value) {
+      .flex-direction--xs-$(value) {
         flex-direction: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .flex-direction--mobile-$(value) {
+      .flex-direction--sm-$(value) {
         flex-direction: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .flex-direction--tablet-$(value) {
+      .flex-direction--md-$(value) {
         flex-direction: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .flex-direction--desktop-$(value) {
+      .flex-direction--rg-$(value) {
         flex-direction: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .flex-direction--widescreen-$(value) {
+      .flex-direction--lg-$(value) {
         flex-direction: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .flex-direction--fullhd-$(value) {
+      .flex-direction--xl-$(value) {
         flex-direction: $(value);
       }
     }
@@ -47,37 +47,37 @@
     }
 
     @media (min-width: 320px) {
-      .flex-wrap--smallmobile-$(value) {
+      .flex-wrap--xs-$(value) {
         flex-wrap: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .flex-wrap--mobile-$(value) {
+      .flex-wrap--sm-$(value) {
         flex-wrap: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .flex-wrap--tablet-$(value) {
+      .flex-wrap--md-$(value) {
         flex-wrap: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .flex-wrap--desktop-$(value) {
+      .flex-wrap--rg-$(value) {
         flex-wrap: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .flex-wrap--widescreen-$(value) {
+      .flex-wrap--lg-$(value) {
         flex-wrap: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .flex-wrap--fullhd-$(value) {
+      .flex-wrap--xl-$(value) {
         flex-wrap: $(value);
       }
     }
@@ -95,61 +95,61 @@
     }
 
     @media (min-width: 320px) {
-      .justify-content--smallmobile-$(value) {
+      .justify-content--xs-$(value) {
         justify-content: $(value);
       }
 
-      .justify-self--smallmobile-$(value) {
+      .justify-self--xs-$(value) {
         justify-self: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .justify-content--mobile-$(value) {
+      .justify-content--sm-$(value) {
         justify-content: $(value);
       }
 
-      .justify-self--mobile-$(value) {
+      .justify-self--sm-$(value) {
         justify-self: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .justify-content--tablet-$(value) {
+      .justify-content--md-$(value) {
         justify-content: $(value);
       }
 
-      .justify-self--tablet-$(value) {
+      .justify-self--md-$(value) {
         justify-self: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .justify-content--desktop-$(value) {
+      .justify-content--rg-$(value) {
         justify-content: $(value);
       }
 
-      .justify-self--desktop-$(value) {
+      .justify-self--rg-$(value) {
         justify-self: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .justify-content--widescreen-$(value) {
+      .justify-content--lg-$(value) {
         justify-content: $(value);
       }
 
-      .justify-self--widescreen-$(value) {
+      .justify-self--lg-$(value) {
         justify-self: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .justify-content--fullhd-$(value) {
+      .justify-content--xl-$(value) {
         justify-content: $(value);
       }
 
-      .justify-self--fullhd-$(value) {
+      .justify-self--xl-$(value) {
         justify-self: $(value);
       }
     }
@@ -167,61 +167,61 @@
     }
 
     @media (min-width: 320px) {
-      .align-content--smallmobile-$(value) {
+      .align-content--xs-$(value) {
         align-content: $(value);
       }
 
-      .align-self--smallmobile-$(value) {
+      .align-self--xs-$(value) {
         align-self: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .align-content--mobile-$(value) {
+      .align-content--sm-$(value) {
         align-content: $(value);
       }
 
-      .align-self--mobile-$(value) {
+      .align-self--sm-$(value) {
         align-self: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .align-content--tablet-$(value) {
+      .align-content--md-$(value) {
         align-content: $(value);
       }
 
-      .align-self--tablet-$(value) {
+      .align-self--md-$(value) {
         align-self: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .align-content--desktop-$(value) {
+      .align-content--rg-$(value) {
         align-content: $(value);
       }
 
-      .align-self--desktop-$(value) {
+      .align-self--rg-$(value) {
         align-self: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .align-content--widescreen-$(value) {
+      .align-content--lg-$(value) {
         align-content: $(value);
       }
 
-      .align-self--widescreen-$(value) {
+      .align-self--lg-$(value) {
         align-self: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .align-content--fullhd-$(value) {
+      .align-content--xl-$(value) {
         align-content: $(value);
       }
 
-      .align-self--fullhd-$(value) {
+      .align-self--xl-$(value) {
         align-self: $(value);
       }
     }
@@ -233,37 +233,37 @@
     }
 
     @media (min-width: 320px) {
-      .align-items--smallmobile-$(value) {
+      .align-items--xs-$(value) {
         align-items: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .align-items--mobile-$(value) {
+      .align-items--sm-$(value) {
         align-items: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .align-items--tablet-$(value) {
+      .align-items--md-$(value) {
         align-items: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .align-items--desktop-$(value) {
+      .align-items--rg-$(value) {
         align-items: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .align-items--widescreen-$(value) {
+      .align-items--lg-$(value) {
         align-items: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .align-items--fullhd-$(value) {
+      .align-items--xl-$(value) {
         align-items: $(value);
       }
     }

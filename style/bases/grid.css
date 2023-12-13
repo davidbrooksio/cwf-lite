@@ -26,13 +26,13 @@
 
       @media (min-width: 320px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--smallmobile-$(size) {
+          &.column--xs-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--mobile-$(size) {
+          &.offset--sm-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
         }
@@ -40,13 +40,13 @@
 
       @media (min-width: 576px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--mobile-$(size) {
+          &.column--sm-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--mobile-$(size) {
+          &.offset--sm-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
         }
@@ -54,13 +54,13 @@
 
       @media (min-width: 768px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--tablet-$(size) {
+          &.column--md-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--tablet-$(size) {
+          &.offset--md-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
         }
@@ -68,13 +68,13 @@
 
       @media (min-width: 1024px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--desktop-$(size) {
+          &.column--rg-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--desktop-$(size) {
+          &.offset--rg-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
         }
@@ -82,13 +82,13 @@
 
       @media (min-width: 1216px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--widescreen-$(size) {
+          &.column--lg-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--widescreen-$(size) {
+          &.offset--lg-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
         }
@@ -96,13 +96,13 @@
 
       @media (min-width: 1408px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--fullhd-$(size) {
+          &.column--xl-$(size) {
             --column-grid-column-end: span $(size);
           }
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--fullhd-$(size) {
+          &.offset--xl-$(size) {
             --column-grid-column-start: calc($(size) + 1);
           }
         }
@@ -143,132 +143,132 @@
       }
 
       @media (min-width: 320px) {
-        &.column--smallmobile-auto {
+        &.column--xs-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
         }
 
-        &.column--smallmobile-fit {
+        &.column--xs-fit {
           flex: var(--column-flex, 1 0 0%);
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--smallmobile-$(size) {
+          &.column--xs-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
           }
 
-          &.offset--smallmobile-$(size) {
+          &.offset--xs-$(size) {
             margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
           }
         }
       }
 
       @media (min-width: 576px) {
-        &.column--mobile-auto {
+        &.column--sm-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
         }
 
-        &.column--mobile-fit {
+        &.column--sm-fit {
           flex: var(--column-flex, 1 0 0%);
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--mobile-$(size) {
+          &.column--sm-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
           }
 
-          &.offset--mobile-$(size) {
+          &.offset--sm-$(size) {
             margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
           }
         }
       }
 
       @media (min-width: 768px) {
-        &.column--tablet-auto {
+        &.column--md-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
         }
 
-        &.column--tablet-fit {
+        &.column--md-fit {
           flex: var(--column-flex, 1 0 0%);
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--tablet-$(size) {
+          &.column--md-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
           }
 
-          &.offset--tablet-$(size) {
+          &.offset--md-$(size) {
             margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
           }
         }
       }
 
       @media (min-width: 1024px) {
-        &.column--desktop-auto {
+        &.column--rg-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
         }
 
-        &.column--desktop-fit {
+        &.column--rg-fit {
           flex: var(--column-flex, 1 0 0%);
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--desktop-$(size) {
+          &.column--rg-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
           }
 
-          &.offset--desktop-$(size) {
+          &.offset--rg-$(size) {
             margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
           }
         }
       }
 
       @media (min-width: 1216px) {
-        &.column--widescreen-auto {
+        &.column--lg-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
         }
 
-        &.column--widescreen-fit {
+        &.column--lg-fit {
           flex: var(--column-flex, 1 0 0%);
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--widescreen-$(size) {
+          &.column--lg-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
           }
 
-          &.offset--widescreen-$(size) {
+          &.offset--lg-$(size) {
             margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
           }
         }
       }
 
       @media (min-width: 1408px) {
-        &.column--fullhd-auto {
+        &.column--xl-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
         }
 
-        &.column--fullhd-fit {
+        &.column--xl-fit {
           flex: var(--column-flex, 1 0 0%);
         }
 
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--fullhd-$(size) {
+          &.column--xl-$(size) {
             flex: var(--column-flex, 0 0 auto);
             width: var(--column-width, calc((100% / 12) * $(size)));
           }
 
-          &.offset--fullhd-$(size) {
+          &.offset--xl-$(size) {
             margin-left: var(--column-margin-left, calc((100% / 12) * $(size)));
           }
         }

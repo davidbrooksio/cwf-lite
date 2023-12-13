@@ -5,37 +5,37 @@
     }
 
     @media (min-width: 320px) {
-      .vertical-align--smallmobile-$(value) {
+      .vertical-align--xs-$(value) {
         vertical-align: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .vertical-align--mobile-$(value) {
+      .vertical-align--sm-$(value) {
         vertical-align: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .vertical-align--tablet-$(value) {
+      .vertical-align--md-$(value) {
         vertical-align: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .vertical-align--desktop-$(value) {
+      .vertical-align--rg-$(value) {
         vertical-align: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .vertical-align--widescreen-$(value) {
+      .vertical-align--lg-$(value) {
         vertical-align: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .vertical-align--fullhd-$(value) {
+      .vertical-align--xl-$(value) {
         vertical-align: $(value);
       }
     }

@@ -11,37 +11,37 @@
     }
 
     @media (min-width: 320px) {
-      .text-align--smallmobile-$(value) {
+      .text-align--xs-$(value) {
         text-align: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .text-align--mobile-$(value) {
+      .text-align--sm-$(value) {
         text-align: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .text-align--tablet-$(value) {
+      .text-align--md-$(value) {
         text-align: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .text-align--desktop-$(value) {
+      .text-align--rg-$(value) {
         text-align: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .text-align--widescreen-$(value) {
+      .text-align--lg-$(value) {
         text-align: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .text-align--fullhd-$(value) {
+      .text-align--xl-$(value) {
         text-align: $(value);
       }
     }
@@ -53,37 +53,37 @@
     }
 
     @media (min-width: 320px) {
-      .text-transform--smallmobile-$(value) {
+      .text-transform--xs-$(value) {
         text-transform: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .text-transform--mobile-$(value) {
+      .text-transform--sm-$(value) {
         text-transform: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .text-transform--tablet-$(value) {
+      .text-transform--md-$(value) {
         text-transform: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .text-transform--desktop-$(value) {
+      .text-transform--rg-$(value) {
         text-transform: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .text-transform--widescreen-$(value) {
+      .text-transform--lg-$(value) {
         text-transform: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .text-transform--fullhd-$(value) {
+      .text-transform--xl-$(value) {
         text-transform: $(value);
       }
     }
@@ -95,37 +95,37 @@
     }
 
     @media (min-width: 320px) {
-      .white-space--smallmobile-$(value) {
+      .white-space--xs-$(value) {
         white-space: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .white-space--mobile-$(value) {
+      .white-space--sm-$(value) {
         white-space: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .white-space--tablet-$(value) {
+      .white-space--md-$(value) {
         white-space: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .white-space--desktop-$(value) {
+      .white-space--rg-$(value) {
         white-space: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .white-space--widescreen-$(value) {
+      .white-space--lg-$(value) {
         white-space: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .white-space--fullhd-$(value) {
+      .white-space--xl-$(value) {
         white-space: $(value);
       }
     }
@@ -139,37 +139,37 @@
     }
 
     @media (min-width: 320px) {
-      .font-weight--smallmobile-$(value) {
+      .font-weight--xs-$(value) {
         font-weight: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .font-weight--mobile-$(value) {
+      .font-weight--sm-$(value) {
         font-weight: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .font-weight--tablet-$(value) {
+      .font-weight--md-$(value) {
         font-weight: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .font-weight--desktop-$(value) {
+      .font-weight--rg-$(value) {
         font-weight: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .font-weight--widescreen-$(value) {
+      .font-weight--lg-$(value) {
         font-weight: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .font-weight--fullhd-$(value) {
+      .font-weight--xl-$(value) {
         font-weight: $(value);
       }
     }
@@ -181,37 +181,37 @@
     }
 
     @media (min-width: 320px) {
-      .font-style--smallmobile-$(value) {
+      .font-style--xs-$(value) {
         font-style: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .font-style--mobile-$(value) {
+      .font-style--sm-$(value) {
         font-style: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .font-style--tablet-$(value) {
+      .font-style--md-$(value) {
         font-style: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .font-style--desktop-$(value) {
+      .font-style--rg-$(value) {
         font-style: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .font-style--widescreen-$(value) {
+      .font-style--lg-$(value) {
         font-style: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .font-style--fullhd-$(value) {
+      .font-style--xl-$(value) {
         font-style: $(value);
       }
     }

@@ -8,61 +8,61 @@
   }
 
   @media (min-width: 320px) {
-    .order--smallmobile-first {
+    .order--xs-first {
       order: -1;
     }
 
-    .order--smallmobile-last {
+    .order--xs-last {
       order: 99;
     }
   }
 
   @media (min-width: 576px) {
-    .order--mobile-first {
+    .order--sm-first {
       order: -1;
     }
 
-    .order--mobile-last {
+    .order--sm-last {
       order: 99;
     }
   }
 
   @media (min-width: 768px) {
-    .order--tablet-first {
+    .order--md-first {
       order: -1;
     }
 
-    .order--tablet-last {
+    .order--md-last {
       order: 99;
     }
   }
 
   @media (min-width: 1024px) {
-    .order--desktop-first {
+    .order--rg-first {
       order: -1;
     }
 
-    .order--desktop-last {
+    .order--rg-last {
       order: 99;
     }
   }
 
   @media (min-width: 1216px) {
-    .order--widescreen-first {
+    .order--lg-first {
       order: -1;
     }
 
-    .order--widescreen-last {
+    .order--lg-last {
       order: 99;
     }
   }
 
   @media (min-width: 1408px) {
-    .order--fullhd-first {
+    .order--xl-first {
       order: -1;
     }
 
-    .order--fullhd-last {
+    .order--xl-last {
       order: 99;
     }
   }
@@ -73,37 +73,37 @@
     }
 
     @media (min-width: 320px) {
-      .order--smallmobile-$(value) {
+      .order--xs-$(value) {
         order: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .order--mobile-$(value) {
+      .order--sm-$(value) {
         order: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .order--tablet-$(value) {
+      .order--md-$(value) {
         order: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .order--desktop-$(value) {
+      .order--rg-$(value) {
         order: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .order--widescreen-$(value) {
+      .order--lg-$(value) {
         order: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .order--fullhd-$(value) {
+      .order--xl-$(value) {
         order: $(value);
       }
     }

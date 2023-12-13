@@ -4,293 +4,433 @@
   {
     .margin--$(count) {
       margin: $(size);
+
+      &.margin--negative {
+        margin: calc($(size) * -1);
+      }
     }
 
     .margin-top--$(count) {
       margin-top: $(size);
+
+      &.margin-top--negative {
+        margin-top: calc($(size) * -1);
+      }
     }
 
     .margin-right--$(count) {
       margin-right: $(size);
+
+      &.margin-right--negative {
+        margin-right: calc($(size) * -1);
+      }
     }
 
     .margin-bottom--$(count) {
       margin-bottom: $(size);
+
+      &.margin-bottom--negative {
+        margin-bottom: calc($(size) * -1);
+      }
     }
 
     .margin-left--$(count) {
       margin-left: $(size);
+
+      &.margin-left--negative {
+        margin-left: calc($(size) * -1);
+      }
     }
 
-    .margin--neg-$(count) {
-      margin: calc($(size) * -1);
+    .margin-y--$(count) {
+      margin-top: $(size);
+      margin-bottom: $(size);
+
+      &.margin-y--negative {
+        margin-top: calc($(size) * -1);
+        margin-bottom: calc($(size) * -1);
+      }
     }
 
-    .margin-top--neg-$(count) {
-      margin-top: calc($(size) * -1);
-    }
+    .margin-x--$(count) {
+      margin-left: $(size);
+      margin-right: $(size);
 
-    .margin-right--neg-$(count) {
-      margin-right: calc($(size) * -1);
-    }
-
-    .margin-bottom--neg-$(count) {
-      margin-bottom: calc($(size) * -1);
-    }
-
-    .margin-left--neg-$(count) {
-      margin-left: calc($(size) * -1);
+      &.margin-x--negative {
+        margin-left: calc($(size) * -1);
+        margin-right: calc($(size) * -1);
+      }
     }
 
     @media (min-width: 320px) {
-      .margin--smallmobile-$(count) {
+      .margin--xs-$(count) {
         margin: $(size);
+
+        &.margin--xs-negative {
+          margin: calc($(size) * -1);
+        }
       }
 
-      .margin-top--smallmobile-$(count) {
+      .margin-top--xs-$(count) {
         margin-top: $(size);
+
+        &.margin-top--xs-negative {
+          margin-top: calc($(size) * -1);
+        }
       }
 
-      .margin-right--smallmobile-$(count) {
+      .margin-right--xs-$(count) {
         margin-right: $(size);
+
+        &.margin-right--xs-negative {
+          margin-right: calc($(size) * -1);
+        }
       }
 
-      .margin-bottom--smallmobile-$(count) {
+      .margin-bottom--xs-$(count) {
         margin-bottom: $(size);
+
+        &.margin-bottom--xs-negative {
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-left--smallmobile-$(count) {
+      .margin-left--xs-$(count) {
         margin-left: $(size);
+
+        &.margin-left--xs-negative {
+          margin-left: calc($(size) * -1);
+        }
       }
 
-      .margin--smallmobile-neg-$(count) {
-        margin: calc($(size) * -1);
+      .margin-y--xs-$(count) {
+        margin-top: $(size);
+        margin-bottom: $(size);
+
+        &.margin-y--xs-negative {
+          margin-top: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-top--smallmobile-neg-$(count) {
-        margin-top: calc($(size) * -1);
-      }
+      .margin-x--xs-$(count) {
+        margin-left: $(size);
+        margin-right: $(size);
 
-      .margin-right--smallmobile-neg-$(count) {
-        margin-right: calc($(size) * -1);
-      }
-
-      .margin-bottom--smallmobile-neg-$(count) {
-        margin-bottom: calc($(size) * -1);
-      }
-
-      .margin-left--smallmobile-neg-$(count) {
-        margin-left: calc($(size) * -1);
+        &.margin-x--xs-negative {
+          margin-left: calc($(size) * -1);
+          margin-right: calc($(size) * -1);
+        }
       }
     }
 
     @media (min-width: 576px) {
-      .margin--mobile-$(count) {
+      .margin--sm-$(count) {
         margin: $(size);
+
+        &.margin--sm-negative {
+          margin: calc($(size) * -1);
+        }
       }
 
-      .margin-top--mobile-$(count) {
+      .margin-top--sm-$(count) {
         margin-top: $(size);
+
+        &.margin-top--sm-negative {
+          margin-top: calc($(size) * -1);
+        }
       }
 
-      .margin-right--mobile-$(count) {
+      .margin-right--sm-$(count) {
         margin-right: $(size);
+
+        &.margin-right--sm-negative {
+          margin-right: calc($(size) * -1);
+        }
       }
 
-      .margin-bottom--mobile-$(count) {
+      .margin-bottom--sm-$(count) {
         margin-bottom: $(size);
+
+        &.margin-bottom--sm-negative {
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-left--mobile-$(count) {
+      .margin-left--sm-$(count) {
         margin-left: $(size);
+
+        &.margin-left--sm-negative {
+          margin-left: calc($(size) * -1);
+        }
       }
 
-      .margin--mobile-neg-$(count) {
-        margin: calc($(size) * -1);
+      .margin-y--sm-$(count) {
+        margin-top: $(size);
+        margin-bottom: $(size);
+
+        &.margin-y--sm-negative {
+          margin-top: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-top--mobile-neg-$(count) {
-        margin-top: calc($(size) * -1);
-      }
+      .margin-x--sm-$(count) {
+        margin-left: $(size);
+        margin-right: $(size);
 
-      .margin-right--mobile-neg-$(count) {
-        margin-right: calc($(size) * -1);
-      }
-
-      .margin-bottom--mobile-neg-$(count) {
-        margin-bottom: calc($(size) * -1);
-      }
-
-      .margin-left--mobile-neg-$(count) {
-        margin-left: calc($(size) * -1);
+        &.margin-x--sm-negative {
+          margin-left: calc($(size) * -1);
+          margin-right: calc($(size) * -1);
+        }
       }
     }
 
     @media (min-width: 768px) {
-      .margin--tablet-$(count) {
+      .margin--md-$(count) {
         margin: $(size);
+
+        &.margin--md-negative {
+          margin: calc($(size) * -1);
+        }
       }
 
-      .margin-top--tablet-$(count) {
+      .margin-top--md-$(count) {
         margin-top: $(size);
+
+        &.margin-top--md-negative {
+          margin-top: calc($(size) * -1);
+        }
       }
 
-      .margin-right--tablet-$(count) {
+      .margin-right--md-$(count) {
         margin-right: $(size);
+
+        &.margin-right--md-negative {
+          margin-right: calc($(size) * -1);
+        }
       }
 
-      .margin-bottom--tablet-$(count) {
+      .margin-bottom--md-$(count) {
         margin-bottom: $(size);
+
+        &.margin-bottom--md-negative {
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-left--tablet-$(count) {
+      .margin-left--md-$(count) {
         margin-left: $(size);
+
+        &.margin-left--md-negative {
+          margin-left: calc($(size) * -1);
+        }
       }
 
-      .margin--tablet-neg-$(count) {
-        margin: calc($(size) * -1);
+      .margin-y--md-$(count) {
+        margin-top: $(size);
+        margin-bottom: $(size);
+
+        &.margin-y--md-negative {
+          margin-top: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-top--tablet-neg-$(count) {
-        margin-top: calc($(size) * -1);
-      }
+      .margin-x--md-$(count) {
+        margin-left: $(size);
+        margin-right: $(size);
 
-      .margin-right--tablet-neg-$(count) {
-        margin-right: calc($(size) * -1);
-      }
-
-      .margin-bottom--tablet-neg-$(count) {
-        margin-bottom: calc($(size) * -1);
-      }
-
-      .margin-left--tablet-neg-$(count) {
-        margin-left: calc($(size) * -1);
+        &.margin-x--md-negative {
+          margin-left: calc($(size) * -1);
+          margin-right: calc($(size) * -1);
+        }
       }
     }
 
     @media (min-width: 1024px) {
-      .margin--desktop-$(count) {
+      .margin--rg-$(count) {
         margin: $(size);
+
+        &.margin--rg-negative {
+          margin: calc($(size) * -1);
+        }
       }
 
-      .margin-top--desktop-$(count) {
+      .margin-top--rg-$(count) {
         margin-top: $(size);
+
+        &.margin-top--rg-negative {
+          margin-top: calc($(size) * -1);
+        }
       }
 
-      .margin-right--desktop-$(count) {
+      .margin-right--rg-$(count) {
         margin-right: $(size);
+
+        &.margin-right--rg-negative {
+          margin-right: calc($(size) * -1);
+        }
       }
 
-      .margin-bottom--desktop-$(count) {
+      .margin-bottom--rg-$(count) {
         margin-bottom: $(size);
+
+        &.margin-bottom--rg-negative {
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-left--desktop-$(count) {
+      .margin-left--rg-$(count) {
         margin-left: $(size);
+
+        &.margin-left--rg-negative {
+          margin-left: calc($(size) * -1);
+        }
       }
 
-      .margin--desktop-neg-$(count) {
-        margin: calc($(size) * -1);
+      .margin-y--rg-$(count) {
+        margin-top: $(size);
+        margin-bottom: $(size);
+
+        &.margin-y--rg-negative {
+          margin-top: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-top--desktop-neg-$(count) {
-        margin-top: calc($(size) * -1);
-      }
+      .margin-x--rg-$(count) {
+        margin-left: $(size);
+        margin-right: $(size);
 
-      .margin-right--desktop-neg-$(count) {
-        margin-right: calc($(size) * -1);
-      }
-
-      .margin-bottom--desktop-neg-$(count) {
-        margin-bottom: calc($(size) * -1);
-      }
-
-      .margin-left--desktop-neg-$(count) {
-        margin-left: calc($(size) * -1);
+        &.margin-x--rg-negative {
+          margin-left: calc($(size) * -1);
+          margin-right: calc($(size) * -1);
+        }
       }
     }
 
     @media (min-width: 1216px) {
-      .margin--widescreen-$(count) {
+      .margin--lg-$(count) {
         margin: $(size);
+
+        &.margin--lg-negative {
+          margin: calc($(size) * -1);
+        }
       }
 
-      .margin-top--widescreen-$(count) {
+      .margin-top--lg-$(count) {
         margin-top: $(size);
+
+        &.margin-top--lg-negative {
+          margin-top: calc($(size) * -1);
+        }
       }
 
-      .margin-right--widescreen-$(count) {
+      .margin-right--lg-$(count) {
         margin-right: $(size);
+
+        &.margin-right--lg-negative {
+          margin-right: calc($(size) * -1);
+        }
       }
 
-      .margin-bottom--widescreen-$(count) {
+      .margin-bottom--lg-$(count) {
         margin-bottom: $(size);
+
+        &.margin-bottom--lg-negative {
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-left--widescreen-$(count) {
+      .margin-left--lg-$(count) {
         margin-left: $(size);
+
+        &.margin-left--lg-negative {
+          margin-left: calc($(size) * -1);
+        }
       }
 
-      .margin--widescreen-neg-$(count) {
-        margin: calc($(size) * -1);
+      .margin-y--lg-$(count) {
+        margin-top: $(size);
+        margin-bottom: $(size);
+
+        &.margin-y--lg-negative {
+          margin-top: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-top--widescreen-neg-$(count) {
-        margin-top: calc($(size) * -1);
-      }
+      .margin-x--lg-$(count) {
+        margin-left: $(size);
+        margin-right: $(size);
 
-      .margin-right--widescreen-neg-$(count) {
-        margin-right: calc($(size) * -1);
-      }
-
-      .margin-bottom--widescreen-neg-$(count) {
-        margin-bottom: calc($(size) * -1);
-      }
-
-      .margin-left--widescreen-neg-$(count) {
-        margin-left: calc($(size) * -1);
+        &.margin-x--lg-negative {
+          margin-left: calc($(size) * -1);
+          margin-right: calc($(size) * -1);
+        }
       }
     }
 
     @media (min-width: 1408px) {
-      .margin--fullhd-$(count) {
+      .margin--xl-$(count) {
         margin: $(size);
+
+        &.margin--xl-negative {
+          margin: calc($(size) * -1);
+        }
       }
 
-      .margin-top--fullhd-$(count) {
+      .margin-top--xl-$(count) {
         margin-top: $(size);
+
+        &.margin-top--xl-negative {
+          margin-top: calc($(size) * -1);
+        }
       }
 
-      .margin-right--fullhd-$(count) {
+      .margin-right--xl-$(count) {
         margin-right: $(size);
+
+        &.margin-right--xl-negative {
+          margin-right: calc($(size) * -1);
+        }
       }
 
-      .margin-bottom--fullhd-$(count) {
+      .margin-bottom--xl-$(count) {
         margin-bottom: $(size);
+
+        &.margin-bottom--xl-negative {
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-left--fullhd-$(count) {
+      .margin-left--xl-$(count) {
         margin-left: $(size);
+
+        &.margin-left--xl-negative {
+          margin-left: calc($(size) * -1);
+        }
       }
 
-      .margin--fullhd-neg-$(count) {
-        margin: calc($(size) * -1);
+      .margin-y--xl-$(count) {
+        margin-top: $(size);
+        margin-bottom: $(size);
+
+        &.margin-y--xl-negative {
+          margin-top: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1);
+        }
       }
 
-      .margin-top--fullhd-neg-$(count) {
-        margin-top: calc($(size) * -1);
-      }
+      .margin-x--xl-$(count) {
+        margin-left: $(size);
+        margin-right: $(size);
 
-      .margin-right--fullhd-neg-$(count) {
-        margin-right: calc($(size) * -1);
-      }
-
-      .margin-bottom--fullhd-neg-$(count) {
-        margin-bottom: calc($(size) * -1);
-      }
-
-      .margin-left--fullhd-neg-$(count) {
-        margin-left: calc($(size) * -1);
+        &.margin-x--xl-negative {
+          margin-left: calc($(size) * -1);
+          margin-right: calc($(size) * -1);
+        }
       }
     }
   }

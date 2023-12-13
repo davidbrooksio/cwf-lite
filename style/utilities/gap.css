@@ -15,85 +15,85 @@
     }
 
     @media (min-width: 320px) {
-      .gap--smallmobile-$(count) {
+      .gap--xs-$(count) {
         gap: $(size);
       }
 
-      .row-gap--smallmobile-$(count) {
+      .row-gap--xs-$(count) {
         row-gap: $(size);
       }
 
-      .column-gap--smallmobile-$(count) {
+      .column-gap--xs-$(count) {
         column-gap: $(size);
       }
     }
 
     @media (min-width: 576px) {
-      .gap--mobile-$(count) {
+      .gap--sm-$(count) {
         gap: $(size);
       }
 
-      .row-gap--mobile-$(count) {
+      .row-gap--sm-$(count) {
         row-gap: $(size);
       }
 
-      .column-gap--mobile-$(count) {
+      .column-gap--sm-$(count) {
         column-gap: $(size);
       }
     }
 
     @media (min-width: 768px) {
-      .gap--tablet-$(count) {
+      .gap--md-$(count) {
         gap: $(size);
       }
 
-      .row-gap--tablet-$(count) {
+      .row-gap--md-$(count) {
         row-gap: $(size);
       }
 
-      .column-gap--tablet-$(count) {
+      .column-gap--md-$(count) {
         column-gap: $(size);
       }
     }
 
     @media (min-width: 1024px) {
-      .gap--desktop-$(count) {
+      .gap--rg-$(count) {
         gap: $(size);
       }
 
-      .row-gap--desktop-$(count) {
+      .row-gap--rg-$(count) {
         row-gap: $(size);
       }
 
-      .column-gap--desktop-$(count) {
+      .column-gap--rg-$(count) {
         column-gap: $(size);
       }
     }
 
     @media (min-width: 1216px) {
-      .gap--widescreen-$(count) {
+      .gap--lg-$(count) {
         gap: $(size);
       }
 
-      .row-gap--widescreen-$(count) {
+      .row-gap--lg-$(count) {
         row-gap: $(size);
       }
 
-      .column-gap--widescreen-$(count) {
+      .column-gap--lg-$(count) {
         column-gap: $(size);
       }
     }
 
     @media (min-width: 1408px) {
-      .gap--fullhd-$(count) {
+      .gap--xl-$(count) {
         gap: $(size);
       }
 
-      .row-gap--fullhd-$(count) {
+      .row-gap--xl-$(count) {
         row-gap: $(size);
       }
 
-      .column-gap--fullhd-$(count) {
+      .column-gap--xl-$(count) {
         column-gap: $(size);
       }
     }

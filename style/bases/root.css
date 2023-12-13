@@ -1,8 +1,8 @@
 :root {
-  --breakpoint-smallmobile: 320px;
-  --breakpoint-mobile: 576px;
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1024px;
-  --breakpoint-widescreen: 1216px;
-  --breakpoint-fullhd: 1408px;
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-rg: 1024px;
+  --breakpoint-lg: 1216px;
+  --breakpoint-xl: 1408px;
 }

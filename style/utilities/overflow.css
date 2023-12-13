@@ -13,85 +13,85 @@
     }
 
     @media (min-width: 320px) {
-      .overflow--smallmobile-$(value) {
+      .overflow--xs-$(value) {
         overflow: $(value);
       }
 
-      .overflow-y--smallmobile-$(value) {
+      .overflow-y--xs-$(value) {
         overflow-y: $(value);
       }
 
-      .overflow-x--smallmobile-$(value) {
+      .overflow-x--xs-$(value) {
         overflow-x: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .overflow--mobile-$(value) {
+      .overflow--sm-$(value) {
         overflow: $(value);
       }
 
-      .overflow-y--mobile-$(value) {
+      .overflow-y--sm-$(value) {
         overflow-y: $(value);
       }
 
-      .overflow-x--mobile-$(value) {
+      .overflow-x--sm-$(value) {
         overflow-x: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .overflow--tablet-$(value) {
+      .overflow--md-$(value) {
         overflow: $(value);
       }
 
-      .overflow-y--tablet-$(value) {
+      .overflow-y--md-$(value) {
         overflow-y: $(value);
       }
 
-      .overflow-x--tablet-$(value) {
+      .overflow-x--md-$(value) {
         overflow-x: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .overflow--desktop-$(value) {
+      .overflow--rg-$(value) {
         overflow: $(value);
       }
 
-      .overflow-y--desktop-$(value) {
+      .overflow-y--rg-$(value) {
         overflow-y: $(value);
       }
 
-      .overflow-x--desktop-$(value) {
+      .overflow-x--rg-$(value) {
         overflow-x: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .overflow--widescreen-$(value) {
+      .overflow--lg-$(value) {
         overflow: $(value);
       }
 
-      .overflow-y--widescreen-$(value) {
+      .overflow-y--lg-$(value) {
         overflow-y: $(value);
       }
 
-      .overflow-x--widescreen-$(value) {
+      .overflow-x--lg-$(value) {
         overflow-x: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .overflow--fullhd-$(value) {
+      .overflow--xl-$(value) {
         overflow: $(value);
       }
 
-      .overflow-y--fullhd-$(value) {
+      .overflow-y--xl-$(value) {
         overflow-y: $(value);
       }
 
-      .overflow-x--fullhd-$(value) {
+      .overflow-x--xl-$(value) {
         overflow-x: $(value);
       }
     }

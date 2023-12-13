@@ -22,135 +22,205 @@
       padding-left: $(size);
     }
 
+    .padding-y--$(count) {
+      padding-top: $(size);
+      padding-bottom: $(size);
+    }
+
+    .padding-x--$(count) {
+      padding-left: $(size);
+      padding-right: $(size);
+    }
+
     @media (min-width: 320px) {
-      .padding--smallmobile-$(count) {
+      .padding--xs-$(count) {
         padding: $(size);
       }
 
-      .padding-top--smallmobile-$(count) {
+      .padding-top--xs-$(count) {
         padding-top: $(size);
       }
 
-      .padding-right--smallmobile-$(count) {
+      .padding-right--xs-$(count) {
         padding-right: $(size);
       }
 
-      .padding-bottom--smallmobile-$(count) {
+      .padding-bottom--xs-$(count) {
         padding-bottom: $(size);
       }
 
-      .padding-left--smallmobile-$(count) {
+      .padding-left--xs-$(count) {
         padding-left: $(size);
+      }
+
+      .padding-y--xs-$(count) {
+        padding-top: $(size);
+        padding-bottom: $(size);
+      }
+
+      .padding-x--xs-$(count) {
+        padding-left: $(size);
+        padding-right: $(size);
       }
     }
 
     @media (min-width: 576px) {
-      .padding--mobile-$(count) {
+      .padding--sm-$(count) {
         padding: $(size);
       }
 
-      .padding-top--mobile-$(count) {
+      .padding-top--sm-$(count) {
         padding-top: $(size);
       }
 
-      .padding-right--mobile-$(count) {
+      .padding-right--sm-$(count) {
         padding-right: $(size);
       }
 
-      .padding-bottom--mobile-$(count) {
+      .padding-bottom--sm-$(count) {
         padding-bottom: $(size);
       }
 
-      .padding-left--mobile-$(count) {
+      .padding-left--sm-$(count) {
         padding-left: $(size);
+      }
+
+      .padding-y--sm-$(count) {
+        padding-top: $(size);
+        padding-bottom: $(size);
+      }
+
+      .padding-x--sm-$(count) {
+        padding-left: $(size);
+        padding-right: $(size);
       }
     }
 
     @media (min-width: 768px) {
-      .padding--tablet-$(count) {
+      .padding--md-$(count) {
         padding: $(size);
       }
 
-      .padding-top--tablet-$(count) {
+      .padding-top--md-$(count) {
         padding-top: $(size);
       }
 
-      .padding-right--tablet-$(count) {
+      .padding-right--md-$(count) {
         padding-right: $(size);
       }
 
-      .padding-bottom--tablet-$(count) {
+      .padding-bottom--md-$(count) {
         padding-bottom: $(size);
       }
 
-      .padding-left--tablet-$(count) {
+      .padding-left--md-$(count) {
         padding-left: $(size);
+      }
+
+      .padding-y--md-$(count) {
+        padding-top: $(size);
+        padding-bottom: $(size);
+      }
+
+      .padding-x--md-$(count) {
+        padding-left: $(size);
+        padding-right: $(size);
       }
     }
 
     @media (min-width: 1024px) {
-      .padding--desktop-$(count) {
+      .padding--rg-$(count) {
         padding: $(size);
       }
 
-      .padding-top--desktop-$(count) {
+      .padding-top--rg-$(count) {
         padding-top: $(size);
       }
 
-      .padding-right--desktop-$(count) {
+      .padding-right--rg-$(count) {
         padding-right: $(size);
       }
 
-      .padding-bottom--desktop-$(count) {
+      .padding-bottom--rg-$(count) {
         padding-bottom: $(size);
       }
 
-      .padding-left--desktop-$(count) {
+      .padding-left--rg-$(count) {
         padding-left: $(size);
+      }
+
+      .padding-y--rg-$(count) {
+        padding-top: $(size);
+        padding-bottom: $(size);
+      }
+
+      .padding-x--rg-$(count) {
+        padding-left: $(size);
+        padding-right: $(size);
       }
     }
 
     @media (min-width: 1216px) {
-      .padding--widescreen-$(count) {
+      .padding--lg-$(count) {
         padding: $(size);
       }
 
-      .padding-top--widescreen-$(count) {
+      .padding-top--lg-$(count) {
         padding-top: $(size);
       }
 
-      .padding-right--widescreen-$(count) {
+      .padding-right--lg-$(count) {
         padding-right: $(size);
       }
 
-      .padding-bottom--widescreen-$(count) {
+      .padding-bottom--lg-$(count) {
         padding-bottom: $(size);
       }
 
-      .padding-left--widescreen-$(count) {
+      .padding-left--lg-$(count) {
         padding-left: $(size);
+      }
+
+      .padding-y--lg-$(count) {
+        padding-top: $(size);
+        padding-bottom: $(size);
+      }
+
+      .padding-x--lg-$(count) {
+        padding-left: $(size);
+        padding-right: $(size);
       }
     }
 
     @media (min-width: 1408px) {
-      .padding--fullhd-$(count) {
+      .padding--xl-$(count) {
         padding: $(size);
       }
 
-      .padding-top--fullhd-$(count) {
+      .padding-top--xl-$(count) {
         padding-top: $(size);
       }
 
-      .padding-right--fullhd-$(count) {
+      .padding-right--xl-$(count) {
         padding-right: $(size);
       }
 
-      .padding-bottom--fullhd-$(count) {
+      .padding-bottom--xl-$(count) {
         padding-bottom: $(size);
       }
 
-      .padding-left--fullhd-$(count) {
+      .padding-left--xl-$(count) {
         padding-left: $(size);
+      }
+
+      .padding-y--xl-$(count) {
+        padding-top: $(size);
+        padding-bottom: $(size);
+      }
+
+      .padding-x--xl-$(count) {
+        padding-left: $(size);
+        padding-right: $(size);
       }
     }
   }

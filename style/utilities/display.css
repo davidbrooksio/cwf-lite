@@ -7,37 +7,37 @@
     }
 
     @media (min-width: 320px) {
-      .display--smallmobile-$(value) {
+      .display--xs-$(value) {
         display: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .display--mobile-$(value) {
+      .display--sm-$(value) {
         display: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .display--tablet-$(value) {
+      .display--md-$(value) {
         display: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .display--desktop-$(value) {
+      .display--rg-$(value) {
         display: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .display--widescreen-$(value) {
+      .display--lg-$(value) {
         display: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .display--fullhd-$(value) {
+      .display--xl-$(value) {
         display: $(value);
       }
     }

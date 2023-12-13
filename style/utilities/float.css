@@ -5,37 +5,37 @@
     }
 
     @media (min-width: 320px) {
-      .float--smallmobile-$(value) {
+      .float--xs-$(value) {
         float: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .float--mobile-$(value) {
+      .float--sm-$(value) {
         float: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .float--tablet-$(value) {
+      .float--md-$(value) {
         float: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .float--desktop-$(value) {
+      .float--rg-$(value) {
         float: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .float--widescreen-$(value) {
+      .float--lg-$(value) {
         float: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .float--fullhd-$(value) {
+      .float--xl-$(value) {
         float: $(value);
       }
     }

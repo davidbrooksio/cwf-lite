@@ -5,37 +5,37 @@
     }
 
     @media (min-width: 320px) {
-      .position--smallmobile-$(value) {
+      .position--xs-$(value) {
         position: $(value);
       }
     }
 
     @media (min-width: 576px) {
-      .position--mobile-$(value) {
+      .position--sm-$(value) {
         position: $(value);
       }
     }
 
     @media (min-width: 768px) {
-      .position--tablet-$(value) {
+      .position--md-$(value) {
         position: $(value);
       }
     }
 
     @media (min-width: 1024px) {
-      .position--desktop-$(value) {
+      .position--rg-$(value) {
         position: $(value);
       }
     }
 
     @media (min-width: 1216px) {
-      .position--widescreen-$(value) {
+      .position--lg-$(value) {
         position: $(value);
       }
     }
 
     @media (min-width: 1408px) {
-      .position--fullhd-$(value) {
+      .position--xl-$(value) {
         position: $(value);
       }
     }
