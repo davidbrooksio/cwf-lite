@@ -1,4 +1,11 @@
 # Claritas Web Framework *lite* (cwf-lite)
+A very lightweight but modern css framework.
+
+## Status
+![Current version](https://badgen.net/badge/Version/0.0.1/green)
+![CSS size](https://badgen.net/badge/CSS%20size/229.92%20kB/yellow)
+![CSS gzip size](https://badgen.net/badge/CSS%20gzip%20size/22.17%20kB/green)
+
 ## Quick start
 For best resultsinstall via `npm` or `yarn`:
 ```
@@ -11,20 +18,24 @@ Once installed, import the source css file from `node_modules/cwf-lite/dist/inde
 ```
 @import "cwf-lite/dist/index.css";
 ```
+
 ## Customisation
 cwf-lite uses css variables with defaults, this means that it will work out for the box (but won't look very good). However, should you wish to change a css property your can update the variable in your project css. There are three main ways of doing this:
+
 ###### In the `:root`
 ```
 :root {
   --card-background-color: red;
 }
 ```
+
 ###### In the css selector
 ```
 .card {
   --card-background-color: red;
 }
 ```
+
 ###### Overriding the variable in the css selector (not recommended)
 ```
 .card {
