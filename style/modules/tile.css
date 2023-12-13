@@ -25,29 +25,29 @@
       }
     }
 
-    & .tile--header,
-    & .tile--body,
-    & .tile--footer {
+    & .tile__header,
+    & .tile__body,
+    & .tile__footer {
       padding: var(--tile-inner-padding-y, 1ch) var(--tile-inner-padding-x, 2ch);
     }
 
-    & .tile--header {
-      background-color: var(--tile-header-background-color, white);
-      border-bottom-color: var(--tile-header-border-bottom-color, DimGray);
-      border-bottom-style: var(--tile-header-border-bottom-style, solid);
-      border-bottom-width: var(--tile-header-border-bottom-width, 1px);
+    & .tile__header {
+      background-color: var(--tile__header-background-color, white);
+      border-bottom-color: var(--tile__header-border-bottom-color, DimGray);
+      border-bottom-style: var(--tile__header-border-bottom-style, solid);
+      border-bottom-width: var(--tile__header-border-bottom-width, 1px);
     }
 
-    & .tile--body {
-      flex: var(--tile-body-flex, 1 1 auto);
+    & .tile__body {
+      flex: var(--tile__body-flex, 1 1 auto);
     }
 
-    & .tile--footer {
-      background-color: var(--tile-footer-background-color, white);
-      border-top-color: var(--tile-footer-border-top-color, DimGray);
-      border-top-style: var(--tile-footer-border-top-style, solid);
-      border-top-width: var(--tile-footer-border-top-width, 1px);
-      margin-top: var(--tile-footer-margin-top, auto);
+    & .tile__footer {
+      background-color: var(--tile__footer-background-color, white);
+      border-top-color: var(--tile__footer-border-top-color, DimGray);
+      border-top-style: var(--tile__footer-border-top-style, solid);
+      border-top-width: var(--tile__footer-border-top-width, 1px);
+      margin-top: var(--tile__footer-margin-top, auto);
     }
   }
 }

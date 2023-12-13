@@ -110,7 +110,7 @@
     }
   }
 
-  .flex-grid {
+  .grid--flex {
     display: var(--flex-grid-display, flex);
     flex-flow: var(--flex-grid-flex-flow, wrap row);
     margin-right: var(--flex-grid-margin-right, -1ch);

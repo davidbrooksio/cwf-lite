@@ -23,29 +23,29 @@
       }
     }
 
-    & .card--header,
-    & .card--body,
-    & .card--footer {
+    & .card__header,
+    & .card__body,
+    & .card__footer {
       padding: var(--card-inner-padding-y, 1ch) var(--card-inner-padding-x, 2ch);
     }
 
-    & .card--header {
-      background-color: var(--card-header-background-color, white);
-      border-bottom-color: var(--card-header-border-bottom-color, DimGray);
-      border-bottom-style: var(--card-header-border-bottom-style, solid);
-      border-bottom-width: var(--card-header-border-bottom-width, 1px);
+    & .card__header {
+      background-color: var(--card__header-background-color, white);
+      border-bottom-color: var(--card__header-border-bottom-color, DimGray);
+      border-bottom-style: var(--card__header-border-bottom-style, solid);
+      border-bottom-width: var(--card__header-border-bottom-width, 1px);
     }
 
-    & .card--body {
-      flex: var(--card-body-flex, 1 1 auto);
+    & .card__body {
+      flex: var(--card__body-flex, 1 1 auto);
     }
 
-    & .card--footer {
-      background-color: var(--card-footer-background-color, white);
-      border-top-color: var(--card-footer-border-top-color, DimGray);
-      border-top-style: var(--card-footer-border-top-style, solid);
-      border-top-width: var(--card-footer-border-top-width, 1px);
-      margin-top: var(--card-footer-margin-top, auto);
+    & .card__footer {
+      background-color: var(--card__footer-background-color, white);
+      border-top-color: var(--card__footer-border-top-color, DimGray);
+      border-top-style: var(--card__footer-border-top-style, solid);
+      border-top-width: var(--card__footer-border-top-width, 1px);
+      margin-top: var(--card__footer-margin-top, auto);
     }
   }
 }
