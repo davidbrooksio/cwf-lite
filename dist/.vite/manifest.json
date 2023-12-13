@@ -1,9 +1,9 @@
 {
   "index.html": {
     "css": [
-      "assets/index-np9jV78M.css"
+      "index.css"
     ],
-    "file": "assets/index-acK89MN0.js",
+    "file": "index.js",
     "isEntry": true,
     "src": "index.html"
   }
