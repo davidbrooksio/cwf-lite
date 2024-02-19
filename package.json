@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "David Brooks <david.brooks@claritas-solutions.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "packageManager": "yarn@3.6.3",
   "scripts": {
     "dev": "vite",
