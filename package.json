@@ -2,6 +2,9 @@
   "name": "cwf-lite",
   "version": "0.0.1",
   "description": "The css lite claritas web framework",
+  "keywords": [
+    "css"
+  ],
   "main": "index.js",
   "author": "David Brooks <david.brooks@claritas-solutions.com>",
   "license": "MIT",
