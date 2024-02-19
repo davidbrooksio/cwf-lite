@@ -20,7 +20,7 @@
         }
 
         &.offset--$(size) {
-          --column-grid-column-start: $(size);
+          --column-grid-column-start: calc($(size) + 1);
         }
       }
 
