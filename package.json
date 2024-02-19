@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@cla-git01/srv/git/cwf-lite"
+    "url": "git@github.com:davidbrooksio/cwf-lite.git"
   },
   "devDependencies": {
     "lightningcss": "^1.23.0",

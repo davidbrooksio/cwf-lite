@@ -1,11 +1,11 @@
 @layer cwf-bases {
   .container {
-    width: var(--container-width, 100%);
-    max-width: var(--container-max-width, 100vw);
     margin-left: var(--container-margin-left, auto);
     margin-right: var(--container-margin-right, auto);
+    max-width: var(--container-max-width, 100vw);
     padding-left: var(--container-padding-left, 1ch);
     padding-right: var(--container-padding-right, 1ch);
+    width: var(--container-width, 100%);
 
     &:not(.container--fluid) {
       @media (min-width: 576px) {

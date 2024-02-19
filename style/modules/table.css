@@ -1,16 +1,16 @@
 @layer cwf-modules {
   .table {
-    width: var(--table-width, 100%);
-    caption-side: var(--table-caption-side, bottom);
     border-collapse: var(--table-border-collapse, collapse);
+    caption-side: var(--table-caption-side, bottom);
+    width: var(--table-width, 100%);
 
     & td,
     & th {
+      border-color: var(--table-cell-border-style, LightGrey);
+      border-style: var(--table-cell-border-style, solid);
+      border-width: var(--table-cell-border-width, 0 0 1px 0);
       padding: var(--table-cell-padding-y, 1ch) var(--table-cell-padding-x, 2ch);
       vertical-align: var(--table-cell-valign, top);
-      border-style: var(--table-cell-border-style, solid);
-      border-color: var(--table-cell-border-style, DimGray);
-      border-width: var(--table-cell-border-width, 0 0 1px 0);
     }
 
     & thead {
@@ -86,7 +86,7 @@
             & > * {
               background-color: var(
                 --table-row-hover-background-color,
-                LightGray
+                LightGrey
               );
             }
           }

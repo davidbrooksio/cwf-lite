@@ -1,25 +1,25 @@
 @layer cwf-modules {
   .pill {
     align-items: var(--pill-align-items, center);
-    background-color: var(--pill-background-color, WhiteSmoke);
-    border-color: var(--pill-border-color, WhiteSmoke);
-    border-radius: var(--pill-border-radius, 50%);
+    background-color: var(--pill-background-color, grey);
+    border-color: var(--pill-border-color, grey);
+    border-radius: var(--pill-border-radius, 99rem);
     border-style: var(--pill-border-style, solid);
     border-width: var(--pill-border-width, 1px);
-    color: var(--pill-color, DimGray);
+    color: var(--pill-color, white);
     display: var(--pill-display, inline-flex);
     font-family: var(--pill-font-family, system-ui);
-    font-weight: var(--pill-font-weight, 400);
     font-size: var(--pill-font-size, 11px);
+    font-weight: var(--pill-font-weight, 400);
     gap: var(--pill-gap, 0.5ch);
     justify-content: var(--pill-justify-content, center);
     line-height: var(--pill-line-height, 1.15);
+    min-height: var(--pill-min-height, 1rem);
+    min-width: var(--pill-min-width, 1rem);
     padding: var(--pill-padding-y, 0) var(--pill-padding-x, 0.5ch);
     text-align: var(--pill-text-align, center);
     user-select: var(--pill-user-select, none);
     vertical-align: var(--pill-vertical-align, middle);
     white-space: var(--pill-white-space, nowrap);
-    min-height: var(--pill-min-height, 1rem);
-    min-width: var(--pill-min-width, 1rem);
   }
 }

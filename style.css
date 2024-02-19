@@ -1,7 +1,7 @@
-@layer cwf-bases, cwf-utilities, cwf-module;
+@layer cwf-bases, cwf-utilities, cwf-modules;
 
 /* -------------------------------- External -------------------------------- */
-@import "modern-normalize/modern-normalize.css" layer(cwf-base);
+@import "modern-normalize/modern-normalize.css" layer(cwf-bases);
 
 /* ---------------------------------- Bases --------------------------------- */
 @import "./style/bases/body.css";
@@ -16,6 +16,7 @@
 @import "./style/utilities/display.css";
 @import "./style/utilities/float.css";
 @import "./style/utilities/gap.css";
+@import "./style/utilities/group.css";
 @import "./style/utilities/inset.css";
 @import "./style/utilities/margin.css";
 @import "./style/utilities/order.css";
@@ -31,7 +32,6 @@
 @import "./style/modules/alert.css";
 @import "./style/modules/button.css";
 @import "./style/modules/card.css";
-@import "./style/modules/group.css";
 @import "./style/modules/input.css";
 @import "./style/modules/list.css";
 @import "./style/modules/nav.css";

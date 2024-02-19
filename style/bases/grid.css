@@ -1,18 +1,18 @@
 @layer cwf-bases {
   .grid {
     display: var(--grid-display, grid);
-    grid-template-rows: var(--grid-template-rows, repeat(var(--rows, 1), 1fr));
     grid-template-columns: var(
       --grid-template-columns,
       repeat(var(--columns, 12), 1fr)
     );
+    grid-template-rows: var(--grid-template-rows, repeat(var(--rows, 1), 1fr));
 
     & > .column {
-      --column-grid-column-start: auto;
       --column-grid-column-end: span 12;
+      --column-grid-column-start: auto;
 
-      grid-column-start: var(--column-grid-column-start);
       grid-column-end: var(--column-grid-column-end);
+      grid-column-start: var(--column-grid-column-start);
 
       @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
         &.column--$(size) {
@@ -117,10 +117,10 @@
     margin-left: var(--flex-grid-margin-left, -1ch);
 
     & > .column {
-      width: var(--column-width, 100%);
       max-width: var(--column-max-width, 100%);
       padding-right: var(--column-padding-right, 1ch);
       padding-left: var(--column-padding-left, 1ch);
+      width: var(--column-width, 100%);
 
       &.column--auto {
         flex: var(--column-flex, 0 0 auto);

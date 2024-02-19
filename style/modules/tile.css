@@ -1,27 +1,29 @@
 @layer cwf-modules {
   .tile {
     background-color: var(--tile-background-color, white);
-    border-color: var(--tile-border-color, DimGray);
-    border-left-color: var(--tile-border-color, DimGray);
+    border-color: var(--tile-border-color, LightGrey);
     border-radius: var(--tile-border-radius, 0);
     border-style: var(--tile-border-style, solid);
     border-width: var(--tile-border-width, 1px);
+    border-left-color: var(--tile-border-color, LightGrey);
     border-left-width: var(--tile-border-left-width, 4px);
     display: var(--tile-display, flex);
     flex-flow: var(--tile-flex-flow, column nowrap);
+    margin: var(--tile-margin-top, 0) var(--tile-margin-right, auto)
+      var(--tile-margin-bottom, 1ch) var(--tile-margin-left, auto);
     min-width: var(--tile-min-width, 0);
     position: var(--tile-position, relative);
     word-wrap: var(--tile-word-wrap, break-word);
 
     & > * {
       &:first-child {
-        border-top-left-radius: var(--tile-child-border-radius, 3px);
-        border-top-right-radius: var(--tile-child-border-radius, 3px);
+        border-top-right-radius: var(--tile-inner-border-radius, 0);
+        border-top-left-radius: var(--tile-inner-border-radius, 0);
       }
 
       &:last-child {
-        border-bottom-left-radius: var(--tile-child-border-radius, 3px);
-        border-bottom-right-radius: var(--tile-child-border-radius, 3px);
+        border-bottom-right-radius: var(--tile-inner-border-radius, 0);
+        border-bottom-left-radius: var(--tile-inner-border-radius, 0);
       }
     }
 
@@ -33,7 +35,7 @@
 
     & .tile__header {
       background-color: var(--tile__header-background-color, white);
-      border-bottom-color: var(--tile__header-border-bottom-color, DimGray);
+      border-bottom-color: var(--tile__header-border-bottom-color, LightGrey);
       border-bottom-style: var(--tile__header-border-bottom-style, solid);
       border-bottom-width: var(--tile__header-border-bottom-width, 1px);
     }
@@ -44,7 +46,7 @@
 
     & .tile__footer {
       background-color: var(--tile__footer-background-color, white);
-      border-top-color: var(--tile__footer-border-top-color, DimGray);
+      border-top-color: var(--tile__footer-border-top-color, LightGrey);
       border-top-style: var(--tile__footer-border-top-style, solid);
       border-top-width: var(--tile__footer-border-top-width, 1px);
       margin-top: var(--tile__footer-margin-top, auto);

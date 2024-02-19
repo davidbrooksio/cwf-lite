@@ -46,8 +46,8 @@
   }
 
   p {
+    margin-bottom: var(--paragraph-margin-bottom, 1ch);
     margin-top: var(--paragraph-margin-top, 0);
-    margin-bottom: var(--paragraph-margin-bottom, 0);
   }
 
   code {
@@ -56,8 +56,8 @@
   }
 
   .truncate {
-    white-space: var(--truncate-white-space, nowrap);
     overflow: var(--truncate-overflow, hidden);
     text-overflow: var(--truncate-text-overflow, ellipsis);
+    white-space: var(--truncate-white-space, nowrap);
   }
 }

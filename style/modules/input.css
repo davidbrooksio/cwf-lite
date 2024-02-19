@@ -1,35 +1,48 @@
 @layer cwf-modules {
   input,
-  textarea {
+  textarea,
+  output,
+  select,
+  progress {
+    width: var(--input-width, 100%);
+  }
+
+  input,
+  textarea,
+  output,
+  select {
     appearance: var(--input-appearance, auto);
-    border-color: var(--input-border-color, DimGray);
+    border-color: var(--input-border-color, LightGrey);
     border-radius: var(--input-border-radius, 4px);
     border-style: var(--input-border-style, solid);
     border-width: var(--input-border-width, 1px);
     box-shadow: var(--input-box-shadow, none);
-    color: var(--input-color, DimGray);
+    color: var(--input-color, DimGrey);
     cursor: var(--input-cursor, auto);
     font-family: var(--input-font-family, system-ui);
     font-weight: var(--input-font-weight, 400);
     height: var(--input-height, auto);
     line-height: var(--input-line-height, 1.15);
+    margin: var(--input-margin-top, 0) var(--input-margin-right, auto)
+      var(--input-margin-bottom, 1ch) var(--input-margin-left, auto);
     outline: var(--input-outline, 0);
     padding: var(--input-padding-y, 1ch) var(--input-padding-x, 2ch);
     vertical-align: var(--input-vertical-align, initial);
-    width: var(--input-width, auto);
 
-    &:hover {
-      border-color: var(--input-hover-border-color, gray);
-      color: var(--input-hover-color, DimGray);
-    }
+    &:not(output) {
+      &:hover {
+        border-color: var(--input-hover-border-color, grey);
+        color: var(--input-hover-color, DimGrey);
+      }
 
-    &:focus-visible {
-      border-color: var(--input-focus-border-color, gray);
-      box-shadow: var(
-        --input-focus-box-shadow,
-        0 0 0 0.25em rgb(0 0 0 / 0.125)
-      );
-      color: var(--input-focus-color, DimGray);
+      &:focus-visible {
+        border-color: var(--input-focus-border-color, grey);
+        box-shadow: var(
+          --input-focus-box-shadow,
+          0 0 0 0.25em rgb(0 0 0 / 0.125)
+        );
+        color: var(--input-focus-color, DimGrey);
+      }
     }
 
     &[type="checkbox"],
@@ -39,9 +52,10 @@
       cursor: var(--input-cursor, pointer);
       padding: var(--input-padding-y, 1ch) var(--input-padding-x, 1ch);
       vertical-align: var(--input-vertical-align, top);
+      width: var(--input-width, auto);
 
       &:checked {
-        background-color: var(--input-background-color, DimGray);
+        background-color: var(--input-background-color, DimGrey);
       }
 
       &:focus {
@@ -71,5 +85,36 @@
         );
       }
     }
+
+    &:is(select) {
+      &[multiple] {
+        padding: var(--input-padding-y, 0) var(--input-padding-x, 0);
+
+        & option {
+          padding: var(--option-padding-y, 1ch) var(--option-padding-x, 2ch);
+        }
+      }
+    }
+
+    &:is(output) {
+      /* fix for output height */
+      &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        pointer-events: none;
+      }
+    }
+  }
+
+  label {
+    display: var(--label-display, inline-flex);
+    color: var(--label-color, DimGrey);
+    font-family: var(--label-font-family, system-ui);
+    font-weight: var(--label-font-weight, 400);
+    margin: var(--label-margin-top, 0) var(--label-margin-right, auto)
+      var(--label-margin-bottom, 0.25ch) var(--label-margin-left, auto);
+    width: var(--label-width, 100%);
   }
 }

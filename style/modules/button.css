@@ -2,12 +2,12 @@
   .button {
     align-items: var(--button-align-items, center);
     background-color: var(--button-background-color, white);
-    border-color: var(--button-border-color, DimGray);
+    border-color: var(--button-border-color, LightGrey);
     border-radius: var(--button-border-radius, 4px);
     border-style: var(--button-border-style, solid);
     border-width: var(--button-border-width, 1px);
     box-shadow: var(--button-box-shadow, none);
-    color: var(--button-color, DimGray);
+    color: var(--button-color, DimGrey);
     cursor: var(--button-cursor, pointer);
     display: var(--button-display, inline-flex);
     font-family: var(--button-font-family, system-ui);
@@ -24,29 +24,29 @@
     white-space: var(--button-white-space, nowrap);
 
     &:hover {
-      border-color: var(--button-hover-border-color, gray);
-      color: var(--button-hover-color, gray);
-      background-color: var(--button-background-color, WhiteSmoke);
+      background-color: var(--button-hover-background-color, WhiteSmoke);
+      border-color: var(--button-hover-border-color, grey);
+      color: var(--button-hover-color, grey);
     }
 
     &:focus-visible {
-      border-color: var(--button-focus-border-color, gray);
+      background-color: var(--button-focus-background-color, WhiteSmoke);
+      border-color: var(--button-focus-border-color, grey);
       box-shadow: var(
         --button-focus-box-shadow,
         0 0 0 0.25em rgb(0 0 0 / 0.125)
       );
-      color: var(--button-focus-color, gray);
-      background-color: var(--button-background-color, WhiteSmoke);
+      color: var(--button-focus-color, grey);
     }
 
     &:active {
-      border-color: var(--button-active-border-color, gray);
+      background-color: var(--button-active-background-color, WhiteSmoke);
+      border-color: var(--button-active-border-color, grey);
       box-shadow: var(
         --button-active-box-shadow,
         0 0 0 0.25em rgb(0 0 0 / 0.25)
       );
-      color: var(--button-active-color, gray);
-      background-color: var(--button-background-color, WhiteSmoke);
+      color: var(--button-active-color, grey);
     }
   }
 }
