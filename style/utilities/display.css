@@ -3,42 +3,42 @@
     table-cell, flex, inline-flex, grid
   {
     .display--$(value) {
-      display: $(value);
+      display: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .display--xs-$(value) {
-        display: $(value);
+        display: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .display--sm-$(value) {
-        display: $(value);
+        display: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .display--md-$(value) {
-        display: $(value);
+        display: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .display--rg-$(value) {
-        display: $(value);
+        display: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .display--lg-$(value) {
-        display: $(value);
+        display: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .display--xl-$(value) {
-        display: $(value);
+        display: $(value) !important;
       }
     }
   }

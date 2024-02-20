@@ -3,98 +3,98 @@
     (0, 0.25ch, 0.5ch, 0.75ch, 1.5ch, 2ch, 2.5ch, 3ch, 3.5ch, 4ch)
   {
     .gap--$(count) {
-      gap: $(size);
+      gap: $(size) !important;
     }
 
     .row-gap--$(count) {
-      row-gap: $(size);
+      row-gap: $(size) !important;
     }
 
     .column-gap--$(count) {
-      column-gap: $(size);
+      column-gap: $(size) !important;
     }
 
     @media (min-width: 320px) {
       .gap--xs-$(count) {
-        gap: $(size);
+        gap: $(size) !important;
       }
 
       .row-gap--xs-$(count) {
-        row-gap: $(size);
+        row-gap: $(size) !important;
       }
 
       .column-gap--xs-$(count) {
-        column-gap: $(size);
+        column-gap: $(size) !important;
       }
     }
 
     @media (min-width: 576px) {
       .gap--sm-$(count) {
-        gap: $(size);
+        gap: $(size) !important;
       }
 
       .row-gap--sm-$(count) {
-        row-gap: $(size);
+        row-gap: $(size) !important;
       }
 
       .column-gap--sm-$(count) {
-        column-gap: $(size);
+        column-gap: $(size) !important;
       }
     }
 
     @media (min-width: 768px) {
       .gap--md-$(count) {
-        gap: $(size);
+        gap: $(size) !important;
       }
 
       .row-gap--md-$(count) {
-        row-gap: $(size);
+        row-gap: $(size) !important;
       }
 
       .column-gap--md-$(count) {
-        column-gap: $(size);
+        column-gap: $(size) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .gap--rg-$(count) {
-        gap: $(size);
+        gap: $(size) !important;
       }
 
       .row-gap--rg-$(count) {
-        row-gap: $(size);
+        row-gap: $(size) !important;
       }
 
       .column-gap--rg-$(count) {
-        column-gap: $(size);
+        column-gap: $(size) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .gap--lg-$(count) {
-        gap: $(size);
+        gap: $(size) !important;
       }
 
       .row-gap--lg-$(count) {
-        row-gap: $(size);
+        row-gap: $(size) !important;
       }
 
       .column-gap--lg-$(count) {
-        column-gap: $(size);
+        column-gap: $(size) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .gap--xl-$(count) {
-        gap: $(size);
+        gap: $(size) !important;
       }
 
       .row-gap--xl-$(count) {
-        row-gap: $(size);
+        row-gap: $(size) !important;
       }
 
       .column-gap--xl-$(count) {
-        column-gap: $(size);
+        column-gap: $(size) !important;
       }
     }
   }

@@ -7,6 +7,198 @@
   </head>
   <body>
     <div id="app"></div>
+    <div class="container padding-y--4">
+      <h1>CWF Lite</h1>
+      <h2>Grid</h2>
+      <h3>CSS grid</h3>
+      <div class="grid column-gap--5 row-gap--4">
+        <div class="column column-start--1 column-span--3">
+          <div class="card margin--0">
+            <section class="card__body">
+              <code>.column.column-start--1.column-span--3</code>
+            </section>
+          </div>
+        </div>
+        <div class="column column-start--md-4 column-span--md-3">
+          <div class="card margin--0">
+            <section class="card__body">
+              <code>.column.column-start--md-4.column-span--md-3</code>
+            </section>
+          </div>
+        </div>
+        <div
+          class="column column-start--md-8 column-span--md-5 column-start--xl-9 column-span--xl-4"
+        >
+          <div class="card margin--0">
+            <section class="card__body">
+              <code>
+                .column.column-start--md-8.column-span--md-5.column-start--xl-9.column-span--xl-4
+              </code>
+            </section>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h3>Flex grid</h3>
+      <div class="grid--flex row-gap--4">
+        <div class="column column--3">
+          <div class="card margin--0">
+            <section class="card__body">
+              <code>.column.column--3</code>
+            </section>
+          </div>
+        </div>
+        <div class="column column--md-3">
+          <div class="card margin--0">
+            <section class="card__body">
+              <code>.column.column--md-3</code>
+            </section>
+          </div>
+        </div>
+        <div class="column column--xl-4 offset--xl-2 column--md-5 offset--md-1">
+          <div class="card margin--0">
+            <section class="card__body">
+              <code>
+                .column.column--xl-4.offset--xl-2.column--md-5.offset--md-1
+              </code>
+            </section>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h2>Modules</h2>
+      <h3>Alert</h3>
+      <div class="alert">This is an alert.</div>
+      <hr />
+      <h3>Button</h3>
+      <button type="button" class="button">Click me</button>
+      <a href="/" class="button">Click me</a>
+      <hr />
+      <h3>Card</h3>
+      <div class="card">
+        <header class="card__header">Header</header>
+        <section class="card__body">Body</section>
+        <footer class="card__footer">Footer</footer>
+      </div>
+      <hr />
+      <h3>Input</h3>
+      <form>
+        <label class="label" for="inputText">Text</label>
+        <input
+          class="input"
+          type="text"
+          id="inputText"
+          name="inputText"
+          placeholder="Text"
+        />
+        <label class="label" for="inputText2">Disabled</label>
+        <input
+          class="input"
+          type="text"
+          id="inputText"
+          name="inputText"
+          placeholder="Text"
+          disabled
+        />
+        <label class="label" for="outputText">Output</label>
+        <output class="input" id="outputText" name="outputText"></output>
+        <label class="label" for="inputTextarea">Textarea</label>
+        <textarea
+          class="input"
+          id="inputTextarea"
+          name="inputTextarea"
+          placeholder="Textarea"
+          rows="6"
+        ></textarea>
+        <label class="label" for="inputSelect">Select</label>
+        <select class="input" name="inputSelect" id="inputSelect">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+        <label class="label" for="inputProgress">Progress</label>
+        <progress class="input" id="inputProgress" value="32" max="100">
+          32%
+        </progress>
+        <label class="label" for="inputCheckbox">Checkbox</label>
+        <input
+          class="input"
+          type="checkbox"
+          id="inputCheckbox"
+          name="inputCheckbox"
+        />
+        <label class="label" for="inputRadio">Radio</label>
+        <input class="input" type="radio" id="inputRadio" name="inputRadio" />
+        <label class="label" for="inputRange">Range</label>
+        <input class="input" type="range" id="inputRange" name="inputRange" />
+      </form>
+      <hr />
+      <h3>List</h3>
+      <ul class="list--unstyled">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+      </ul>
+      <hr />
+      <h3>Nav</h3>
+      <nav class="nav">
+        <button type="button" class="nav__item" data-active="true">
+          Click me
+        </button>
+        <button type="button" class="nav__item">Click me</button>
+        <button type="button" class="nav__item">Click me</button>
+        <button type="button" class="nav__item">Click me</button>
+      </nav>
+      <hr />
+      <h3>Pill</h3>
+      <span class="pill">pill</span>
+      <hr />
+      <h3>Table</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>One</th>
+            <th>Two</th>
+            <th>Three</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+          </tr>
+          <tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+          </tr>
+          <tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+          </tr>
+          <tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h3>Tag</h3>
+      <span class="tag">tag</span>
+      <hr />
+      <h3>Tile</h3>
+      <div class="tile">
+        <header class="tile__header">Header</header>
+        <section class="tile__body">Body</section>
+        <footer class="tile__footer">Footer</footer>
+      </div>
+    </div>
 
     <script type="module" src="/main.js"></script>
   </body>

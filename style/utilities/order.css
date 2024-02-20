@@ -1,110 +1,110 @@
 @layer cwf-utilities {
   .order--first {
-    order: -1;
+    order: -1 !important;
   }
 
   .order--last {
-    order: 99;
+    order: 99 !important;
   }
 
   @media (min-width: 320px) {
     .order--xs-first {
-      order: -1;
+      order: -1 !important;
     }
 
     .order--xs-last {
-      order: 99;
+      order: 99 !important;
     }
   }
 
   @media (min-width: 576px) {
     .order--sm-first {
-      order: -1;
+      order: -1 !important;
     }
 
     .order--sm-last {
-      order: 99;
+      order: 99 !important;
     }
   }
 
   @media (min-width: 768px) {
     .order--md-first {
-      order: -1;
+      order: -1 !important;
     }
 
     .order--md-last {
-      order: 99;
+      order: 99 !important;
     }
   }
 
   @media (min-width: 1024px) {
     .order--rg-first {
-      order: -1;
+      order: -1 !important;
     }
 
     .order--rg-last {
-      order: 99;
+      order: 99 !important;
     }
   }
 
   @media (min-width: 1216px) {
     .order--lg-first {
-      order: -1;
+      order: -1 !important;
     }
 
     .order--lg-last {
-      order: 99;
+      order: 99 !important;
     }
   }
 
   @media (min-width: 1408px) {
     .order--xl-first {
-      order: -1;
+      order: -1 !important;
     }
 
     .order--xl-last {
-      order: 99;
+      order: 99 !important;
     }
   }
 
   @each $value in 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
     .order--$(value) {
-      order: $(value);
+      order: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .order--xs-$(value) {
-        order: $(value);
+        order: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .order--sm-$(value) {
-        order: $(value);
+        order: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .order--md-$(value) {
-        order: $(value);
+        order: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .order--rg-$(value) {
-        order: $(value);
+        order: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .order--lg-$(value) {
-        order: $(value);
+        order: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .order--xl-$(value) {
-        order: $(value);
+        order: $(value) !important;
       }
     }
   }

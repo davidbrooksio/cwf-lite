@@ -1,349 +1,349 @@
 @layer cwf-utilities {
   .top--auto {
-    top: auto;
+    top: auto !important;
   }
 
   .top--100 {
-    top: 100%;
+    top: 100% !important;
   }
 
   .top--0 {
-    top: 0;
+    top: 0 !important;
   }
 
   .right--auto {
-    right: auto;
+    right: auto !important;
   }
 
   .right--100 {
-    right: 100%;
+    right: 100% !important;
   }
 
   .right--0 {
-    right: 0;
+    right: 0 !important;
   }
 
   .bottom--auto {
-    bottom: auto;
+    bottom: auto !important;
   }
 
   .bottom--100 {
-    bottom: 100%;
+    bottom: 100% !important;
   }
 
   .bottom--0 {
-    bottom: 0;
+    bottom: 0 !important;
   }
 
   .left--auto {
-    left: auto;
+    left: auto !important;
   }
 
   .left--100 {
-    left: 100%;
+    left: 100% !important;
   }
 
   .left--0 {
-    left: 0;
+    left: 0 !important;
   }
 
   @media (min-width: 320px) {
     .top--xs-auto {
-      top: auto;
+      top: auto !important;
     }
 
     .top--xs-100 {
-      top: 100%;
+      top: 100% !important;
     }
 
     .top--xs-0 {
-      top: 0;
+      top: 0 !important;
     }
 
     .right--xs-auto {
-      right: auto;
+      right: auto !important;
     }
 
     .right--xs-100 {
-      right: 100%;
+      right: 100% !important;
     }
 
     .right--xs-0 {
-      right: 0;
+      right: 0 !important;
     }
 
     .bottom--xs-auto {
-      bottom: auto;
+      bottom: auto !important;
     }
 
     .bottom--xs-100 {
-      bottom: 100%;
+      bottom: 100% !important;
     }
 
     .bottom--xs-0 {
-      bottom: 0;
+      bottom: 0 !important;
     }
 
     .left--xs-auto {
-      left: auto;
+      left: auto !important;
     }
 
     .left--xs-100 {
-      left: 100%;
+      left: 100% !important;
     }
 
     .left--xs-0 {
-      left: 0;
+      left: 0 !important;
     }
   }
 
   @media (min-width: 576px) {
     .top--sm-auto {
-      top: auto;
+      top: auto !important;
     }
 
     .top--sm-100 {
-      top: 100%;
+      top: 100% !important;
     }
 
     .top--sm-0 {
-      top: 0;
+      top: 0 !important;
     }
 
     .right--sm-auto {
-      right: auto;
+      right: auto !important;
     }
 
     .right--sm-100 {
-      right: 100%;
+      right: 100% !important;
     }
 
     .right--sm-0 {
-      right: 0;
+      right: 0 !important;
     }
 
     .bottom--sm-auto {
-      bottom: auto;
+      bottom: auto !important;
     }
 
     .bottom--sm-100 {
-      bottom: 100%;
+      bottom: 100% !important;
     }
 
     .bottom--sm-0 {
-      bottom: 0;
+      bottom: 0 !important;
     }
 
     .left--sm-auto {
-      left: auto;
+      left: auto !important;
     }
 
     .left--sm-100 {
-      left: 100%;
+      left: 100% !important;
     }
 
     .left--sm-0 {
-      left: 0;
+      left: 0 !important;
     }
   }
 
   @media (min-width: 768px) {
     .top--md-auto {
-      top: auto;
+      top: auto !important;
     }
 
     .top--md-100 {
-      top: 100%;
+      top: 100% !important;
     }
 
     .top--md-0 {
-      top: 0;
+      top: 0 !important;
     }
 
     .right--md-auto {
-      right: auto;
+      right: auto !important;
     }
 
     .right--md-100 {
-      right: 100%;
+      right: 100% !important;
     }
 
     .right--md-0 {
-      right: 0;
+      right: 0 !important;
     }
 
     .bottom--md-auto {
-      bottom: auto;
+      bottom: auto !important;
     }
 
     .bottom--md-100 {
-      bottom: 100%;
+      bottom: 100% !important;
     }
 
     .bottom--md-0 {
-      bottom: 0;
+      bottom: 0 !important;
     }
 
     .left--md-auto {
-      left: auto;
+      left: auto !important;
     }
 
     .left--md-100 {
-      left: 100%;
+      left: 100% !important;
     }
 
     .left--md-0 {
-      left: 0;
+      left: 0 !important;
     }
   }
 
   @media (min-width: 1024px) {
     .top--rg-auto {
-      top: auto;
+      top: auto !important;
     }
 
     .top--rg-100 {
-      top: 100%;
+      top: 100% !important;
     }
 
     .top--rg-0 {
-      top: 0;
+      top: 0 !important;
     }
 
     .right--rg-auto {
-      right: auto;
+      right: auto !important;
     }
 
     .right--rg-100 {
-      right: 100%;
+      right: 100% !important;
     }
 
     .right--rg-0 {
-      right: 0;
+      right: 0 !important;
     }
 
     .bottom--rg-auto {
-      bottom: auto;
+      bottom: auto !important;
     }
 
     .bottom--rg-100 {
-      bottom: 100%;
+      bottom: 100% !important;
     }
 
     .bottom--rg-0 {
-      bottom: 0;
+      bottom: 0 !important;
     }
 
     .left--rg-auto {
-      left: auto;
+      left: auto !important;
     }
 
     .left--rg-100 {
-      left: 100%;
+      left: 100% !important;
     }
 
     .left--rg-0 {
-      left: 0;
+      left: 0 !important;
     }
   }
 
   @media (min-width: 1216px) {
     .top--lg-auto {
-      top: auto;
+      top: auto !important;
     }
 
     .top--lg-100 {
-      top: 100%;
+      top: 100% !important;
     }
 
     .top--lg-0 {
-      top: 0;
+      top: 0 !important;
     }
 
     .right--lg-auto {
-      right: auto;
+      right: auto !important;
     }
 
     .right--lg-100 {
-      right: 100%;
+      right: 100% !important;
     }
 
     .right--lg-0 {
-      right: 0;
+      right: 0 !important;
     }
 
     .bottom--lg-auto {
-      bottom: auto;
+      bottom: auto !important;
     }
 
     .bottom--lg-100 {
-      bottom: 100%;
+      bottom: 100% !important;
     }
 
     .bottom--lg-0 {
-      bottom: 0;
+      bottom: 0 !important;
     }
 
     .left--lg-auto {
-      left: auto;
+      left: auto !important;
     }
 
     .left--lg-100 {
-      left: 100%;
+      left: 100% !important;
     }
 
     .left--lg-0 {
-      left: 0;
+      left: 0 !important;
     }
   }
 
   @media (min-width: 1408px) {
     .top--xl-auto {
-      top: auto;
+      top: auto !important;
     }
 
     .top--xl-100 {
-      top: 100%;
+      top: 100% !important;
     }
 
     .top--xl-0 {
-      top: 0;
+      top: 0 !important;
     }
 
     .right--xl-auto {
-      right: auto;
+      right: auto !important;
     }
 
     .right--xl-100 {
-      right: 100%;
+      right: 100% !important;
     }
 
     .right--xl-0 {
-      right: 0;
+      right: 0 !important;
     }
 
     .bottom--xl-auto {
-      bottom: auto;
+      bottom: auto !important;
     }
 
     .bottom--xl-100 {
-      bottom: 100%;
+      bottom: 100% !important;
     }
 
     .bottom--xl-0 {
-      bottom: 0;
+      bottom: 0 !important;
     }
 
     .left--xl-auto {
-      left: auto;
+      left: auto !important;
     }
 
     .left--xl-100 {
-      left: 100%;
+      left: 100% !important;
     }
 
     .left--xl-0 {
-      left: 0;
+      left: 0 !important;
     }
   }
 }

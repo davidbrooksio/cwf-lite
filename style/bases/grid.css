@@ -8,102 +8,90 @@
     grid-template-rows: var(--grid-template-rows, repeat(var(--rows, 1), 1fr));
 
     & > .column {
-      --column-grid-column-end: span 12;
       --column-grid-column-start: auto;
+      --column-grid-column-end: span 12;
 
-      grid-column-end: var(--column-grid-column-end);
       grid-column-start: var(--column-grid-column-start);
+      grid-column-end: var(--column-grid-column-end);
 
       @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-        &.column--$(size) {
-          --column-grid-column-end: span $(size);
+        &.column-start--$(size) {
+          --column-grid-column-start: $(size);
         }
 
-        &.offset--$(size) {
-          --column-grid-column-start: calc($(size) + 1);
+        &.column-span--$(size) {
+          --column-grid-column-end: span $(size);
         }
       }
 
       @media (min-width: 320px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--xs-$(size) {
-            --column-grid-column-end: span $(size);
+          &.column-start--xs-$(size) {
+            --column-grid-column-start: $(size);
           }
-        }
 
-        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--sm-$(size) {
-            --column-grid-column-start: calc($(size) + 1);
+          &.column-span--xs-$(size) {
+            --column-grid-column-end: span $(size);
           }
         }
       }
 
       @media (min-width: 576px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--sm-$(size) {
-            --column-grid-column-end: span $(size);
+          &.column-start--sm-$(size) {
+            --column-grid-column-start: $(size);
           }
-        }
 
-        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--sm-$(size) {
-            --column-grid-column-start: calc($(size) + 1);
+          &.column-span--sm-$(size) {
+            --column-grid-column-end: span $(size);
           }
         }
       }
 
       @media (min-width: 768px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--md-$(size) {
-            --column-grid-column-end: span $(size);
+          &.column-start--md-$(size) {
+            --column-grid-column-start: $(size);
           }
-        }
 
-        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--md-$(size) {
-            --column-grid-column-start: calc($(size) + 1);
+          &.column-span--md-$(size) {
+            --column-grid-column-end: span $(size);
           }
         }
       }
 
       @media (min-width: 1024px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--rg-$(size) {
-            --column-grid-column-end: span $(size);
+          &.column-start--rg-$(size) {
+            --column-grid-column-start: $(size);
           }
-        }
 
-        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--rg-$(size) {
-            --column-grid-column-start: calc($(size) + 1);
+          &.column-span--rg-$(size) {
+            --column-grid-column-end: span $(size);
           }
         }
       }
 
       @media (min-width: 1216px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--lg-$(size) {
-            --column-grid-column-end: span $(size);
+          &.column-start--lg-$(size) {
+            --column-grid-column-start: $(size);
           }
-        }
 
-        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--lg-$(size) {
-            --column-grid-column-start: calc($(size) + 1);
+          &.column-span--lg-$(size) {
+            --column-grid-column-end: span $(size);
           }
         }
       }
 
       @media (min-width: 1408px) {
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-          &.column--xl-$(size) {
-            --column-grid-column-end: span $(size);
+          &.column-start--xl-$(size) {
+            --column-grid-column-start: $(size);
           }
-        }
 
-        @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 {
-          &.offset--xl-$(size) {
-            --column-grid-column-start: calc($(size) + 1);
+          &.column-span--xl-$(size) {
+            --column-grid-column-end: span $(size);
           }
         }
       }

@@ -3,433 +3,433 @@
     (0, 0.25ch, 0.5ch, 0.75ch, 1.5ch, 2ch, 2.5ch, 3ch, 3.5ch, 4ch)
   {
     .margin--$(count) {
-      margin: $(size);
+      margin: $(size) !important;
 
       &.margin--negative {
-        margin: calc($(size) * -1);
+        margin: calc($(size) * -1) !important;
       }
     }
 
     .margin-top--$(count) {
-      margin-top: $(size);
+      margin-top: $(size) !important;
 
       &.margin-top--negative {
-        margin-top: calc($(size) * -1);
+        margin-top: calc($(size) * -1) !important;
       }
     }
 
     .margin-right--$(count) {
-      margin-right: $(size);
+      margin-right: $(size) !important;
 
       &.margin-right--negative {
-        margin-right: calc($(size) * -1);
+        margin-right: calc($(size) * -1) !important;
       }
     }
 
     .margin-bottom--$(count) {
-      margin-bottom: $(size);
+      margin-bottom: $(size) !important;
 
       &.margin-bottom--negative {
-        margin-bottom: calc($(size) * -1);
+        margin-bottom: calc($(size) * -1) !important;
       }
     }
 
     .margin-left--$(count) {
-      margin-left: $(size);
+      margin-left: $(size) !important;
 
       &.margin-left--negative {
-        margin-left: calc($(size) * -1);
+        margin-left: calc($(size) * -1) !important;
       }
     }
 
     .margin-y--$(count) {
-      margin-top: $(size);
-      margin-bottom: $(size);
+      margin-top: $(size) !important;
+      margin-bottom: $(size) !important;
 
       &.margin-y--negative {
-        margin-top: calc($(size) * -1);
-        margin-bottom: calc($(size) * -1);
+        margin-top: calc($(size) * -1) !important;
+        margin-bottom: calc($(size) * -1) !important;
       }
     }
 
     .margin-x--$(count) {
-      margin-left: $(size);
-      margin-right: $(size);
+      margin-left: $(size) !important;
+      margin-right: $(size) !important;
 
       &.margin-x--negative {
-        margin-left: calc($(size) * -1);
-        margin-right: calc($(size) * -1);
+        margin-left: calc($(size) * -1) !important;
+        margin-right: calc($(size) * -1) !important;
       }
     }
 
     @media (min-width: 320px) {
       .margin--xs-$(count) {
-        margin: $(size);
+        margin: $(size) !important;
 
         &.margin--xs-negative {
-          margin: calc($(size) * -1);
+          margin: calc($(size) * -1) !important;
         }
       }
 
       .margin-top--xs-$(count) {
-        margin-top: $(size);
+        margin-top: $(size) !important;
 
         &.margin-top--xs-negative {
-          margin-top: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
         }
       }
 
       .margin-right--xs-$(count) {
-        margin-right: $(size);
+        margin-right: $(size) !important;
 
         &.margin-right--xs-negative {
-          margin-right: calc($(size) * -1);
+          margin-right: calc($(size) * -1) !important;
         }
       }
 
       .margin-bottom--xs-$(count) {
-        margin-bottom: $(size);
+        margin-bottom: $(size) !important;
 
         &.margin-bottom--xs-negative {
-          margin-bottom: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-left--xs-$(count) {
-        margin-left: $(size);
+        margin-left: $(size) !important;
 
         &.margin-left--xs-negative {
-          margin-left: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
         }
       }
 
       .margin-y--xs-$(count) {
-        margin-top: $(size);
-        margin-bottom: $(size);
+        margin-top: $(size) !important;
+        margin-bottom: $(size) !important;
 
         &.margin-y--xs-negative {
-          margin-top: calc($(size) * -1);
-          margin-bottom: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-x--xs-$(count) {
-        margin-left: $(size);
-        margin-right: $(size);
+        margin-left: $(size) !important;
+        margin-right: $(size) !important;
 
         &.margin-x--xs-negative {
-          margin-left: calc($(size) * -1);
-          margin-right: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
+          margin-right: calc($(size) * -1) !important;
         }
       }
     }
 
     @media (min-width: 576px) {
       .margin--sm-$(count) {
-        margin: $(size);
+        margin: $(size) !important;
 
         &.margin--sm-negative {
-          margin: calc($(size) * -1);
+          margin: calc($(size) * -1) !important;
         }
       }
 
       .margin-top--sm-$(count) {
-        margin-top: $(size);
+        margin-top: $(size) !important;
 
         &.margin-top--sm-negative {
-          margin-top: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
         }
       }
 
       .margin-right--sm-$(count) {
-        margin-right: $(size);
+        margin-right: $(size) !important;
 
         &.margin-right--sm-negative {
-          margin-right: calc($(size) * -1);
+          margin-right: calc($(size) * -1) !important;
         }
       }
 
       .margin-bottom--sm-$(count) {
-        margin-bottom: $(size);
+        margin-bottom: $(size) !important;
 
         &.margin-bottom--sm-negative {
-          margin-bottom: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-left--sm-$(count) {
-        margin-left: $(size);
+        margin-left: $(size) !important;
 
         &.margin-left--sm-negative {
-          margin-left: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
         }
       }
 
       .margin-y--sm-$(count) {
-        margin-top: $(size);
-        margin-bottom: $(size);
+        margin-top: $(size) !important;
+        margin-bottom: $(size) !important;
 
         &.margin-y--sm-negative {
-          margin-top: calc($(size) * -1);
-          margin-bottom: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-x--sm-$(count) {
-        margin-left: $(size);
-        margin-right: $(size);
+        margin-left: $(size) !important;
+        margin-right: $(size) !important;
 
         &.margin-x--sm-negative {
-          margin-left: calc($(size) * -1);
-          margin-right: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
+          margin-right: calc($(size) * -1) !important;
         }
       }
     }
 
     @media (min-width: 768px) {
       .margin--md-$(count) {
-        margin: $(size);
+        margin: $(size) !important;
 
         &.margin--md-negative {
-          margin: calc($(size) * -1);
+          margin: calc($(size) * -1) !important;
         }
       }
 
       .margin-top--md-$(count) {
-        margin-top: $(size);
+        margin-top: $(size) !important;
 
         &.margin-top--md-negative {
-          margin-top: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
         }
       }
 
       .margin-right--md-$(count) {
-        margin-right: $(size);
+        margin-right: $(size) !important;
 
         &.margin-right--md-negative {
-          margin-right: calc($(size) * -1);
+          margin-right: calc($(size) * -1) !important;
         }
       }
 
       .margin-bottom--md-$(count) {
-        margin-bottom: $(size);
+        margin-bottom: $(size) !important;
 
         &.margin-bottom--md-negative {
-          margin-bottom: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-left--md-$(count) {
-        margin-left: $(size);
+        margin-left: $(size) !important;
 
         &.margin-left--md-negative {
-          margin-left: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
         }
       }
 
       .margin-y--md-$(count) {
-        margin-top: $(size);
-        margin-bottom: $(size);
+        margin-top: $(size) !important;
+        margin-bottom: $(size) !important;
 
         &.margin-y--md-negative {
-          margin-top: calc($(size) * -1);
-          margin-bottom: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-x--md-$(count) {
-        margin-left: $(size);
-        margin-right: $(size);
+        margin-left: $(size) !important;
+        margin-right: $(size) !important;
 
         &.margin-x--md-negative {
-          margin-left: calc($(size) * -1);
-          margin-right: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
+          margin-right: calc($(size) * -1) !important;
         }
       }
     }
 
     @media (min-width: 1024px) {
       .margin--rg-$(count) {
-        margin: $(size);
+        margin: $(size) !important;
 
         &.margin--rg-negative {
-          margin: calc($(size) * -1);
+          margin: calc($(size) * -1) !important;
         }
       }
 
       .margin-top--rg-$(count) {
-        margin-top: $(size);
+        margin-top: $(size) !important;
 
         &.margin-top--rg-negative {
-          margin-top: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
         }
       }
 
       .margin-right--rg-$(count) {
-        margin-right: $(size);
+        margin-right: $(size) !important;
 
         &.margin-right--rg-negative {
-          margin-right: calc($(size) * -1);
+          margin-right: calc($(size) * -1) !important;
         }
       }
 
       .margin-bottom--rg-$(count) {
-        margin-bottom: $(size);
+        margin-bottom: $(size) !important;
 
         &.margin-bottom--rg-negative {
-          margin-bottom: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-left--rg-$(count) {
-        margin-left: $(size);
+        margin-left: $(size) !important;
 
         &.margin-left--rg-negative {
-          margin-left: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
         }
       }
 
       .margin-y--rg-$(count) {
-        margin-top: $(size);
-        margin-bottom: $(size);
+        margin-top: $(size) !important;
+        margin-bottom: $(size) !important;
 
         &.margin-y--rg-negative {
-          margin-top: calc($(size) * -1);
-          margin-bottom: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-x--rg-$(count) {
-        margin-left: $(size);
-        margin-right: $(size);
+        margin-left: $(size) !important;
+        margin-right: $(size) !important;
 
         &.margin-x--rg-negative {
-          margin-left: calc($(size) * -1);
-          margin-right: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
+          margin-right: calc($(size) * -1) !important;
         }
       }
     }
 
     @media (min-width: 1216px) {
       .margin--lg-$(count) {
-        margin: $(size);
+        margin: $(size) !important;
 
         &.margin--lg-negative {
-          margin: calc($(size) * -1);
+          margin: calc($(size) * -1) !important;
         }
       }
 
       .margin-top--lg-$(count) {
-        margin-top: $(size);
+        margin-top: $(size) !important;
 
         &.margin-top--lg-negative {
-          margin-top: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
         }
       }
 
       .margin-right--lg-$(count) {
-        margin-right: $(size);
+        margin-right: $(size) !important;
 
         &.margin-right--lg-negative {
-          margin-right: calc($(size) * -1);
+          margin-right: calc($(size) * -1) !important;
         }
       }
 
       .margin-bottom--lg-$(count) {
-        margin-bottom: $(size);
+        margin-bottom: $(size) !important;
 
         &.margin-bottom--lg-negative {
-          margin-bottom: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-left--lg-$(count) {
-        margin-left: $(size);
+        margin-left: $(size) !important;
 
         &.margin-left--lg-negative {
-          margin-left: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
         }
       }
 
       .margin-y--lg-$(count) {
-        margin-top: $(size);
-        margin-bottom: $(size);
+        margin-top: $(size) !important;
+        margin-bottom: $(size) !important;
 
         &.margin-y--lg-negative {
-          margin-top: calc($(size) * -1);
-          margin-bottom: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-x--lg-$(count) {
-        margin-left: $(size);
-        margin-right: $(size);
+        margin-left: $(size) !important;
+        margin-right: $(size) !important;
 
         &.margin-x--lg-negative {
-          margin-left: calc($(size) * -1);
-          margin-right: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
+          margin-right: calc($(size) * -1) !important;
         }
       }
     }
 
     @media (min-width: 1408px) {
       .margin--xl-$(count) {
-        margin: $(size);
+        margin: $(size) !important;
 
         &.margin--xl-negative {
-          margin: calc($(size) * -1);
+          margin: calc($(size) * -1) !important;
         }
       }
 
       .margin-top--xl-$(count) {
-        margin-top: $(size);
+        margin-top: $(size) !important;
 
         &.margin-top--xl-negative {
-          margin-top: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
         }
       }
 
       .margin-right--xl-$(count) {
-        margin-right: $(size);
+        margin-right: $(size) !important;
 
         &.margin-right--xl-negative {
-          margin-right: calc($(size) * -1);
+          margin-right: calc($(size) * -1) !important;
         }
       }
 
       .margin-bottom--xl-$(count) {
-        margin-bottom: $(size);
+        margin-bottom: $(size) !important;
 
         &.margin-bottom--xl-negative {
-          margin-bottom: calc($(size) * -1);
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-left--xl-$(count) {
-        margin-left: $(size);
+        margin-left: $(size) !important;
 
         &.margin-left--xl-negative {
-          margin-left: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
         }
       }
 
       .margin-y--xl-$(count) {
-        margin-top: $(size);
-        margin-bottom: $(size);
+        margin-top: $(size) !important;
+        margin-bottom: $(size) !important;
 
         &.margin-y--xl-negative {
-          margin-top: calc($(size) * -1);
-          margin-bottom: calc($(size) * -1);
+          margin-top: calc($(size) * -1) !important;
+          margin-bottom: calc($(size) * -1) !important;
         }
       }
 
       .margin-x--xl-$(count) {
-        margin-left: $(size);
-        margin-right: $(size);
+        margin-left: $(size) !important;
+        margin-right: $(size) !important;
 
         &.margin-x--xl-negative {
-          margin-left: calc($(size) * -1);
-          margin-right: calc($(size) * -1);
+          margin-left: calc($(size) * -1) !important;
+          margin-right: calc($(size) * -1) !important;
         }
       }
     }

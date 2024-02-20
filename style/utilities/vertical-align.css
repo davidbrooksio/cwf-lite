@@ -1,42 +1,42 @@
 @layer cwf-utilities {
   @each $value in baseline, top, middle, bottom, text-bottom, text-top {
     .vertical-align--$(value) {
-      vertical-align: $(value);
+      vertical-align: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .vertical-align--xs-$(value) {
-        vertical-align: $(value);
+        vertical-align: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .vertical-align--sm-$(value) {
-        vertical-align: $(value);
+        vertical-align: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .vertical-align--md-$(value) {
-        vertical-align: $(value);
+        vertical-align: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .vertical-align--rg-$(value) {
-        vertical-align: $(value);
+        vertical-align: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .vertical-align--lg-$(value) {
-        vertical-align: $(value);
+        vertical-align: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .vertical-align--xl-$(value) {
-        vertical-align: $(value);
+        vertical-align: $(value) !important;
       }
     }
   }

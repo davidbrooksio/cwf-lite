@@ -1,84 +1,84 @@
 @layer cwf-utilities {
   @each $value in row, column, row-reverse, column-reverse {
     .flex-direction--$(value) {
-      flex-direction: $(value);
+      flex-direction: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .flex-direction--xs-$(value) {
-        flex-direction: $(value);
+        flex-direction: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .flex-direction--sm-$(value) {
-        flex-direction: $(value);
+        flex-direction: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .flex-direction--md-$(value) {
-        flex-direction: $(value);
+        flex-direction: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .flex-direction--rg-$(value) {
-        flex-direction: $(value);
+        flex-direction: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .flex-direction--lg-$(value) {
-        flex-direction: $(value);
+        flex-direction: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .flex-direction--xl-$(value) {
-        flex-direction: $(value);
+        flex-direction: $(value) !important;
       }
     }
   }
 
   @each $value in wrap, nowrap, wrap-reverse {
     .flex-wrap--$(value) {
-      flex-wrap: $(value);
+      flex-wrap: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .flex-wrap--xs-$(value) {
-        flex-wrap: $(value);
+        flex-wrap: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .flex-wrap--sm-$(value) {
-        flex-wrap: $(value);
+        flex-wrap: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .flex-wrap--md-$(value) {
-        flex-wrap: $(value);
+        flex-wrap: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .flex-wrap--rg-$(value) {
-        flex-wrap: $(value);
+        flex-wrap: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .flex-wrap--lg-$(value) {
-        flex-wrap: $(value);
+        flex-wrap: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .flex-wrap--xl-$(value) {
-        flex-wrap: $(value);
+        flex-wrap: $(value) !important;
       }
     }
   }
@@ -87,70 +87,70 @@
     space-evenly
   {
     .justify-content--$(value) {
-      justify-content: $(value);
+      justify-content: $(value) !important;
     }
 
     .justify-self--$(value) {
-      justify-self: $(value);
+      justify-self: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .justify-content--xs-$(value) {
-        justify-content: $(value);
+        justify-content: $(value) !important;
       }
 
       .justify-self--xs-$(value) {
-        justify-self: $(value);
+        justify-self: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .justify-content--sm-$(value) {
-        justify-content: $(value);
+        justify-content: $(value) !important;
       }
 
       .justify-self--sm-$(value) {
-        justify-self: $(value);
+        justify-self: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .justify-content--md-$(value) {
-        justify-content: $(value);
+        justify-content: $(value) !important;
       }
 
       .justify-self--md-$(value) {
-        justify-self: $(value);
+        justify-self: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .justify-content--rg-$(value) {
-        justify-content: $(value);
+        justify-content: $(value) !important;
       }
 
       .justify-self--rg-$(value) {
-        justify-self: $(value);
+        justify-self: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .justify-content--lg-$(value) {
-        justify-content: $(value);
+        justify-content: $(value) !important;
       }
 
       .justify-self--lg-$(value) {
-        justify-self: $(value);
+        justify-self: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .justify-content--xl-$(value) {
-        justify-content: $(value);
+        justify-content: $(value) !important;
       }
 
       .justify-self--xl-$(value) {
-        justify-self: $(value);
+        justify-self: $(value) !important;
       }
     }
   }
@@ -159,112 +159,112 @@
     stretch
   {
     .align-content--$(value) {
-      align-content: $(value);
+      align-content: $(value) !important;
     }
 
     .align-self--$(value) {
-      align-self: $(value);
+      align-self: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .align-content--xs-$(value) {
-        align-content: $(value);
+        align-content: $(value) !important;
       }
 
       .align-self--xs-$(value) {
-        align-self: $(value);
+        align-self: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .align-content--sm-$(value) {
-        align-content: $(value);
+        align-content: $(value) !important;
       }
 
       .align-self--sm-$(value) {
-        align-self: $(value);
+        align-self: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .align-content--md-$(value) {
-        align-content: $(value);
+        align-content: $(value) !important;
       }
 
       .align-self--md-$(value) {
-        align-self: $(value);
+        align-self: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .align-content--rg-$(value) {
-        align-content: $(value);
+        align-content: $(value) !important;
       }
 
       .align-self--rg-$(value) {
-        align-self: $(value);
+        align-self: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .align-content--lg-$(value) {
-        align-content: $(value);
+        align-content: $(value) !important;
       }
 
       .align-self--lg-$(value) {
-        align-self: $(value);
+        align-self: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .align-content--xl-$(value) {
-        align-content: $(value);
+        align-content: $(value) !important;
       }
 
       .align-self--xl-$(value) {
-        align-self: $(value);
+        align-self: $(value) !important;
       }
     }
   }
 
   @each $value in auto, flex-start, flex-end, center, baseline, stretch {
     .align-items--$(value) {
-      align-items: $(value);
+      align-items: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .align-items--xs-$(value) {
-        align-items: $(value);
+        align-items: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .align-items--sm-$(value) {
-        align-items: $(value);
+        align-items: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .align-items--md-$(value) {
-        align-items: $(value);
+        align-items: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .align-items--rg-$(value) {
-        align-items: $(value);
+        align-items: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .align-items--lg-$(value) {
-        align-items: $(value);
+        align-items: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .align-items--xl-$(value) {
-        align-items: $(value);
+        align-items: $(value) !important;
       }
     }
   }

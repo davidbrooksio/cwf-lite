@@ -1,42 +1,42 @@
 @layer cwf-utilities {
   @each $value in static, relative, absolute, fixed, sticky {
     .position--$(value) {
-      position: $(value);
+      position: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .position--xs-$(value) {
-        position: $(value);
+        position: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .position--sm-$(value) {
-        position: $(value);
+        position: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .position--md-$(value) {
-        position: $(value);
+        position: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .position--rg-$(value) {
-        position: $(value);
+        position: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .position--lg-$(value) {
-        position: $(value);
+        position: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .position--xl-$(value) {
-        position: $(value);
+        position: $(value) !important;
       }
     }
   }

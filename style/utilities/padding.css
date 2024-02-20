@@ -3,224 +3,224 @@
     (0, 0.25ch, 0.5ch, 0.75ch, 1.5ch, 2ch, 2.5ch, 3ch, 3.5ch, 4ch)
   {
     .padding--$(count) {
-      padding: $(size);
+      padding: $(size) !important;
     }
 
     .padding-top--$(count) {
-      padding-top: $(size);
+      padding-top: $(size) !important;
     }
 
     .padding-right--$(count) {
-      padding-right: $(size);
+      padding-right: $(size) !important;
     }
 
     .padding-bottom--$(count) {
-      padding-bottom: $(size);
+      padding-bottom: $(size) !important;
     }
 
     .padding-left--$(count) {
-      padding-left: $(size);
+      padding-left: $(size) !important;
     }
 
     .padding-y--$(count) {
-      padding-top: $(size);
-      padding-bottom: $(size);
+      padding-top: $(size) !important;
+      padding-bottom: $(size) !important;
     }
 
     .padding-x--$(count) {
-      padding-left: $(size);
-      padding-right: $(size);
+      padding-left: $(size) !important;
+      padding-right: $(size) !important;
     }
 
     @media (min-width: 320px) {
       .padding--xs-$(count) {
-        padding: $(size);
+        padding: $(size) !important;
       }
 
       .padding-top--xs-$(count) {
-        padding-top: $(size);
+        padding-top: $(size) !important;
       }
 
       .padding-right--xs-$(count) {
-        padding-right: $(size);
+        padding-right: $(size) !important;
       }
 
       .padding-bottom--xs-$(count) {
-        padding-bottom: $(size);
+        padding-bottom: $(size) !important;
       }
 
       .padding-left--xs-$(count) {
-        padding-left: $(size);
+        padding-left: $(size) !important;
       }
 
       .padding-y--xs-$(count) {
-        padding-top: $(size);
-        padding-bottom: $(size);
+        padding-top: $(size) !important;
+        padding-bottom: $(size) !important;
       }
 
       .padding-x--xs-$(count) {
-        padding-left: $(size);
-        padding-right: $(size);
+        padding-left: $(size) !important;
+        padding-right: $(size) !important;
       }
     }
 
     @media (min-width: 576px) {
       .padding--sm-$(count) {
-        padding: $(size);
+        padding: $(size) !important;
       }
 
       .padding-top--sm-$(count) {
-        padding-top: $(size);
+        padding-top: $(size) !important;
       }
 
       .padding-right--sm-$(count) {
-        padding-right: $(size);
+        padding-right: $(size) !important;
       }
 
       .padding-bottom--sm-$(count) {
-        padding-bottom: $(size);
+        padding-bottom: $(size) !important;
       }
 
       .padding-left--sm-$(count) {
-        padding-left: $(size);
+        padding-left: $(size) !important;
       }
 
       .padding-y--sm-$(count) {
-        padding-top: $(size);
-        padding-bottom: $(size);
+        padding-top: $(size) !important;
+        padding-bottom: $(size) !important;
       }
 
       .padding-x--sm-$(count) {
-        padding-left: $(size);
-        padding-right: $(size);
+        padding-left: $(size) !important;
+        padding-right: $(size) !important;
       }
     }
 
     @media (min-width: 768px) {
       .padding--md-$(count) {
-        padding: $(size);
+        padding: $(size) !important;
       }
 
       .padding-top--md-$(count) {
-        padding-top: $(size);
+        padding-top: $(size) !important;
       }
 
       .padding-right--md-$(count) {
-        padding-right: $(size);
+        padding-right: $(size) !important;
       }
 
       .padding-bottom--md-$(count) {
-        padding-bottom: $(size);
+        padding-bottom: $(size) !important;
       }
 
       .padding-left--md-$(count) {
-        padding-left: $(size);
+        padding-left: $(size) !important;
       }
 
       .padding-y--md-$(count) {
-        padding-top: $(size);
-        padding-bottom: $(size);
+        padding-top: $(size) !important;
+        padding-bottom: $(size) !important;
       }
 
       .padding-x--md-$(count) {
-        padding-left: $(size);
-        padding-right: $(size);
+        padding-left: $(size) !important;
+        padding-right: $(size) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .padding--rg-$(count) {
-        padding: $(size);
+        padding: $(size) !important;
       }
 
       .padding-top--rg-$(count) {
-        padding-top: $(size);
+        padding-top: $(size) !important;
       }
 
       .padding-right--rg-$(count) {
-        padding-right: $(size);
+        padding-right: $(size) !important;
       }
 
       .padding-bottom--rg-$(count) {
-        padding-bottom: $(size);
+        padding-bottom: $(size) !important;
       }
 
       .padding-left--rg-$(count) {
-        padding-left: $(size);
+        padding-left: $(size) !important;
       }
 
       .padding-y--rg-$(count) {
-        padding-top: $(size);
-        padding-bottom: $(size);
+        padding-top: $(size) !important;
+        padding-bottom: $(size) !important;
       }
 
       .padding-x--rg-$(count) {
-        padding-left: $(size);
-        padding-right: $(size);
+        padding-left: $(size) !important;
+        padding-right: $(size) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .padding--lg-$(count) {
-        padding: $(size);
+        padding: $(size) !important;
       }
 
       .padding-top--lg-$(count) {
-        padding-top: $(size);
+        padding-top: $(size) !important;
       }
 
       .padding-right--lg-$(count) {
-        padding-right: $(size);
+        padding-right: $(size) !important;
       }
 
       .padding-bottom--lg-$(count) {
-        padding-bottom: $(size);
+        padding-bottom: $(size) !important;
       }
 
       .padding-left--lg-$(count) {
-        padding-left: $(size);
+        padding-left: $(size) !important;
       }
 
       .padding-y--lg-$(count) {
-        padding-top: $(size);
-        padding-bottom: $(size);
+        padding-top: $(size) !important;
+        padding-bottom: $(size) !important;
       }
 
       .padding-x--lg-$(count) {
-        padding-left: $(size);
-        padding-right: $(size);
+        padding-left: $(size) !important;
+        padding-right: $(size) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .padding--xl-$(count) {
-        padding: $(size);
+        padding: $(size) !important;
       }
 
       .padding-top--xl-$(count) {
-        padding-top: $(size);
+        padding-top: $(size) !important;
       }
 
       .padding-right--xl-$(count) {
-        padding-right: $(size);
+        padding-right: $(size) !important;
       }
 
       .padding-bottom--xl-$(count) {
-        padding-bottom: $(size);
+        padding-bottom: $(size) !important;
       }
 
       .padding-left--xl-$(count) {
-        padding-left: $(size);
+        padding-left: $(size) !important;
       }
 
       .padding-y--xl-$(count) {
-        padding-top: $(size);
-        padding-bottom: $(size);
+        padding-top: $(size) !important;
+        padding-bottom: $(size) !important;
       }
 
       .padding-x--xl-$(count) {
-        padding-left: $(size);
-        padding-right: $(size);
+        padding-left: $(size) !important;
+        padding-right: $(size) !important;
       }
     }
   }

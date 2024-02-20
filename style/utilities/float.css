@@ -1,42 +1,42 @@
 @layer cwf-utilities {
   @each $value in left, right, none {
     .float--$(value) {
-      float: $(value);
+      float: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .float--xs-$(value) {
-        float: $(value);
+        float: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .float--sm-$(value) {
-        float: $(value);
+        float: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .float--md-$(value) {
-        float: $(value);
+        float: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .float--rg-$(value) {
-        float: $(value);
+        float: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .float--lg-$(value) {
-        float: $(value);
+        float: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .float--xl-$(value) {
-        float: $(value);
+        float: $(value) !important;
       }
     }
   }

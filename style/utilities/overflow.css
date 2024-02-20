@@ -1,98 +1,98 @@
 @layer cwf-utilities {
   @each $value in auto, hidden, visible, scroll {
     .overflow--$(value) {
-      overflow: $(value);
+      overflow: $(value) !important;
     }
 
     .overflow-y--$(value) {
-      overflow-y: $(value);
+      overflow-y: $(value) !important;
     }
 
     .overflow-x--$(value) {
-      overflow-x: $(value);
+      overflow-x: $(value) !important;
     }
 
     @media (min-width: 320px) {
       .overflow--xs-$(value) {
-        overflow: $(value);
+        overflow: $(value) !important;
       }
 
       .overflow-y--xs-$(value) {
-        overflow-y: $(value);
+        overflow-y: $(value) !important;
       }
 
       .overflow-x--xs-$(value) {
-        overflow-x: $(value);
+        overflow-x: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
       .overflow--sm-$(value) {
-        overflow: $(value);
+        overflow: $(value) !important;
       }
 
       .overflow-y--sm-$(value) {
-        overflow-y: $(value);
+        overflow-y: $(value) !important;
       }
 
       .overflow-x--sm-$(value) {
-        overflow-x: $(value);
+        overflow-x: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
       .overflow--md-$(value) {
-        overflow: $(value);
+        overflow: $(value) !important;
       }
 
       .overflow-y--md-$(value) {
-        overflow-y: $(value);
+        overflow-y: $(value) !important;
       }
 
       .overflow-x--md-$(value) {
-        overflow-x: $(value);
+        overflow-x: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
       .overflow--rg-$(value) {
-        overflow: $(value);
+        overflow: $(value) !important;
       }
 
       .overflow-y--rg-$(value) {
-        overflow-y: $(value);
+        overflow-y: $(value) !important;
       }
 
       .overflow-x--rg-$(value) {
-        overflow-x: $(value);
+        overflow-x: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
       .overflow--lg-$(value) {
-        overflow: $(value);
+        overflow: $(value) !important;
       }
 
       .overflow-y--lg-$(value) {
-        overflow-y: $(value);
+        overflow-y: $(value) !important;
       }
 
       .overflow-x--lg-$(value) {
-        overflow-x: $(value);
+        overflow-x: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
       .overflow--xl-$(value) {
-        overflow: $(value);
+        overflow: $(value) !important;
       }
 
       .overflow-y--xl-$(value) {
-        overflow-y: $(value);
+        overflow-y: $(value) !important;
       }
 
       .overflow-x--xl-$(value) {
-        overflow-x: $(value);
+        overflow-x: $(value) !important;
       }
     }
   }
