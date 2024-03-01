@@ -41,26 +41,26 @@
       width: var(--nav__item-width, auto);
 
       &:hover {
-        background-color: var(--nav__item-background-color, WhiteSmoke);
+        background-color: var(--nav__item-hover-background-color, WhiteSmoke);
         border-color: var(--nav__item-hover-border-color, transparent);
         color: var(--nav__item-hover-color, grey);
       }
 
       &:focus-visible {
-        background-color: var(--nav__item-background-color, WhiteSmoke);
+        background-color: var(--nav__item-focus-background-color, WhiteSmoke);
         border-color: var(--nav__item-focus-border-color, transparent);
         color: var(--nav__item-focus-color, grey);
       }
 
       &:active {
-        background-color: var(--nav__item-background-color, WhiteSmoke);
+        background-color: var(--nav__item-active-background-color, WhiteSmoke);
         border-color: var(--nav__item-active-border-color, transparent);
         color: var(--nav__item-active-color, grey);
       }
 
       &[data-active="true"],
       &.active {
-        background-color: var(--nav__item-background-color, WhiteSmoke);
+        background-color: var(--nav__item-active-background-color, WhiteSmoke);
         border-color: var(--nav__item-active-border-color, transparent);
         color: var(--nav__item-active-color, grey);
       }
