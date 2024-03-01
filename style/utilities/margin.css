@@ -1,4 +1,156 @@
 @layer cwf-utilities {
+  .margin-top--auto,
+  .margin-y--auto {
+    margin-top: auto !important;
+  }
+
+  .margin-right--auto,
+  .margin-x--auto {
+    margin-right: auto !important;
+  }
+
+  .margin-bottom--auto,
+  .margin-y--auto {
+    margin-bottom: auto !important;
+  }
+
+  .margin-left--auto,
+  .margin-x--auto {
+    margin-left: auto !important;
+  }
+
+  @media (min-width: 320px) {
+    .margin-top--xs-auto,
+    .margin-y--xs-auto {
+      margin-top: auto !important;
+    }
+
+    .margin-right--xs-auto,
+    .margin-x--xs-auto {
+      margin-right: auto !important;
+    }
+
+    .margin-bottom--xs-auto,
+    .margin-y--xs-auto {
+      margin-bottom: auto !important;
+    }
+
+    .margin-left--xs-auto,
+    .margin-x--xs-auto {
+      margin-left: auto !important;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .margin-top--sm-auto,
+    .margin-y--sm-auto {
+      margin-top: auto !important;
+    }
+
+    .margin-right--sm-auto,
+    .margin-x--sm-auto {
+      margin-right: auto !important;
+    }
+
+    .margin-bottom--sm-auto,
+    .margin-y--sm-auto {
+      margin-bottom: auto !important;
+    }
+
+    .margin-left--sm-auto,
+    .margin-x--sm-auto {
+      margin-left: auto !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .margin-top--md-auto,
+    .margin-y--md-auto {
+      margin-top: auto !important;
+    }
+
+    .margin-right--md-auto,
+    .margin-x--md-auto {
+      margin-right: auto !important;
+    }
+
+    .margin-bottom--md-auto,
+    .margin-y--md-auto {
+      margin-bottom: auto !important;
+    }
+
+    .margin-left--md-auto,
+    .margin-x--md-auto {
+      margin-left: auto !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .margin-top--rg-auto,
+    .margin-y--rg-auto {
+      margin-top: auto !important;
+    }
+
+    .margin-right--rg-auto,
+    .margin-x--rg-auto {
+      margin-right: auto !important;
+    }
+
+    .margin-bottom--rg-auto,
+    .margin-y--rg-auto {
+      margin-bottom: auto !important;
+    }
+
+    .margin-left--rg-auto,
+    .margin-x--rg-auto {
+      margin-left: auto !important;
+    }
+  }
+
+  @media (min-width: 1216px) {
+    .margin-top--lg-auto,
+    .margin-y--lg-auto {
+      margin-top: auto !important;
+    }
+
+    .margin-right--lg-auto,
+    .margin-x--lg-auto {
+      margin-right: auto !important;
+    }
+
+    .margin-bottom--lg-auto,
+    .margin-y--lg-auto {
+      margin-bottom: auto !important;
+    }
+
+    .margin-left--lg-auto,
+    .margin-x--lg-auto {
+      margin-left: auto !important;
+    }
+  }
+
+  @media (min-width: 1408px) {
+    .margin-top--xl-auto,
+    .margin-y--xl-auto {
+      margin-top: auto !important;
+    }
+
+    .margin-right--xl-auto,
+    .margin-x--xl-auto {
+      margin-right: auto !important;
+    }
+
+    .margin-bottom--xl-auto,
+    .margin-y--xl-auto {
+      margin-bottom: auto !important;
+    }
+
+    .margin-left--xl-auto,
+    .margin-x--xl-auto {
+      margin-left: auto !important;
+    }
+  }
+
   @each $count, $size in (0, 1, 2, 3, 4, 5, 6, 7, 8, 9),
     (0, 0.25ch, 0.5ch, 0.75ch, 1.5ch, 2ch, 2.5ch, 3ch, 3.5ch, 4ch)
   {
