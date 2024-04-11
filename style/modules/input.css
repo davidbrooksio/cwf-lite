@@ -33,7 +33,8 @@
         color: var(--input-hover-color, DimGrey);
       }
 
-      &:focus-visible {
+      &:focus-visible,
+      &:focus {
         border-color: var(--input-focus-border-color, grey);
         box-shadow: var(
           --input-focus-box-shadow,

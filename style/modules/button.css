@@ -27,9 +27,11 @@
       background-color: var(--button-hover-background-color, WhiteSmoke);
       border-color: var(--button-hover-border-color, grey);
       color: var(--button-hover-color, grey);
+      text-decoration: var(--button-hover-text-decoration, none);
     }
 
-    &:focus-visible {
+    &:focus-visible,
+    &:focus {
       background-color: var(--button-focus-background-color, WhiteSmoke);
       border-color: var(--button-focus-border-color, grey);
       box-shadow: var(
@@ -37,6 +39,7 @@
         0 0 0 0.25em rgb(0 0 0 / 0.125)
       );
       color: var(--button-focus-color, grey);
+      text-decoration: var(--button-focus-text-decoration, none);
     }
 
     &:active {
@@ -47,6 +50,7 @@
         0 0 0 0.25em rgb(0 0 0 / 0.25)
       );
       color: var(--button-active-color, grey);
+      text-decoration: var(--button-active-text-decoration, none);
     }
   }
 }

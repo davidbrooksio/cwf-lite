@@ -44,25 +44,24 @@
         background-color: var(--nav__item-hover-background-color, WhiteSmoke);
         border-color: var(--nav__item-hover-border-color, transparent);
         color: var(--nav__item-hover-color, grey);
+        text-decoration: var(--nav__item-hover-text-decoration, none);
       }
 
-      &:focus-visible {
+      &:focus-visible,
+      &:focus {
         background-color: var(--nav__item-focus-background-color, WhiteSmoke);
         border-color: var(--nav__item-focus-border-color, transparent);
         color: var(--nav__item-focus-color, grey);
+        text-decoration: var(--nav__item-focus-text-decoration, none);
       }
 
-      &:active {
-        background-color: var(--nav__item-active-background-color, WhiteSmoke);
-        border-color: var(--nav__item-active-border-color, transparent);
-        color: var(--nav__item-active-color, grey);
-      }
-
+      &:active,
       &[data-active="true"],
       &.active {
         background-color: var(--nav__item-active-background-color, WhiteSmoke);
         border-color: var(--nav__item-active-border-color, transparent);
         color: var(--nav__item-active-color, grey);
+        text-decoration: var(--nav__item-active-text-decoration, none);
       }
     }
 
@@ -91,6 +90,7 @@
         border-width: var(--nav__item-border-width, 1px);
         margin: var(--nav__item-margin, 0 0 -1px);
 
+        &:active,
         &[data-active="true"],
         &.active {
           background-color: var(--nav__item-background-color, white);
