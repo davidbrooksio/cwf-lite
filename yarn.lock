@@ -1008,7 +1008,7 @@ __metadata:
     postcss: ^8.4.38
     postcss-calc: ^9.0.1
     postcss-each: ^1.1.0
-    postcss-preset-env: ^9.5.4
+    postcss-preset-env: ^9.5.5
     vite: ^5.2.8
   languageName: unknown
   linkType: soft
@@ -1795,9 +1795,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:^13.3.6":
-  version: 13.3.6
-  resolution: "postcss-custom-properties@npm:13.3.6"
+"postcss-custom-properties@npm:^13.3.7":
+  version: 13.3.7
+  resolution: "postcss-custom-properties@npm:13.3.7"
   dependencies:
     "@csstools/cascade-layer-name-parser": ^1.0.9
     "@csstools/css-parser-algorithms": ^2.6.1
@@ -1806,7 +1806,7 @@ __metadata:
     postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.4
-  checksum: b4c1355db1652f5595b2f39dc971a0ddbd5912d4eee7a6a94e60a89bf38ec5d39fe981eae0b5b026fd6ad40025df09c3ec6d09549510ad3e46af3ad2900be8a8
+  checksum: 945af9294befa05eac2d03e6442efa8a1d2147892e0cf706e2d1157c94ddaf45f8fc19507debe22a3844142d119fcd961792ce026f98a6ae3b7932bd95c5f6cc
   languageName: node
   linkType: hard
 
@@ -1990,9 +1990,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-env@npm:^9.5.4":
-  version: 9.5.4
-  resolution: "postcss-preset-env@npm:9.5.4"
+"postcss-preset-env@npm:^9.5.5":
+  version: 9.5.5
+  resolution: "postcss-preset-env@npm:9.5.5"
   dependencies:
     "@csstools/postcss-cascade-layers": ^4.0.4
     "@csstools/postcss-color-function": ^3.0.13
@@ -2035,7 +2035,7 @@ __metadata:
     postcss-color-hex-alpha: ^9.0.4
     postcss-color-rebeccapurple: ^9.0.3
     postcss-custom-media: ^10.0.4
-    postcss-custom-properties: ^13.3.6
+    postcss-custom-properties: ^13.3.7
     postcss-custom-selectors: ^7.1.8
     postcss-dir-pseudo-class: ^8.0.1
     postcss-double-position-gradients: ^5.0.6
@@ -2056,7 +2056,7 @@ __metadata:
     postcss-selector-not: ^7.0.2
   peerDependencies:
     postcss: ^8.4
-  checksum: cbd4221d1bc7b1f669eac6436eb94102e4bd2e8708b8030b340d73da10b30750b65493b1963bf48d1e177128e40f03832b315c68c1ce6bcae1e3ea5ad64aa240
+  checksum: 754278d243552fd6f2e94213287819d8c498eba480dd87148d188e45960eaeb436051a3ea47e35a1d18546e8e34d49f8ed5570fd0a8d30832cef24a7e1b615f7
   languageName: node
   linkType: hard
 
