@@ -24,8 +24,8 @@
 @import "./utilities/position.css";
 @import "./utilities/size.css";
 @import "./utilities/typography.css";
-@import "./utilities/vertical-align.css";
-@import "./utilities/z-index.css";
+@import "./utilities/verticalAlign.css";
+@import "./utilities/zIndex.css";
 
 /* --------------------------------- Modules -------------------------------- */
 @import "./modules/alert.css";
