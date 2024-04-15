@@ -35,9 +35,9 @@
 
     & .tile__header {
       background-color: var(--tile__header-background-color, white);
-      border-bottom-color: var(--tile__header-border-bottom-color, LightGrey);
-      border-bottom-style: var(--tile__header-border-bottom-style, solid);
-      border-bottom-width: var(--tile__header-border-bottom-width, 1px);
+      border-color: var(--tile__header-border-color, LightGrey);
+      border-style: var(--tile__header-border-style, solid);
+      border-width: var(--tile__header-border-width, 0 0 1px);
     }
 
     & .tile__body {
@@ -46,10 +46,10 @@
 
     & .tile__footer {
       background-color: var(--tile__footer-background-color, white);
-      border-top-color: var(--tile__footer-border-top-color, LightGrey);
-      border-top-style: var(--tile__footer-border-top-style, solid);
-      border-top-width: var(--tile__footer-border-top-width, 1px);
-      margin-top: var(--tile__footer-margin-top, auto);
+      border-color: var(--tile__footer-border-color, LightGrey);
+      border-style: var(--tile__footer-border-style, solid);
+      border-width: var(--tile__footer-border-width, 1px 0 0);
+      margin: var(--tile__footer-margin, auto 0 0);
     }
   }
 }
