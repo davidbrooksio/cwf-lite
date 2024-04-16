@@ -1,11 +1,26 @@
+/* Define styles for elements within the 'cwf-modules' layer */
 @layer cwf-modules {
+  /* Apply styles to elements with the class '.group' */
   .group {
+    /* Align items along the cross axis (vertically) */
     align-items: var(--group-align-items, center);
+
+    /* Use flexbox layout for displaying child elements */
     display: var(--group-display, flex);
+
+    /* Define flex container's direction and wrapping behavior */
     flex-flow: var(--group-flex-flow, wrap row);
+
+    /* Specify the spacing between flex items */
     gap: var(--group-gap, 1ch);
+
+    /* Align content along the main axis (horizontally) */
     justify-content: var(--group-justify-content, flex-start);
+
+    /* Define the margin around the group element */
     margin: var(--group-margin, 0);
+
+    /* Specify the positioning context for the group element */
     position: var(--group-position, relative);
   }
 }

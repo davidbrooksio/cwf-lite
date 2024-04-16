@@ -1,4 +1,11 @@
+/* 
+   Define a layer named 'cwf-bases'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-bases {
+  /* 
+     Apply styles to headings (h1 to h6) and their corresponding class names (.h1 to .h6).
+  */
   h1,
   h2,
   h3,
@@ -11,54 +18,151 @@
   .h4,
   .h5,
   .h6 {
+    /* 
+       Set font weight using custom property '--heading-font-weight'.
+       Default to '600' (bold) if the custom property is not defined.
+    */
     font-weight: var(--heading-font-weight, 600);
+
+    /* 
+       Set top margin using custom property '--heading-margin-top'.
+       Default to '0' if the custom property is not defined.
+    */
     margin-top: var(--heading-margin-top, 0);
+
+    /* 
+       Set bottom margin using custom property '--heading-margin-bottom'.
+       Default to '1rem' if the custom property is not defined.
+    */
     margin-bottom: var(--heading-margin-bottom, 1rem);
   }
 
+  /* 
+     Define specific styles for <h1> elements and elements with class '.h1'.
+  */
   h1,
   .h1 {
+    /* 
+       Set font size using custom property '--h1-font-size'.
+       Default to responsive calculation based on viewport width.
+    */
     font-size: var(--h1-font-size, calc(1.5rem + 0.75vw));
   }
 
+  /* 
+     Define specific styles for <h2> elements and elements with class '.h2'.
+  */
   h2,
   .h2 {
+    /* 
+       Set font size using custom property '--h2-font-size'.
+       Default to responsive calculation based on viewport width.
+    */
     font-size: var(--h2-font-size, calc(1.375rem + 0.75vw));
   }
 
+  /* 
+     Define specific styles for <h3> elements and elements with class '.h3'.
+  */
   h3,
   .h3 {
+    /* 
+       Set font size using custom property '--h3-font-size'.
+       Default to responsive calculation based on viewport width.
+    */
     font-size: var(--h3-font-size, calc(1.25rem + 0.75vw));
   }
 
+  /* 
+     Define specific styles for <h4> elements and elements with class '.h4'.
+  */
   h4,
   .h4 {
+    /* 
+       Set font size using custom property '--h4-font-size'.
+       Default to responsive calculation based on viewport width.
+    */
     font-size: var(--h4-font-size, calc(1rem + 0.75vw));
   }
 
+  /* 
+     Define specific styles for <h5> elements and elements with class '.h5'.
+  */
   h5,
   .h5 {
+    /* 
+       Set font size using custom property '--h5-font-size'.
+       Default to responsive calculation based on viewport width.
+    */
     font-size: var(--h5-font-size, calc(0.75rem + 0.75vw));
   }
 
+  /* 
+     Define specific styles for <h6> elements and elements with class '.h6'.
+  */
   h6,
   .h6 {
+    /* 
+       Set font size using custom property '--h6-font-size'.
+       Default to responsive calculation based on viewport width.
+    */
     font-size: var(--h6-font-size, calc(0.5rem + 0.75vw));
   }
 
+  /* 
+     Apply styles to <p> elements.
+  */
   p {
+    /* 
+       Set bottom margin using custom property '--paragraph-margin-bottom'.
+       Default to '1ch' if the custom property is not defined.
+    */
     margin-bottom: var(--paragraph-margin-bottom, 1ch);
+
+    /* 
+       Set top margin using custom property '--paragraph-margin-top'.
+       Default to '0' if the custom property is not defined.
+    */
     margin-top: var(--paragraph-margin-top, 0);
   }
 
+  /* 
+     Apply styles to <code> elements.
+  */
   code {
+    /* 
+       Set text color using custom property '--code-color'.
+       Default to 'DeepPink' if the custom property is not defined.
+    */
     color: var(--code-color, DeepPink);
+
+    /* 
+       Set font family using custom property '--code-font-family'.
+       Default to 'monospace' if the custom property is not defined.
+    */
     font-family: var(--code-font-family, monospace);
   }
 
+  /* 
+     Apply styles to elements with class '.truncate'.
+  */
   .truncate {
+    /* 
+       Set overflow property using custom property '--truncate-overflow'.
+       Default to 'hidden' if the custom property is not defined.
+    */
     overflow: var(--truncate-overflow, hidden);
+
+    /* 
+       Set text-overflow property using custom property '--truncate-text-overflow'.
+       Default to 'ellipsis' if the custom property is not defined.
+    */
     text-overflow: var(--truncate-text-overflow, ellipsis);
+
+    /* 
+       Set white-space property using custom property '--truncate-white-space'.
+       Default to 'nowrap' if the custom property is not defined.
+    */
     white-space: var(--truncate-white-space, nowrap);
   }
 }

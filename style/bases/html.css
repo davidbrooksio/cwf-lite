@@ -1,7 +1,28 @@
+/* 
+   Define a layer named 'cwf-bases'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-bases {
+  /* 
+     Apply styles to the <html> element.
+  */
   html {
+    /* 
+       Set text color using custom property '--html-color'.
+       Default to 'DimGrey' if the custom property is not defined.
+    */
     color: var(--html-color, DimGrey);
+
+    /* 
+       Set font family using custom property '--html-font-family'.
+       Default to 'system-ui' if the custom property is not defined.
+    */
     font-family: var(--html-font-family, system-ui);
+
+    /* 
+       Set font size using custom property '--html-font-size'.
+       Default to '1rem' if the custom property is not defined.
+    */
     font-size: var(--html-font-size, 1rem);
   }
 }

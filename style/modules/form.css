@@ -1,10 +1,17 @@
+/* Define styles for elements within the 'cwf-modules' layer */
 @layer cwf-modules {
+  /* Apply styles to elements with the class '.input' */
   .input {
+    /* Set margins using custom properties for top, right, bottom, and left */
     margin: var(--input-margin-top, 0) var(--input-margin-right, auto)
       var(--input-margin-bottom, 1ch) var(--input-margin-left, auto);
+
+    /* Set width of the input using custom property */
     width: var(--input-width, 100%);
 
+    /* Base styles for all inputs except <progress> */
     &:not(progress) {
+      /* Apply appearance using custom property */
       appearance: var(--input-appearance, auto);
       background-color: var(--input-background-color, white);
       border-color: var(--input-border-color, LightGrey);
@@ -23,14 +30,17 @@
       vertical-align: var(--input-vertical-align, initial);
     }
 
+    /* Placeholder text styles */
     &::placeholder {
       color: var(--input-placeholder-color, LightGrey);
     }
 
+    /* Disabled state styles */
     &[disabled] {
       background-color: var(--input-disabled-background-color, WhiteSmoke);
     }
 
+    /* Hover and focus styles for inputs except <output> and when disabled */
     &:not(output):not([disabled]) {
       &:hover {
         border-color: var(--input-hover-border-color, grey);
@@ -40,14 +50,22 @@
       &:focus-visible,
       &:focus {
         border-color: var(--input-focus-border-color, grey);
-        box-shadow: var(
-          --input-focus-box-shadow,
-          0 0 0 0.25em rgb(0 0 0 / 0.125)
-        );
         color: var(--input-focus-color, DimGrey);
       }
     }
 
+    /* Focus styles for inputs except [type="range"],  <output> and when disabled */
+    &:not([type="range"]):not(output):not([disabled]) {
+      &:focus-visible,
+      &:focus {
+        box-shadow: var(
+          --input-focus-box-shadow,
+          0 0 0 0.25em rgba(0, 0, 0, 0.125)
+        );
+      }
+    }
+
+    /* Styles for checkboxes and radio buttons */
     &[type="checkbox"],
     &[type="radio"] {
       appearance: var(--input-appearance, none);
@@ -57,38 +75,42 @@
       vertical-align: var(--input-vertical-align, top);
       width: var(--input-width, auto);
 
+      /* Checked state styles */
       &:checked {
         background-color: var(--input-background-color, DimGrey);
       }
 
+      /* Focus state styles */
       &:focus {
         box-shadow: var(
           --input-focus-box-shadow,
-          0 0 0 0.25em rgb(0 0 0 / 0.125)
+          0 0 0 0.25em rgba(0, 0, 0, 0.125)
         );
       }
     }
 
-    &[type="checkbox"] {
-      &:checked {
-        background-image: var(
-          --input-checkbox-background-image,
-          url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e")
-        );
-      }
-    }
-
+    /* Styles for radio buttons */
     &[type="radio"] {
       border-radius: var(--input-border-radius, 50%);
-
-      &:checked {
-        background-image: var(
-          --input-radio-background-image,
-          url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
-        );
-      }
     }
 
+    /* Styles specific to checkboxes when checked */
+    &[type="checkbox"]:checked {
+      background-image: var(
+        --input-checkbox-background-image,
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e")
+      );
+    }
+
+    /* Styles specific to radio buttons when checked */
+    &[type="radio"]:checked {
+      background-image: var(
+        --input-radio-background-image,
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
+      );
+    }
+
+    /* Styles for <select> elements with multiple options */
     &:is(select) {
       &[multiple] {
         padding: var(--input-padding-y, 0) var(--input-padding-x, 0);
@@ -99,6 +121,7 @@
       }
     }
 
+    /* Styles for <progress> elements */
     &:is(progress) {
       appearance: var(--input-appearance, none);
       border-color: var(--input-border-color, LightGrey);
@@ -123,9 +146,11 @@
       }
     }
 
+    /* Styles for <output> elements */
     &:is(output) {
       display: var(--input-display, block);
-      /* fix for output height */
+
+      /* Fix for output height */
       &::before {
         content: "";
         display: inline-block;
@@ -136,7 +161,9 @@
     }
   }
 
+  /* Apply styles to elements with the class '.label' */
   .label {
+    /* Set display and margins using custom properties */
     display: var(--label-display, inline-flex);
     color: var(--label-color, DimGrey);
     font-family: var(--label-font-family, system-ui);

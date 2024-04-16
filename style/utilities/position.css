@@ -1,3 +1,7 @@
+/* 
+   Define a layer named 'cwf-utilities'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-utilities {
   @each $value in static, relative, absolute, fixed, sticky {
     .position--$(value) {
@@ -5,36 +9,54 @@
     }
 
     @media (min-width: 320px) {
+      /*
+         Apply styles for extra small screens and above (>= 320px) using custom classes.
+      */
       .position--xs-$(value) {
         position: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
+      /* 
+         Apply styles for small screens and above (>= 576px) using custom classes.
+      */
       .position--sm-$(value) {
         position: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
+      /* 
+         Apply styles for medium screens and above (>= 768px) using custom classes.
+      */
       .position--md-$(value) {
         position: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
+      /* 
+         Apply styles for regular screens and above (>= 1024px) using custom classes.
+      */
       .position--rg-$(value) {
         position: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
+      /* 
+         Apply styles for large screens and above (>= 1216px) using custom classes.
+      */
       .position--lg-$(value) {
         position: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
+      /* 
+         Apply styles for extra large screens and above (>= 1408px) using custom classes.
+      */
       .position--xl-$(value) {
         position: $(value) !important;
       }

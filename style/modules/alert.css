@@ -1,16 +1,79 @@
+/* 
+   Define a layer named 'cwf-modules'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-modules {
+  /* 
+     Apply styles to elements with the class '.alert'.
+  */
   .alert {
+    /* 
+       Set background color using custom property '--alert-background-color'.
+       Default to 'white' if the custom property is not defined.
+    */
     background-color: var(--alert-background-color, white);
+
+    /* 
+       Set border color using custom property '--alert-border-color'.
+       Default to 'LightGrey' if the custom property is not defined.
+    */
     border-color: var(--alert-border-color, LightGrey);
+
+    /* 
+       Set border radius using custom property '--alert-border-radius'.
+       Default to '0' if the custom property is not defined.
+    */
     border-radius: var(--alert-border-radius, 0);
+
+    /* 
+       Set border style using custom property '--alert-border-style'.
+       Default to 'solid' if the custom property is not defined.
+    */
     border-style: var(--alert-border-style, solid);
+
+    /* 
+       Set border width using custom property '--alert-border-width'.
+       Default to '4px 1px 1px 1px' (top right bottom left) if the custom property is not defined.
+    */
     border-width: var(--alert-border-width, 4px 1px 1px 1px);
+
+    /* 
+       Set display property using custom property '--alert-display'.
+       Default to 'block' if the custom property is not defined.
+    */
     display: var(--alert-display, block);
+
+    /* 
+       Set minimum width using custom property '--alert-min-width'.
+       Default to '0' if the custom property is not defined.
+    */
     min-width: var(--alert-min-width, 0);
+
+    /* 
+       Set padding using custom properties '--alert-padding-y' and '--alert-padding-x'.
+       Default to '3ch' for vertical padding and '3ch' for horizontal padding if not defined.
+    */
     padding: var(--alert-padding-y, 3ch) var(--alert-padding-x, 3ch);
+
+    /* 
+       Set margin using custom properties '--alert-margin-top', '--alert-margin-right',
+       '--alert-margin-bottom', and '--alert-margin-left'.
+       Default to '0' for top margin, 'auto' for right and left margins,
+       and '1ch' for bottom margin if not defined.
+    */
     margin: var(--alert-margin-top, 0) var(--alert-margin-right, auto)
       var(--alert-margin-bottom, 1ch) var(--alert-margin-left, auto);
+
+    /* 
+       Set position using custom property '--alert-position'.
+       Default to 'relative' if the custom property is not defined.
+    */
     position: var(--alert-position, relative);
+
+    /* 
+       Set word wrap behavior using custom property '--alert-word-wrap'.
+       Default to 'break-word' if the custom property is not defined.
+    */
     word-wrap: var(--alert-word-wrap, break-word);
   }
 }

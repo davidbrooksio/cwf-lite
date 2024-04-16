@@ -1,3 +1,7 @@
+/* 
+   Define a layer named 'cwf-utilities'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-utilities {
   .order--first {
     order: -1 !important;
@@ -8,6 +12,9 @@
   }
 
   @media (min-width: 320px) {
+    /*
+       Apply styles for extra small screens and above (>= 320px) using custom classes.
+    */
     .order--xs-first {
       order: -1 !important;
     }
@@ -18,6 +25,9 @@
   }
 
   @media (min-width: 576px) {
+    /* 
+       Apply styles for small screens and above (>= 576px) using custom classes.
+    */
     .order--sm-first {
       order: -1 !important;
     }
@@ -28,6 +38,9 @@
   }
 
   @media (min-width: 768px) {
+    /* 
+       Apply styles for medium screens and above (>= 768px) using custom classes.
+    */
     .order--md-first {
       order: -1 !important;
     }
@@ -38,6 +51,9 @@
   }
 
   @media (min-width: 1024px) {
+    /* 
+       Apply styles for regular screens and above (>= 1024px) using custom classes.
+    */
     .order--rg-first {
       order: -1 !important;
     }
@@ -48,6 +64,9 @@
   }
 
   @media (min-width: 1216px) {
+    /* 
+       Apply styles for large screens and above (>= 1216px) using custom classes.
+    */
     .order--lg-first {
       order: -1 !important;
     }
@@ -58,6 +77,9 @@
   }
 
   @media (min-width: 1408px) {
+    /* 
+       Apply styles for extra large screens and above (>= 1408px) using custom classes.
+    */
     .order--xl-first {
       order: -1 !important;
     }
@@ -73,36 +95,54 @@
     }
 
     @media (min-width: 320px) {
+      /*
+         Apply styles for extra small screens and above (>= 320px) using custom classes.
+      */
       .order--xs-$(value) {
         order: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
+      /* 
+         Apply styles for small screens and above (>= 576px) using custom classes.
+      */
       .order--sm-$(value) {
         order: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
+      /* 
+         Apply styles for medium screens and above (>= 768px) using custom classes.
+      */
       .order--md-$(value) {
         order: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
+      /* 
+         Apply styles for regular screens and above (>= 1024px) using custom classes.
+      */
       .order--rg-$(value) {
         order: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
+      /* 
+         Apply styles for large screens and above (>= 1216px) using custom classes.
+      */
       .order--lg-$(value) {
         order: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
+      /* 
+         Apply styles for extra large screens and above (>= 1408px) using custom classes.
+      */
       .order--xl-$(value) {
         order: $(value) !important;
       }

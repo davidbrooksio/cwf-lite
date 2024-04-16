@@ -1,3 +1,7 @@
+/* 
+   Define a layer named 'cwf-utilities'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-utilities {
   @each $count, $size in (0, 1, 2, 3, 4, 5, 6, 7, 8, 9),
     (0, 0.25ch, 0.5ch, 0.75ch, 1.5ch, 2ch, 2.5ch, 3ch, 3.5ch, 4ch)
@@ -15,6 +19,9 @@
     }
 
     @media (min-width: 320px) {
+      /* 
+         Apply styles for extra small screens and above (>= 320px) using custom classes.
+      */
       .gap--xs-$(count) {
         gap: $(size) !important;
       }
@@ -29,6 +36,9 @@
     }
 
     @media (min-width: 576px) {
+      /* 
+         Apply styles for small screens and above (>= 576px) using custom classes.
+      */
       .gap--sm-$(count) {
         gap: $(size) !important;
       }
@@ -43,6 +53,9 @@
     }
 
     @media (min-width: 768px) {
+      /* 
+         Apply styles for medium screens and above (>= 768px) using custom classes.
+      */
       .gap--md-$(count) {
         gap: $(size) !important;
       }
@@ -57,6 +70,9 @@
     }
 
     @media (min-width: 1024px) {
+      /* 
+         Apply styles for regular screens and above (>= 1024px) using custom classes.
+      */
       .gap--rg-$(count) {
         gap: $(size) !important;
       }
@@ -71,6 +87,9 @@
     }
 
     @media (min-width: 1216px) {
+      /* 
+         Apply styles for large screens and above (>= 1216px) using custom classes.
+      */
       .gap--lg-$(count) {
         gap: $(size) !important;
       }
@@ -85,6 +104,9 @@
     }
 
     @media (min-width: 1408px) {
+      /* 
+         Apply styles for extra large screens and above (>= 1408px) using custom classes.
+      */
       .gap--xl-$(count) {
         gap: $(size) !important;
       }

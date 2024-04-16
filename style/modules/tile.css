@@ -1,5 +1,8 @@
+/* Define styles for elements within the 'cwf-modules' layer */
 @layer cwf-modules {
+  /* Styling for tile component */
   .tile {
+    /* Background and border styles */
     background-color: var(--tile-background-color, white);
     border-color: var(--tile-border-color, LightGrey);
     border-radius: var(--tile-border-radius, 0);
@@ -7,14 +10,19 @@
     border-width: var(--tile-border-width, 1px);
     border-left-color: var(--tile-border-color, LightGrey);
     border-left-width: var(--tile-border-left-width, 4px);
+
+    /* Flexbox display settings */
     display: var(--tile-display, flex);
     flex-flow: var(--tile-flex-flow, column nowrap);
+
+    /* Spacing and positioning */
     margin: var(--tile-margin-top, 0) var(--tile-margin-right, auto)
       var(--tile-margin-bottom, 1ch) var(--tile-margin-left, auto);
     min-width: var(--tile-min-width, 0);
     position: var(--tile-position, relative);
     word-wrap: var(--tile-word-wrap, break-word);
 
+    /* Child elements styling */
     & > * {
       &:first-child {
         border-top-right-radius: var(--tile-inner-border-radius, 0);
@@ -27,12 +35,14 @@
       }
     }
 
+    /* Inner parts of the tile */
     & .tile__header,
     & .tile__body,
     & .tile__footer {
       padding: var(--tile-inner-padding-y, 1ch) var(--tile-inner-padding-x, 2ch);
     }
 
+    /* Styling for header section */
     & .tile__header {
       background-color: var(--tile__header-background-color, white);
       border-color: var(--tile__header-border-color, LightGrey);
@@ -40,10 +50,12 @@
       border-width: var(--tile__header-border-width, 0 0 1px);
     }
 
+    /* Styling for body section */
     & .tile__body {
       flex: var(--tile__body-flex, 1 1 auto);
     }
 
+    /* Styling for footer section */
     & .tile__footer {
       background-color: var(--tile__footer-background-color, white);
       border-color: var(--tile__footer-border-color, LightGrey);

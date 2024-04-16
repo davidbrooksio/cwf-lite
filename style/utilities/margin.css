@@ -1,3 +1,7 @@
+/* 
+   Define a layer named 'cwf-utilities'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-utilities {
   .margin-top--auto,
   .margin-y--auto {
@@ -20,6 +24,9 @@
   }
 
   @media (min-width: 320px) {
+    /* 
+       Apply styles for extra small screens and above (>= 320px) using custom classes.
+    */
     .margin-top--xs-auto,
     .margin-y--xs-auto {
       margin-top: auto !important;
@@ -42,6 +49,9 @@
   }
 
   @media (min-width: 576px) {
+    /* 
+       Apply styles for small screens and above (>= 576px) using custom classes.
+    */
     .margin-top--sm-auto,
     .margin-y--sm-auto {
       margin-top: auto !important;
@@ -64,6 +74,9 @@
   }
 
   @media (min-width: 768px) {
+    /* 
+       Apply styles for medium screens and above (>= 768px) using custom classes.
+    */
     .margin-top--md-auto,
     .margin-y--md-auto {
       margin-top: auto !important;
@@ -86,6 +99,9 @@
   }
 
   @media (min-width: 1024px) {
+    /* 
+       Apply styles for regular screens and above (>= 1024px) using custom classes.
+    */
     .margin-top--rg-auto,
     .margin-y--rg-auto {
       margin-top: auto !important;
@@ -108,6 +124,9 @@
   }
 
   @media (min-width: 1216px) {
+    /* 
+       Apply styles for large screens and above (>= 1216px) using custom classes.
+    */
     .margin-top--lg-auto,
     .margin-y--lg-auto {
       margin-top: auto !important;
@@ -130,6 +149,9 @@
   }
 
   @media (min-width: 1408px) {
+    /* 
+       Apply styles for extra large screens and above (>= 1408px) using custom classes.
+    */
     .margin-top--xl-auto,
     .margin-y--xl-auto {
       margin-top: auto !important;
@@ -215,6 +237,9 @@
     }
 
     @media (min-width: 320px) {
+      /*
+         Apply styles for extra small screens and above (>= 320px) using custom classes.
+      */
       .margin--xs-$(count) {
         margin: $(size) !important;
 
@@ -277,6 +302,9 @@
     }
 
     @media (min-width: 576px) {
+      /* 
+         Apply styles for small screens and above (>= 576px) using custom classes.
+      */
       .margin--sm-$(count) {
         margin: $(size) !important;
 
@@ -339,6 +367,9 @@
     }
 
     @media (min-width: 768px) {
+      /* 
+         Apply styles for medium screens and above (>= 768px) using custom classes.
+      */
       .margin--md-$(count) {
         margin: $(size) !important;
 
@@ -401,6 +432,9 @@
     }
 
     @media (min-width: 1024px) {
+      /* 
+         Apply styles for regular screens and above (>= 1024px) using custom classes.
+      */
       .margin--rg-$(count) {
         margin: $(size) !important;
 
@@ -463,6 +497,9 @@
     }
 
     @media (min-width: 1216px) {
+      /* 
+         Apply styles for large screens and above (>= 1216px) using custom classes.
+      */
       .margin--lg-$(count) {
         margin: $(size) !important;
 
@@ -525,6 +562,9 @@
     }
 
     @media (min-width: 1408px) {
+      /* 
+         Apply styles for extra large screens and above (>= 1408px) using custom classes.
+      */
       .margin--xl-$(count) {
         margin: $(size) !important;
 

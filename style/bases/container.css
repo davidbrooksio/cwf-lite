@@ -1,30 +1,93 @@
+/* 
+   Define a layer named 'cwf-bases'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-bases {
+  /* 
+     Apply styles to elements with class 'container'.
+  */
   .container {
+    /* 
+       Set left margin using custom property '--container-margin-left'.
+       Default to 'auto' if the custom property is not defined.
+    */
     margin-left: var(--container-margin-left, auto);
+
+    /* 
+       Set right margin using custom property '--container-margin-right'.
+       Default to 'auto' if the custom property is not defined.
+    */
     margin-right: var(--container-margin-right, auto);
+
+    /* 
+       Set maximum width using custom property '--container-max-width'.
+       Default to '100vw' (100% of viewport width) if the custom property is not defined.
+    */
     max-width: var(--container-max-width, 100vw);
+
+    /* 
+       Set left padding using custom property '--container-padding-left'.
+       Default to '1ch' if the custom property is not defined.
+    */
     padding-left: var(--container-padding-left, 1ch);
+
+    /* 
+       Set right padding using custom property '--container-padding-right'.
+       Default to '1ch' if the custom property is not defined.
+    */
     padding-right: var(--container-padding-right, 1ch);
+
+    /* 
+       Set width using custom property '--container-width'.
+       Default to '100%' if the custom property is not defined.
+    */
     width: var(--container-width, 100%);
 
+    /* 
+       Apply additional styles when the element does not have the class 'container--fluid'.
+    */
     &:not(.container--fluid) {
+      /* 
+         Adjust max-width within specific media query breakpoints.
+         These override the default max-width values set above.
+      */
       @media (min-width: 576px) {
+        /* 
+           Set max-width to 516px when viewport width is 576px or wider.
+           Uses custom property '--container-max-width' with a fallback of 516px.
+        */
         max-width: var(--container-max-width, 516px);
       }
 
       @media (min-width: 768px) {
+        /* 
+           Set max-width to 708px when viewport width is 768px or wider.
+           Uses custom property '--container-max-width' with a fallback of 708px.
+        */
         max-width: var(--container-max-width, 708px);
       }
 
       @media (min-width: 1024px) {
+        /* 
+           Set max-width to 964px when viewport width is 1024px or wider.
+           Uses custom property '--container-max-width' with a fallback of 964px.
+        */
         max-width: var(--container-max-width, 964px);
       }
 
       @media (min-width: 1216px) {
+        /* 
+           Set max-width to 1156px when viewport width is 1216px or wider.
+           Uses custom property '--container-max-width' with a fallback of 1156px.
+        */
         max-width: var(--container-max-width, 1156px);
       }
 
       @media (min-width: 1408px) {
+        /* 
+           Set max-width to 1348px when viewport width is 1408px or wider.
+           Uses custom property '--container-max-width' with a fallback of 1348px.
+        */
         max-width: var(--container-max-width, 1348px);
       }
     }

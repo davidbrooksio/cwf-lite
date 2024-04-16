@@ -1,3 +1,7 @@
+/* 
+   Define a layer named 'cwf-utilities'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-utilities {
   @each $value in serif, sans-serif, monospace, cursive, emoji {
     .font-family--$(value) {
@@ -11,36 +15,54 @@
     }
 
     @media (min-width: 320px) {
+      /*
+         Apply styles for extra small screens and above (>= 320px) using custom classes.
+      */
       .text-align--xs-$(value) {
         text-align: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
+      /* 
+         Apply styles for small screens and above (>= 576px) using custom classes.
+      */
       .text-align--sm-$(value) {
         text-align: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
+      /* 
+         Apply styles for medium screens and above (>= 768px) using custom classes.
+      */
       .text-align--md-$(value) {
         text-align: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
+      /* 
+         Apply styles for regular screens and above (>= 1024px) using custom classes.
+      */
       .text-align--rg-$(value) {
         text-align: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
+      /* 
+         Apply styles for large screens and above (>= 1216px) using custom classes.
+      */
       .text-align--lg-$(value) {
         text-align: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
+      /* 
+         Apply styles for extra large screens and above (>= 1408px) using custom classes.
+      */
       .text-align--xl-$(value) {
         text-align: $(value) !important;
       }
@@ -53,36 +75,54 @@
     }
 
     @media (min-width: 320px) {
+      /*
+         Apply styles for extra small screens and above (>= 320px) using custom classes.
+      */
       .text-transform--xs-$(value) {
         text-transform: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
+      /* 
+         Apply styles for small screens and above (>= 576px) using custom classes.
+      */
       .text-transform--sm-$(value) {
         text-transform: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
+      /* 
+         Apply styles for medium screens and above (>= 768px) using custom classes.
+      */
       .text-transform--md-$(value) {
         text-transform: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
+      /* 
+         Apply styles for regular screens and above (>= 1024px) using custom classes.
+      */
       .text-transform--rg-$(value) {
         text-transform: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
+      /* 
+         Apply styles for large screens and above (>= 1216px) using custom classes.
+      */
       .text-transform--lg-$(value) {
         text-transform: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
+      /* 
+         Apply styles for extra large screens and above (>= 1408px) using custom classes.
+      */
       .text-transform--xl-$(value) {
         text-transform: $(value) !important;
       }
@@ -95,36 +135,54 @@
     }
 
     @media (min-width: 320px) {
+      /*
+         Apply styles for extra small screens and above (>= 320px) using custom classes.
+      */
       .white-space--xs-$(value) {
         white-space: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
+      /* 
+         Apply styles for small screens and above (>= 576px) using custom classes.
+      */
       .white-space--sm-$(value) {
         white-space: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
+      /* 
+         Apply styles for medium screens and above (>= 768px) using custom classes.
+      */
       .white-space--md-$(value) {
         white-space: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
+      /* 
+         Apply styles for regular screens and above (>= 1024px) using custom classes.
+      */
       .white-space--rg-$(value) {
         white-space: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
+      /* 
+         Apply styles for large screens and above (>= 1216px) using custom classes.
+      */
       .white-space--lg-$(value) {
         white-space: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
+      /* 
+         Apply styles for extra large screens and above (>= 1408px) using custom classes.
+      */
       .white-space--xl-$(value) {
         white-space: $(value) !important;
       }
@@ -139,36 +197,54 @@
     }
 
     @media (min-width: 320px) {
+      /*
+         Apply styles for extra small screens and above (>= 320px) using custom classes.
+      */
       .font-weight--xs-$(value) {
         font-weight: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
+      /* 
+         Apply styles for small screens and above (>= 576px) using custom classes.
+      */
       .font-weight--sm-$(value) {
         font-weight: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
+      /* 
+         Apply styles for medium screens and above (>= 768px) using custom classes.
+      */
       .font-weight--md-$(value) {
         font-weight: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
+      /* 
+         Apply styles for regular screens and above (>= 1024px) using custom classes.
+      */
       .font-weight--rg-$(value) {
         font-weight: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
+      /* 
+         Apply styles for large screens and above (>= 1216px) using custom classes.
+      */
       .font-weight--lg-$(value) {
         font-weight: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
+      /* 
+         Apply styles for extra large screens and above (>= 1408px) using custom classes.
+      */
       .font-weight--xl-$(value) {
         font-weight: $(value) !important;
       }
@@ -181,36 +257,54 @@
     }
 
     @media (min-width: 320px) {
+      /*
+         Apply styles for extra small screens and above (>= 320px) using custom classes.
+      */
       .font-style--xs-$(value) {
         font-style: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
+      /* 
+         Apply styles for small screens and above (>= 576px) using custom classes.
+      */
       .font-style--sm-$(value) {
         font-style: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
+      /* 
+         Apply styles for medium screens and above (>= 768px) using custom classes.
+      */
       .font-style--md-$(value) {
         font-style: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
+      /* 
+         Apply styles for regular screens and above (>= 1024px) using custom classes.
+      */
       .font-style--rg-$(value) {
         font-style: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
+      /* 
+         Apply styles for large screens and above (>= 1216px) using custom classes.
+      */
       .font-style--lg-$(value) {
         font-style: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
+      /* 
+         Apply styles for extra large screens and above (>= 1408px) using custom classes.
+      */
       .font-style--xl-$(value) {
         font-style: $(value) !important;
       }

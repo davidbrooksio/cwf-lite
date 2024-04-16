@@ -1,3 +1,7 @@
+/* 
+   Define a layer named 'cwf-utilities'.
+   This is used to organize CSS rules into logical groups or layers.
+*/
 @layer cwf-utilities {
   .top--auto {
     top: auto !important;
@@ -48,6 +52,9 @@
   }
 
   @media (min-width: 320px) {
+    /* 
+       Apply styles for extra small screens and above (>= 320px) using custom classes.
+    */
     .top--xs-auto {
       top: auto !important;
     }
@@ -98,6 +105,9 @@
   }
 
   @media (min-width: 576px) {
+    /* 
+       Apply styles for small screens and above (>= 576px) using custom classes.
+    */
     .top--sm-auto {
       top: auto !important;
     }
@@ -148,6 +158,9 @@
   }
 
   @media (min-width: 768px) {
+    /* 
+       Apply styles for medium screens and above (>= 768px) using custom classes.
+    */
     .top--md-auto {
       top: auto !important;
     }
@@ -198,6 +211,9 @@
   }
 
   @media (min-width: 1024px) {
+    /* 
+       Apply styles for regular screens and above (>= 1024px) using custom classes.
+    */
     .top--rg-auto {
       top: auto !important;
     }
@@ -248,6 +264,9 @@
   }
 
   @media (min-width: 1216px) {
+    /* 
+       Apply styles for large screens and above (>= 1216px) using custom classes.
+    */
     .top--lg-auto {
       top: auto !important;
     }
@@ -298,6 +317,9 @@
   }
 
   @media (min-width: 1408px) {
+    /* 
+       Apply styles for extra large screens and above (>= 1408px) using custom classes.
+    */
     .top--xl-auto {
       top: auto !important;
     }

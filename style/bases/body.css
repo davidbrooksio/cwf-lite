@@ -1,5 +1,19 @@
+/* 
+   Define a layer named 'cwf-bases'. 
+   This is used to organize CSS rules into logical groups or layers.
+   The '@layer' directive is part of the CSS Layers Level 1 specification.
+*/
 @layer cwf-bases {
+  /* 
+     Apply styles to the 'body' element.
+     This sets the background color of the body.
+     Uses a custom property '--body-background-color' with a fallback value of 'white'.
+  */
   body {
     background-color: var(--body-background-color, white);
+    /* 
+       The 'var()' function is used to insert the value of a custom property.
+       If '--body-background-color' is not defined, it defaults to 'white'.
+    */
   }
 }

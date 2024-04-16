@@ -1,54 +1,90 @@
-@layer cwf-modules {
-  .table {
-    border-collapse: var(--table-border-collapse, collapse);
-    caption-side: var(--table-caption-side, bottom);
-    width: var(--table-width, 100%);
+/* Custom table module with configurable variables */
 
+@layer cwf-modules {
+  /* Define the .table class for table styling */
+  .table {
+    /* Table properties based on custom variables */
+    border-collapse: var(
+      --table-border-collapse,
+      collapse
+    ); /* Default: collapse */
+    caption-side: var(--table-caption-side, bottom); /* Default: bottom */
+    width: var(--table-width, 100%); /* Default: 100% */
+
+    /* Styling for table cells (td and th) */
     & td,
     & th {
-      border-color: var(--table-cell-border-style, LightGrey);
-      border-style: var(--table-cell-border-style, solid);
-      border-width: var(--table-cell-border-width, 0 0 1px 0);
-      padding: var(--table-cell-padding-y, 1ch) var(--table-cell-padding-x, 2ch);
-      vertical-align: var(--table-cell-valign, top);
+      border-color: var(
+        --table-cell-border-color,
+        LightGrey
+      ); /* Default: LightGrey */
+      border-style: var(--table-cell-border-style, solid); /* Default: solid */
+      border-width: var(
+        --table-cell-border-width,
+        0 0 1px 0
+      ); /* Default: 0 0 1px 0 */
+      padding: var(--table-cell-padding-y, 1ch) var(--table-cell-padding-x, 2ch); /* Default: 1ch 2ch */
+      vertical-align: var(--table-cell-valign, top); /* Default: top */
     }
 
+    /* Styling for table head (thead) */
     & thead {
       & tr {
-        background-color: var(--table-head-background-color, WhiteSmoke);
+        background-color: var(
+          --table-head-background-color,
+          WhiteSmoke
+        ); /* Default: WhiteSmoke */
 
         & > * {
-          border-width: var(--table-head-cell-border-width, 0 0 2px 0);
+          border-width: var(
+            --table-head-cell-border-width,
+            0 0 2px 0
+          ); /* Default: 0 0 2px 0 */
         }
       }
     }
 
+    /* Styling for table body (tbody) */
     & tbody {
       & tr {
-        background-color: var(--table-body-background-color, white);
+        background-color: var(
+          --table-body-background-color,
+          white
+        ); /* Default: white */
       }
     }
 
+    /* Styling for table foot (tfoot) */
     & tfoot {
       & tr {
-        background-color: var(--table-foot-background-color, WhiteSmoke);
+        background-color: var(
+          --table-foot-background-color,
+          WhiteSmoke
+        ); /* Default: WhiteSmoke */
 
         & > * {
-          border-width: var(--table-foot-cell-border-width, 2px 0 1px 0);
+          border-width: var(
+            --table-foot-cell-border-width,
+            2px 0 1px 0
+          ); /* Default: 2px 0 1px 0 */
         }
       }
     }
 
+    /* Modifier class: table--bordered */
     &.table--bordered {
       & td,
       & th {
-        border-width: var(--table-cell-border-width, 1px);
+        border-width: var(--table-cell-border-width, 1px); /* Default: 1px */
       }
 
       & thead {
         & tr {
           & > * {
-            border-width: var(--table-head-cell-border-width, 1px 1px 2px 1px);
+            border-width: var(
+              --table-head-cell-border-width,
+              1px 1px 2px 1px
+            ); /* Default: 1px 1px 2px 1px */
           }
         }
       }
@@ -56,12 +92,16 @@
       & tfoot {
         & tr {
           & > * {
-            border-width: var(--table-foot-cell-border-width, 2px 1px 1px 1px);
+            border-width: var(
+              --table-foot-cell-border-width,
+              2px 1px 1px 1px
+            ); /* Default: 2px 1px 1px 1px */
           }
         }
       }
     }
 
+    /* Modifier class: table--striped */
     &.table--striped {
       & tbody {
         & tr {
@@ -69,16 +109,20 @@
             background-color: var(
               --table-row-even-background-color,
               WhiteSmoke
-            );
+            ); /* Default: WhiteSmoke */
           }
 
           &:nth-of-type(odd) {
-            background-color: var(--table-row-odd-background-color, white);
+            background-color: var(
+              --table-row-odd-background-color,
+              white
+            ); /* Default: white */
           }
         }
       }
     }
 
+    /* Modifier class: table--hover */
     &.table--hover {
       & tbody {
         & tr {
@@ -87,7 +131,7 @@
               background-color: var(
                 --table-row-hover-background-color,
                 LightGrey
-              );
+              ); /* Default: LightGrey */
             }
           }
         }

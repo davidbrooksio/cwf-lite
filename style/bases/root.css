@@ -1,8 +1,35 @@
+/* 
+   Define root-level CSS custom properties (variables) using :root pseudo-class.
+   These variables are globally available throughout the stylesheet.
+*/
 :root {
+  /* 
+     Define a custom property '--breakpoint-xs' for extra small screens (>= 320px).
+  */
   --breakpoint-xs: 320px;
+
+  /* 
+     Define a custom property '--breakpoint-sm' for small screens (>= 576px).
+  */
   --breakpoint-sm: 576px;
+
+  /* 
+     Define a custom property '--breakpoint-md' for medium screens (>= 768px).
+  */
   --breakpoint-md: 768px;
+
+  /* 
+     Define a custom property '--breakpoint-rg' for regular screens (>= 1024px).
+  */
   --breakpoint-rg: 1024px;
+
+  /* 
+     Define a custom property '--breakpoint-lg' for large screens (>= 1216px).
+  */
   --breakpoint-lg: 1216px;
+
+  /* 
+     Define a custom property '--breakpoint-xl' for extra large screens (>= 1408px).
+  */
   --breakpoint-xl: 1408px;
 }
