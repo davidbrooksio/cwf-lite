@@ -1,5 +1,5 @@
-/* Define styles for elements within the 'cwf-modules' layer */
-@layer cwf-modules {
+/* Define styles for elements within the 'cwf-utilities' layer */
+@layer cwf-utilities {
   /* Apply styles to elements with the class '.group' */
   .group {
     /* Align items along the cross axis (vertically) */

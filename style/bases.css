@@ -1,0 +1,9 @@
+@layer cwf-bases;
+
+/* ---------------------------------- Bases --------------------------------- */
+@import "./bases/body.css";
+@import "./bases/container.css";
+@import "./bases/grid.css";
+@import "./bases/html.css";
+@import "./bases/root.css";
+@import "./bases/typography.css";
