@@ -8,7 +8,6 @@
   "main": "index.js",
   "author": "David Brooks <david.brooks@claritas-solutions.com>",
   "license": "MIT",
-  "packageManager": "yarn@3.6.3",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,14 +18,14 @@
     "url": "git@github.com:davidbrooksio/cwf-lite.git"
   },
   "devDependencies": {
-    "lightningcss": "^1.24.1",
-    "vite": "^5.2.9"
+    "lightningcss": "^1.25.1",
+    "vite": "^5.2.12"
   },
   "dependencies": {
     "modern-normalize": "^2.0.0",
     "postcss": "^8.4.38",
-    "postcss-calc": "^9.0.1",
+    "postcss-calc": "^10.0.0",
     "postcss-each": "^1.1.0",
-    "postcss-preset-env": "^9.5.5"
+    "postcss-preset-env": "^9.5.14"
   }
 }

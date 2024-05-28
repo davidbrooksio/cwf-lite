@@ -189,9 +189,7 @@
     }
   }
 
-  @each $value in lighter, bolder, thin, light, normal, medium, semibold, bold,
-    heavy, black, 100, 300, 400, 500, 600, 700, 800, 900
-  {
+  @each $value in 100, 300, 400, 500, 600, 700, 800, 900 {
     .font-weight--$(value) {
       font-weight: $(value) !important;
     }
