@@ -8,7 +8,9 @@
     border-radius: var(--tile-border-radius, 0);
     border-style: var(--tile-border-style, solid);
     border-width: var(--tile-border-width, 1px);
-    border-left-color: var(--tile-border-color, LightGrey);
+
+    /* border left settings */
+    border-left-color: var(--tile-border-left-color, LightGrey);
     border-left-width: var(--tile-border-left-width, 4px);
 
     /* Flexbox display settings */
