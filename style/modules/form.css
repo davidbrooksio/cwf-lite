@@ -65,13 +65,24 @@
       }
     }
 
+    /* Styles for checkboxes */
+    &[type="checkbox"] {
+      padding: var(--input-checkbox-padding-y, 1ch)
+        var(--input-checkbox-padding-x, 1ch);
+    }
+
+    /* Styles for  radio buttons */
+    &[type="radio"] {
+      padding: var(--input-radio-padding-y, 1ch)
+        var(--input-radio-padding-x, 1ch);
+    }
+
     /* Styles for checkboxes and radio buttons */
     &[type="checkbox"],
     &[type="radio"] {
       appearance: var(--input-appearance, none);
       background-size: var(--input-background-size, contain);
       cursor: var(--input-cursor, pointer);
-      padding: var(--input-padding-y, 1ch) var(--input-padding-x, 1ch);
       vertical-align: var(--input-vertical-align, top);
       width: var(--input-width, auto);
 
