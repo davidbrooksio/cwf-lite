@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "lightningcss": "^1.25.1",
-    "vite": "^5.2.12"
+    "vite": "^5.3.1"
   },
   "dependencies": {
     "modern-normalize": "^2.0.0",

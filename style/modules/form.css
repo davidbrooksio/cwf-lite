@@ -21,7 +21,6 @@
       box-shadow: var(--input-box-shadow, none);
       color: var(--input-color, DimGrey);
       cursor: var(--input-cursor, auto);
-      font-family: var(--input-font-family, system-ui);
       font-weight: var(--input-font-weight, 400);
       height: var(--input-height, auto);
       line-height: var(--input-line-height, 1.15);
@@ -177,7 +176,6 @@
     /* Set display and margins using custom properties */
     display: var(--label-display, inline-flex);
     color: var(--label-color, DimGrey);
-    font-family: var(--label-font-family, system-ui);
     font-weight: var(--label-font-weight, 400);
     margin: var(--label-margin-top, 0) var(--label-margin-right, auto)
       var(--label-margin-bottom, 0.25ch) var(--label-margin-left, auto);

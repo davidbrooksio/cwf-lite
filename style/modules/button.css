@@ -68,12 +68,6 @@
     display: var(--button-display, inline-flex);
 
     /* 
-       Set font family using custom property '--button-font-family'.
-       Default to 'system-ui' if the custom property is not defined.
-    */
-    font-family: var(--button-font-family, system-ui);
-
-    /* 
        Set font weight using custom property '--button-font-weight'.
        Default to '400' if the custom property is not defined.
     */

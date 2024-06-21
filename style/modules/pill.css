@@ -16,7 +16,6 @@
 
     /* Text and font styles */
     color: var(--pill-color, white);
-    font-family: var(--pill-font-family, system-ui);
     font-size: var(--pill-font-size, 11px);
     font-weight: var(--pill-font-weight, 400);
     line-height: var(--pill-line-height, 1.15);

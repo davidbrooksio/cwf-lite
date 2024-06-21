@@ -5,7 +5,7 @@
 @layer cwf-utilities {
   @each $value in serif, sans-serif, monospace, cursive, emoji {
     .font-family--$(value) {
-      font-family: $(value) !important;
+      font-family: var(--font-family-$(value), $(value)) !important;
     }
   }
 

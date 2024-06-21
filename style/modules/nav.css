@@ -29,7 +29,6 @@
       color: var(--nav__item-color, DimGrey);
       cursor: var(--nav__item-cursor, pointer);
       display: var(--nav__item-display, inline-flex);
-      font-family: var(--nav__item-font-family, system-ui);
       font-weight: var(--nav__item-font-weight, 400);
       gap: var(--nav__item-gap, 1ch);
       justify-content: var(--nav__item-justify-content, center);
