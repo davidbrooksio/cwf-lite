@@ -169,22 +169,22 @@
       background-color: var(--card__footer-background-color, white);
 
       /* 
-         Set border color for card footer using custom property '--card__header-border-color'.
+         Set border color for card footer using custom property '--card__footer-border-color'.
          Default to 'LightGrey' if the custom property is not defined.
       */
-      border-color: var(--card__header-border-color, LightGrey);
+      border-color: var(--card__footer-border-color, LightGrey);
 
       /* 
-         Set border style for card footer using custom property '--card__header-border-style'.
+         Set border style for card footer using custom property '--card__footer-border-style'.
          Default to 'solid' if the custom property is not defined.
       */
-      border-style: var(--card__header-border-style, solid);
+      border-style: var(--card__footer-border-style, solid);
 
       /* 
-         Set border width for card footer using custom property '--card__header-border-width'.
+         Set border width for card footer using custom property '--card__footer-border-width'.
          Default to '1px 0 0' if the custom property is not defined.
       */
-      border-width: var(--card__header-border-width, 1px 0 0);
+      border-width: var(--card__footer-border-width, 1px 0 0);
 
       /* 
          Set margins for card footer using custom property '--card__footer-margin'.

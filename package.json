@@ -18,14 +18,14 @@
     "url": "git@github.com:davidbrooksio/cwf-lite.git"
   },
   "devDependencies": {
-    "lightningcss": "^1.25.1",
-    "vite": "^5.3.5"
+    "lightningcss": "^1.26.0",
+    "vite": "^5.4.0"
   },
   "dependencies": {
     "modern-normalize": "^2.0.0",
-    "postcss": "^8.4.40",
-    "postcss-calc": "^10.0.0",
+    "postcss": "^8.4.41",
+    "postcss-calc": "^10.0.1",
     "postcss-each": "^1.1.0",
-    "postcss-preset-env": "^9.6.0"
+    "postcss-preset-env": "^10.0.0"
   }
 }
