@@ -55,6 +55,10 @@
 
     /* Focus styles for inputs except [type="range"],  <output> and when disabled */
     &:not([type="range"]):not(output):not([disabled]) {
+      &:hover {
+        box-shadow: var(--input-hover-box-shadow, none);
+      }
+
       &:focus-visible,
       &:focus {
         box-shadow: var(
@@ -74,6 +78,7 @@
     &[type="radio"] {
       padding: var(--input-radio-padding-y, 1ch)
         var(--input-radio-padding-x, 1ch);
+      border-radius: var(--input-border-radius, 50%);
     }
 
     /* Styles for checkboxes and radio buttons */
@@ -90,6 +95,11 @@
         background-color: var(--input-background-color, DimGrey);
       }
 
+      /* Hover state styles */
+      &:hover {
+        box-shadow: var(--input-hover-box-shadow, none);
+      }
+
       /* Focus state styles */
       &:focus {
         box-shadow: var(
@@ -97,11 +107,6 @@
           0 0 0 0.25em rgba(0, 0, 0, 0.125)
         );
       }
-    }
-
-    /* Styles for radio buttons */
-    &[type="radio"] {
-      border-radius: var(--input-border-radius, 50%);
     }
 
     /* Styles specific to checkboxes when checked */

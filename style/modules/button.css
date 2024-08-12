@@ -150,6 +150,12 @@
       border-color: var(--button-hover-border-color, grey);
 
       /* 
+         Add box shadow on hover using custom property '--button-hover-box-shadow'.
+         Default to a subtle box shadow if the custom property is not defined.
+      */
+      box-shadow: var(--button-hover-box-shadow, none);
+
+      /* 
          Change text color on hover using custom property '--button-hover-color'.
          Default to 'grey' if the custom property is not defined.
       */
