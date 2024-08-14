@@ -22,10 +22,10 @@
     "vite": "^5.4.0"
   },
   "dependencies": {
-    "modern-normalize": "^2.0.0",
+    "modern-normalize": "^3.0.0",
     "postcss": "^8.4.41",
     "postcss-calc": "^10.0.1",
     "postcss-each": "^1.1.0",
-    "postcss-preset-env": "^10.0.0"
+    "postcss-preset-env": "^10.0.1"
   }
 }
