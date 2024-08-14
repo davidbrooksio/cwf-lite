@@ -101,6 +101,7 @@
       }
 
       /* Focus state styles */
+      &:focus-visible,
       &:focus {
         box-shadow: var(
           --input-focus-box-shadow,
