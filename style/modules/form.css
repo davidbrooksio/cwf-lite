@@ -92,7 +92,7 @@
 
       /* Checked state styles */
       &:checked {
-        background-color: var(--input-background-color, DimGrey);
+        background-color: var(--input-checked-background-color, DimGrey);
       }
 
       /* Hover state styles */
