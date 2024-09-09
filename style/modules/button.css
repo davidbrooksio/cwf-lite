@@ -134,117 +134,136 @@
     white-space: var(--button-white-space, nowrap);
 
     /* 
+       Styles applied on disabled state of the button.
+    */
+    &:disabled {
+      /* 
+       Set opacity using custom property '--button-disabled-opacity'.
+       Default to '0.75' if the custom property is not defined.
+    */
+      opacity: var(--button-disabled-opacity, 0.75);
+
+      /* 
+       Set cursor style using custom property '--button-disbaled-cursor'.
+       Default to 'not-allowed' if the custom property is not defined.
+    */
+      cursor: var(--button-disabled-cursor, not-allowed);
+    }
+
+    &:not(:disabled) {
+      /* 
        Styles applied on hover state of the button.
     */
-    &:hover {
-      /* 
+      &:hover {
+        /* 
          Change background color on hover using custom property '--button-hover-background-color'.
          Default to 'WhiteSmoke' if the custom property is not defined.
       */
-      background-color: var(--button-hover-background-color, WhiteSmoke);
+        background-color: var(--button-hover-background-color, WhiteSmoke);
 
-      /* 
+        /* 
          Change border color on hover using custom property '--button-hover-border-color'.
          Default to 'grey' if the custom property is not defined.
       */
-      border-color: var(--button-hover-border-color, grey);
+        border-color: var(--button-hover-border-color, grey);
 
-      /* 
+        /* 
          Add box shadow on hover using custom property '--button-hover-box-shadow'.
          Default to a subtle box shadow if the custom property is not defined.
       */
-      box-shadow: var(--button-hover-box-shadow, none);
+        box-shadow: var(--button-hover-box-shadow, none);
 
-      /* 
+        /* 
          Change text color on hover using custom property '--button-hover-color'.
          Default to 'grey' if the custom property is not defined.
       */
-      color: var(--button-hover-color, grey);
+        color: var(--button-hover-color, grey);
 
-      /* 
+        /* 
          Disable text decoration on hover using custom property '--button-hover-text-decoration'.
          Default to 'none' if the custom property is not defined.
       */
-      text-decoration: var(--button-hover-text-decoration, none);
-    }
+        text-decoration: var(--button-hover-text-decoration, none);
+      }
 
-    /* 
+      /* 
        Styles applied on focus-visible or focus state of the button.
     */
-    &:focus-visible,
-    &:focus {
-      /* 
+      &:focus-visible,
+      &:focus {
+        /* 
          Change background color on focus using custom property '--button-focus-background-color'.
          Default to 'WhiteSmoke' if the custom property is not defined.
       */
-      background-color: var(--button-focus-background-color, WhiteSmoke);
+        background-color: var(--button-focus-background-color, WhiteSmoke);
 
-      /* 
+        /* 
          Change border color on focus using custom property '--button-focus-border-color'.
          Default to 'grey' if the custom property is not defined.
       */
-      border-color: var(--button-focus-border-color, grey);
+        border-color: var(--button-focus-border-color, grey);
 
-      /* 
+        /* 
          Add box shadow on focus using custom property '--button-focus-box-shadow'.
          Default to a subtle box shadow if the custom property is not defined.
       */
-      box-shadow: var(
-        --button-focus-box-shadow,
-        0 0 0 0.25em rgba(0, 0, 0, 0.125)
-      );
+        box-shadow: var(
+          --button-focus-box-shadow,
+          0 0 0 0.25em rgba(0, 0, 0, 0.125)
+        );
 
-      /* 
+        /* 
          Change text color on focus using custom property '--button-focus-color'.
          Default to 'grey' if the custom property is not defined.
       */
-      color: var(--button-focus-color, grey);
+        color: var(--button-focus-color, grey);
 
-      /* 
+        /* 
          Disable text decoration on focus using custom property '--button-focus-text-decoration'.
          Default to 'none' if the custom property is not defined.
       */
-      text-decoration: var(--button-focus-text-decoration, none);
-    }
+        text-decoration: var(--button-focus-text-decoration, none);
+      }
 
-    /* 
+      /* 
        Styles applied on active state of the button (when clicked).
     */
-    &:active,
-    &[data-active="true"],
-    &.active {
-      /* 
+      &:active,
+      &[data-active="true"],
+      &.active {
+        /* 
          Change background color on click using custom property '--button-active-background-color'.
          Default to 'WhiteSmoke' if the custom property is not defined.
       */
-      background-color: var(--button-active-background-color, WhiteSmoke);
+        background-color: var(--button-active-background-color, WhiteSmoke);
 
-      /* 
+        /* 
          Change border color on click using custom property '--button-active-border-color'.
          Default to 'grey' if the custom property is not defined.
       */
-      border-color: var(--button-active-border-color, grey);
+        border-color: var(--button-active-border-color, grey);
 
-      /* 
+        /* 
          Add box shadow on click using custom property '--button-active-box-shadow'.
          Default to a stronger box shadow if the custom property is not defined.
       */
-      box-shadow: var(
-        --button-active-box-shadow,
-        0 0 0 0.25em rgba(0, 0, 0, 0.25)
-      );
+        box-shadow: var(
+          --button-active-box-shadow,
+          0 0 0 0.25em rgba(0, 0, 0, 0.25)
+        );
 
-      /* 
+        /* 
          Change text color on click using custom property '--button-active-color'.
          Default to 'grey' if the custom property is not defined.
       */
-      color: var(--button-active-color, grey);
+        color: var(--button-active-color, grey);
 
-      /* 
+        /* 
          Disable text decoration on click using custom property '--button-active-text-decoration'.
          Default to 'none' if the custom property is not defined.
       */
-      text-decoration: var(--button-active-text-decoration, none);
+        text-decoration: var(--button-active-text-decoration, none);
+      }
     }
   }
 }

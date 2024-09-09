@@ -19,13 +19,13 @@
   },
   "devDependencies": {
     "lightningcss": "^1.26.0",
-    "vite": "^5.4.2"
+    "vite": "^5.4.3"
   },
   "dependencies": {
-    "modern-normalize": "^3.0.0",
-    "postcss": "^8.4.44",
+    "modern-normalize": "^3.0.1",
+    "postcss": "^8.4.45",
     "postcss-calc": "^10.0.2",
     "postcss-each": "^1.1.0",
-    "postcss-preset-env": "^10.0.2"
+    "postcss-preset-env": "^10.0.3"
   }
 }
