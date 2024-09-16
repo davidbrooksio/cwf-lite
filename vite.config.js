@@ -15,7 +15,7 @@ export default defineConfig({
   },
   build: {
     manifest: true,
-    cssMinify: "lightningcss",
+    cssMinify: true,
     rollupOptions: {
       output: {
         entryFileNames: "[name].js",
