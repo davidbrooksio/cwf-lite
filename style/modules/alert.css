@@ -8,10 +8,10 @@
   */
   .alert {
     /* 
-       Set background color using custom property '--alert-background-color'.
+       Set background color using custom property '--alert-background'.
        Default to 'white' if the custom property is not defined.
     */
-    background-color: var(--alert-background-color, white);
+    background: var(--alert-background, white);
 
     /* 
        Set border color using custom property '--alert-border-color'.

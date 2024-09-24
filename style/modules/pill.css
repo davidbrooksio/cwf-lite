@@ -8,7 +8,7 @@
     justify-content: var(--pill-justify-content, center);
 
     /* Background and border styles */
-    background-color: var(--pill-background-color, grey);
+    background: var(--pill-background, grey);
     border-color: var(--pill-border-color, grey);
     border-radius: var(--pill-border-radius, 99rem);
     border-style: var(--pill-border-style, solid);

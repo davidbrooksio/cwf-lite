@@ -229,9 +229,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-light-dark-function@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "@csstools/postcss-light-dark-function@npm:2.0.2"
+"@csstools/postcss-light-dark-function@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@csstools/postcss-light-dark-function@npm:2.0.4"
   dependencies:
     "@csstools/css-parser-algorithms": ^3.0.1
     "@csstools/css-tokenizer": ^3.0.1
@@ -239,7 +239,7 @@ __metadata:
     "@csstools/utilities": ^2.0.0
   peerDependencies:
     postcss: ^8.4
-  checksum: 0790debd6afe8945c7100f895ad2e1b6db83fc03d3d3d592ad7fabf15d928e906d15faf4e7228a76005723269cb15c51fe7d5fff19189fe8d1ccfcb9e615e434
+  checksum: ef16fdc5389cbd05909af00f18e9736bf3ebbc5b40f917f98c62d9aa129a7f457dcede74ba6c41532247e7dbb29d2d13bdc7d1295cf4659d3bd44e66c93965af
   languageName: node
   linkType: hard
 
@@ -1043,8 +1043,8 @@ __metadata:
     postcss: ^8.4.47
     postcss-calc: ^10.0.2
     postcss-each: ^1.1.0
-    postcss-preset-env: ^10.0.3
-    vite: ^5.4.5
+    postcss-preset-env: ^10.0.5
+    vite: ^5.4.7
   languageName: unknown
   linkType: soft
 
@@ -2056,9 +2056,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-env@npm:^10.0.3":
-  version: 10.0.3
-  resolution: "postcss-preset-env@npm:10.0.3"
+"postcss-preset-env@npm:^10.0.5":
+  version: 10.0.5
+  resolution: "postcss-preset-env@npm:10.0.5"
   dependencies:
     "@csstools/postcss-cascade-layers": ^5.0.0
     "@csstools/postcss-color-function": ^4.0.2
@@ -2072,7 +2072,7 @@ __metadata:
     "@csstools/postcss-ic-unit": ^4.0.0
     "@csstools/postcss-initial": ^2.0.0
     "@csstools/postcss-is-pseudo-class": ^5.0.0
-    "@csstools/postcss-light-dark-function": ^2.0.2
+    "@csstools/postcss-light-dark-function": ^2.0.4
     "@csstools/postcss-logical-float-and-clear": ^3.0.0
     "@csstools/postcss-logical-overflow": ^2.0.0
     "@csstools/postcss-logical-overscroll-behavior": ^2.0.0
@@ -2123,7 +2123,7 @@ __metadata:
     postcss-selector-not: ^8.0.0
   peerDependencies:
     postcss: ^8.4
-  checksum: 66b8a03dceef9f7b151968b923542c21fd4885df39bd59cff9e9a575040be005754701be79020f418b80660aab76f134e6458318c75bb04d86049ee792f2a0a7
+  checksum: 5b3ae7fa63ea4f53caede45ad05936e28be56c4a25548103914069f772ff98d7d6dfb82293e53d59cd65e418d49bf86159ba7ea6e2f861e3232f1d45e80a1703
   languageName: node
   linkType: hard
 
@@ -2509,9 +2509,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.4.5":
-  version: 5.4.5
-  resolution: "vite@npm:5.4.5"
+"vite@npm:^5.4.7":
+  version: 5.4.7
+  resolution: "vite@npm:5.4.7"
   dependencies:
     esbuild: ^0.21.3
     fsevents: ~2.3.3
@@ -2548,7 +2548,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 19e7aa49cd72f93d4e152f23b736ff3de4fc4bccf81d99970b3e88bf399138cf1807314fde1f5ee6251f2007292d491bad97e444fb9d4d5628be4bf6cae62a42
+  checksum: aecb3380a85b8b2df9cbd01077b132e042b5a9f9bc87a302ccd69c5e528323eb4972ae41c430d8336a5d1d3ca253beb5e92ce74bc4e5fca3d0dd8651daa33d03
   languageName: node
   linkType: hard
 

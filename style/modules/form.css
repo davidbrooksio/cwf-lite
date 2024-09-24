@@ -13,7 +13,7 @@
     &:not(progress) {
       /* Apply appearance using custom property */
       appearance: var(--input-appearance, auto);
-      background-color: var(--input-background-color, white);
+      background: var(--input-background, white);
       border-color: var(--input-border-color, LightGrey);
       border-radius: var(--input-border-radius, 4px);
       border-style: var(--input-border-style, solid);
@@ -36,7 +36,7 @@
 
     /* Disabled state styles */
     &[disabled] {
-      background-color: var(--input-disabled-background-color, WhiteSmoke);
+      background: var(--input-disabled-background, WhiteSmoke);
     }
 
     /* Hover and focus styles for inputs except <output> and when disabled */
@@ -92,7 +92,7 @@
 
       /* Checked state styles */
       &:checked {
-        background-color: var(--input-checked-background-color, DimGrey);
+        background: var(--input-checked-background, DimGrey);
       }
 
       /* Hover state styles */
@@ -144,11 +144,11 @@
       border-radius: var(--input-border-radius, 10px);
       border-style: var(--input-border-style, solid);
       border-width: var(--input-border-width, 1px);
-      background: var(--input-background-color, WhiteSmoke);
+      background: var(--input-background, WhiteSmoke);
 
       &::-webkit-progress-bar {
         border-radius: var(--input-border-radius, 10px);
-        background: var(--input-background-color, WhiteSmoke);
+        background: var(--input-background, WhiteSmoke);
       }
 
       &::-webkit-progress-value {

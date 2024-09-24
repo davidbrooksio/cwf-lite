@@ -3,7 +3,7 @@
   /* Styling for tile component */
   .tile {
     /* Background and border styles */
-    background-color: var(--tile-background-color, white);
+    background: var(--tile-background, white);
     border-color: var(--tile-border-color, LightGrey);
     border-radius: var(--tile-border-radius, 0);
     border-style: var(--tile-border-style, solid);
@@ -46,7 +46,7 @@
 
     /* Styling for header section */
     & .tile__header {
-      background-color: var(--tile__header-background-color, white);
+      background: var(--tile__header-background, white);
       border-color: var(--tile__header-border-color, LightGrey);
       border-style: var(--tile__header-border-style, solid);
       border-width: var(--tile__header-border-width, 0 0 1px);
@@ -59,7 +59,7 @@
 
     /* Styling for footer section */
     & .tile__footer {
-      background-color: var(--tile__footer-background-color, white);
+      background: var(--tile__footer-background, white);
       border-color: var(--tile__footer-border-color, LightGrey);
       border-style: var(--tile__footer-border-style, solid);
       border-width: var(--tile__footer-border-width, 1px 0 0);

@@ -6,9 +6,9 @@ A very lightweight but modern css framework.
 
 ## Status
 
-![Current version](https://badgen.net/badge/Version/1.0.93/green)
-![CSS size](https://badgen.net/badge/CSS%20size/342.42%20kB/yellow)
-![CSS gzip size](https://badgen.net/badge/CSS%20gzip%20size/24.10%20kB/green)
+![Current version](https://badgen.net/badge/Version/1.1.0/green)
+![CSS size](https://badgen.net/badge/CSS%20size/345.63%20kB/yellow)
+![CSS gzip size](https://badgen.net/badge/CSS%20gzip%20size/24.40%20kB/green)
 
 ## Quick start
 
@@ -36,7 +36,7 @@ Once installed, import the source css file from `node_modules/cwf-lite/dist/inde
 
 ```
 :root {
-  --card-background-color: red;
+  --card-background: red;
 }
 ```
 
@@ -44,7 +44,7 @@ Once installed, import the source css file from `node_modules/cwf-lite/dist/inde
 
 ```
 .card {
-  --card-background-color: red;
+  --card-background: red;
 }
 ```
 
@@ -52,6 +52,6 @@ Once installed, import the source css file from `node_modules/cwf-lite/dist/inde
 
 ```
 .card {
-  background-color: red;
+  background: red;
 }
 ```

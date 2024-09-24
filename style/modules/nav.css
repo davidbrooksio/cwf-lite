@@ -20,7 +20,7 @@
     /* Styling for navigation items */
     & .nav__item {
       align-items: var(--nav__item-align-items, center);
-      background-color: var(--nav__item-background-color, transparent);
+      background: var(--nav__item-background, transparent);
       border-color: var(--nav__item-border-color, transparent);
       border-radius: var(--nav__item-border-radius, 0);
       border-style: var(--nav__item-border-style, solid);
@@ -45,7 +45,7 @@
 
       /* Hover state styling for navigation items */
       &:hover {
-        background-color: var(--nav__item-hover-background-color, WhiteSmoke);
+        background: var(--nav__item-hover-background, WhiteSmoke);
         border-color: var(--nav__item-hover-border-color, transparent);
         color: var(--nav__item-hover-color, grey);
         text-decoration: var(--nav__item-hover-text-decoration, none);
@@ -54,7 +54,7 @@
       /* Focus state styling for navigation items */
       &:focus-visible,
       &:focus {
-        background-color: var(--nav__item-focus-background-color, WhiteSmoke);
+        background: var(--nav__item-focus-background, WhiteSmoke);
         border-color: var(--nav__item-focus-border-color, transparent);
         color: var(--nav__item-focus-color, grey);
         text-decoration: var(--nav__item-focus-text-decoration, none);
@@ -64,7 +64,7 @@
       &:active,
       &[data-active="true"],
       &.active {
-        background-color: var(--nav__item-active-background-color, WhiteSmoke);
+        background: var(--nav__item-active-background, WhiteSmoke);
         border-color: var(--nav__item-active-border-color, transparent);
         color: var(--nav__item-active-color, grey);
         text-decoration: var(--nav__item-active-text-decoration, none);
@@ -105,7 +105,7 @@
         &:active,
         &[data-active="true"],
         &.active {
-          background-color: var(--nav__item-background-color, white);
+          background: var(--nav__item-background, white);
           border-color: var(
             --nav__item-active-border-color,
             LightGrey LightGrey white LightGrey

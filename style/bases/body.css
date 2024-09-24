@@ -7,13 +7,13 @@
   /* 
      Apply styles to the 'body' element.
      This sets the background color of the body.
-     Uses a custom property '--body-background-color' with a fallback value of 'white'.
+     Uses a custom property '--body-background' with a fallback value of 'white'.
   */
   body {
-    background-color: var(--body-background-color, white);
+    background: var(--body-background, white);
     /* 
        The 'var()' function is used to insert the value of a custom property.
-       If '--body-background-color' is not defined, it defaults to 'white'.
+       If '--body-background' is not defined, it defaults to 'white'.
     */
   }
 }

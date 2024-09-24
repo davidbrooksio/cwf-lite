@@ -14,10 +14,10 @@
     align-items: var(--button-align-items, center);
 
     /* 
-       Set background color using custom property '--button-background-color'.
+       Set background color using custom property '--button-background'.
        Default to 'white' if the custom property is not defined.
     */
-    background-color: var(--button-background-color, white);
+    background: var(--button-background, white);
 
     /* 
        Set border color using custom property '--button-border-color'.
@@ -156,10 +156,10 @@
     */
       &:hover {
         /* 
-         Change background color on hover using custom property '--button-hover-background-color'.
+         Change background color on hover using custom property '--button-hover-background'.
          Default to 'WhiteSmoke' if the custom property is not defined.
       */
-        background-color: var(--button-hover-background-color, WhiteSmoke);
+        background: var(--button-hover-background, WhiteSmoke);
 
         /* 
          Change border color on hover using custom property '--button-hover-border-color'.
@@ -192,10 +192,10 @@
       &:focus-visible,
       &:focus {
         /* 
-         Change background color on focus using custom property '--button-focus-background-color'.
+         Change background color on focus using custom property '--button-focus-background'.
          Default to 'WhiteSmoke' if the custom property is not defined.
       */
-        background-color: var(--button-focus-background-color, WhiteSmoke);
+        background: var(--button-focus-background, WhiteSmoke);
 
         /* 
          Change border color on focus using custom property '--button-focus-border-color'.
@@ -232,10 +232,10 @@
       &[data-active="true"],
       &.active {
         /* 
-         Change background color on click using custom property '--button-active-background-color'.
+         Change background color on click using custom property '--button-active-background'.
          Default to 'WhiteSmoke' if the custom property is not defined.
       */
-        background-color: var(--button-active-background-color, WhiteSmoke);
+        background: var(--button-active-background, WhiteSmoke);
 
         /* 
          Change border color on click using custom property '--button-active-border-color'.

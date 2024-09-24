@@ -8,10 +8,10 @@
   */
   .card {
     /* 
-       Set background color using custom property '--card-background-color'.
+       Set background color using custom property '--card-background'.
        Default to 'white' if the custom property is not defined.
     */
-    background-color: var(--card-background-color, white);
+    background: var(--card-background, white);
 
     /* 
        Set border color using custom property '--card-border-color'.
@@ -123,10 +123,10 @@
     */
     & .card__header {
       /* 
-         Set background color for card header using custom property '--card__header-background-color'.
+         Set background color for card header using custom property '--card__header-background'.
          Default to 'white' if the custom property is not defined.
       */
-      background-color: var(--card__header-background-color, white);
+      background: var(--card__header-background, white);
 
       /* 
          Set border color for card header using custom property '--card__header-border-color'.
@@ -163,10 +163,10 @@
     */
     & .card__footer {
       /* 
-         Set background color for card footer using custom property '--card__footer-background-color'.
+         Set background color for card footer using custom property '--card__footer-background'.
          Default to 'white' if the custom property is not defined.
       */
-      background-color: var(--card__footer-background-color, white);
+      background: var(--card__footer-background, white);
 
       /* 
          Set border color for card footer using custom property '--card__footer-border-color'.
