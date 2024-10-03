@@ -69,6 +69,14 @@
         color: var(--nav__item-active-color, grey);
         text-decoration: var(--nav__item-active-text-decoration, none);
       }
+
+      &:disabled {
+        background: var(--nav__item-disabled-background, transparent);
+        border-color: var(--nav__item-disabled-border-color, transparent);
+        color: var(--nav__item-disabled-color, LightGrey);
+        text-decoration: var(--nav__item-disabled-text-decoration, none);
+        pointer-events: var(--nav__item-disabled-pointer-events, none);
+      }
     }
 
     /* Stacked navigation style modifier */
