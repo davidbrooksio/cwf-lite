@@ -29,6 +29,12 @@
     grid-template-rows: var(--grid-template-rows, repeat(var(--rows, 1), 1fr));
 
     /* 
+       Set gap using custom property '--grid-gap'.
+       Default to 0 if the custom property is not defined.
+    */
+    gap: var(--grid-gap, 0);
+
+    /* 
        Apply styles to direct children with class 'column' inside '.grid'.
     */
     & > .column {
