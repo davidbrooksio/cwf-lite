@@ -26,7 +26,7 @@
       border-style: var(--nav__item-border-style, solid);
       border-width: var(--nav__item-border-width, 0);
       box-shadow: var(--nav__item-box-shadow, none);
-      color: var(--nav__item-color, DimGrey);
+      color: var(--nav__item-color, inherit);
       cursor: var(--nav__item-cursor, pointer);
       display: var(--nav__item-display, inline-flex);
       font-weight: var(--nav__item-font-weight, 400);
@@ -47,7 +47,7 @@
       &:hover {
         background: var(--nav__item-hover-background, WhiteSmoke);
         border-color: var(--nav__item-hover-border-color, transparent);
-        color: var(--nav__item-hover-color, grey);
+        color: var(--nav__item-hover-color, inherit);
         text-decoration: var(--nav__item-hover-text-decoration, none);
       }
 
@@ -56,7 +56,7 @@
       &:focus {
         background: var(--nav__item-focus-background, WhiteSmoke);
         border-color: var(--nav__item-focus-border-color, transparent);
-        color: var(--nav__item-focus-color, grey);
+        color: var(--nav__item-focus-color, inherit);
         text-decoration: var(--nav__item-focus-text-decoration, none);
       }
 
@@ -66,14 +66,14 @@
       &.active {
         background: var(--nav__item-active-background, WhiteSmoke);
         border-color: var(--nav__item-active-border-color, transparent);
-        color: var(--nav__item-active-color, grey);
+        color: var(--nav__item-active-color, inherit);
         text-decoration: var(--nav__item-active-text-decoration, none);
       }
 
       &:disabled {
         background: var(--nav__item-disabled-background, transparent);
         border-color: var(--nav__item-disabled-border-color, transparent);
-        color: var(--nav__item-disabled-color, LightGrey);
+        color: var(--nav__item-disabled-color, inherit);
         text-decoration: var(--nav__item-disabled-text-decoration, none);
         pointer-events: var(--nav__item-disabled-pointer-events, none);
       }
@@ -104,7 +104,7 @@
 
       /* Styling for tab navigation items */
       & .nav__item {
-        border-color: var(--nav__item-border-color, LightGrey);
+        border-color: var(--nav__item-border-color, inherit);
         border-radius: var(--nav__item-border-radius, 4px 4px 0 0);
         border-width: var(--nav__item-border-width, 1px);
         margin: var(--nav__item-margin, 0 0 -1px);

@@ -51,9 +51,9 @@
 
     /* 
        Set text color using custom property '--button-color'.
-       Default to 'DimGrey' if the custom property is not defined.
+       Default to 'inherit' if the custom property is not defined.
     */
-    color: var(--button-color, DimGrey);
+    color: var(--button-color, inherit);
 
     /* 
        Set cursor style using custom property '--button-cursor'.
@@ -177,7 +177,7 @@
          Change text color on hover using custom property '--button-hover-color'.
          Default to 'grey' if the custom property is not defined.
       */
-        color: var(--button-hover-color, grey);
+        color: var(--button-hover-color, inherit);
 
         /* 
          Disable text decoration on hover using custom property '--button-hover-text-decoration'.
@@ -216,7 +216,7 @@
          Change text color on focus using custom property '--button-focus-color'.
          Default to 'grey' if the custom property is not defined.
       */
-        color: var(--button-focus-color, grey);
+        color: var(--button-focus-color, inherit);
 
         /* 
          Disable text decoration on focus using custom property '--button-focus-text-decoration'.
@@ -256,7 +256,7 @@
          Change text color on click using custom property '--button-active-color'.
          Default to 'grey' if the custom property is not defined.
       */
-        color: var(--button-active-color, grey);
+        color: var(--button-active-color, inherit);
 
         /* 
          Disable text decoration on click using custom property '--button-active-text-decoration'.

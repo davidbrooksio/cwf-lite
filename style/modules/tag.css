@@ -15,7 +15,7 @@
     border-width: var(--tag-border-width, 1px);
 
     /* Text and font styles */
-    color: var(--tag-color, DimGrey);
+    color: var(--tag-color, inherit);
     font-size: var(--tag-font-size, 11px);
     font-weight: var(--tag-font-weight, 400);
     line-height: var(--tag-line-height, 1.15);

@@ -124,21 +124,21 @@
     & .card__header {
       /* 
          Set background color for card header using custom property '--card__header-background'.
-         Default to 'white' if the custom property is not defined.
+         Default to 'inherit' if the custom property is not defined.
       */
-      background: var(--card__header-background, white);
+      background: var(--card__header-background, inherit);
 
       /* 
          Set border color for card header using custom property '--card__header-border-color'.
-         Default to 'LightGrey' if the custom property is not defined.
+         Default to 'inherit' if the custom property is not defined.
       */
-      border-color: var(--card__header-border-color, LightGrey);
+      border-color: var(--card__header-border-color, inherit);
 
       /* 
          Set border style for card header using custom property '--card__header-border-style'.
-         Default to 'solid' if the custom property is not defined.
+         Default to 'inherit' if the custom property is not defined.
       */
-      border-style: var(--card__header-border-style, solid);
+      border-style: var(--card__header-border-style, inherit);
 
       /* 
          Set border width for card header using custom property '--card__header-border-width'.
@@ -164,21 +164,21 @@
     & .card__footer {
       /* 
          Set background color for card footer using custom property '--card__footer-background'.
-         Default to 'white' if the custom property is not defined.
+         Default to 'inherit' if the custom property is not defined.
       */
-      background: var(--card__footer-background, white);
+      background: var(--card__footer-background, inherit);
 
       /* 
          Set border color for card footer using custom property '--card__footer-border-color'.
-         Default to 'LightGrey' if the custom property is not defined.
+         Default to 'inherit' if the custom property is not defined.
       */
-      border-color: var(--card__footer-border-color, LightGrey);
+      border-color: var(--card__footer-border-color, inherit);
 
       /* 
          Set border style for card footer using custom property '--card__footer-border-style'.
-         Default to 'solid' if the custom property is not defined.
+         Default to 'inherit' if the custom property is not defined.
       */
-      border-style: var(--card__footer-border-style, solid);
+      border-style: var(--card__footer-border-style, inherit);
 
       /* 
          Set border width for card footer using custom property '--card__footer-border-width'.

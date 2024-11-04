@@ -19,7 +19,7 @@
       border-style: var(--input-border-style, solid);
       border-width: var(--input-border-width, 1px);
       box-shadow: var(--input-box-shadow, none);
-      color: var(--input-color, DimGrey);
+      color: var(--input-color, inherit);
       cursor: var(--input-cursor, auto);
       font-weight: var(--input-font-weight, 400);
       height: var(--input-height, auto);
@@ -43,13 +43,13 @@
     &:not(output):not([disabled]) {
       &:hover {
         border-color: var(--input-hover-border-color, grey);
-        color: var(--input-hover-color, DimGrey);
+        color: var(--input-hover-color, inherit);
       }
 
       &:focus-visible,
       &:focus {
         border-color: var(--input-focus-border-color, grey);
-        color: var(--input-focus-color, DimGrey);
+        color: var(--input-focus-color, inherit);
       }
     }
 
@@ -188,7 +188,7 @@
   .label {
     /* Set display and margins using custom properties */
     display: var(--label-display, inline-flex);
-    color: var(--label-color, DimGrey);
+    color: var(--label-color, inherit);
     font-weight: var(--label-font-weight, 400);
     margin: var(--label-margin-top, 0) var(--label-margin-right, auto)
       var(--label-margin-bottom, 0.25ch) var(--label-margin-left, auto);
