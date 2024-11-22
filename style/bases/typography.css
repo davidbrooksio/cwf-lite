@@ -127,23 +127,6 @@
   }
 
   /* 
-     Apply styles to <code> elements.
-  */
-  code {
-    /* 
-       Set text color using custom property '--code-color'.
-       Default to 'DeepPink' if the custom property is not defined.
-    */
-    color: var(--code-color, DeepPink);
-
-    /* 
-       Set font family using custom property '--code-font-family'.
-       Default to 'monospace' if the custom property is not defined.
-    */
-    font-family: var(--code-font-family, monospace);
-  }
-
-  /* 
      Apply styles to elements with class '.truncate'.
   */
   .truncate {
