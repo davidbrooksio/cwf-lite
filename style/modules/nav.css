@@ -18,7 +18,7 @@
     border-color: var(--nav-border-color, transparent);
 
     /* Styling for navigation items */
-    & .nav__item {
+    &__item {
       align-items: var(--nav__item-align-items, center);
       background: var(--nav__item-background, transparent);
       border-color: var(--nav__item-border-color, transparent);
