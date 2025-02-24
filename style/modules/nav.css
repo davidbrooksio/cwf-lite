@@ -16,9 +16,10 @@
     border-width: var(--nav-border-width, 0);
     border-style: var(--nav-border-style, solid);
     border-color: var(--nav-border-color, transparent);
+    color: var(--nav-color, inherit);
 
     /* Styling for navigation items */
-    &__item {
+    & .nav__item {
       align-items: var(--nav__item-align-items, center);
       background: var(--nav__item-background, transparent);
       border-color: var(--nav__item-border-color, transparent);

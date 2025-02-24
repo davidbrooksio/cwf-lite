@@ -1,5 +1,3 @@
 .git
-.yarn
-.yarnrc.yml
-yarn.lock
+package-lock.json
 node_modules

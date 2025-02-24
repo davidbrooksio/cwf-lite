@@ -38,6 +38,12 @@
     border-width: var(--alert-border-width, 4px 1px 1px 1px);
 
     /* 
+       Set color using custom property '--alert-color'.
+       Default to 'inherit' if the custom property is not defined.
+    */
+    color: var(--alert-color, inherit);
+
+    /* 
        Set display property using custom property '--alert-display'.
        Default to 'block' if the custom property is not defined.
     */

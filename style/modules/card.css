@@ -38,6 +38,12 @@
     border-width: var(--card-border-width, 1px);
 
     /* 
+       Set color using custom property '--alert-color'.
+       Default to 'inherit' if the custom property is not defined.
+    */
+    color: var(--card-color, inherit);
+
+    /* 
        Set display property using custom property '--card-display'.
        Default to 'flex' if the custom property is not defined.
     */
@@ -107,9 +113,9 @@
     /* 
        Styles applied to child elements with specific class names within '.card'.
     */
-    &__header,
-    &__body,
-    &__footer {
+    & .card__header,
+    & .card__body,
+    & .card__footer {
       /* 
          Set padding for inner elements using custom properties '--card-inner-padding-y' (vertical)
          and '--card-inner-padding-x' (horizontal).
@@ -121,7 +127,7 @@
     /* 
        Styles applied specifically to elements with class '.card__header' within '.card'.
     */
-    &__header {
+    & .card__header {
       /* 
          Set background color for card header using custom property '--card__header-background'.
          Default to 'inherit' if the custom property is not defined.
@@ -150,7 +156,7 @@
     /* 
        Styles applied specifically to elements with class '.card__body' within '.card'.
     */
-    &__body {
+    & .card__body {
       /* 
          Set flex properties for card body using custom property '--card__body-flex'.
          Default to '1 1 auto' if the custom property is not defined.
@@ -161,7 +167,7 @@
     /* 
        Styles applied specifically to elements with class '.card__footer' within '.card'.
     */
-    &__footer {
+    & .card__footer {
       /* 
          Set background color for card footer using custom property '--card__footer-background'.
          Default to 'inherit' if the custom property is not defined.

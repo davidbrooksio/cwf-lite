@@ -9,6 +9,7 @@
       collapse
     ); /* Default: collapse */
     caption-side: var(--table-caption-side, bottom); /* Default: bottom */
+    color: var(--table-color, inherit);
     width: var(--table-width, 100%); /* Default: 100% */
 
     /* Styling for table cells (td and th) */
@@ -29,6 +30,8 @@
 
     /* Styling for table head (thead) */
     & thead {
+      color: var(--table-head-color, inherit);
+
       & tr {
         background: var(
           --table-head-background,
@@ -46,6 +49,8 @@
 
     /* Styling for table body (tbody) */
     & tbody {
+      color: var(--table-body-color, inherit);
+
       & tr {
         background: var(--table-body-background, white); /* Default: white */
       }
@@ -53,6 +58,8 @@
 
     /* Styling for table foot (tfoot) */
     & tfoot {
+      color: var(--table-foot-color, inherit);
+
       & tr {
         background: var(
           --table-foot-background,

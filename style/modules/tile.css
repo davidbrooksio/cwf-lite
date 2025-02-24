@@ -13,6 +13,9 @@
     border-left-color: var(--tile-border-left-color, LightGrey);
     border-left-width: var(--tile-border-left-width, 4px);
 
+    /* color */
+    color: var(--tile-color, inherit);
+
     /* Flexbox display settings */
     display: var(--tile-display, flex);
     flex-flow: var(--tile-flex-flow, column nowrap);
@@ -38,14 +41,14 @@
     }
 
     /* Inner parts of the tile */
-    &__header,
-    &__body,
-    &__footer {
+    & .tile__header,
+    & .tile__body,
+    & .tile__footer {
       padding: var(--tile-inner-padding-y, 1ch) var(--tile-inner-padding-x, 2ch);
     }
 
     /* Styling for header section */
-    &__header {
+    & .tile__header {
       background: var(--tile__header-background, inherit);
       border-color: var(--tile__header-border-color, inherit);
       border-style: var(--tile__header-border-style, inherit);
@@ -53,12 +56,12 @@
     }
 
     /* Styling for body section */
-    &__body {
+    & .tile__body {
       flex: var(--tile__body-flex, 1 1 auto);
     }
 
     /* Styling for footer section */
-    &__footer {
+    & .tile__footer {
       background: var(--tile__footer-background, inherit);
       border-color: var(--tile__footer-border-color, inherit);
       border-style: var(--tile__footer-border-style, inherit);

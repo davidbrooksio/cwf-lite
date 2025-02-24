@@ -1,11 +1,10 @@
 import { defineConfig } from "vite";
 import postcssEach from "postcss-each";
-import postCssNested from "postcss-nested";
 
 export default defineConfig({
   css: {
     postcss: {
-      plugins: [postCssNested({}), postcssEach({})],
+      plugins: [postcssEach({})],
     },
   },
   build: {
