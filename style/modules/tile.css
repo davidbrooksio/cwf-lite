@@ -21,8 +21,8 @@
     flex-flow: var(--tile-flex-flow, column nowrap);
 
     /* Spacing and positioning */
-    margin: var(--tile-margin-top, 0) var(--tile-margin-right, auto)
-      var(--tile-margin-bottom, 1ch) var(--tile-margin-left, auto);
+    margin: var(--tile-margin-top, 0) var(--tile-margin-right, 0)
+      var(--tile-margin-bottom, 1ch) var(--tile-margin-left, 0);
     min-width: var(--tile-min-width, 0);
     position: var(--tile-position, relative);
     word-wrap: var(--tile-word-wrap, break-word);

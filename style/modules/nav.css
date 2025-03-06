@@ -8,8 +8,8 @@
     align-items: var(--nav-align-items, center);
     justify-content: var(--nav-justify-content, flex-start);
     position: var(--nav-position, relative);
-    margin: var(--nav-margin-top, 0) var(--nav-margin-right, auto)
-      var(--nav-margin-bottom, 1ch) var(--nav-margin-left, auto);
+    margin: var(--nav-margin-top, 0) var(--nav-margin-right, 0)
+      var(--nav-margin-bottom, 1ch) var(--nav-margin-left, 0);
     padding: var(--nav-padding, 0);
     list-style: var(--nav-list-style, none);
     gap: var(--nav-gap, 0);
@@ -114,7 +114,7 @@
         &:active,
         &[data-active="true"],
         &.active {
-          background: var(--nav__item-background, white);
+          background: var(--nav__item-active-background, white);
           border-color: var(
             --nav__item-active-border-color,
             LightGrey LightGrey white LightGrey

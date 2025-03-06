@@ -3,8 +3,8 @@
   /* Apply styles to elements with the class '.input' */
   .input {
     /* Set margins using custom properties for top, right, bottom, and left */
-    margin: var(--input-margin-top, 0) var(--input-margin-right, auto)
-      var(--input-margin-bottom, 1ch) var(--input-margin-left, auto);
+    margin: var(--input-margin-top, 0) var(--input-margin-right, 0)
+      var(--input-margin-bottom, 1ch) var(--input-margin-left, 0);
 
     /* Set width of the input using custom property */
     width: var(--input-width, 100%);
@@ -190,8 +190,8 @@
     display: var(--label-display, inline-flex);
     color: var(--label-color, inherit);
     font-weight: var(--label-font-weight, 400);
-    margin: var(--label-margin-top, 0) var(--label-margin-right, auto)
-      var(--label-margin-bottom, 0.25ch) var(--label-margin-left, auto);
+    margin: var(--label-margin-top, 0) var(--label-margin-right, 0)
+      var(--label-margin-bottom, 0.25ch) var(--label-margin-left, 0);
     width: var(--label-width, 100%);
   }
 }

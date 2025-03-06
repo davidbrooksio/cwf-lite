@@ -60,8 +60,8 @@
        '--card-margin-bottom', and '--card-margin-left'.
        Default values are provided for margins if custom properties are not defined.
     */
-    margin: var(--card-margin-top, 0) var(--card-margin-right, auto)
-      var(--card-margin-bottom, 1ch) var(--card-margin-left, auto);
+    margin: var(--card-margin-top, 0) var(--card-margin-right, 0)
+      var(--card-margin-bottom, 1ch) var(--card-margin-left, 0);
 
     /* 
        Set minimum width using custom property '--card-min-width'.

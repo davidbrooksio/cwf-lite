@@ -67,8 +67,8 @@
        Default to '0' for top margin, 'auto' for right and left margins,
        and '1ch' for bottom margin if not defined.
     */
-    margin: var(--alert-margin-top, 0) var(--alert-margin-right, auto)
-      var(--alert-margin-bottom, 1ch) var(--alert-margin-left, auto);
+    margin: var(--alert-margin-top, 0) var(--alert-margin-right, 0)
+      var(--alert-margin-bottom, 1ch) var(--alert-margin-left, 0);
 
     /* 
        Set position using custom property '--alert-position'.
