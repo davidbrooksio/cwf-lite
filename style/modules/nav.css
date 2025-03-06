@@ -77,6 +77,7 @@
         color: var(--nav__item-disabled-color, inherit);
         text-decoration: var(--nav__item-disabled-text-decoration, none);
         pointer-events: var(--nav__item-disabled-pointer-events, none);
+        opacity: var(--nav__item-disabled-opacity, 0.5);
       }
     }
 
@@ -110,6 +111,21 @@
         border-width: var(--nav__item-border-width, 1px);
         margin: var(--nav__item-margin, 0 0 -1px);
 
+        &:hover {
+          background: var(--nav__item-hover-background, WhiteSmoke);
+          border-color: var(--nav__item-active-border-color, LightGrey);
+          color: var(--nav__item-hover-color, inherit);
+          text-decoration: var(--nav__item-hover-text-decoration, none);
+        }
+
+        &:focus-visible,
+        &:focus {
+          background: var(--nav__item-focus-background, WhiteSmoke);
+          border-color: var(--nav__item-active-border-color, LightGrey);
+          color: var(--nav__item-focus-color, inherit);
+          text-decoration: var(--nav__item-focus-text-decoration, none);
+        }
+
         /* Active state for tab navigation items */
         &:active,
         &[data-active="true"],
@@ -119,6 +135,15 @@
             --nav__item-active-border-color,
             LightGrey LightGrey white LightGrey
           );
+        }
+
+        &:disabled {
+          background: var(--nav__item-disabled-background, transparent);
+          border-color: var(--nav__item-disabled-border-color, LightGrey);
+          color: var(--nav__item-disabled-color, inherit);
+          text-decoration: var(--nav__item-disabled-text-decoration, none);
+          pointer-events: var(--nav__item-disabled-pointer-events, none);
+          opacity: var(--nav__item-disabled-opacity, 0.5);
         }
       }
     }
