@@ -138,7 +138,7 @@
       &[multiple] {
         padding: var(--input-padding-y, 0) var(--input-padding-x, 0);
 
-        & option {
+        option {
           padding: var(--option-padding-y, 1ch) var(--option-padding-x, 2ch);
         }
       }

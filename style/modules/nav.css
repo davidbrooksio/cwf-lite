@@ -19,7 +19,7 @@
     color: var(--nav-color, inherit);
 
     /* Styling for navigation items */
-    & .nav__item {
+    .nav__item {
       align-items: var(--nav__item-align-items, center);
       background: var(--nav__item-background, transparent);
       border-color: var(--nav__item-border-color, transparent);
@@ -87,7 +87,7 @@
       flex-flow: var(--nav-flex-flow, wrap column);
 
       /* Stacked navigation item styles */
-      & .nav__item {
+      .nav__item {
         justify-content: var(--nav__item-justify-content, flex-start);
         width: var(--nav__item-width, 100%);
       }
@@ -105,7 +105,7 @@
       }
 
       /* Styling for tab navigation items */
-      & .nav__item {
+      .nav__item {
         border-color: var(--nav__item-border-color, inherit);
         border-radius: var(--nav__item-border-radius, 4px 4px 0 0);
         border-width: var(--nav__item-border-width, 1px);

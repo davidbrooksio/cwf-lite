@@ -28,7 +28,7 @@
     word-wrap: var(--tile-word-wrap, break-word);
 
     /* Child elements styling */
-    & > * {
+    > * {
       &:first-child {
         border-top-right-radius: var(--tile-inner-border-radius, 0);
         border-top-left-radius: var(--tile-inner-border-radius, 0);
@@ -41,14 +41,14 @@
     }
 
     /* Inner parts of the tile */
-    & .tile__header,
-    & .tile__body,
-    & .tile__footer {
+    .tile__header,
+    .tile__body,
+    .tile__footer {
       padding: var(--tile-inner-padding-y, 1ch) var(--tile-inner-padding-x, 2ch);
     }
 
     /* Styling for header section */
-    & .tile__header {
+    .tile__header {
       background: var(--tile__header-background, inherit);
       border-color: var(--tile__header-border-color, inherit);
       border-style: var(--tile__header-border-style, inherit);
@@ -56,12 +56,12 @@
     }
 
     /* Styling for body section */
-    & .tile__body {
+    .tile__body {
       flex: var(--tile__body-flex, 1 1 auto);
     }
 
     /* Styling for footer section */
-    & .tile__footer {
+    .tile__footer {
       background: var(--tile__footer-background, inherit);
       border-color: var(--tile__footer-border-color, inherit);
       border-style: var(--tile__footer-border-style, inherit);

@@ -84,7 +84,7 @@
     /* 
        Apply specific styles to direct children of '.card'.
     */
-    & > * {
+    > * {
       /* 
          Styles applied to the first child element within '.card'.
       */
@@ -113,9 +113,9 @@
     /* 
        Styles applied to child elements with specific class names within '.card'.
     */
-    & .card__header,
-    & .card__body,
-    & .card__footer {
+    .card__header,
+    .card__body,
+    .card__footer {
       /* 
          Set padding for inner elements using custom properties '--card-inner-padding-y' (vertical)
          and '--card-inner-padding-x' (horizontal).
@@ -127,7 +127,7 @@
     /* 
        Styles applied specifically to elements with class '.card__header' within '.card'.
     */
-    & .card__header {
+    .card__header {
       /* 
          Set background color for card header using custom property '--card__header-background'.
          Default to 'inherit' if the custom property is not defined.
@@ -156,7 +156,7 @@
     /* 
        Styles applied specifically to elements with class '.card__body' within '.card'.
     */
-    & .card__body {
+    .card__body {
       /* 
          Set flex properties for card body using custom property '--card__body-flex'.
          Default to '1 1 auto' if the custom property is not defined.
@@ -167,7 +167,7 @@
     /* 
        Styles applied specifically to elements with class '.card__footer' within '.card'.
     */
-    & .card__footer {
+    .card__footer {
       /* 
          Set background color for card footer using custom property '--card__footer-background'.
          Default to 'inherit' if the custom property is not defined.

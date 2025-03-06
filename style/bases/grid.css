@@ -37,7 +37,7 @@
     /* 
        Apply styles to direct children with class 'column' inside '.grid'.
     */
-    & > .column {
+    > .column {
       /* 
          Define custom properties for column grid placement.
       */
@@ -199,7 +199,7 @@
     /* 
        Apply styles to direct children with class 'column' inside '.grid--flex'.
     */
-    & > .column {
+    > .column {
       /* 
          Set max-width using custom property '--column-max-width'.
          Default to '100%' if the custom property is not defined.
