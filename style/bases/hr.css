@@ -1,0 +1,9 @@
+@layer cwf-bases {
+  hr {
+    margin: var(--hr-margin-top, var(--size-3)) var(--hr-margin-right, 0)
+      var(--hr-margin-bottom, var(--size-3)) var(--hr-margin-left, 0);
+    border-color: var(--hr-border-color, LightGrey);
+    border-style: var(--hr-border-style, solid);
+    border-width: var(--hr-border-width, 1px 0 0 0);
+  }
+}

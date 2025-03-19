@@ -12,6 +12,26 @@
 
     <div class="container padding-y--4">
       <h1>CWF Lite</h1>
+      <h2>Typography</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis
+        magna sit amet luctus tincidunt.
+      </p>
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Nam massa dui, interdum porttitor pretium sit
+        amet, tempus et felis. Sed massa magna, cursus et consectetur eu,
+        consectetur vel tellus. Integer vulputate et turpis in facilisis.
+        Praesent a nisi non massa sagittis tincidunt at id magna. Vestibulum
+        iaculis convallis feugiat. Quisque consequat justo quis lectus
+        porttitor, in congue enim luctus.
+      </p>
+      <p>
+        Sed augue dolor, rutrum vel facilisis non, ornare in mi. Praesent eget
+        ligula dictum, convallis risus ac, tempor nisi. Integer sed pulvinar mi,
+        nec posuere ante. Aenean interdum finibus viverra.
+      </p>
+      <hr />
       <h2>Grid</h2>
       <h3>CSS grid</h3>
       <div class="grid column-gap--5 row-gap--4">
@@ -84,57 +104,119 @@
         <footer class="card__footer">Footer</footer>
       </div>
       <hr />
-      <h3>Input</h3>
+      <h3>Form</h3>
       <form>
-        <label class="label" for="inputText">Text</label>
+        <label class="label" for="text">Text</label>
+        <input class="input" type="text" id="text" placeholder="Text …" />
+
+        <label class="label" for="disabled">Disabled</label>
         <input
           class="input"
           type="text"
-          id="inputText"
-          name="inputText"
-          placeholder="Text"
-        />
-        <label class="label" for="inputText2">Disabled</label>
-        <input
-          class="input"
-          type="text"
-          id="inputText"
-          name="inputText"
-          placeholder="Text"
+          id="disabled"
+          placeholder="Disabled …"
           disabled
         />
-        <label class="label" for="outputText">Output</label>
-        <output class="input" id="outputText" name="outputText"></output>
-        <label class="label" for="inputTextarea">Textarea</label>
-        <textarea
-          class="input"
-          id="inputTextarea"
-          name="inputTextarea"
-          placeholder="Textarea"
-          rows="6"
-        ></textarea>
-        <label class="label" for="inputSelect">Select</label>
-        <select class="input" name="inputSelect" id="inputSelect">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
-        <label class="label" for="inputProgress">Progress</label>
-        <progress class="input" id="inputProgress" value="32" max="100">
-          32%
-        </progress>
-        <label class="label" for="inputCheckbox">Checkbox</label>
+
+        <label class="label" for="email">Email</label>
+        <input class="input" type="email" id="email" placeholder="Email …" />
+
+        <label class="label" for="tel">tel</label>
+        <input class="input" type="tel" id="tel" placeholder="tel …" />
+
+        <label class="label" for="url">Url</label>
+        <input class="input" type="url" id="url" placeholder="Url …" />
+
+        <label class="label" for="number">Number</label>
+        <input class="input" type="number" id="number" placeholder="Number …" />
+
+        <label class="label" for="search">Search</label>
+        <input class="input" type="search" id="search" placeholder="Search …" />
+
+        <label class="label" for="password">Password</label>
         <input
           class="input"
-          type="checkbox"
-          id="inputCheckbox"
-          name="inputCheckbox"
+          type="password"
+          id="password"
+          placeholder="Password …"
         />
-        <label class="label" for="inputRadio">Radio</label>
-        <input class="input" type="radio" id="inputRadio" name="inputRadio" />
-        <label class="label" for="inputRange">Range</label>
-        <input class="input" type="range" id="inputRange" name="inputRange" />
+
+        <label class="label" for="select">Select</label>
+        <select class="input" id="select">
+          <option value="">Select a role</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="manager">Manager</option>
+        </select>
+
+        <label class="label" for="multiple">Multiple</label>
+        <select class="input" id="multiple" multiple>
+          <option value="">Select a role</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="manager">Manager</option>
+        </select>
+
+        <label class="label" for="textarea">Textarea</label>
+        <textarea
+          class="input"
+          id="textarea"
+          rows="4"
+          placeholder="Textarea …"
+        ></textarea>
+
+        <label class="label" for="radio">Radio</label>
+        <input class="input" type="radio" id="radio" />
+
+        <label class="label" for="checkbox">Checkbox</label>
+        <input class="input" type="checkbox" id="checkbox" />
+
+        <label class="label" for="color">Colour</label>
+        <input class="input" type="color" id="color" placeholder="Color …" />
+
+        <label class="label" for="date">Date</label>
+        <input class="input" type="date" id="date" placeholder="Date …" />
+
+        <label class="label" for="datetime-local">Datetime local</label>
+        <input
+          class="input"
+          type="datetime-local"
+          id="datetime-local"
+          placeholder="Datetime local …"
+        />
+
+        <label class="label" for="month">Month</label>
+        <input class="input" type="month" id="month" placeholder="Month …" />
+
+        <label class="label" for="week">Week</label>
+        <input class="input" type="week" id="week" placeholder="Week …" />
+
+        <label class="label" for="time">Time</label>
+        <input class="input" type="time" id="time" placeholder="Time …" />
+
+        <label class="label" for="file">File</label>
+        <input class="input" type="file" id="file" placeholder="File …" />
+
+        <label class="label" for="range">Range</label>
+        <input class="input" type="range" id="range" placeholder="Range …" />
+
+        <label class="label" for="output">Output</label>
+        <output class="input" id="output" for="range"></output>
+
+        <label for="datalist" class="label">Datalist</label>
+        <input
+          class="input"
+          list="datalistOpt"
+          id="datalist"
+          placeholder="Type to search..."
+        />
+        <datalist id="datalistOpt">
+          <option value="San Francisco"></option>
+          <option value="New York"></option>
+          <option value="Seattle"></option>
+          <option value="Los Angeles"></option>
+          <option value="Chicago"></option>
+        </datalist>
       </form>
       <hr />
       <h3>List</h3>

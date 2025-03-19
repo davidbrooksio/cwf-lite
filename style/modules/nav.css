@@ -96,7 +96,10 @@
 
       .nav__item {
         border-color: var(--nav__item-border-color, inherit);
-        border-radius: var(--nav__item-border-radius, 4px 4px 0 0);
+        border-radius: var(
+          --nav__item-border-radius,
+          var(--size-2) var(--size-2) 0 0
+        );
         border-width: var(--nav__item-border-width, 1px);
         margin: var(--nav__item-margin, 0 0 -1px);
 

@@ -5,7 +5,7 @@
     justify-content: var(--tag-justify-content, center);
     background: var(--tag-background, WhiteSmoke);
     border-color: var(--tag-border-color, LightGrey);
-    border-radius: var(--tag-border-radius, 4px);
+    border-radius: var(--tag-border-radius, var(--size-2));
     border-style: var(--tag-border-style, solid);
     border-width: var(--tag-border-width, 1px);
     color: var(--tag-color, inherit);

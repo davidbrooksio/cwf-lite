@@ -6,7 +6,7 @@
     border-style: var(--tile-border-style, solid);
     border-width: var(--tile-border-width, 1px);
     border-left-color: var(--tile-border-left-color, LightGrey);
-    border-left-width: var(--tile-border-left-width, 4px);
+    border-left-width: var(--tile-border-left-width, var(--size-2));
     color: var(--tile-color, inherit);
     display: var(--tile-display, flex);
     flex-flow: var(--tile-flex-flow, column nowrap);

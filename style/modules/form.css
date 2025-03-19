@@ -1,158 +1,201 @@
 @layer cwf-modules {
   .input {
+    appearance: var(--input-appearance, auto);
+    background-color: var(--input-background-color, white);
+    background-image: var(--input-background-image, none);
+    background-repeat: var(--input-background-repeat, no-repeat);
+    background-position: var(--input-background-position, 50% 50%);
+    background-size: var(--input-background-size, 1rem);
+    border-color: var(--input-border-color, LightGrey);
+    border-radius: var(--input-border-radius, var(--size-2));
+    border-style: var(--input-border-style, solid);
+    border-width: var(--input-border-width, 1px);
+    box-shadow: var(--input-box-shadow, none);
+    color: var(--input-color, inherit);
+    cursor: var(--input-cursor, auto);
+    font-weight: var(--input-font-weight, 400);
+    height: var(--input-height, auto);
+    line-height: var(--input-line-height, 1.15);
     margin: var(--input-margin-top, 0) var(--input-margin-right, 0)
       var(--input-margin-bottom, var(--size-3)) var(--input-margin-left, 0);
-    width: var(--input-width, 100%);
+    min-height: var(--input-min-height, 0);
+    outline: var(--input-outline, 0);
+    padding: var(--input-padding-top, var(--size-3))
+      var(--input-padding-right, var(--size-5))
+      var(--input-padding-bottom, var(--size-3))
+      var(--input-padding-left, var(--size-5));
+    pointer-events: var(--input-pointer-events, initial);
+    resize: var(--input-resize, initial);
     transition: var(--input-transition, all 0.2s ease-in-out);
-
-    &:not(progress) {
-      appearance: var(--input-appearance, auto);
-      background-color: var(--input-background-color, white);
-      border-color: var(--input-border-color, LightGrey);
-      border-radius: var(--input-border-radius, 4px);
-      border-style: var(--input-border-style, solid);
-      border-width: var(--input-border-width, 1px);
-      box-shadow: var(--input-box-shadow, none);
-      color: var(--input-color, inherit);
-      cursor: var(--input-cursor, auto);
-      font-weight: var(--input-font-weight, 400);
-      height: var(--input-height, auto);
-      line-height: var(--input-line-height, 1.15);
-      outline: var(--input-outline, 0);
-      padding: var(--input-padding-y, var(--size-3))
-        var(--input-padding-x, var(--size-5));
-      vertical-align: var(--input-vertical-align, initial);
-    }
+    vertical-align: var(--input-vertical-align, initial);
+    width: var(--input-width, 100%);
 
     &::placeholder {
       color: var(--input-placeholder-color, LightGrey);
     }
 
-    &[disabled] {
+    &:disabled {
       background-color: var(--input-disabled-background-color, WhiteSmoke);
+      pointer-events: var(--input-disabled-pointer-events, none);
     }
 
-    &:not(output):not([disabled]) {
-      &:hover {
-        border-color: var(--input-hover-border-color, grey);
-        color: var(--input-hover-color, inherit);
-      }
-
-      &:focus-visible,
-      &:focus {
-        border-color: var(--input-focus-border-color, grey);
-        color: var(--input-focus-color, inherit);
-      }
+    &:hover {
+      border-color: var(--input-hover-border-color, grey);
+      box-shadow: var(--input-hover-box-shadow, none);
+      color: var(--input-hover-color, inherit);
     }
 
-    &:not([type="range"]):not(output):not([disabled]) {
-      &:hover {
-        box-shadow: var(--input-hover-box-shadow, none);
-      }
+    &:focus-visible,
+    &:focus {
+      border-color: var(--input-focus-border-color, grey);
+      box-shadow: var(
+        --input-focus-box-shadow,
+        0 0 0 0.25em hsl(from black h s l / 12.5%)
+      );
+      color: var(--input-focus-color, inherit);
+    }
 
-      &:focus-visible,
-      &:focus {
-        box-shadow: var(
-          --input-focus-box-shadow,
-          0 0 0 0.25em rgba(0, 0, 0, 0.125)
+    /* --------------------------------- Select --------------------------------- */
+    &:is(select) {
+      appearance: var(--input-select-appearance, none);
+
+      &:not([multiple]) {
+        padding-right: var(--input-select-padding-right, var(--size-7));
+        background-image: var(
+          --input-select-background-image,
+          url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e")
         );
+        background-position: var(
+          --input-select-background-position,
+          right 0.5em center
+        );
+        background-size: var(--input-select-background-size, 1em);
       }
-    }
 
-    &[type="checkbox"] {
-      padding: var(--input-checkbox-padding-y, var(--size-3))
-        var(--input-checkbox-padding-x, var(--size-3));
-    }
+      &[multiple] {
+        padding: var(--input-select-multiple-padding-top, 0)
+          var(--input-select-multiple-padding-right, 0)
+          var(--input-select-multiple-padding-bottom, 0)
+          var(--input-select-multiple-padding-left, 0);
 
-    &[type="radio"] {
-      padding: var(--input-radio-padding-y, var(--size-3))
-        var(--input-radio-padding-x, var(--size-3));
-      border-radius: var(--input-border-radius, 50%);
-    }
-
-    &[type="checkbox"],
-    &[type="radio"] {
-      appearance: var(--input-appearance, none);
-      background-size: var(--input-background-size, contain);
-      cursor: var(--input-cursor, pointer);
-      vertical-align: var(--input-vertical-align, top);
-      width: var(--input-width, auto);
-
-      &:checked {
-        background-color: var(--input-checked-background-color, DimGrey);
-
-        &[disabled] {
-          background-color: var(
-            --input-checked-disabled-background-color,
-            WhiteSmoke
-          );
+        & option {
+          padding: var(--option-padding-top, var(--size-3))
+            var(--option-padding-right, var(--size-5))
+            var(--option-padding-bottom, var(--size-3))
+            var(--option-padding-left, var(--size-5));
         }
       }
+    }
 
-      &:hover {
-        box-shadow: var(--input-hover-box-shadow, none);
-      }
+    /* -------------------------------- Textarea -------------------------------- */
+    &:is(textarea) {
+      min-height: var(--input-textarea-min-height, var(--size-9));
+      resize: var(--input-textarea-resize, vertical);
+    }
 
-      &:focus-visible,
-      &:focus {
-        box-shadow: var(
-          --input-focus-box-shadow,
-          0 0 0 0.25em rgba(0, 0, 0, 0.125)
-        );
+    /* ---------------------------------- Color --------------------------------- */
+    &:is([type="color"]) {
+      /* padding-y + line-height + 4px for some reason */
+      --input-color-size: calc(2ch + 1.15rem + 4px);
+
+      appearance: var(--input-color-appearance, none);
+      width: var(--input-color-width, var(--input-color-size));
+      height: var(--input-color-height, var(--input-color-size));
+      padding: var(--input-color-padding-top, 0.5ch)
+        var(--input-color-padding-right, 0.5ch)
+        var(--input-color-padding-bottom, 0.5ch)
+        var(--input-color-padding-left, 0.5ch);
+
+      &::-webkit-color-swatch-wrapper {
+        padding: 0;
       }
     }
 
-    &[type="checkbox"]:checked {
+    /* ---------------------------------- Range --------------------------------- */
+    &:is([type="range"]) {
+      &:focus-visible,
+      &:focus {
+        box-shadow: var(--input-range-focus-box-shadow, none);
+      }
+    }
+
+    /* -------------------------------- Checkbox -------------------------------- */
+    &:is([type="checkbox"]) {
+      appearance: var(--input-checkbox-appearance, none);
+      padding: var(--input-checkbox-padding-y, var(--size-3))
+        var(--input-checkbox-padding-x, var(--size-3));
+      width: var(--input-checkbox-width, 1em);
+      height: var(--input-checkbox-height, 1em);
       background-image: var(
         --input-checkbox-background-image,
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e")
       );
+      background-size: var(--input-checkbox-checked-background-size, 100%);
+
+      &:checked {
+        background-color: var(--input-checkbox-background-color, DimGrey);
+      }
     }
 
-    &[type="radio"]:checked {
+    /* ---------------------------------- Radio --------------------------------- */
+    &:is([type="radio"]) {
+      appearance: var(--input-radio-appearance, none);
+      border-radius: var(--input-radio-border-radius, 50%);
+      padding: var(--input-radio-padding-y, var(--size-3))
+        var(--input-radio-padding-x, var(--size-3));
+      width: var(--input-radio-width, 1em);
+      height: var(--input-radio-height, 1em);
       background-image: var(
         --input-radio-background-image,
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
       );
-    }
+      background-size: var(--input-radio-background-size, 100%);
 
-    &:is(select) {
-      &[multiple] {
-        padding: var(--input-padding-y, 0) var(--input-padding-x, 0);
-
-        option {
-          padding: var(--option-padding-y, var(--size-3))
-            var(--option-padding-x, var(--size-5));
-        }
+      &:checked {
+        background-color: var(--input-radio-checked-background-color, DimGrey);
       }
     }
 
-    &:is(progress) {
-      appearance: var(--input-appearance, none);
-      border-color: var(--input-border-color, LightGrey);
-      border-radius: var(--input-border-radius, 10px);
-      border-style: var(--input-border-style, solid);
-      border-width: var(--input-border-width, 1px);
-      background-color: var(--input-background-color, WhiteSmoke);
+    /* ---------------------------------- File ---------------------------------- */
+    &:is([type="file"]) {
+      appearance: var(--input-file-appearance, none);
+      cursor: var(--input-file-cursor, pointer);
 
-      &::-webkit-progress-bar {
-        border-radius: var(--input-border-radius, 10px);
-        background-color: var(--input-background-color, WhiteSmoke);
-      }
+      &::-webkit-file-upload-button,
+      &::file-selector-button {
+        -webkit-appearance: button;
+        -webkit-margin-end: var(--input-file-button-margin-end, var(--size-5));
 
-      &::-webkit-progress-value {
-        border-radius: var(--input-border-radius, 10px);
-        background-color: var(--input-background-color, grey);
-      }
-
-      &::-moz-progress-bar {
-        border-radius: var(--input-border-radius, 10px);
-        background-color: var(--input-background-color, grey);
+        padding: var(--input-file-button-padding-y, var(--size-3))
+          var(--input-file-button-padding-x, var(--size-5));
+        margin: var(--input-file-button-margin-y, calc(var(--size-3) * -1))
+          var(--input-file-button-margin-x, calc(var(--size-5) * -1));
+        margin-inline-end: var(
+          --input-file-button-margin-inline-end,
+          var(--size-5)
+        );
+        color: var(--input-file-button-color, inherit);
+        background: var(--input-file-button-background, WhiteSmoke);
+        pointer-events: var(--input-file-button-pointer-events, none);
+        border-color: var(--input-file-button-border-color, inherit);
+        border-style: var(--input-file-button-border-style, solid);
+        border-width: var(--input-file-button-border-width, 0);
+        border-inline-end-width: var(
+          --input-file-button-border-inline-end-width,
+          1px
+        );
+        border-radius: var(--input-file-button-border-radius, 0);
       }
     }
 
+    /* --------------------------------- Search --------------------------------- */
+    &:is([type="search"]) {
+      border-radius: var(--input-search-border-radius, 99rem);
+    }
+
+    /* --------------------------------- Output --------------------------------- */
     &:is(output) {
-      display: var(--input-display, block);
+      display: var(--input-output-display, block);
 
       /* Fix for output height */
       &::before {
@@ -163,8 +206,28 @@
         pointer-events: none;
       }
     }
+
+    /* ---------------------------------- List ---------------------------------- */
+    &:is([list]) {
+      appearance: var(--input-list-appearance, none);
+      padding-right: var(--input-list-padding-right, var(--size-7));
+      background-image: var(
+        --input-list-background-image,
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e")
+      );
+      background-position: var(
+        --input-list-background-position,
+        right 0.5em center
+      );
+      background-size: var(--input-list-background-size, 1em);
+
+      &::-webkit-calendar-picker-indicator {
+        display: none !important;
+      }
+    }
   }
 
+  /* ---------------------------------- Label --------------------------------- */
   .label {
     display: var(--label-display, inline-flex);
     color: var(--label-color, inherit);

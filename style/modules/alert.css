@@ -4,7 +4,7 @@
     border-color: var(--alert-border-color, LightGrey);
     border-radius: var(--alert-border-radius, 0);
     border-style: var(--alert-border-style, solid);
-    border-width: var(--alert-border-width, 4px 1px 1px 1px);
+    border-width: var(--alert-border-width, var(--size-2) 1px 1px 1px);
     color: var(--alert-color, inherit);
     display: var(--alert-display, block);
     min-width: var(--alert-min-width, 0);
