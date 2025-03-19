@@ -1,0 +1,33 @@
+@layer cwf-bases {
+  a {
+    &:not(.button):not(.nav__item) {
+      color: var(--link-color, blue);
+      text-decoration: var(--link-text-decoration, none);
+      outline: var(--link-outline, 0);
+      transition: var(--link-transition, all 0.2s ease-in-out);
+
+      &:visited {
+        color: var(--link-visited-color, purple);
+        text-decoration: var(--link-visited-text-decoration, none);
+      }
+
+      &:hover {
+        color: var(--link-hover-color, DarkBlue);
+        text-decoration: var(--link-hover-text-decoration, underline);
+      }
+
+      &:focus-visible,
+      &:focus {
+        color: var(--link-focus-color, red);
+        text-decoration: var(--link-focus-text-decoration, underline);
+      }
+
+      &:active,
+      &[data-active="true"],
+      &.active {
+        color: var(--link-active-color, DarkRed);
+        text-decoration: var(--link-active-text-decoration, underline);
+      }
+    }
+  }
+}

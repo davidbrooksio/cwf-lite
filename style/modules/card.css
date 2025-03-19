@@ -1,201 +1,54 @@
-/* 
-   Define a layer named 'cwf-modules'.
-   This is used to organize CSS rules into logical groups or layers.
-*/
 @layer cwf-modules {
-  /* 
-     Apply styles to elements with the class '.card'.
-  */
   .card {
-    /* 
-       Set background color using custom property '--card-background'.
-       Default to 'white' if the custom property is not defined.
-    */
     background: var(--card-background, white);
-
-    /* 
-       Set border color using custom property '--card-border-color'.
-       Default to 'LightGrey' if the custom property is not defined.
-    */
     border-color: var(--card-border-color, LightGrey);
-
-    /* 
-       Set border radius using custom property '--card-border-radius'.
-       Default to '4px' if the custom property is not defined.
-    */
     border-radius: var(--card-border-radius, 4px);
-
-    /* 
-       Set border style using custom property '--card-border-style'.
-       Default to 'solid' if the custom property is not defined.
-    */
     border-style: var(--card-border-style, solid);
-
-    /* 
-       Set border width using custom property '--card-border-width'.
-       Default to '1px' if the custom property is not defined.
-    */
     border-width: var(--card-border-width, 1px);
-
-    /* 
-       Set color using custom property '--alert-color'.
-       Default to 'inherit' if the custom property is not defined.
-    */
     color: var(--card-color, inherit);
-
-    /* 
-       Set display property using custom property '--card-display'.
-       Default to 'flex' if the custom property is not defined.
-    */
     display: var(--card-display, flex);
-
-    /* 
-       Set flex container properties using custom property '--card-flex-flow'.
-       Default to 'column nowrap' if the custom property is not defined.
-    */
     flex-flow: var(--card-flex-flow, column nowrap);
-
-    /* 
-       Set margins using custom properties '--card-margin-top', '--card-margin-right',
-       '--card-margin-bottom', and '--card-margin-left'.
-       Default values are provided for margins if custom properties are not defined.
-    */
     margin: var(--card-margin-top, 0) var(--card-margin-right, 0)
-      var(--card-margin-bottom, 1ch) var(--card-margin-left, 0);
-
-    /* 
-       Set minimum width using custom property '--card-min-width'.
-       Default to '0' if the custom property is not defined.
-    */
+      var(--card-margin-bottom, var(--size-3)) var(--card-margin-left, 0);
     min-width: var(--card-min-width, 0);
-
-    /* 
-       Set position property using custom property '--card-position'.
-       Default to 'relative' if the custom property is not defined.
-    */
     position: var(--card-position, relative);
-
-    /* 
-       Set word wrapping behavior using custom property '--card-word-wrap'.
-       Default to 'break-word' if the custom property is not defined.
-    */
     word-wrap: var(--card-word-wrap, break-word);
 
-    /* 
-       Apply specific styles to direct children of '.card'.
-    */
     > * {
-      /* 
-         Styles applied to the first child element within '.card'.
-      */
       &:first-child {
-        /* 
-           Set border radius for top corners using custom property '--card-inner-border-radius'.
-           Default to '3px' if the custom property is not defined.
-        */
         border-top-right-radius: var(--card-inner-border-radius, 3px);
         border-top-left-radius: var(--card-inner-border-radius, 3px);
       }
 
-      /* 
-         Styles applied to the last child element within '.card'.
-      */
       &:last-child {
-        /* 
-           Set border radius for bottom corners using custom property '--card-inner-border-radius'.
-           Default to '3px' if the custom property is not defined.
-        */
         border-bottom-right-radius: var(--card-inner-border-radius, 3px);
         border-bottom-left-radius: var(--card-inner-border-radius, 3px);
       }
     }
 
-    /* 
-       Styles applied to child elements with specific class names within '.card'.
-    */
     .card__header,
     .card__body,
     .card__footer {
-      /* 
-         Set padding for inner elements using custom properties '--card-inner-padding-y' (vertical)
-         and '--card-inner-padding-x' (horizontal).
-         Default values are provided if custom properties are not defined.
-      */
-      padding: var(--card-inner-padding-y, 1ch) var(--card-inner-padding-x, 2ch);
+      padding: var(--card-inner-padding-y, var(--size-3))
+        var(--card-inner-padding-x, var(--size-5));
     }
 
-    /* 
-       Styles applied specifically to elements with class '.card__header' within '.card'.
-    */
     .card__header {
-      /* 
-         Set background color for card header using custom property '--card__header-background'.
-         Default to 'inherit' if the custom property is not defined.
-      */
       background: var(--card__header-background, inherit);
-
-      /* 
-         Set border color for card header using custom property '--card__header-border-color'.
-         Default to 'inherit' if the custom property is not defined.
-      */
       border-color: var(--card__header-border-color, inherit);
-
-      /* 
-         Set border style for card header using custom property '--card__header-border-style'.
-         Default to 'inherit' if the custom property is not defined.
-      */
       border-style: var(--card__header-border-style, inherit);
-
-      /* 
-         Set border width for card header using custom property '--card__header-border-width'.
-         Default to '0 0 1px' if the custom property is not defined.
-      */
       border-width: var(--card__header-border-width, 0 0 1px);
     }
 
-    /* 
-       Styles applied specifically to elements with class '.card__body' within '.card'.
-    */
     .card__body {
-      /* 
-         Set flex properties for card body using custom property '--card__body-flex'.
-         Default to '1 1 auto' if the custom property is not defined.
-      */
       flex: var(--card__body-flex, 1 1 auto);
     }
 
-    /* 
-       Styles applied specifically to elements with class '.card__footer' within '.card'.
-    */
     .card__footer {
-      /* 
-         Set background color for card footer using custom property '--card__footer-background'.
-         Default to 'inherit' if the custom property is not defined.
-      */
       background: var(--card__footer-background, inherit);
-
-      /* 
-         Set border color for card footer using custom property '--card__footer-border-color'.
-         Default to 'inherit' if the custom property is not defined.
-      */
       border-color: var(--card__footer-border-color, inherit);
-
-      /* 
-         Set border style for card footer using custom property '--card__footer-border-style'.
-         Default to 'inherit' if the custom property is not defined.
-      */
       border-style: var(--card__footer-border-style, inherit);
-
-      /* 
-         Set border width for card footer using custom property '--card__footer-border-width'.
-         Default to '1px 0 0' if the custom property is not defined.
-      */
       border-width: var(--card__footer-border-width, 1px 0 0);
-
-      /* 
-         Set margins for card footer using custom property '--card__footer-margin'.
-         Default to 'auto 0 0' if the custom property is not defined.
-      */
       margin: var(--card__footer-margin, auto 0 0);
     }
   }

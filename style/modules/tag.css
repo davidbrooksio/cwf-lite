@@ -1,34 +1,23 @@
-/* Define styles for elements within the 'cwf-modules' layer */
 @layer cwf-modules {
-  /* Styling for pill component */
   .tag {
-    /* Flexbox display settings */
     align-items: var(--tag-align-items, center);
     display: var(--tag-display, inline-flex);
     justify-content: var(--tag-justify-content, center);
-
-    /* Background and border styles */
     background: var(--tag-background, WhiteSmoke);
     border-color: var(--tag-border-color, LightGrey);
     border-radius: var(--tag-border-radius, 4px);
     border-style: var(--tag-border-style, solid);
     border-width: var(--tag-border-width, 1px);
-
-    /* Text and font styles */
     color: var(--tag-color, inherit);
     font-size: var(--tag-font-size, 11px);
     font-weight: var(--tag-font-weight, 400);
     line-height: var(--tag-line-height, 1.15);
     text-align: var(--tag-text-align, center);
     white-space: var(--tag-white-space, nowrap);
-
-    /* Spacing and padding */
-    gap: var(--tag-gap, 0.5ch);
-    padding: var(--tag-padding-y, 0) var(--tag-padding-x, 1ch);
+    gap: var(--tag-gap, var(--size-2));
+    padding: var(--tag-padding-y, 0) var(--tag-padding-x, var(--size-3));
     min-height: var(--tag-min-height, 1rem);
     min-width: var(--tag-min-width, 1rem);
-
-    /* Interaction and usability */
     user-select: var(--tag-user-select, none);
     vertical-align: var(--tag-vertical-align, middle);
   }

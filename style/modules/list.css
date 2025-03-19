@@ -1,14 +1,7 @@
-/* Define styles for elements within the 'cwf-modules' layer */
 @layer cwf-modules {
-  /* Apply styles to unordered lists with the class '.list--unstyled' */
   .list--unstyled {
-    /* Remove default list styles (bullets/numbers) */
     list-style: var(--list-list-style, none);
-
-    /* Set margin around the unordered list */
     margin: var(--list-margin, 0);
-
-    /* Set padding inside the unordered list */
     padding: var(--list-padding, 0);
   }
 }

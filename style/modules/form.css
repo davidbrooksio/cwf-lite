@@ -1,17 +1,11 @@
-/* Define styles for elements within the 'cwf-modules' layer */
 @layer cwf-modules {
-  /* Apply styles to elements with the class '.input' */
   .input {
-    /* Set margins using custom properties for top, right, bottom, and left */
     margin: var(--input-margin-top, 0) var(--input-margin-right, 0)
-      var(--input-margin-bottom, 1ch) var(--input-margin-left, 0);
-
-    /* Set width of the input using custom property */
+      var(--input-margin-bottom, var(--size-3)) var(--input-margin-left, 0);
     width: var(--input-width, 100%);
+    transition: var(--input-transition, all 0.2s ease-in-out);
 
-    /* Base styles for all inputs except <progress> */
     &:not(progress) {
-      /* Apply appearance using custom property */
       appearance: var(--input-appearance, auto);
       background-color: var(--input-background-color, white);
       border-color: var(--input-border-color, LightGrey);
@@ -25,21 +19,19 @@
       height: var(--input-height, auto);
       line-height: var(--input-line-height, 1.15);
       outline: var(--input-outline, 0);
-      padding: var(--input-padding-y, 1ch) var(--input-padding-x, 2ch);
+      padding: var(--input-padding-y, var(--size-3))
+        var(--input-padding-x, var(--size-5));
       vertical-align: var(--input-vertical-align, initial);
     }
 
-    /* Placeholder text styles */
     &::placeholder {
       color: var(--input-placeholder-color, LightGrey);
     }
 
-    /* Disabled state styles */
     &[disabled] {
       background-color: var(--input-disabled-background-color, WhiteSmoke);
     }
 
-    /* Hover and focus styles for inputs except <output> and when disabled */
     &:not(output):not([disabled]) {
       &:hover {
         border-color: var(--input-hover-border-color, grey);
@@ -53,7 +45,6 @@
       }
     }
 
-    /* Focus styles for inputs except [type="range"],  <output> and when disabled */
     &:not([type="range"]):not(output):not([disabled]) {
       &:hover {
         box-shadow: var(--input-hover-box-shadow, none);
@@ -68,20 +59,17 @@
       }
     }
 
-    /* Styles for checkboxes */
     &[type="checkbox"] {
-      padding: var(--input-checkbox-padding-y, 1ch)
-        var(--input-checkbox-padding-x, 1ch);
+      padding: var(--input-checkbox-padding-y, var(--size-3))
+        var(--input-checkbox-padding-x, var(--size-3));
     }
 
-    /* Styles for  radio buttons */
     &[type="radio"] {
-      padding: var(--input-radio-padding-y, 1ch)
-        var(--input-radio-padding-x, 1ch);
+      padding: var(--input-radio-padding-y, var(--size-3))
+        var(--input-radio-padding-x, var(--size-3));
       border-radius: var(--input-border-radius, 50%);
     }
 
-    /* Styles for checkboxes and radio buttons */
     &[type="checkbox"],
     &[type="radio"] {
       appearance: var(--input-appearance, none);
@@ -90,7 +78,6 @@
       vertical-align: var(--input-vertical-align, top);
       width: var(--input-width, auto);
 
-      /* Checked state styles */
       &:checked {
         background-color: var(--input-checked-background-color, DimGrey);
 
@@ -102,12 +89,10 @@
         }
       }
 
-      /* Hover state styles */
       &:hover {
         box-shadow: var(--input-hover-box-shadow, none);
       }
 
-      /* Focus state styles */
       &:focus-visible,
       &:focus {
         box-shadow: var(
@@ -117,7 +102,6 @@
       }
     }
 
-    /* Styles specific to checkboxes when checked */
     &[type="checkbox"]:checked {
       background-image: var(
         --input-checkbox-background-image,
@@ -125,7 +109,6 @@
       );
     }
 
-    /* Styles specific to radio buttons when checked */
     &[type="radio"]:checked {
       background-image: var(
         --input-radio-background-image,
@@ -133,18 +116,17 @@
       );
     }
 
-    /* Styles for <select> elements with multiple options */
     &:is(select) {
       &[multiple] {
         padding: var(--input-padding-y, 0) var(--input-padding-x, 0);
 
         option {
-          padding: var(--option-padding-y, 1ch) var(--option-padding-x, 2ch);
+          padding: var(--option-padding-y, var(--size-3))
+            var(--option-padding-x, var(--size-5));
         }
       }
     }
 
-    /* Styles for <progress> elements */
     &:is(progress) {
       appearance: var(--input-appearance, none);
       border-color: var(--input-border-color, LightGrey);
@@ -169,7 +151,6 @@
       }
     }
 
-    /* Styles for <output> elements */
     &:is(output) {
       display: var(--input-display, block);
 
@@ -184,14 +165,12 @@
     }
   }
 
-  /* Apply styles to elements with the class '.label' */
   .label {
-    /* Set display and margins using custom properties */
     display: var(--label-display, inline-flex);
     color: var(--label-color, inherit);
     font-weight: var(--label-font-weight, 400);
     margin: var(--label-margin-top, 0) var(--label-margin-right, 0)
-      var(--label-margin-bottom, 0.25ch) var(--label-margin-left, 0);
+      var(--label-margin-bottom, var(--size-1)) var(--label-margin-left, 0);
     width: var(--label-width, 100%);
   }
 }

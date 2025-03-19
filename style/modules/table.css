@@ -1,94 +1,64 @@
-/* Custom table module with configurable variables */
-
 @layer cwf-modules {
-  /* Define the .table class for table styling */
   .table {
-    /* Table properties based on custom variables */
-    border-collapse: var(
-      --table-border-collapse,
-      collapse
-    ); /* Default: collapse */
-    caption-side: var(--table-caption-side, bottom); /* Default: bottom */
+    border-collapse: var(--table-border-collapse, collapse);
+    border-spacing: var(--table-border-spacing, 0);
+    caption-side: var(--table-caption-side, bottom);
     color: var(--table-color, inherit);
-    width: var(--table-width, 100%); /* Default: 100% */
+    margin: var(--table-margin, 0 0 var(--size-3) 0);
+    width: var(--table-width, 100%);
 
-    /* Styling for table cells (td and th) */
     td,
     th {
-      border-color: var(
-        --table-cell-border-color,
-        LightGrey
-      ); /* Default: LightGrey */
-      border-style: var(--table-cell-border-style, solid); /* Default: solid */
-      border-width: var(
-        --table-cell-border-width,
-        0 0 1px 0
-      ); /* Default: 0 0 1px 0 */
-      padding: var(--table-cell-padding-y, 1ch) var(--table-cell-padding-x, 2ch); /* Default: 1ch 2ch */
-      vertical-align: var(--table-cell-valign, top); /* Default: top */
+      border-color: var(--table-cell-border-color, LightGrey);
+      border-style: var(--table-cell-border-style, solid);
+      border-width: var(--table-cell-border-width, 0 0 1px 0);
+      padding: var(--table-cell-padding-y, var(--size-3))
+        var(--table-cell-padding-x, var(--size-5));
+      vertical-align: var(--table-cell-valign, top);
     }
 
-    /* Styling for table head (thead) */
     thead {
       color: var(--table-head-color, inherit);
 
       tr {
-        background: var(
-          --table-head-background,
-          WhiteSmoke
-        ); /* Default: WhiteSmoke */
+        background: var(--table-head-background, WhiteSmoke);
 
         > * {
-          border-width: var(
-            --table-head-cell-border-width,
-            0 0 2px 0
-          ); /* Default: 0 0 2px 0 */
+          border-width: var(--table-head-cell-border-width, 0 0 2px 0);
         }
       }
     }
 
-    /* Styling for table body (tbody) */
     tbody {
       color: var(--table-body-color, inherit);
 
       tr {
-        background: var(--table-body-background, white); /* Default: white */
+        background: var(--table-body-background, white);
       }
     }
 
-    /* Styling for table foot (tfoot) */
     tfoot {
       color: var(--table-foot-color, inherit);
 
       tr {
-        background: var(
-          --table-foot-background,
-          WhiteSmoke
-        ); /* Default: WhiteSmoke */
+        background: var(--table-foot-background, WhiteSmoke);
 
         > * {
-          border-width: var(
-            --table-foot-cell-border-width,
-            2px 0 1px 0
-          ); /* Default: 2px 0 1px 0 */
+          border-width: var(--table-foot-cell-border-width, 2px 0 1px 0);
         }
       }
     }
 
-    /* Modifier class: table--bordered */
     &.table--bordered {
       td,
       th {
-        border-width: var(--table-cell-border-width, 1px); /* Default: 1px */
+        border-width: var(--table-cell-border-width, 1px);
       }
 
       thead {
         tr {
           > * {
-            border-width: var(
-              --table-head-cell-border-width,
-              1px 1px 2px 1px
-            ); /* Default: 1px 1px 2px 1px */
+            border-width: var(--table-head-cell-border-width, 1px 1px 2px 1px);
           }
         }
       }
@@ -96,46 +66,32 @@
       tfoot {
         tr {
           > * {
-            border-width: var(
-              --table-foot-cell-border-width,
-              2px 1px 1px 1px
-            ); /* Default: 2px 1px 1px 1px */
+            border-width: var(--table-foot-cell-border-width, 2px 1px 1px 1px);
           }
         }
       }
     }
 
-    /* Modifier class: table--striped */
     &.table--striped {
       tbody {
         tr {
           &:nth-of-type(even) {
-            background: var(
-              --table-row-even-background,
-              WhiteSmoke
-            ); /* Default: WhiteSmoke */
+            background: var(--table-row-even-background, WhiteSmoke);
           }
 
           &:nth-of-type(odd) {
-            background: var(
-              --table-row-odd-background,
-              white
-            ); /* Default: white */
+            background: var(--table-row-odd-background, white);
           }
         }
       }
     }
 
-    /* Modifier class: table--hover */
     &.table--hover {
       tbody {
         tr {
           &:hover {
             > * {
-              background: var(
-                --table-row-hover-background,
-                LightGrey
-              ); /* Default: LightGrey */
+              background: var(--table-row-hover-background, LightGrey);
             }
           }
         }

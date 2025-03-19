@@ -1,7 +1,3 @@
-/* 
-   Define a layer named 'cwf-utilities'.
-   This is used to organize CSS rules into logical groups or layers.
-*/
 @layer cwf-utilities {
   @each $value in left, right, none {
     .float--$(value) {
@@ -9,54 +5,36 @@
     }
 
     @media (min-width: 320px) {
-      /* 
-         Apply styles for extra small screens and above (>= 320px) using custom classes.
-      */
       .float--xs-$(value) {
         float: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
-      /* 
-         Apply styles for small screens and above (>= 576px) using custom classes.
-      */
       .float--sm-$(value) {
         float: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
-      /* 
-         Apply styles for medium screens and above (>= 768px) using custom classes.
-      */
       .float--md-$(value) {
         float: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
-      /* 
-         Apply styles for regular screens and above (>= 1024px) using custom classes.
-      */
       .float--rg-$(value) {
         float: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
-      /* 
-         Apply styles for large screens and above (>= 1216px) using custom classes.
-      */
       .float--lg-$(value) {
         float: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
-      /* 
-         Apply styles for extra large screens and above (>= 1408px) using custom classes.
-      */
       .float--xl-$(value) {
         float: $(value) !important;
       }

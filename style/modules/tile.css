@@ -1,33 +1,21 @@
-/* Define styles for elements within the 'cwf-modules' layer */
 @layer cwf-modules {
-  /* Styling for tile component */
   .tile {
-    /* Background and border styles */
     background: var(--tile-background, white);
     border-color: var(--tile-border-color, LightGrey);
     border-radius: var(--tile-border-radius, 0);
     border-style: var(--tile-border-style, solid);
     border-width: var(--tile-border-width, 1px);
-
-    /* border left settings */
     border-left-color: var(--tile-border-left-color, LightGrey);
     border-left-width: var(--tile-border-left-width, 4px);
-
-    /* color */
     color: var(--tile-color, inherit);
-
-    /* Flexbox display settings */
     display: var(--tile-display, flex);
     flex-flow: var(--tile-flex-flow, column nowrap);
-
-    /* Spacing and positioning */
     margin: var(--tile-margin-top, 0) var(--tile-margin-right, 0)
-      var(--tile-margin-bottom, 1ch) var(--tile-margin-left, 0);
+      var(--tile-margin-bottom, var(--size-3)) var(--tile-margin-left, 0);
     min-width: var(--tile-min-width, 0);
     position: var(--tile-position, relative);
     word-wrap: var(--tile-word-wrap, break-word);
 
-    /* Child elements styling */
     > * {
       &:first-child {
         border-top-right-radius: var(--tile-inner-border-radius, 0);
@@ -40,14 +28,13 @@
       }
     }
 
-    /* Inner parts of the tile */
     .tile__header,
     .tile__body,
     .tile__footer {
-      padding: var(--tile-inner-padding-y, 1ch) var(--tile-inner-padding-x, 2ch);
+      padding: var(--tile-inner-padding-y, var(--size-3))
+        var(--tile-inner-padding-x, var(--size-5));
     }
 
-    /* Styling for header section */
     .tile__header {
       background: var(--tile__header-background, inherit);
       border-color: var(--tile__header-border-color, inherit);
@@ -55,12 +42,10 @@
       border-width: var(--tile__header-border-width, 0 0 1px);
     }
 
-    /* Styling for body section */
     .tile__body {
       flex: var(--tile__body-flex, 1 1 auto);
     }
 
-    /* Styling for footer section */
     .tile__footer {
       background: var(--tile__footer-background, inherit);
       border-color: var(--tile__footer-border-color, inherit);

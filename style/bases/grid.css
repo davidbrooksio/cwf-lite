@@ -1,85 +1,31 @@
-/* 
-   Define a layer named 'cwf-bases'.
-   This is used to organize CSS rules into logical groups or layers.
-*/
 @layer cwf-bases {
-  /* 
-     Apply styles to elements with class 'grid'.
-  */
   .grid {
-    /* 
-       Set display property using custom property '--grid-display'.
-       Default to 'grid' if the custom property is not defined.
-    */
     display: var(--grid-display, grid);
-
-    /* 
-       Set grid-template-columns using custom property '--grid-template-columns'.
-       Default to repeating '12' columns with equal fraction sizes (1fr) if the custom property is not defined.
-    */
     grid-template-columns: var(
       --grid-template-columns,
       repeat(var(--columns, 12), 1fr)
     );
-
-    /* 
-       Set grid-template-rows using custom property '--grid-template-rows'.
-       Default to repeating '1' row with equal fraction sizes (1fr) if the custom property is not defined.
-    */
     grid-template-rows: var(--grid-template-rows, repeat(var(--rows, 1), 1fr));
-
-    /* 
-       Set gap using custom property '--grid-gap'.
-       Default to 0 if the custom property is not defined.
-    */
     gap: var(--grid-gap, 0);
 
-    /* 
-       Apply styles to direct children with class 'column' inside '.grid'.
-    */
     > .column {
-      /* 
-         Define custom properties for column grid placement.
-      */
       --column-grid-column-start: auto;
       --column-grid-column-end: span 12;
 
-      /* 
-         Set grid-column-start using custom property '--column-grid-column-start'.
-      */
       grid-column-start: var(--column-grid-column-start);
-
-      /* 
-         Set grid-column-end using custom property '--column-grid-column-end'.
-      */
       grid-column-end: var(--column-grid-column-end);
 
-      /* 
-         Loop through column size classes to dynamically set custom properties.
-      */
       @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-        /* 
-           Set custom property '--column-grid-column-start' for specific column start classes.
-        */
         &.column-start--$(size) {
           --column-grid-column-start: $(size);
         }
 
-        /* 
-           Set custom property '--column-grid-column-end' for specific column span classes.
-        */
         &.column-span--$(size) {
           --column-grid-column-end: span $(size);
         }
       }
 
-      /* 
-         Define responsive column layout based on media queries.
-      */
       @media (min-width: 320px) {
-        /* 
-           Apply styles for extra small screens (>= 320px) using custom column classes.
-        */
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column-start--xs-$(size) {
             --column-grid-column-start: $(size);
@@ -92,9 +38,6 @@
       }
 
       @media (min-width: 576px) {
-        /* 
-           Apply styles for small screens (>= 576px) using custom column classes.
-        */
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column-start--sm-$(size) {
             --column-grid-column-start: $(size);
@@ -107,9 +50,6 @@
       }
 
       @media (min-width: 768px) {
-        /* 
-           Apply styles for medium screens (>= 768px) using custom column classes.
-        */
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column-start--md-$(size) {
             --column-grid-column-start: $(size);
@@ -122,9 +62,6 @@
       }
 
       @media (min-width: 1024px) {
-        /* 
-           Apply styles for regular screens (>= 1024px) using custom column classes.
-        */
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column-start--rg-$(size) {
             --column-grid-column-start: $(size);
@@ -137,9 +74,6 @@
       }
 
       @media (min-width: 1216px) {
-        /* 
-           Apply styles for large screens (>= 1216px) using custom column classes.
-        */
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column-start--lg-$(size) {
             --column-grid-column-start: $(size);
@@ -152,9 +86,6 @@
       }
 
       @media (min-width: 1408px) {
-        /* 
-           Apply styles for extra large screens (>= 1408px) using custom column classes.
-        */
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column-start--xl-$(size) {
             --column-grid-column-start: $(size);
@@ -168,65 +99,18 @@
     }
   }
 
-  /* 
-     Apply styles to elements with class 'grid--flex'.
-  */
   .grid--flex {
-    /* 
-       Set display property using custom property '--flex-grid-display'.
-       Default to 'flex' if the custom property is not defined.
-    */
     display: var(--flex-grid-display, flex);
-
-    /* 
-       Set flex-flow property using custom property '--flex-grid-flex-flow'.
-       Default to 'wrap row' if the custom property is not defined.
-    */
     flex-flow: var(--flex-grid-flex-flow, wrap row);
+    margin-right: var(--flex-grid-margin-right, -var(--size-3));
+    margin-left: var(--flex-grid-margin-left, -var(--size-3));
 
-    /* 
-       Set margin-right using custom property '--flex-grid-margin-right'.
-       Default to '-1ch' if the custom property is not defined.
-    */
-    margin-right: var(--flex-grid-margin-right, -1ch);
-
-    /* 
-       Set margin-left using custom property '--flex-grid-margin-left'.
-       Default to '-1ch' if the custom property is not defined.
-    */
-    margin-left: var(--flex-grid-margin-left, -1ch);
-
-    /* 
-       Apply styles to direct children with class 'column' inside '.grid--flex'.
-    */
     > .column {
-      /* 
-         Set max-width using custom property '--column-max-width'.
-         Default to '100%' if the custom property is not defined.
-      */
       max-width: var(--column-max-width, 100%);
-
-      /* 
-         Set padding-right using custom property '--column-padding-right'.
-         Default to '1ch' if the custom property is not defined.
-      */
-      padding-right: var(--column-padding-right, 1ch);
-
-      /* 
-         Set padding-left using custom property '--column-padding-left'.
-         Default to '1ch' if the custom property is not defined.
-      */
-      padding-left: var(--column-padding-left, 1ch);
-
-      /* 
-         Set width using custom property '--column-width'.
-         Default to '100%' if the custom property is not defined.
-      */
+      padding-right: var(--column-padding-right, var(--size-3));
+      padding-left: var(--column-padding-left, var(--size-3));
       width: var(--column-width, 100%);
 
-      /* 
-         Apply styles for specific column classes (auto, fit, custom sizes).
-      */
       &.column--auto {
         flex: var(--column-flex, 0 0 auto);
         width: var(--column-width, auto);
@@ -236,9 +120,6 @@
         flex: var(--column-flex, 1 0 0%);
       }
 
-      /* 
-         Loop through column size classes to dynamically set width.
-      */
       @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
         &.column--$(size) {
           flex: var(--column-flex, 0 0 auto);
@@ -250,13 +131,7 @@
         }
       }
 
-      /* 
-         Define responsive column layout based on media queries.
-      */
       @media (min-width: 320px) {
-        /* 
-           Apply styles for extra small screens (>= 320px) using custom column classes.
-        */
         @each $size in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
           &.column--xs-$(size) {
             flex: var(--column-flex, 0 0 auto);
@@ -270,9 +145,6 @@
       }
 
       @media (min-width: 576px) {
-        /* 
-           Apply styles for small screens (>= 576px) using custom column classes.
-        */
         &.column--sm-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
@@ -295,9 +167,6 @@
       }
 
       @media (min-width: 768px) {
-        /* 
-           Apply styles for medium screens (>= 768px) using custom column classes.
-        */
         &.column--md-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
@@ -320,9 +189,6 @@
       }
 
       @media (min-width: 1024px) {
-        /* 
-           Apply styles for regular screens (>= 1024px) using custom column classes.
-        */
         &.column--rg-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
@@ -345,9 +211,6 @@
       }
 
       @media (min-width: 1216px) {
-        /* 
-           Apply styles for large screens (>= 1216px) using custom column classes.
-        */
         &.column--lg-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);
@@ -370,9 +233,6 @@
       }
 
       @media (min-width: 1408px) {
-        /* 
-           Apply styles for extra large screens (>= 1408px) using custom column classes.
-        */
         &.column--xl-auto {
           flex: var(--column-flex, 0 0 auto);
           width: var(--column-width, auto);

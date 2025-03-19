@@ -1,7 +1,3 @@
-/* 
-   Define a layer named 'cwf-utilities'.
-   This is used to organize CSS rules into logical groups or layers.
-*/
 @layer cwf-utilities {
   .margin-top--auto,
   .margin-y--auto {
@@ -24,9 +20,6 @@
   }
 
   @media (min-width: 320px) {
-    /* 
-       Apply styles for extra small screens and above (>= 320px) using custom classes.
-    */
     .margin-top--xs-auto,
     .margin-y--xs-auto {
       margin-top: auto !important;
@@ -49,9 +42,6 @@
   }
 
   @media (min-width: 576px) {
-    /* 
-       Apply styles for small screens and above (>= 576px) using custom classes.
-    */
     .margin-top--sm-auto,
     .margin-y--sm-auto {
       margin-top: auto !important;
@@ -74,9 +64,6 @@
   }
 
   @media (min-width: 768px) {
-    /* 
-       Apply styles for medium screens and above (>= 768px) using custom classes.
-    */
     .margin-top--md-auto,
     .margin-y--md-auto {
       margin-top: auto !important;
@@ -99,9 +86,6 @@
   }
 
   @media (min-width: 1024px) {
-    /* 
-       Apply styles for regular screens and above (>= 1024px) using custom classes.
-    */
     .margin-top--rg-auto,
     .margin-y--rg-auto {
       margin-top: auto !important;
@@ -124,9 +108,6 @@
   }
 
   @media (min-width: 1216px) {
-    /* 
-       Apply styles for large screens and above (>= 1216px) using custom classes.
-    */
     .margin-top--lg-auto,
     .margin-y--lg-auto {
       margin-top: auto !important;
@@ -149,9 +130,6 @@
   }
 
   @media (min-width: 1408px) {
-    /* 
-       Apply styles for extra large screens and above (>= 1408px) using custom classes.
-    */
     .margin-top--xl-auto,
     .margin-y--xl-auto {
       margin-top: auto !important;
@@ -173,455 +151,435 @@
     }
   }
 
-  @each $count, $size in (0, 1, 2, 3, 4, 5, 6, 7, 8, 9),
-    (0, 0.25ch, 0.5ch, 1ch, 1.5ch, 2ch, 2.5ch, 3ch, 3.5ch, 4ch)
-  {
+  @each $count in (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) {
     .margin--$(count) {
-      margin: $(size) !important;
+      margin: var(--size-$(count)) !important;
 
       &.margin--negative {
-        margin: calc($(size) * -1) !important;
+        margin: calc(var(--size-$(count)) * -1) !important;
       }
     }
 
     .margin-top--$(count) {
-      margin-top: $(size) !important;
+      margin-top: var(--size-$(count)) !important;
 
       &.margin-top--negative {
-        margin-top: calc($(size) * -1) !important;
+        margin-top: calc(var(--size-$(count)) * -1) !important;
       }
     }
 
     .margin-right--$(count) {
-      margin-right: $(size) !important;
+      margin-right: var(--size-$(count)) !important;
 
       &.margin-right--negative {
-        margin-right: calc($(size) * -1) !important;
+        margin-right: calc(var(--size-$(count)) * -1) !important;
       }
     }
 
     .margin-bottom--$(count) {
-      margin-bottom: $(size) !important;
+      margin-bottom: var(--size-$(count)) !important;
 
       &.margin-bottom--negative {
-        margin-bottom: calc($(size) * -1) !important;
+        margin-bottom: calc(var(--size-$(count)) * -1) !important;
       }
     }
 
     .margin-left--$(count) {
-      margin-left: $(size) !important;
+      margin-left: var(--size-$(count)) !important;
 
       &.margin-left--negative {
-        margin-left: calc($(size) * -1) !important;
+        margin-left: calc(var(--size-$(count)) * -1) !important;
       }
     }
 
     .margin-y--$(count) {
-      margin-top: $(size) !important;
-      margin-bottom: $(size) !important;
+      margin-top: var(--size-$(count)) !important;
+      margin-bottom: var(--size-$(count)) !important;
 
       &.margin-y--negative {
-        margin-top: calc($(size) * -1) !important;
-        margin-bottom: calc($(size) * -1) !important;
+        margin-top: calc(var(--size-$(count)) * -1) !important;
+        margin-bottom: calc(var(--size-$(count)) * -1) !important;
       }
     }
 
     .margin-x--$(count) {
-      margin-left: $(size) !important;
-      margin-right: $(size) !important;
+      margin-left: var(--size-$(count)) !important;
+      margin-right: var(--size-$(count)) !important;
 
       &.margin-x--negative {
-        margin-left: calc($(size) * -1) !important;
-        margin-right: calc($(size) * -1) !important;
+        margin-left: calc(var(--size-$(count)) * -1) !important;
+        margin-right: calc(var(--size-$(count)) * -1) !important;
       }
     }
 
     @media (min-width: 320px) {
-      /*
-         Apply styles for extra small screens and above (>= 320px) using custom classes.
-      */
       .margin--xs-$(count) {
-        margin: $(size) !important;
+        margin: var(--size-$(count)) !important;
 
         &.margin--xs-negative {
-          margin: calc($(size) * -1) !important;
+          margin: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-top--xs-$(count) {
-        margin-top: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
 
         &.margin-top--xs-negative {
-          margin-top: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-right--xs-$(count) {
-        margin-right: $(size) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-right--xs-negative {
-          margin-right: calc($(size) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-bottom--xs-$(count) {
-        margin-bottom: $(size) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-bottom--xs-negative {
-          margin-bottom: calc($(size) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-left--xs-$(count) {
-        margin-left: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
 
         &.margin-left--xs-negative {
-          margin-left: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-y--xs-$(count) {
-        margin-top: $(size) !important;
-        margin-bottom: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-y--xs-negative {
-          margin-top: calc($(size) * -1) !important;
-          margin-bottom: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-x--xs-$(count) {
-        margin-left: $(size) !important;
-        margin-right: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-x--xs-negative {
-          margin-left: calc($(size) * -1) !important;
-          margin-right: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
     }
 
     @media (min-width: 576px) {
-      /* 
-         Apply styles for small screens and above (>= 576px) using custom classes.
-      */
       .margin--sm-$(count) {
-        margin: $(size) !important;
+        margin: var(--size-$(count)) !important;
 
         &.margin--sm-negative {
-          margin: calc($(size) * -1) !important;
+          margin: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-top--sm-$(count) {
-        margin-top: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
 
         &.margin-top--sm-negative {
-          margin-top: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-right--sm-$(count) {
-        margin-right: $(size) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-right--sm-negative {
-          margin-right: calc($(size) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-bottom--sm-$(count) {
-        margin-bottom: $(size) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-bottom--sm-negative {
-          margin-bottom: calc($(size) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-left--sm-$(count) {
-        margin-left: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
 
         &.margin-left--sm-negative {
-          margin-left: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-y--sm-$(count) {
-        margin-top: $(size) !important;
-        margin-bottom: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-y--sm-negative {
-          margin-top: calc($(size) * -1) !important;
-          margin-bottom: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-x--sm-$(count) {
-        margin-left: $(size) !important;
-        margin-right: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-x--sm-negative {
-          margin-left: calc($(size) * -1) !important;
-          margin-right: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
     }
 
     @media (min-width: 768px) {
-      /* 
-         Apply styles for medium screens and above (>= 768px) using custom classes.
-      */
       .margin--md-$(count) {
-        margin: $(size) !important;
+        margin: var(--size-$(count)) !important;
 
         &.margin--md-negative {
-          margin: calc($(size) * -1) !important;
+          margin: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-top--md-$(count) {
-        margin-top: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
 
         &.margin-top--md-negative {
-          margin-top: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-right--md-$(count) {
-        margin-right: $(size) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-right--md-negative {
-          margin-right: calc($(size) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-bottom--md-$(count) {
-        margin-bottom: $(size) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-bottom--md-negative {
-          margin-bottom: calc($(size) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-left--md-$(count) {
-        margin-left: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
 
         &.margin-left--md-negative {
-          margin-left: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-y--md-$(count) {
-        margin-top: $(size) !important;
-        margin-bottom: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-y--md-negative {
-          margin-top: calc($(size) * -1) !important;
-          margin-bottom: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-x--md-$(count) {
-        margin-left: $(size) !important;
-        margin-right: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-x--md-negative {
-          margin-left: calc($(size) * -1) !important;
-          margin-right: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
     }
 
     @media (min-width: 1024px) {
-      /* 
-         Apply styles for regular screens and above (>= 1024px) using custom classes.
-      */
       .margin--rg-$(count) {
-        margin: $(size) !important;
+        margin: var(--size-$(count)) !important;
 
         &.margin--rg-negative {
-          margin: calc($(size) * -1) !important;
+          margin: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-top--rg-$(count) {
-        margin-top: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
 
         &.margin-top--rg-negative {
-          margin-top: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-right--rg-$(count) {
-        margin-right: $(size) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-right--rg-negative {
-          margin-right: calc($(size) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-bottom--rg-$(count) {
-        margin-bottom: $(size) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-bottom--rg-negative {
-          margin-bottom: calc($(size) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-left--rg-$(count) {
-        margin-left: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
 
         &.margin-left--rg-negative {
-          margin-left: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-y--rg-$(count) {
-        margin-top: $(size) !important;
-        margin-bottom: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-y--rg-negative {
-          margin-top: calc($(size) * -1) !important;
-          margin-bottom: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-x--rg-$(count) {
-        margin-left: $(size) !important;
-        margin-right: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-x--rg-negative {
-          margin-left: calc($(size) * -1) !important;
-          margin-right: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
     }
 
     @media (min-width: 1216px) {
-      /* 
-         Apply styles for large screens and above (>= 1216px) using custom classes.
-      */
       .margin--lg-$(count) {
-        margin: $(size) !important;
+        margin: var(--size-$(count)) !important;
 
         &.margin--lg-negative {
-          margin: calc($(size) * -1) !important;
+          margin: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-top--lg-$(count) {
-        margin-top: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
 
         &.margin-top--lg-negative {
-          margin-top: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-right--lg-$(count) {
-        margin-right: $(size) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-right--lg-negative {
-          margin-right: calc($(size) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-bottom--lg-$(count) {
-        margin-bottom: $(size) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-bottom--lg-negative {
-          margin-bottom: calc($(size) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-left--lg-$(count) {
-        margin-left: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
 
         &.margin-left--lg-negative {
-          margin-left: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-y--lg-$(count) {
-        margin-top: $(size) !important;
-        margin-bottom: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-y--lg-negative {
-          margin-top: calc($(size) * -1) !important;
-          margin-bottom: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-x--lg-$(count) {
-        margin-left: $(size) !important;
-        margin-right: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-x--lg-negative {
-          margin-left: calc($(size) * -1) !important;
-          margin-right: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
     }
 
     @media (min-width: 1408px) {
-      /* 
-         Apply styles for extra large screens and above (>= 1408px) using custom classes.
-      */
       .margin--xl-$(count) {
-        margin: $(size) !important;
+        margin: var(--size-$(count)) !important;
 
         &.margin--xl-negative {
-          margin: calc($(size) * -1) !important;
+          margin: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-top--xl-$(count) {
-        margin-top: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
 
         &.margin-top--xl-negative {
-          margin-top: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-right--xl-$(count) {
-        margin-right: $(size) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-right--xl-negative {
-          margin-right: calc($(size) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-bottom--xl-$(count) {
-        margin-bottom: $(size) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-bottom--xl-negative {
-          margin-bottom: calc($(size) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-left--xl-$(count) {
-        margin-left: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
 
         &.margin-left--xl-negative {
-          margin-left: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-y--xl-$(count) {
-        margin-top: $(size) !important;
-        margin-bottom: $(size) !important;
+        margin-top: var(--size-$(count)) !important;
+        margin-bottom: var(--size-$(count)) !important;
 
         &.margin-y--xl-negative {
-          margin-top: calc($(size) * -1) !important;
-          margin-bottom: calc($(size) * -1) !important;
+          margin-top: calc(var(--size-$(count)) * -1) !important;
+          margin-bottom: calc(var(--size-$(count)) * -1) !important;
         }
       }
 
       .margin-x--xl-$(count) {
-        margin-left: $(size) !important;
-        margin-right: $(size) !important;
+        margin-left: var(--size-$(count)) !important;
+        margin-right: var(--size-$(count)) !important;
 
         &.margin-x--xl-negative {
-          margin-left: calc($(size) * -1) !important;
-          margin-right: calc($(size) * -1) !important;
+          margin-left: calc(var(--size-$(count)) * -1) !important;
+          margin-right: calc(var(--size-$(count)) * -1) !important;
         }
       }
     }

@@ -1,22 +1,13 @@
-/* 
-   Define a layer named 'cwf-utilities'.
-   This is used to organize CSS rules into logical groups or layers.
-*/
 @layer cwf-utilities {
-  /* An extremely low z-index */
   .z-index--neg-1 {
     z-index: -1 !important;
   }
 
-  /* An extremely high z-index */
   .z-index--top {
     z-index: 9999 !important;
   }
 
   @media (min-width: 320px) {
-    /*
-       Apply styles for extra small screens and above (>= 320px) using custom classes.
-    */
     .z-index--xs-neg-1 {
       z-index: -1 !important;
     }
@@ -27,9 +18,6 @@
   }
 
   @media (min-width: 576px) {
-    /* 
-       Apply styles for small screens and above (>= 576px) using custom classes.
-    */
     .z-index--sm-neg-1 {
       z-index: -1 !important;
     }
@@ -40,9 +28,6 @@
   }
 
   @media (min-width: 768px) {
-    /* 
-       Apply styles for medium screens and above (>= 768px) using custom classes.
-    */
     .z-index--md-neg-1 {
       z-index: -1 !important;
     }
@@ -53,9 +38,6 @@
   }
 
   @media (min-width: 1024px) {
-    /* 
-       Apply styles for regular screens and above (>= 1024px) using custom classes.
-    */
     .z-index--rg-neg-1 {
       z-index: -1 !important;
     }
@@ -66,9 +48,6 @@
   }
 
   @media (min-width: 1216px) {
-    /* 
-       Apply styles for large screens and above (>= 1216px) using custom classes.
-    */
     .z-index--lg-neg-1 {
       z-index: -1 !important;
     }
@@ -79,9 +58,6 @@
   }
 
   @media (min-width: 1408px) {
-    /* 
-       Apply styles for extra large screens and above (>= 1408px) using custom classes.
-    */
     .z-index--xl-neg-1 {
       z-index: -1 !important;
     }
@@ -97,54 +73,36 @@
     }
 
     @media (min-width: 320px) {
-      /*
-         Apply styles for extra small screens and above (>= 320px) using custom classes.
-      */
       .z-index--xs-$(value) {
         z-index: $(value) !important;
       }
     }
 
     @media (min-width: 576px) {
-      /* 
-         Apply styles for small screens and above (>= 576px) using custom classes.
-      */
       .z-index--sm-$(value) {
         z-index: $(value) !important;
       }
     }
 
     @media (min-width: 768px) {
-      /* 
-         Apply styles for medium screens and above (>= 768px) using custom classes.
-      */
       .z-index--md-$(value) {
         z-index: $(value) !important;
       }
     }
 
     @media (min-width: 1024px) {
-      /* 
-         Apply styles for regular screens and above (>= 1024px) using custom classes.
-      */
       .z-index--rg-$(value) {
         z-index: $(value) !important;
       }
     }
 
     @media (min-width: 1216px) {
-      /* 
-         Apply styles for large screens and above (>= 1216px) using custom classes.
-      */
       .z-index--lg-$(value) {
         z-index: $(value) !important;
       }
     }
 
     @media (min-width: 1408px) {
-      /* 
-         Apply styles for extra large screens and above (>= 1408px) using custom classes.
-      */
       .z-index--xl-$(value) {
         z-index: $(value) !important;
       }

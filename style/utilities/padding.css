@@ -1,248 +1,224 @@
-/* 
-   Define a layer named 'cwf-utilities'.
-   This is used to organize CSS rules into logical groups or layers.
-*/
 @layer cwf-utilities {
-  @each $count, $size in (0, 1, 2, 3, 4, 5, 6, 7, 8, 9),
-    (0, 0.25ch, 0.5ch, 1ch, 1.5ch, 2ch, 2.5ch, 3ch, 3.5ch, 4ch)
-  {
+  @each $count in (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) {
     .padding--$(count) {
-      padding: $(size) !important;
+      padding: var(--size-$(count)) !important;
     }
 
     .padding-top--$(count) {
-      padding-top: $(size) !important;
+      padding-top: var(--size-$(count)) !important;
     }
 
     .padding-right--$(count) {
-      padding-right: $(size) !important;
+      padding-right: var(--size-$(count)) !important;
     }
 
     .padding-bottom--$(count) {
-      padding-bottom: $(size) !important;
+      padding-bottom: var(--size-$(count)) !important;
     }
 
     .padding-left--$(count) {
-      padding-left: $(size) !important;
+      padding-left: var(--size-$(count)) !important;
     }
 
     .padding-y--$(count) {
-      padding-top: $(size) !important;
-      padding-bottom: $(size) !important;
+      padding-top: var(--size-$(count)) !important;
+      padding-bottom: var(--size-$(count)) !important;
     }
 
     .padding-x--$(count) {
-      padding-left: $(size) !important;
-      padding-right: $(size) !important;
+      padding-left: var(--size-$(count)) !important;
+      padding-right: var(--size-$(count)) !important;
     }
 
     @media (min-width: 320px) {
-      /*
-         Apply styles for extra small screens and above (>= 320px) using custom classes.
-      */
       .padding--xs-$(count) {
-        padding: $(size) !important;
+        padding: var(--size-$(count)) !important;
       }
 
       .padding-top--xs-$(count) {
-        padding-top: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
       }
 
       .padding-right--xs-$(count) {
-        padding-right: $(size) !important;
+        padding-right: var(--size-$(count)) !important;
       }
 
       .padding-bottom--xs-$(count) {
-        padding-bottom: $(size) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-left--xs-$(count) {
-        padding-left: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
       }
 
       .padding-y--xs-$(count) {
-        padding-top: $(size) !important;
-        padding-bottom: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-x--xs-$(count) {
-        padding-left: $(size) !important;
-        padding-right: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
+        padding-right: var(--size-$(count)) !important;
       }
     }
 
     @media (min-width: 576px) {
-      /* 
-         Apply styles for small screens and above (>= 576px) using custom classes.
-      */
       .padding--sm-$(count) {
-        padding: $(size) !important;
+        padding: var(--size-$(count)) !important;
       }
 
       .padding-top--sm-$(count) {
-        padding-top: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
       }
 
       .padding-right--sm-$(count) {
-        padding-right: $(size) !important;
+        padding-right: var(--size-$(count)) !important;
       }
 
       .padding-bottom--sm-$(count) {
-        padding-bottom: $(size) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-left--sm-$(count) {
-        padding-left: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
       }
 
       .padding-y--sm-$(count) {
-        padding-top: $(size) !important;
-        padding-bottom: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-x--sm-$(count) {
-        padding-left: $(size) !important;
-        padding-right: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
+        padding-right: var(--size-$(count)) !important;
       }
     }
 
     @media (min-width: 768px) {
-      /* 
-         Apply styles for medium screens and above (>= 768px) using custom classes.
-      */
       .padding--md-$(count) {
-        padding: $(size) !important;
+        padding: var(--size-$(count)) !important;
       }
 
       .padding-top--md-$(count) {
-        padding-top: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
       }
 
       .padding-right--md-$(count) {
-        padding-right: $(size) !important;
+        padding-right: var(--size-$(count)) !important;
       }
 
       .padding-bottom--md-$(count) {
-        padding-bottom: $(size) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-left--md-$(count) {
-        padding-left: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
       }
 
       .padding-y--md-$(count) {
-        padding-top: $(size) !important;
-        padding-bottom: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-x--md-$(count) {
-        padding-left: $(size) !important;
-        padding-right: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
+        padding-right: var(--size-$(count)) !important;
       }
     }
 
     @media (min-width: 1024px) {
-      /* 
-         Apply styles for regular screens and above (>= 1024px) using custom classes.
-      */
       .padding--rg-$(count) {
-        padding: $(size) !important;
+        padding: var(--size-$(count)) !important;
       }
 
       .padding-top--rg-$(count) {
-        padding-top: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
       }
 
       .padding-right--rg-$(count) {
-        padding-right: $(size) !important;
+        padding-right: var(--size-$(count)) !important;
       }
 
       .padding-bottom--rg-$(count) {
-        padding-bottom: $(size) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-left--rg-$(count) {
-        padding-left: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
       }
 
       .padding-y--rg-$(count) {
-        padding-top: $(size) !important;
-        padding-bottom: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-x--rg-$(count) {
-        padding-left: $(size) !important;
-        padding-right: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
+        padding-right: var(--size-$(count)) !important;
       }
     }
 
     @media (min-width: 1216px) {
-      /* 
-         Apply styles for large screens and above (>= 1216px) using custom classes.
-      */
       .padding--lg-$(count) {
-        padding: $(size) !important;
+        padding: var(--size-$(count)) !important;
       }
 
       .padding-top--lg-$(count) {
-        padding-top: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
       }
 
       .padding-right--lg-$(count) {
-        padding-right: $(size) !important;
+        padding-right: var(--size-$(count)) !important;
       }
 
       .padding-bottom--lg-$(count) {
-        padding-bottom: $(size) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-left--lg-$(count) {
-        padding-left: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
       }
 
       .padding-y--lg-$(count) {
-        padding-top: $(size) !important;
-        padding-bottom: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-x--lg-$(count) {
-        padding-left: $(size) !important;
-        padding-right: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
+        padding-right: var(--size-$(count)) !important;
       }
     }
 
     @media (min-width: 1408px) {
-      /* 
-         Apply styles for extra large screens and above (>= 1408px) using custom classes.
-      */
       .padding--xl-$(count) {
-        padding: $(size) !important;
+        padding: var(--size-$(count)) !important;
       }
 
       .padding-top--xl-$(count) {
-        padding-top: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
       }
 
       .padding-right--xl-$(count) {
-        padding-right: $(size) !important;
+        padding-right: var(--size-$(count)) !important;
       }
 
       .padding-bottom--xl-$(count) {
-        padding-bottom: $(size) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-left--xl-$(count) {
-        padding-left: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
       }
 
       .padding-y--xl-$(count) {
-        padding-top: $(size) !important;
-        padding-bottom: $(size) !important;
+        padding-top: var(--size-$(count)) !important;
+        padding-bottom: var(--size-$(count)) !important;
       }
 
       .padding-x--xl-$(count) {
-        padding-left: $(size) !important;
-        padding-right: $(size) !important;
+        padding-left: var(--size-$(count)) !important;
+        padding-right: var(--size-$(count)) !important;
       }
     }
   }

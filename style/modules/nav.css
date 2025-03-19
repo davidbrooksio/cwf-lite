@@ -1,15 +1,12 @@
-/* Define styles for elements within the 'cwf-modules' layer */
 @layer cwf-modules {
-  /* Styling for navigation component */
   .nav {
-    /* Flexbox display settings */
     display: var(--nav-display, flex);
     flex-flow: var(--nav-flex-flow, wrap row);
     align-items: var(--nav-align-items, center);
     justify-content: var(--nav-justify-content, flex-start);
     position: var(--nav-position, relative);
     margin: var(--nav-margin-top, 0) var(--nav-margin-right, 0)
-      var(--nav-margin-bottom, 1ch) var(--nav-margin-left, 0);
+      var(--nav-margin-bottom, var(--size-3)) var(--nav-margin-left, 0);
     padding: var(--nav-padding, 0);
     list-style: var(--nav-list-style, none);
     gap: var(--nav-gap, 0);
@@ -18,7 +15,6 @@
     border-color: var(--nav-border-color, transparent);
     color: var(--nav-color, inherit);
 
-    /* Styling for navigation items */
     .nav__item {
       align-items: var(--nav__item-align-items, center);
       background: var(--nav__item-background, transparent);
@@ -31,12 +27,13 @@
       cursor: var(--nav__item-cursor, pointer);
       display: var(--nav__item-display, inline-flex);
       font-weight: var(--nav__item-font-weight, 400);
-      gap: var(--nav__item-gap, 1ch);
+      gap: var(--nav__item-gap, var(--size-3));
       justify-content: var(--nav__item-justify-content, center);
       line-height: var(--nav__item-line-height, 1.15);
       margin: var(--nav__item-margin, 0);
       outline: var(--nav__item-outline, 0);
-      padding: var(--nav__item-padding-y, 1ch) var(--nav__item-padding-x, 2ch);
+      padding: var(--nav__item-padding-y, var(--size-3))
+        var(--nav__item-padding-x, var(--size-5));
       text-align: var(--nav__item-text-align, center);
       text-decoration: var(--nav__item-text-decoration, none);
       user-select: var(--nav__item-user-select, none);
@@ -44,7 +41,6 @@
       white-space: var(--nav__item-white-space, nowrap);
       width: var(--nav__item-width, auto);
 
-      /* Hover state styling for navigation items */
       &:hover {
         background: var(--nav__item-hover-background, WhiteSmoke);
         border-color: var(--nav__item-hover-border-color, transparent);
@@ -52,7 +48,6 @@
         text-decoration: var(--nav__item-hover-text-decoration, none);
       }
 
-      /* Focus state styling for navigation items */
       &:focus-visible,
       &:focus {
         background: var(--nav__item-focus-background, WhiteSmoke);
@@ -61,7 +56,6 @@
         text-decoration: var(--nav__item-focus-text-decoration, none);
       }
 
-      /* Active state styling for navigation items */
       &:active,
       &[data-active="true"],
       &.active {
@@ -81,30 +75,25 @@
       }
     }
 
-    /* Stacked navigation style modifier */
     &.nav--stacked {
       align-items: var(--nav-align-items, stretch);
       flex-flow: var(--nav-flex-flow, wrap column);
 
-      /* Stacked navigation item styles */
       .nav__item {
         justify-content: var(--nav__item-justify-content, flex-start);
         width: var(--nav__item-width, 100%);
       }
     }
 
-    /* Tab navigation style modifier */
     &.nav--tabs {
-      /* Apply border and padding only if not empty */
       &:not(:empty) {
         border-color: var(--nav-border-color, LightGrey);
         border-style: var(--nav-border-style, solid);
         border-width: var(--nav-border-width, 0 0 1px);
-        gap: var(--nav-gap, 1ch);
-        padding: var(--nav-padding, 0 1ch);
+        gap: var(--nav-gap, var(--size-3));
+        padding: var(--nav-padding, 0 var(--size-3));
       }
 
-      /* Styling for tab navigation items */
       .nav__item {
         border-color: var(--nav__item-border-color, inherit);
         border-radius: var(--nav__item-border-radius, 4px 4px 0 0);
@@ -126,7 +115,6 @@
           text-decoration: var(--nav__item-focus-text-decoration, none);
         }
 
-        /* Active state for tab navigation items */
         &:active,
         &[data-active="true"],
         &.active {
