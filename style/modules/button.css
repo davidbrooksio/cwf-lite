@@ -13,10 +13,12 @@
     font-weight: var(--button-font-weight, 400);
     gap: var(--button-gap, var(--size-3));
     justify-content: var(--button-justify-content, center);
-    line-height: var(--button-line-height, 1.15);
+    line-height: var(--button-line-height, 1);
     outline: var(--button-outline, 0);
-    padding: var(--button-padding-y, var(--size-3))
-      var(--button-padding-x, var(--size-5));
+    padding: var(--button-padding-top, var(--size-3))
+      var(--button-padding-right, var(--size-5))
+      var(--button-padding-bottom, var(--size-3))
+      var(--button-padding-left, var(--size-5));
     text-align: var(--button-text-align, center);
     text-decoration: var(--button-text-decoration, none);
     user-select: var(--button-user-select, none);
@@ -50,9 +52,7 @@
         text-decoration: var(--button-focus-text-decoration, none);
       }
 
-      &:active,
-      &[data-active="true"],
-      &.active {
+      &:active {
         background: var(--button-active-background, WhiteSmoke);
         border-color: var(--button-active-border-color, grey);
         box-shadow: var(
@@ -61,6 +61,14 @@
         );
         color: var(--button-active-color, inherit);
         text-decoration: var(--button-active-text-decoration, none);
+      }
+
+      &[aria-current="page"] {
+        background: var(--button-current-background, WhiteSmoke);
+        border-color: var(--button-current-border-color, DarkGray);
+        box-shadow: var(--button-current-box-shadow, none);
+        color: var(--button-current-color, inherit);
+        text-decoration: var(--button-current-text-decoration, none);
       }
     }
   }

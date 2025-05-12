@@ -12,8 +12,10 @@
       border-color: var(--table-cell-border-color, LightGrey);
       border-style: var(--table-cell-border-style, solid);
       border-width: var(--table-cell-border-width, 0 0 1px 0);
-      padding: var(--table-cell-padding-y, var(--size-3))
-        var(--table-cell-padding-x, var(--size-5));
+      padding: var(--table-cell-padding-top, var(--size-3))
+        var(--table-cell-padding-right, var(--size-5))
+        var(--table-cell-padding-bottom, var(--size-3))
+        var(--table-cell-padding-left, var(--size-5));
       vertical-align: var(--table-cell-valign, top);
     }
 

@@ -29,27 +29,29 @@
     .card__header,
     .card__body,
     .card__footer {
-      padding: var(--card-inner-padding-y, var(--size-3))
-        var(--card-inner-padding-x, var(--size-5));
+      padding: var(--card-inner-padding-top, var(--size-3))
+        var(--card-inner-padding-right, var(--size-5))
+        var(--card-inner-padding-bottom, var(--size-3))
+        var(--card-inner-padding-left, var(--size-5));
     }
 
     .card__header {
-      background: var(--card__header-background, inherit);
-      border-color: var(--card__header-border-color, inherit);
-      border-style: var(--card__header-border-style, inherit);
-      border-width: var(--card__header-border-width, 0 0 1px);
+      background: var(--card-header-background, inherit);
+      border-color: var(--card-header-border-color, inherit);
+      border-style: var(--card-header-border-style, inherit);
+      border-width: var(--card-header-border-width, 0 0 1px);
     }
 
     .card__body {
-      flex: var(--card__body-flex, 1 1 auto);
+      flex: var(--card-body-flex, 1 1 auto);
     }
 
     .card__footer {
-      background: var(--card__footer-background, inherit);
-      border-color: var(--card__footer-border-color, inherit);
-      border-style: var(--card__footer-border-style, inherit);
-      border-width: var(--card__footer-border-width, 1px 0 0);
-      margin: var(--card__footer-margin, auto 0 0);
+      background: var(--card-footer-background, inherit);
+      border-color: var(--card-footer-border-color, inherit);
+      border-style: var(--card-footer-border-style, inherit);
+      border-width: var(--card-footer-border-width, 1px 0 0);
+      margin: var(--card-footer-margin, auto 0 0);
     }
   }
 }

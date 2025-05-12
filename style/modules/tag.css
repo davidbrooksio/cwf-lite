@@ -11,11 +11,12 @@
     color: var(--tag-color, inherit);
     font-size: var(--tag-font-size, 11px);
     font-weight: var(--tag-font-weight, 400);
-    line-height: var(--tag-line-height, 1.15);
+    line-height: var(--tag-line-height, 1);
     text-align: var(--tag-text-align, center);
     white-space: var(--tag-white-space, nowrap);
     gap: var(--tag-gap, var(--size-2));
-    padding: var(--tag-padding-y, 0) var(--tag-padding-x, var(--size-3));
+    padding: var(--tag-padding-top, 0) var(--tag-padding-right, var(--size-3))
+      var(--tag-padding-bottom, 0) var(--tag-padding-left, var(--size-3));
     min-height: var(--tag-min-height, 1rem);
     min-width: var(--tag-min-width, 1rem);
     user-select: var(--tag-user-select, none);

@@ -15,7 +15,7 @@
     cursor: var(--input-cursor, auto);
     font-weight: var(--input-font-weight, 400);
     height: var(--input-height, auto);
-    line-height: var(--input-line-height, 1.15);
+    line-height: var(--input-line-height, 1);
     margin: var(--input-margin-top, 0) var(--input-margin-right, 0)
       var(--input-margin-bottom, var(--size-3)) var(--input-margin-left, 0);
     min-height: var(--input-min-height, 0);
@@ -122,8 +122,10 @@
     /* -------------------------------- Checkbox -------------------------------- */
     &:is([type="checkbox"]) {
       appearance: var(--input-checkbox-appearance, none);
-      padding: var(--input-checkbox-padding-y, var(--size-3))
-        var(--input-checkbox-padding-x, var(--size-3));
+      padding: var(--input-checkbox-padding-top, var(--size-3))
+        var(--input-checkbox-padding-right, var(--size-3))
+        var(--input-checkbox-padding-bottom, var(--size-3))
+        var(--input-checkbox-padding-left, var(--size-3));
       width: var(--input-checkbox-width, 1em);
       height: var(--input-checkbox-height, 1em);
       background-image: var(
@@ -141,8 +143,10 @@
     &:is([type="radio"]) {
       appearance: var(--input-radio-appearance, none);
       border-radius: var(--input-radio-border-radius, 50%);
-      padding: var(--input-radio-padding-y, var(--size-3))
-        var(--input-radio-padding-x, var(--size-3));
+      padding: var(--input-radio-padding-top, var(--size-3))
+        var(--input-radio-padding-right, var(--size-3))
+        var(--input-radio-padding-bottom, var(--size-3))
+        var(--input-radio-padding-left, var(--size-3));
       width: var(--input-radio-width, 1em);
       height: var(--input-radio-height, 1em);
       background-image: var(
@@ -166,8 +170,10 @@
         -webkit-appearance: button;
         -webkit-margin-end: var(--input-file-button-margin-end, var(--size-5));
 
-        padding: var(--input-file-button-padding-y, var(--size-3))
-          var(--input-file-button-padding-x, var(--size-5));
+        padding: var(--input-file-button-padding-top, var(--size-3))
+          var(--input-file-button-padding-right, var(--size-5))
+          var(--input-file-button-padding-bottom, var(--size-3))
+          var(--input-file-button-padding-left, var(--size-5));
         margin: var(--input-file-button-margin-y, calc(var(--size-3) * -1))
           var(--input-file-button-margin-x, calc(var(--size-5) * -1));
         margin-inline-end: var(

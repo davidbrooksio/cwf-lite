@@ -8,8 +8,10 @@
     color: var(--alert-color, inherit);
     display: var(--alert-display, block);
     min-width: var(--alert-min-width, 0);
-    padding: var(--alert-padding-y, var(--size-7))
-      var(--alert-padding-x, var(--size-7));
+    padding: var(--alert-padding-top, var(--size-7))
+      var(--alert-padding-right, var(--size-7))
+      var(--alert-padding-bottom, var(--size-7))
+      var(--alert-padding-left, var(--size-7));
     margin: var(--alert-margin-top, 0) var(--alert-margin-right, 0)
       var(--alert-margin-bottom, var(--size-3)) var(--alert-margin-left, 0);
     position: var(--alert-position, relative);

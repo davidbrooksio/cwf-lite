@@ -22,11 +22,14 @@
         text-decoration: var(--link-focus-text-decoration, underline);
       }
 
-      &:active,
-      &[data-active="true"],
-      &.active {
-        color: var(--link-active-color, DarkRed);
+      &:active {
+        color: var(--link-active-color, FireBrick);
         text-decoration: var(--link-active-text-decoration, underline);
+      }
+
+      &[aria-current="page"] {
+        color: var(--link-current-color, maroon);
+        text-decoration: var(--link-current-text-decoration, none);
       }
     }
   }

@@ -11,11 +11,12 @@
     color: var(--pill-color, LightGrey);
     font-size: var(--pill-font-size, 11px);
     font-weight: var(--pill-font-weight, 400);
-    line-height: var(--pill-line-height, 1.15);
+    line-height: var(--pill-line-height, 1);
     text-align: var(--pill-text-align, center);
     white-space: var(--pill-white-space, nowrap);
     gap: var(--pill-gap, var(--size-2));
-    padding: var(--pill-padding-y, 0) var(--pill-padding-x, var(--size-2));
+    padding: var(--pill-padding-top, 0) var(--pill-padding-right, var(--size-2))
+      var(--pill-padding-bottom, 0) var(--pill-padding-left, var(--size-2));
     min-width: var(--pill-min-width, 1rem);
     min-height: var(--pill-min-height, 1rem);
     user-select: var(--pill-user-select, none);

@@ -16,62 +16,69 @@
     color: var(--nav-color, inherit);
 
     .nav__item {
-      align-items: var(--nav__item-align-items, center);
-      background: var(--nav__item-background, transparent);
-      border-color: var(--nav__item-border-color, transparent);
-      border-radius: var(--nav__item-border-radius, 0);
-      border-style: var(--nav__item-border-style, solid);
-      border-width: var(--nav__item-border-width, 0);
-      box-shadow: var(--nav__item-box-shadow, none);
-      color: var(--nav__item-color, inherit);
-      cursor: var(--nav__item-cursor, pointer);
-      display: var(--nav__item-display, inline-flex);
-      font-weight: var(--nav__item-font-weight, 400);
-      gap: var(--nav__item-gap, var(--size-3));
-      justify-content: var(--nav__item-justify-content, center);
-      line-height: var(--nav__item-line-height, 1.15);
-      margin: var(--nav__item-margin, 0);
-      outline: var(--nav__item-outline, 0);
-      padding: var(--nav__item-padding-y, var(--size-3))
-        var(--nav__item-padding-x, var(--size-5));
-      text-align: var(--nav__item-text-align, center);
-      text-decoration: var(--nav__item-text-decoration, none);
-      user-select: var(--nav__item-user-select, none);
-      vertical-align: var(--nav__item-vertical-align, middle);
-      white-space: var(--nav__item-white-space, nowrap);
-      width: var(--nav__item-width, auto);
+      align-items: var(--nav-item-align-items, center);
+      background: var(--nav-item-background, transparent);
+      border-color: var(--nav-item-border-color, transparent);
+      border-radius: var(--nav-item-border-radius, 0);
+      border-style: var(--nav-item-border-style, solid);
+      border-width: var(--nav-item-border-width, 0);
+      box-shadow: var(--nav-item-box-shadow, none);
+      color: var(--nav-item-color, inherit);
+      cursor: var(--nav-item-cursor, pointer);
+      display: var(--nav-item-display, inline-flex);
+      font-weight: var(--nav-item-font-weight, 400);
+      gap: var(--nav-item-gap, var(--size-3));
+      justify-content: var(--nav-item-justify-content, center);
+      line-height: var(--nav-item-line-height, 1);
+      margin: var(--nav-item-margin, 0);
+      outline: var(--nav-item-outline, 0);
+      padding: var(--nav-item-padding-top, var(--size-3))
+        var(--nav-item-padding-right, var(--size-5))
+        var(--nav-item-padding-bottom, var(--size-3))
+        var(--nav-item-padding-left, var(--size-5));
+      text-align: var(--nav-item-text-align, center);
+      text-decoration: var(--nav-item-text-decoration, none);
+      user-select: var(--nav-item-user-select, none);
+      vertical-align: var(--nav-item-vertical-align, middle);
+      white-space: var(--nav-item-white-space, nowrap);
+      width: var(--nav-item-width, auto);
 
       &:hover {
-        background: var(--nav__item-hover-background, WhiteSmoke);
-        border-color: var(--nav__item-hover-border-color, transparent);
-        color: var(--nav__item-hover-color, inherit);
-        text-decoration: var(--nav__item-hover-text-decoration, none);
+        background: var(--nav-item-hover-background, WhiteSmoke);
+        border-color: var(--nav-item-hover-border-color, transparent);
+        color: var(--nav-item-hover-color, inherit);
+        text-decoration: var(--nav-item-hover-text-decoration, none);
       }
 
       &:focus-visible,
       &:focus {
-        background: var(--nav__item-focus-background, WhiteSmoke);
-        border-color: var(--nav__item-focus-border-color, transparent);
-        color: var(--nav__item-focus-color, inherit);
-        text-decoration: var(--nav__item-focus-text-decoration, none);
+        background: var(--nav-item-focus-background, WhiteSmoke);
+        border-color: var(--nav-item-focus-border-color, transparent);
+        color: var(--nav-item-focus-color, inherit);
+        text-decoration: var(--nav-item-focus-text-decoration, none);
       }
 
-      &:active,
-      &[data-active="true"],
-      &.active {
-        background: var(--nav__item-active-background, WhiteSmoke);
-        border-color: var(--nav__item-active-border-color, transparent);
-        color: var(--nav__item-active-color, inherit);
-        text-decoration: var(--nav__item-active-text-decoration, none);
+      &:active {
+        background: var(--nav-item-active-background, WhiteSmoke);
+        border-color: var(--nav-item-active-border-color, transparent);
+        color: var(--nav-item-active-color, inherit);
+        text-decoration: var(--nav-item-active-text-decoration, none);
+      }
+
+      &[aria-current="page"] {
+        background: var(--nav-item-current-background, WhiteSmoke);
+        border-color: var(--nav-item-current-border-color, transparent);
+        color: var(--nav-item-current-color, inherit);
+        text-decoration: var(--nav-item-current-text-decoration, none);
       }
 
       &:disabled {
-        background: var(--nav__item-disabled-background, transparent);
-        border-color: var(--nav__item-disabled-border-color, transparent);
-        color: var(--nav__item-disabled-color, inherit);
-        text-decoration: var(--nav__item-disabled-text-decoration, none);
-        pointer-events: var(--nav__item-disabled-pointer-events, none);
-        opacity: var(--nav__item-disabled-opacity, 0.5);
+        background: var(--nav-item-disabled-background, transparent);
+        border-color: var(--nav-item-disabled-border-color, transparent);
+        color: var(--nav-item-disabled-color, inherit);
+        text-decoration: var(--nav-item-disabled-text-decoration, none);
+        pointer-events: var(--nav-item-disabled-pointer-events, none);
+        opacity: var(--nav-item-disabled-opacity, 0.5);
       }
     }
 
@@ -80,8 +87,8 @@
       flex-flow: var(--nav-flex-flow, wrap column);
 
       .nav__item {
-        justify-content: var(--nav__item-justify-content, flex-start);
-        width: var(--nav__item-width, 100%);
+        justify-content: var(--nav-item-justify-content, flex-start);
+        width: var(--nav-item-width, 100%);
       }
     }
 
@@ -95,46 +102,52 @@
       }
 
       .nav__item {
-        border-color: var(--nav__item-border-color, inherit);
+        border-color: var(--nav-item-border-color, inherit);
         border-radius: var(
-          --nav__item-border-radius,
+          --nav-item-border-radius,
           var(--size-2) var(--size-2) 0 0
         );
-        border-width: var(--nav__item-border-width, 1px);
-        margin: var(--nav__item-margin, 0 0 -1px);
+        border-width: var(--nav-item-border-width, 1px);
+        margin: var(--nav-item-margin, 0 0 -1px);
 
         &:hover {
-          background: var(--nav__item-hover-background, WhiteSmoke);
-          border-color: var(--nav__item-active-border-color, LightGrey);
-          color: var(--nav__item-hover-color, inherit);
-          text-decoration: var(--nav__item-hover-text-decoration, none);
+          background: var(--nav-item-hover-background, WhiteSmoke);
+          border-color: var(--nav-item-active-border-color, LightGrey);
+          color: var(--nav-item-hover-color, inherit);
+          text-decoration: var(--nav-item-hover-text-decoration, none);
         }
 
         &:focus-visible,
         &:focus {
-          background: var(--nav__item-focus-background, WhiteSmoke);
-          border-color: var(--nav__item-active-border-color, LightGrey);
-          color: var(--nav__item-focus-color, inherit);
-          text-decoration: var(--nav__item-focus-text-decoration, none);
+          background: var(--nav-item-focus-background, WhiteSmoke);
+          border-color: var(--nav-item-active-border-color, LightGrey);
+          color: var(--nav-item-focus-color, inherit);
+          text-decoration: var(--nav-item-focus-text-decoration, none);
         }
 
-        &:active,
-        &[data-active="true"],
-        &.active {
-          background: var(--nav__item-active-background, white);
+        &:active {
+          background: var(--nav-item-active-background, white);
           border-color: var(
-            --nav__item-active-border-color,
+            --nav-item-active-border-color,
+            LightGrey LightGrey white LightGrey
+          );
+        }
+
+        &[aria-current="page"] {
+          background: var(--nav-item-current-background, white);
+          border-color: var(
+            --nav-item-current-border-color,
             LightGrey LightGrey white LightGrey
           );
         }
 
         &:disabled {
-          background: var(--nav__item-disabled-background, transparent);
-          border-color: var(--nav__item-disabled-border-color, LightGrey);
-          color: var(--nav__item-disabled-color, inherit);
-          text-decoration: var(--nav__item-disabled-text-decoration, none);
-          pointer-events: var(--nav__item-disabled-pointer-events, none);
-          opacity: var(--nav__item-disabled-opacity, 0.5);
+          background: var(--nav-item-disabled-background, transparent);
+          border-color: var(--nav-item-disabled-border-color, LightGrey);
+          color: var(--nav-item-disabled-color, inherit);
+          text-decoration: var(--nav-item-disabled-text-decoration, none);
+          pointer-events: var(--nav-item-disabled-pointer-events, none);
+          opacity: var(--nav-item-disabled-opacity, 0.5);
         }
       }
     }
