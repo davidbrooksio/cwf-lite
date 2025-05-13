@@ -19,6 +19,7 @@
     margin: var(--input-margin-top, 0) var(--input-margin-right, 0)
       var(--input-margin-bottom, var(--size-3)) var(--input-margin-left, 0);
     min-height: var(--input-min-height, 0);
+    min-width: var(--input-min-width, 0);
     outline: var(--input-outline, 0);
     padding: var(--input-padding-top, var(--size-3))
       var(--input-padding-right, var(--size-5))
