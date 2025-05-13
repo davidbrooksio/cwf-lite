@@ -129,14 +129,18 @@
         var(--input-checkbox-padding-left, var(--size-3));
       width: var(--input-checkbox-width, 1em);
       height: var(--input-checkbox-height, 1em);
-      background-image: var(
-        --input-checkbox-background-image,
-        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e")
-      );
+      background-image: var(--input-checkbox-background-image, none);
       background-size: var(--input-checkbox-checked-background-size, 100%);
 
       &:checked {
-        background-color: var(--input-checkbox-background-color, DimGrey);
+        background-color: var(
+          --input-checkbox-checked-background-color,
+          DimGrey
+        );
+        background-image: var(
+          --input-checkbox-checked-background-image,
+          url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e")
+        );
       }
     }
 
@@ -150,13 +154,14 @@
         var(--input-radio-padding-left, var(--size-3));
       width: var(--input-radio-width, 1em);
       height: var(--input-radio-height, 1em);
-      background-image: var(
-        --input-radio-background-image,
-        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
-      );
+      background-image: var(--input-radio-background-image, none);
       background-size: var(--input-radio-background-size, 100%);
 
       &:checked {
+        background-image: var(
+          --input-radio-checked-background-image,
+          url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
+        );
         background-color: var(--input-radio-checked-background-color, DimGrey);
       }
     }
