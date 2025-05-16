@@ -11,6 +11,7 @@
   .h4,
   .h5,
   .h6 {
+    font-family: var(--heading-font-family, system-ui);
     font-weight: var(--heading-font-weight, 600);
     line-height: var(--heading-line-height, 1.2);
     letter-spacing: var(--heading-letter-spacing, -0.025em);
