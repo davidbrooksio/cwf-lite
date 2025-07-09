@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:davidbrooksio/cwf-lite.git"
+    "url": "git+ssh://git@github.com/davidbrooksio/cwf-lite.git"
   },
   "release": {
     "repositoryUrl": "https://github.com/davidbrooksio/cwf-lite.git",
