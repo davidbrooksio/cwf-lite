@@ -1,5 +1,5 @@
 @layer cwf-utilities {
-  @each $value in initial, none, inline, inline-block, block, table-row,
+  @each $value in none, initial, inline, inline-block, block, table-row,
     table-cell, flex, inline-flex, grid
   {
     .display--$(value) {
