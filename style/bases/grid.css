@@ -8,7 +8,7 @@
     grid-template-rows: var(--grid-template-rows, repeat(var(--rows, 1), 1fr));
     gap: var(--grid-gap, 0);
 
-    > .column {
+    & > .column {
       --column-grid-column-start: auto;
       --column-grid-column-end: span 12;
 
@@ -167,7 +167,7 @@
     margin-right: var(--flex-grid-margin-right, -var(--size-3));
     margin-left: var(--flex-grid-margin-left, -var(--size-3));
 
-    > .column {
+    & > .column {
       max-width: var(--column-max-width, 100%);
       padding-right: var(--column-padding-right, var(--size-3));
       padding-left: var(--column-padding-left, var(--size-3));

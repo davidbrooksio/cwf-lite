@@ -32,6 +32,14 @@
     }
 
     &:not(:disabled) {
+      &[aria-current="page"] {
+        background: var(--button-current-background, WhiteSmoke);
+        border-color: var(--button-current-border-color, DarkGray);
+        box-shadow: var(--button-current-box-shadow, none);
+        color: var(--button-current-color, inherit);
+        text-decoration: var(--button-current-text-decoration, none);
+      }
+
       &:hover {
         background: var(--button-hover-background, WhiteSmoke);
         border-color: var(--button-hover-border-color, grey);
@@ -61,14 +69,6 @@
         );
         color: var(--button-active-color, inherit);
         text-decoration: var(--button-active-text-decoration, none);
-      }
-
-      &[aria-current="page"] {
-        background: var(--button-current-background, WhiteSmoke);
-        border-color: var(--button-current-border-color, DarkGray);
-        box-shadow: var(--button-current-box-shadow, none);
-        color: var(--button-current-color, inherit);
-        text-decoration: var(--button-current-text-decoration, none);
       }
     }
   }

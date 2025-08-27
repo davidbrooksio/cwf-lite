@@ -14,7 +14,7 @@
     position: var(--card-position, relative);
     word-wrap: var(--card-word-wrap, break-word);
 
-    > * {
+    & > * {
       &:first-child {
         border-top-right-radius: var(--card-inner-border-radius, 3px);
         border-top-left-radius: var(--card-inner-border-radius, 3px);
@@ -26,27 +26,27 @@
       }
     }
 
-    .card__header,
-    .card__body,
-    .card__footer {
+    & .card__header,
+    & .card__body,
+    & .card__footer {
       padding: var(--card-inner-padding-top, var(--size-3))
         var(--card-inner-padding-right, var(--size-5))
         var(--card-inner-padding-bottom, var(--size-3))
         var(--card-inner-padding-left, var(--size-5));
     }
 
-    .card__header {
+    & .card__header {
       background: var(--card-header-background, inherit);
       border-color: var(--card-header-border-color, inherit);
       border-style: var(--card-header-border-style, inherit);
       border-width: var(--card-header-border-width, 0 0 1px);
     }
 
-    .card__body {
+    & .card__body {
       flex: var(--card-body-flex, 1 1 auto);
     }
 
-    .card__footer {
+    & .card__footer {
       background: var(--card-footer-background, inherit);
       border-color: var(--card-footer-border-color, inherit);
       border-style: var(--card-footer-border-style, inherit);

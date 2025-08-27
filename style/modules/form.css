@@ -1,5 +1,6 @@
 @layer cwf-modules {
   .input {
+    accent-color: var(--input-accent-color, blue);
     appearance: var(--input-appearance, auto);
     background-color: var(--input-background-color, white);
     background-image: var(--input-background-image, none);
@@ -35,11 +36,6 @@
       color: var(--input-placeholder-color, LightGrey);
     }
 
-    &:disabled {
-      background-color: var(--input-disabled-background-color, WhiteSmoke);
-      pointer-events: var(--input-disabled-pointer-events, none);
-    }
-
     &:hover {
       border-color: var(--input-hover-border-color, grey);
       box-shadow: var(--input-hover-box-shadow, none);
@@ -54,6 +50,11 @@
         0 0 0 0.25em hsl(from black h s l / 12.5%)
       );
       color: var(--input-focus-color, inherit);
+    }
+
+    &:disabled {
+      background-color: var(--input-disabled-background-color, WhiteSmoke);
+      pointer-events: var(--input-disabled-pointer-events, none);
     }
 
     /* --------------------------------- Select --------------------------------- */

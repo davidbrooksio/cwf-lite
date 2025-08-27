@@ -7,8 +7,8 @@
     margin: var(--table-margin, 0 0 var(--size-3) 0);
     width: var(--table-width, 100%);
 
-    td,
-    th {
+    & td,
+    & th {
       border-color: var(--table-cell-border-color, LightGrey);
       border-style: var(--table-cell-border-style, solid);
       border-width: var(--table-cell-border-width, 0 0 1px 0);
@@ -19,55 +19,55 @@
       vertical-align: var(--table-cell-valign, top);
     }
 
-    thead {
+    & thead {
       color: var(--table-head-color, inherit);
 
-      tr {
+      & tr {
         background: var(--table-head-background, WhiteSmoke);
 
-        > * {
+        & > * {
           border-width: var(--table-head-cell-border-width, 0 0 2px 0);
         }
       }
     }
 
-    tbody {
+    & tbody {
       color: var(--table-body-color, inherit);
 
-      tr {
+      & tr {
         background: var(--table-body-background, white);
       }
     }
 
-    tfoot {
+    & tfoot {
       color: var(--table-foot-color, inherit);
 
-      tr {
+      & tr {
         background: var(--table-foot-background, WhiteSmoke);
 
-        > * {
+        & > * {
           border-width: var(--table-foot-cell-border-width, 2px 0 1px 0);
         }
       }
     }
 
     &.table--bordered {
-      td,
-      th {
+      & td,
+      & th {
         border-width: var(--table-cell-border-width, 1px);
       }
 
-      thead {
-        tr {
-          > * {
+      & thead {
+        & tr {
+          & > * {
             border-width: var(--table-head-cell-border-width, 1px 1px 2px 1px);
           }
         }
       }
 
-      tfoot {
-        tr {
-          > * {
+      & tfoot {
+        & tr {
+          & > * {
             border-width: var(--table-foot-cell-border-width, 2px 1px 1px 1px);
           }
         }
@@ -75,8 +75,8 @@
     }
 
     &.table--striped {
-      tbody {
-        tr {
+      & tbody {
+        & tr {
           &:nth-of-type(even) {
             background: var(--table-row-even-background, WhiteSmoke);
           }
@@ -89,10 +89,10 @@
     }
 
     &.table--hover {
-      tbody {
-        tr {
+      & tbody {
+        & tr {
           &:hover {
-            > * {
+            & > * {
               background: var(--table-row-hover-background, LightGrey);
             }
           }

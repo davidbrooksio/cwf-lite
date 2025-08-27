@@ -16,7 +16,7 @@
     position: var(--tile-position, relative);
     word-wrap: var(--tile-word-wrap, break-word);
 
-    > * {
+    & > * {
       &:first-child {
         border-top-right-radius: var(--tile-inner-border-radius, 0);
         border-top-left-radius: var(--tile-inner-border-radius, 0);
@@ -28,27 +28,27 @@
       }
     }
 
-    .tile__header,
-    .tile__body,
-    .tile__footer {
+    & .tile__header,
+    & .tile__body,
+    & .tile__footer {
       padding: var(--tile-inner-padding-top, var(--size-3))
         var(--tile-inner-padding-right, var(--size-5))
         var(--tile-inner-padding-bottom, var(--size-3))
         var(--tile-inner-padding-left, var(--size-5));
     }
 
-    .tile__header {
+    & .tile__header {
       background: var(--tile-header-background, inherit);
       border-color: var(--tile-header-border-color, inherit);
       border-style: var(--tile-header-border-style, inherit);
       border-width: var(--tile-header-border-width, 0 0 1px);
     }
 
-    .tile__body {
+    & .tile__body {
       flex: var(--tile-body-flex, 1 1 auto);
     }
 
-    .tile__footer {
+    & .tile__footer {
       background: var(--tile-footer-background, inherit);
       border-color: var(--tile-footer-border-color, inherit);
       border-style: var(--tile-footer-border-style, inherit);

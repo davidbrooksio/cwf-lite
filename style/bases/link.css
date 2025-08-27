@@ -11,6 +11,11 @@
         text-decoration: var(--link-visited-text-decoration, none);
       }
 
+      &[aria-current="page"] {
+        color: var(--link-current-color, maroon);
+        text-decoration: var(--link-current-text-decoration, none);
+      }
+
       &:hover {
         color: var(--link-hover-color, DarkBlue);
         text-decoration: var(--link-hover-text-decoration, underline);
@@ -25,11 +30,6 @@
       &:active {
         color: var(--link-active-color, FireBrick);
         text-decoration: var(--link-active-text-decoration, underline);
-      }
-
-      &[aria-current="page"] {
-        color: var(--link-current-color, maroon);
-        text-decoration: var(--link-current-text-decoration, none);
       }
     }
   }

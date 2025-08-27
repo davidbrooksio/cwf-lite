@@ -15,7 +15,7 @@
     border-color: var(--nav-border-color, transparent);
     color: var(--nav-color, inherit);
 
-    .nav__item {
+    & .nav__item {
       align-items: var(--nav-item-align-items, center);
       background: var(--nav-item-background, transparent);
       border-color: var(--nav-item-border-color, transparent);
@@ -43,6 +43,13 @@
       white-space: var(--nav-item-white-space, nowrap);
       width: var(--nav-item-width, auto);
 
+      &[aria-current="page"] {
+        background: var(--nav-item-current-background, WhiteSmoke);
+        border-color: var(--nav-item-current-border-color, transparent);
+        color: var(--nav-item-current-color, inherit);
+        text-decoration: var(--nav-item-current-text-decoration, none);
+      }
+
       &:hover {
         background: var(--nav-item-hover-background, WhiteSmoke);
         border-color: var(--nav-item-hover-border-color, transparent);
@@ -65,13 +72,6 @@
         text-decoration: var(--nav-item-active-text-decoration, none);
       }
 
-      &[aria-current="page"] {
-        background: var(--nav-item-current-background, WhiteSmoke);
-        border-color: var(--nav-item-current-border-color, transparent);
-        color: var(--nav-item-current-color, inherit);
-        text-decoration: var(--nav-item-current-text-decoration, none);
-      }
-
       &:disabled {
         background: var(--nav-item-disabled-background, transparent);
         border-color: var(--nav-item-disabled-border-color, transparent);
@@ -86,7 +86,7 @@
       align-items: var(--nav-align-items, stretch);
       flex-flow: var(--nav-flex-flow, wrap column);
 
-      .nav__item {
+      & .nav__item {
         justify-content: var(--nav-item-justify-content, flex-start);
         width: var(--nav-item-width, 100%);
       }
@@ -101,7 +101,7 @@
         padding: var(--nav-padding, 0 var(--size-3));
       }
 
-      .nav__item {
+      & .nav__item {
         border-color: var(--nav-item-border-color, inherit);
         border-radius: var(
           --nav-item-border-radius,
@@ -109,6 +109,14 @@
         );
         border-width: var(--nav-item-border-width, 1px);
         margin: var(--nav-item-margin, 0 0 -1px);
+
+        &[aria-current="page"] {
+          background: var(--nav-item-current-background, white);
+          border-color: var(
+            --nav-item-current-border-color,
+            LightGrey LightGrey white LightGrey
+          );
+        }
 
         &:hover {
           background: var(--nav-item-hover-background, WhiteSmoke);
@@ -133,10 +141,10 @@
           );
         }
 
-        &[aria-current="page"] {
-          background: var(--nav-item-current-background, white);
+        &[aria-selected="true"] {
+          background: var(--nav-item-selected-background, white);
           border-color: var(
-            --nav-item-current-border-color,
+            --nav-item-selected-border-color,
             LightGrey LightGrey white LightGrey
           );
         }
