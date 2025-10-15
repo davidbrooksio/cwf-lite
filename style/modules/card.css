@@ -16,13 +16,25 @@
 
     & > * {
       &:first-child {
-        border-top-right-radius: var(--card-inner-border-radius, 3px);
-        border-top-left-radius: var(--card-inner-border-radius, 3px);
+        border-top-right-radius: var(
+          --card-inner-border-radius,
+          calc(var(--size-2) - 1px)
+        );
+        border-top-left-radius: var(
+          --card-inner-border-radius,
+          calc(var(--size-2) - 1px)
+        );
       }
 
       &:last-child {
-        border-bottom-right-radius: var(--card-inner-border-radius, 3px);
-        border-bottom-left-radius: var(--card-inner-border-radius, 3px);
+        border-bottom-right-radius: var(
+          --card-inner-border-radius,
+          calc(var(--size-2) - 1px)
+        );
+        border-bottom-left-radius: var(
+          --card-inner-border-radius,
+          calc(var(--size-2) - 1px)
+        );
       }
     }
 
