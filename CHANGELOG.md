@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.6](https://github.com/davidbrooksio/cwf-lite/compare/v1.4.5...v1.4.6) (2025-10-15)
+
+
+### Bug Fixes
+
+* card inner border radius ([9319119](https://github.com/davidbrooksio/cwf-lite/commit/9319119d6289b0dbec1c720a2eae931524116737))
+
 ### [1.4.5](https://github.com/davidbrooksio/cwf-lite/compare/v1.4.4...v1.4.5) (2025-08-27)
 
 
