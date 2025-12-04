@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.7](https://github.com/davidbrooksio/cwf-lite/compare/v1.4.8...v1.4.7) (2025-12-04)
+
 ### [1.4.8](https://github.com/davidbrooksio/cwf-lite/compare/v1.4.7...v1.4.8) (2025-11-07)
 
 ### [1.4.7](https://github.com/davidbrooksio/cwf-lite/compare/v1.4.6...v1.4.7) (2025-10-15)
