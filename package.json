@@ -6,7 +6,7 @@
     "css"
   ],
   "main": "index.js",
-  "author": "David Brooks <david.brooks@claritas-solutions.com>",
+  "author": "David Brooks <david.brooks@claritas-solutions.co.uk>",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
@@ -20,31 +20,10 @@
   "release": {
     "branches": [
       "master"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/github",
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "CHANGELOG.md",
-            "package.json"
-          ]
-        }
-      ]
     ]
   },
   "devDependencies": {
-    "@semantic-release/github": "^12.0.2",
-    "@semantic-release/npm": "^13.1.2",
-    "@semantic-release/changelog": "^6.0.0",
-    "@semantic-release/git": "^12.0.0",
-    "semantic-release": "^25.0.2",
-    "vite": "^7.2.6"
+    "vite": "^7.3.0"
   },
   "dependencies": {
     "modern-normalize": "^3.0.1",
