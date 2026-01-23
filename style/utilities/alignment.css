@@ -84,8 +84,7 @@
   }
 
   @each $value in flex-start, flex-end, center, space-between, space-around,
-    space-evenly
-  {
+    space-evenly, stretch {
     .justify-content--$(value) {
       justify-content: $(value) !important;
     }
@@ -156,8 +155,7 @@
   }
 
   @each $value in flex-start, flex-end, center, space-between, space-around,
-    stretch
-  {
+    stretch {
     .align-content--$(value) {
       align-content: $(value) !important;
     }
