@@ -120,7 +120,7 @@
 
         &:hover {
           background: var(--nav-item-hover-background, WhiteSmoke);
-          border-color: var(--nav-item-active-border-color, LightGrey);
+          border-color: var(--nav-item-hover-border-color, LightGrey);
           color: var(--nav-item-hover-color, inherit);
           text-decoration: var(--nav-item-hover-text-decoration, none);
         }
@@ -128,7 +128,7 @@
         &:focus-visible,
         &:focus {
           background: var(--nav-item-focus-background, WhiteSmoke);
-          border-color: var(--nav-item-active-border-color, LightGrey);
+          border-color: var(--nav-item-focus-border-color, LightGrey);
           color: var(--nav-item-focus-color, inherit);
           text-decoration: var(--nav-item-focus-text-decoration, none);
         }
