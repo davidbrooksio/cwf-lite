@@ -28,24 +28,23 @@
       }
     }
 
-    & .tile__header,
-    & .tile__body,
-    & .tile__footer {
-      padding: var(--tile-inner-padding-top, var(--size-3))
-        var(--tile-inner-padding-right, var(--size-5))
-        var(--tile-inner-padding-bottom, var(--size-3))
-        var(--tile-inner-padding-left, var(--size-5));
-    }
-
     & .tile__header {
       background: var(--tile-header-background, inherit);
       border-color: var(--tile-header-border-color, inherit);
       border-style: var(--tile-header-border-style, inherit);
       border-width: var(--tile-header-border-width, 0 0 1px);
+      padding: var(--tile-header-padding-top, var(--size-3))
+        var(--tile-header-padding-right, var(--size-5))
+        var(--tile-header-padding-bottom, var(--size-3))
+        var(--tile-header-padding-left, var(--size-5));
     }
 
     & .tile__body {
       flex: var(--tile-body-flex, 1 1 auto);
+      padding: var(--tile-body-padding-top, var(--size-3))
+        var(--tile-body-padding-right, var(--size-5))
+        var(--tile-body-padding-bottom, var(--size-3))
+        var(--tile-body-padding-left, var(--size-5));
     }
 
     & .tile__footer {
@@ -54,6 +53,10 @@
       border-style: var(--tile-footer-border-style, inherit);
       border-width: var(--tile-footer-border-width, 1px 0 0);
       margin: var(--tile-footer-margin, auto 0 0);
+      padding: var(--tile-footer-padding-top, var(--size-3))
+        var(--tile-footer-padding-right, var(--size-5))
+        var(--tile-footer-padding-bottom, var(--size-3))
+        var(--tile-footer-padding-left, var(--size-5));
     }
   }
 }
