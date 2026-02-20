@@ -3,6 +3,7 @@
     align-items: var(--nav-align-items, center);
     background: var(--nav-background, transparent);
     border-color: var(--nav-border-color, transparent);
+    border-radius: var(--nav-border-radius, 0);
     border-style: var(--nav-border-style, solid);
     border-width: var(--nav-border-width, 0);
     color: var(--nav-color, inherit);
