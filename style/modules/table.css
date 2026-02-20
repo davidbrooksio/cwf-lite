@@ -1,5 +1,6 @@
 @layer cwf-modules {
   .table {
+    background: var(--table-background, transparent);
     border-collapse: var(--table-border-collapse, collapse);
     border-spacing: var(--table-border-spacing, 0);
     caption-side: var(--table-caption-side, bottom);
