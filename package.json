@@ -17,11 +17,6 @@
     "type": "git",
     "url": "git+ssh://git@github.com/davidbrooksio/cwf-lite.git"
   },
-  "release": {
-    "branches": [
-      "master"
-    ]
-  },
   "devDependencies": {
     "vite": "^8.0.11"
   },

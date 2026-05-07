@@ -3,5 +3,6 @@
     color: var(--html-color);
     font-family: var(--html-font-family, system-ui);
     font-size: var(--html-font-size, 1rem);
+    line-height: var(--html-line-height, 1.4);
   }
 }
