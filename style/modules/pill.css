@@ -8,7 +8,7 @@
     border-radius: var(--pill-border-radius, 99rem);
     border-style: var(--pill-border-style, solid);
     border-width: var(--pill-border-width, 1px);
-    color: var(--pill-color, LightGrey);
+    color: var(--pill-color, white);
     font-size: var(--pill-font-size, 11px);
     font-weight: var(--pill-font-weight, 400);
     line-height: var(--pill-line-height, 1);
