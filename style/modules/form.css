@@ -37,6 +37,7 @@
     }
 
     &:hover {
+      background-color: var(--input-hover-background-color, white);
       border-color: var(--input-hover-border-color, grey);
       box-shadow: var(--input-hover-box-shadow, none);
       color: var(--input-hover-color, inherit);
@@ -44,6 +45,7 @@
 
     &:focus-visible,
     &:focus {
+      background-color: var(--input-focus-background-color, white);
       border-color: var(--input-focus-border-color, grey);
       box-shadow: var(
         --input-focus-box-shadow,
