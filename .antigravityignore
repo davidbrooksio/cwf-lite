@@ -1,6 +1,15 @@
+# Exclude build output
+
 dist/
 chunks/
 
+# Exclude package managers and caches
+
 node_modules/
+.astro/
+
+# Optional: general lockfiles/metadata if needed
 
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
