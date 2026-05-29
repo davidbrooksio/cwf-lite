@@ -14,9 +14,22 @@
     box-shadow: var(--input-box-shadow, none);
     color: var(--input-color, var(--color-text));
     cursor: var(--input-cursor, auto);
+    font-family: var(--input-font-family, inherit);
+    font-size: var(--input-font-size, inherit);
     font-weight: var(--input-font-weight, 400);
-    height: var(--input-height, auto);
-    line-height: var(--input-line-height, 1);
+    height: var(--input-height, var(--control-height, auto));
+    line-height: var(--input-line-height, var(--control-line-height));
+
+    &::-webkit-datetime-edit,
+    &::-webkit-datetime-edit-fields-wrapper,
+    &::-webkit-datetime-edit-text,
+    &::-webkit-datetime-edit-minute,
+    &::-webkit-datetime-edit-hour,
+    &::-webkit-datetime-edit-day,
+    &::-webkit-datetime-edit-month,
+    &::-webkit-datetime-edit-year {
+      padding-block: 0;
+    }
 
     margin-block-start: var(--input-margin-top, 0);
     margin-inline-end: var(--input-margin-right, 0);
@@ -27,9 +40,9 @@
     min-width: var(--input-min-width, 0);
     outline: var(--input-outline, 0);
 
-    padding-block-start: var(--input-padding-top, var(--size-3));
+    padding-block-start: var(--input-padding-top, var(--control-padding-y));
     padding-inline-end: var(--input-padding-right, var(--size-4));
-    padding-block-end: var(--input-padding-bottom, var(--size-3));
+    padding-block-end: var(--input-padding-bottom, var(--control-padding-y));
     padding-inline-start: var(--input-padding-left, var(--size-4));
 
     pointer-events: var(--input-pointer-events, initial);
@@ -118,6 +131,7 @@
 
     /* -------------------------------- Textarea -------------------------------- */
     &:is(textarea) {
+      height: auto;
       min-height: var(--input-textarea-min-height, var(--size-9));
       resize: var(--input-textarea-resize, vertical);
     }
@@ -141,6 +155,8 @@
 
     /* ---------------------------------- Range --------------------------------- */
     &:is([type="range"]) {
+      height: auto;
+
       &:focus-visible,
       &:focus {
         box-shadow: var(--input-range-focus-box-shadow, none);

@@ -10,15 +10,18 @@
     color: var(--button-color, var(--color-text));
     cursor: var(--button-cursor, pointer);
     display: var(--button-display, inline-flex);
+    font-family: var(--button-font-family, inherit);
+    font-size: var(--button-font-size, inherit);
     font-weight: var(--button-font-weight, 400);
     gap: var(--button-gap, var(--size-3));
+    height: var(--button-height, var(--control-height, auto));
     justify-content: var(--button-justify-content, center);
-    line-height: var(--button-line-height, 1);
+    line-height: var(--button-line-height, var(--control-line-height));
     outline: var(--button-outline, 0);
 
-    padding-block-start: var(--button-padding-top, var(--size-3));
+    padding-block-start: var(--button-padding-top, var(--control-padding-y));
     padding-inline-end: var(--button-padding-right, var(--size-5));
-    padding-block-end: var(--button-padding-bottom, var(--size-3));
+    padding-block-end: var(--button-padding-bottom, var(--control-padding-y));
     padding-inline-start: var(--button-padding-left, var(--size-5));
 
     text-align: var(--button-text-align, center);

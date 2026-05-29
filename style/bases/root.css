@@ -33,6 +33,13 @@
   --body-background: var(--color-background);
   --html-color: var(--color-text);
 
+  /* Shared Form Control & Button Sizing */
+  --control-line-height: 1;
+  --control-padding-y: var(--size-3);
+  --control-height: calc(
+    var(--control-line-height) * 1em + var(--control-padding-y) * 2 + 2px
+  );
+
   color-scheme: light;
   --color-mode: "light";
 }
