@@ -7,5 +7,11 @@
     justify-content: var(--group-justify-content, flex-start);
     margin: var(--group-margin, 0);
     position: var(--group-position, relative);
+
+    &.group--stacked {
+      align-items: var(--group-stacked-align-items, flex-start);
+      flex-flow: var(--group-stacked-flex-flow, wrap column);
+      justify-content: var(--group-stacked-justify-content, stretch);
+    }
   }
 }

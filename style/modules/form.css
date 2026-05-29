@@ -28,9 +28,9 @@
     outline: var(--input-outline, 0);
 
     padding-block-start: var(--input-padding-top, var(--size-3));
-    padding-inline-end: var(--input-padding-right, var(--size-5));
+    padding-inline-end: var(--input-padding-right, var(--size-4));
     padding-block-end: var(--input-padding-bottom, var(--size-3));
-    padding-inline-start: var(--input-padding-left, var(--size-5));
+    padding-inline-start: var(--input-padding-left, var(--size-4));
 
     pointer-events: var(--input-pointer-events, initial);
     resize: var(--input-resize, initial);
@@ -109,9 +109,9 @@
 
         & option {
           padding-block-start: var(--option-padding-top, var(--size-3));
-          padding-inline-end: var(--option-padding-right, var(--size-5));
+          padding-inline-end: var(--option-padding-right, var(--size-4));
           padding-block-end: var(--option-padding-bottom, var(--size-3));
-          padding-inline-start: var(--option-padding-left, var(--size-5));
+          padding-inline-start: var(--option-padding-left, var(--size-4));
         }
       }
     }
@@ -204,7 +204,7 @@
       &::-webkit-file-upload-button,
       &::file-selector-button {
         -webkit-appearance: button;
-        -webkit-margin-end: var(--input-file-button-margin-end, var(--size-5));
+        -webkit-margin-end: var(--input-file-button-margin-end, var(--size-4));
 
         padding-block-start: var(
           --input-file-button-padding-top,
@@ -212,7 +212,7 @@
         );
         padding-inline-end: var(
           --input-file-button-padding-right,
-          var(--size-5)
+          var(--size-4)
         );
         padding-block-end: var(
           --input-file-button-padding-bottom,
@@ -220,7 +220,7 @@
         );
         padding-inline-start: var(
           --input-file-button-padding-left,
-          var(--size-5)
+          var(--size-4)
         );
 
         margin-block: var(
@@ -229,11 +229,11 @@
         );
         margin-inline: var(
           --input-file-button-margin-x,
-          calc(var(--size-5) * -1)
+          calc(var(--size-4) * -1)
         );
         margin-inline-end: var(
           --input-file-button-margin-inline-end,
-          var(--size-5)
+          var(--size-4)
         );
         color: var(--input-file-button-color, inherit);
         background: var(
