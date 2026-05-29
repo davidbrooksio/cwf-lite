@@ -1,31 +1,37 @@
 @layer cwf-modules {
   .input {
-    accent-color: var(--input-accent-color, blue);
+    accent-color: var(--input-accent-color, var(--color-primary));
     appearance: var(--input-appearance, auto);
-    background-color: var(--input-background-color, white);
+    background-color: var(--input-background-color, var(--color-background));
     background-image: var(--input-background-image, none);
     background-repeat: var(--input-background-repeat, no-repeat);
     background-position: var(--input-background-position, 50% 50%);
     background-size: var(--input-background-size, 1rem);
-    border-color: var(--input-border-color, LightGrey);
+    border-color: var(--input-border-color, var(--color-border));
     border-radius: var(--input-border-radius, var(--size-2));
     border-style: var(--input-border-style, solid);
     border-width: var(--input-border-width, 1px);
     box-shadow: var(--input-box-shadow, none);
-    color: var(--input-color, inherit);
+    color: var(--input-color, var(--color-text));
     cursor: var(--input-cursor, auto);
     font-weight: var(--input-font-weight, 400);
     height: var(--input-height, auto);
     line-height: var(--input-line-height, 1);
-    margin: var(--input-margin-top, 0) var(--input-margin-right, 0)
-      var(--input-margin-bottom, var(--size-3)) var(--input-margin-left, 0);
+
+    margin-block-start: var(--input-margin-top, 0);
+    margin-inline-end: var(--input-margin-right, 0);
+    margin-block-end: var(--input-margin-bottom, var(--size-3));
+    margin-inline-start: var(--input-margin-left, 0);
+
     min-height: var(--input-min-height, 0);
     min-width: var(--input-min-width, 0);
     outline: var(--input-outline, 0);
-    padding: var(--input-padding-top, var(--size-3))
-      var(--input-padding-right, var(--size-5))
-      var(--input-padding-bottom, var(--size-3))
-      var(--input-padding-left, var(--size-5));
+
+    padding-block-start: var(--input-padding-top, var(--size-3));
+    padding-inline-end: var(--input-padding-right, var(--size-5));
+    padding-block-end: var(--input-padding-bottom, var(--size-3));
+    padding-inline-start: var(--input-padding-left, var(--size-5));
+
     pointer-events: var(--input-pointer-events, initial);
     resize: var(--input-resize, initial);
     transition: var(--input-transition, all 0.2s ease-in-out);
@@ -33,30 +39,51 @@
     width: var(--input-width, 100%);
 
     &::placeholder {
-      color: var(--input-placeholder-color, LightGrey);
+      color: var(
+        --input-placeholder-color,
+        hsl(from var(--color-text) h s l / 45%)
+      );
     }
 
     &:hover {
-      background-color: var(--input-hover-background-color, white);
-      border-color: var(--input-hover-border-color, grey);
+      background-color: var(
+        --input-hover-background-color,
+        var(--color-background)
+      );
+      border-color: var(--input-hover-border-color, var(--color-border));
       box-shadow: var(--input-hover-box-shadow, none);
-      color: var(--input-hover-color, inherit);
+      color: var(--input-hover-color, var(--color-text));
     }
 
     &:focus-visible,
     &:focus {
-      background-color: var(--input-focus-background-color, white);
-      border-color: var(--input-focus-border-color, grey);
+      background-color: var(
+        --input-focus-background-color,
+        var(--color-background)
+      );
+      border-color: var(--input-focus-border-color, var(--color-primary));
       box-shadow: var(
         --input-focus-box-shadow,
-        0 0 0 0.25em hsl(from black h s l / 12.5%)
+        0 0 0 0.25em hsl(from var(--color-primary) h s l / 15%)
       );
-      color: var(--input-focus-color, inherit);
+      color: var(--input-focus-color, var(--color-text));
     }
 
     &:disabled {
-      background-color: var(--input-disabled-background-color, WhiteSmoke);
+      background-color: var(
+        --input-disabled-background-color,
+        var(--color-neutral-hover)
+      );
       pointer-events: var(--input-disabled-pointer-events, none);
+    }
+
+    /* Modern Native User Validation Styling */
+    &:user-invalid {
+      border-color: var(--input-invalid-border-color, var(--color-red));
+      box-shadow: var(
+        --input-invalid-box-shadow,
+        0 0 0 0.25em hsl(from var(--color-red) h s l / 15%)
+      );
     }
 
     /* --------------------------------- Select --------------------------------- */
@@ -64,7 +91,7 @@
       appearance: var(--input-select-appearance, none);
 
       &:not([multiple]) {
-        padding-right: var(--input-select-padding-right, var(--size-7));
+        padding-inline-end: var(--input-select-padding-right, var(--size-7));
         background-image: var(
           --input-select-background-image,
           url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e")
@@ -77,16 +104,14 @@
       }
 
       &[multiple] {
-        padding: var(--input-select-multiple-padding-top, 0)
-          var(--input-select-multiple-padding-right, 0)
-          var(--input-select-multiple-padding-bottom, 0)
-          var(--input-select-multiple-padding-left, 0);
+        padding-block: var(--input-select-multiple-padding-y, 0);
+        padding-inline: var(--input-select-multiple-padding-x, 0);
 
         & option {
-          padding: var(--option-padding-top, var(--size-3))
-            var(--option-padding-right, var(--size-5))
-            var(--option-padding-bottom, var(--size-3))
-            var(--option-padding-left, var(--size-5));
+          padding-block-start: var(--option-padding-top, var(--size-3));
+          padding-inline-end: var(--option-padding-right, var(--size-5));
+          padding-block-end: var(--option-padding-bottom, var(--size-3));
+          padding-inline-start: var(--option-padding-left, var(--size-5));
         }
       }
     }
@@ -105,10 +130,9 @@
       appearance: var(--input-color-appearance, none);
       width: var(--input-color-width, var(--input-color-size));
       height: var(--input-color-height, var(--input-color-size));
-      padding: var(--input-color-padding-top, 0.5ch)
-        var(--input-color-padding-right, 0.5ch)
-        var(--input-color-padding-bottom, 0.5ch)
-        var(--input-color-padding-left, 0.5ch);
+
+      padding-block: var(--input-color-padding-y, 0.5ch);
+      padding-inline: var(--input-color-padding-x, 0.5ch);
 
       &::-webkit-color-swatch-wrapper {
         padding: 0;
@@ -126,10 +150,10 @@
     /* -------------------------------- Checkbox -------------------------------- */
     &:is([type="checkbox"]) {
       appearance: var(--input-checkbox-appearance, none);
-      padding: var(--input-checkbox-padding-top, var(--size-3))
-        var(--input-checkbox-padding-right, var(--size-3))
-        var(--input-checkbox-padding-bottom, var(--size-3))
-        var(--input-checkbox-padding-left, var(--size-3));
+
+      padding-block: var(--input-checkbox-padding-y, var(--size-3));
+      padding-inline: var(--input-checkbox-padding-x, var(--size-3));
+
       width: var(--input-checkbox-width, 1em);
       height: var(--input-checkbox-height, 1em);
       background-image: var(--input-checkbox-background-image, none);
@@ -138,7 +162,7 @@
       &:checked {
         background-color: var(
           --input-checkbox-checked-background-color,
-          DimGrey
+          var(--color-primary)
         );
         background-image: var(
           --input-checkbox-checked-background-image,
@@ -151,10 +175,10 @@
     &:is([type="radio"]) {
       appearance: var(--input-radio-appearance, none);
       border-radius: var(--input-radio-border-radius, 50%);
-      padding: var(--input-radio-padding-top, var(--size-3))
-        var(--input-radio-padding-right, var(--size-3))
-        var(--input-radio-padding-bottom, var(--size-3))
-        var(--input-radio-padding-left, var(--size-3));
+
+      padding-block: var(--input-radio-padding-y, var(--size-3));
+      padding-inline: var(--input-radio-padding-x, var(--size-3));
+
       width: var(--input-radio-width, 1em);
       height: var(--input-radio-height, 1em);
       background-image: var(--input-radio-background-image, none);
@@ -165,7 +189,10 @@
           --input-radio-checked-background-image,
           url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
         );
-        background-color: var(--input-radio-checked-background-color, DimGrey);
+        background-color: var(
+          --input-radio-checked-background-color,
+          var(--color-primary)
+        );
       }
     }
 
@@ -179,18 +206,40 @@
         -webkit-appearance: button;
         -webkit-margin-end: var(--input-file-button-margin-end, var(--size-5));
 
-        padding: var(--input-file-button-padding-top, var(--size-3))
-          var(--input-file-button-padding-right, var(--size-5))
-          var(--input-file-button-padding-bottom, var(--size-3))
-          var(--input-file-button-padding-left, var(--size-5));
-        margin: var(--input-file-button-margin-y, calc(var(--size-3) * -1))
-          var(--input-file-button-margin-x, calc(var(--size-5) * -1));
+        padding-block-start: var(
+          --input-file-button-padding-top,
+          var(--size-3)
+        );
+        padding-inline-end: var(
+          --input-file-button-padding-right,
+          var(--size-5)
+        );
+        padding-block-end: var(
+          --input-file-button-padding-bottom,
+          var(--size-3)
+        );
+        padding-inline-start: var(
+          --input-file-button-padding-left,
+          var(--size-5)
+        );
+
+        margin-block: var(
+          --input-file-button-margin-y,
+          calc(var(--size-3) * -1)
+        );
+        margin-inline: var(
+          --input-file-button-margin-x,
+          calc(var(--size-5) * -1)
+        );
         margin-inline-end: var(
           --input-file-button-margin-inline-end,
           var(--size-5)
         );
         color: var(--input-file-button-color, inherit);
-        background: var(--input-file-button-background, WhiteSmoke);
+        background: var(
+          --input-file-button-background,
+          var(--color-neutral-hover)
+        );
         pointer-events: var(--input-file-button-pointer-events, none);
         border-color: var(--input-file-button-border-color, inherit);
         border-style: var(--input-file-button-border-style, solid);
@@ -225,7 +274,7 @@
     /* ---------------------------------- List ---------------------------------- */
     &:is([list]) {
       appearance: var(--input-list-appearance, none);
-      padding-right: var(--input-list-padding-right, var(--size-7));
+      padding-inline-end: var(--input-list-padding-right, var(--size-7));
       background-image: var(
         --input-list-background-image,
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e")
@@ -247,8 +296,13 @@
     display: var(--label-display, inline-flex);
     color: var(--label-color, inherit);
     font-weight: var(--label-font-weight, 400);
-    margin: var(--label-margin-top, 0) var(--label-margin-right, 0)
-      var(--label-margin-bottom, var(--size-1)) var(--label-margin-left, 0);
+    letter-spacing: var(--label-letter-spacing, unset);
+
+    margin-block-start: var(--label-margin-top, 0);
+    margin-inline-end: var(--label-margin-right, 0);
+    margin-block-end: var(--label-margin-bottom, var(--size-1));
+    margin-inline-start: var(--label-margin-left, 0);
+
     width: var(--label-width, 100%);
   }
 }

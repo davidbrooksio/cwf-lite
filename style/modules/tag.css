@@ -3,9 +3,9 @@
     align-items: var(--tag-align-items, center);
     display: var(--tag-display, inline-flex);
     justify-content: var(--tag-justify-content, center);
-    background: var(--tag-background, WhiteSmoke);
-    border-color: var(--tag-border-color, LightGrey);
-    border-radius: var(--tag-border-radius, var(--size-2));
+    background: var(--tag-background, var(--color-neutral-hover));
+    border-color: var(--tag-border-color, var(--color-border));
+    border-radius: var(--tag-border-radius, var(--size-1));
     border-style: var(--tag-border-style, solid);
     border-width: var(--tag-border-width, 1px);
     color: var(--tag-color, inherit);

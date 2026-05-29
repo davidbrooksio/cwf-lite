@@ -10,7 +10,7 @@
 
     & td,
     & th {
-      border-color: var(--table-cell-border-color, LightGrey);
+      border-color: var(--table-cell-border-color, var(--color-border));
       border-style: var(--table-cell-border-style, solid);
       border-width: var(--table-cell-border-width, 0 0 1px 0);
       padding: var(--table-cell-padding-top, var(--size-3))
@@ -24,7 +24,7 @@
       color: var(--table-head-color, inherit);
 
       & tr {
-        background: var(--table-head-background, WhiteSmoke);
+        background: var(--table-head-background, var(--color-neutral-hover));
 
         & > * {
           border-width: var(--table-head-cell-border-width, 0 0 2px 0);
@@ -36,7 +36,7 @@
       color: var(--table-body-color, inherit);
 
       & tr {
-        background: var(--table-body-background, white);
+        background: var(--table-body-background, var(--color-background));
       }
     }
 
@@ -44,7 +44,7 @@
       color: var(--table-foot-color, inherit);
 
       & tr {
-        background: var(--table-foot-background, WhiteSmoke);
+        background: var(--table-foot-background, var(--color-neutral-hover));
 
         & > * {
           border-width: var(--table-foot-cell-border-width, 2px 0 1px 0);
@@ -79,11 +79,17 @@
       & tbody {
         & tr {
           &:nth-of-type(even) {
-            background: var(--table-row-even-background, WhiteSmoke);
+            background: var(
+              --table-row-even-background,
+              var(--color-neutral-hover)
+            );
           }
 
           &:nth-of-type(odd) {
-            background: var(--table-row-odd-background, white);
+            background: var(
+              --table-row-odd-background,
+              var(--color-background)
+            );
           }
         }
       }
@@ -94,7 +100,10 @@
         & tr {
           &:hover {
             & > * {
-              background: var(--table-row-hover-background, LightGrey);
+              background: var(
+                --table-row-hover-background,
+                var(--color-border)
+              );
             }
           }
         }

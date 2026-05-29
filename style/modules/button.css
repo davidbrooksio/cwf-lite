@@ -1,13 +1,13 @@
 @layer cwf-modules {
   .button {
     align-items: var(--button-align-items, center);
-    background: var(--button-background, white);
-    border-color: var(--button-border-color, LightGrey);
+    background: var(--button-background, var(--color-background));
+    border-color: var(--button-border-color, var(--color-border));
     border-radius: var(--button-border-radius, var(--size-2));
     border-style: var(--button-border-style, solid);
     border-width: var(--button-border-width, 1px);
     box-shadow: var(--button-box-shadow, none);
-    color: var(--button-color, inherit);
+    color: var(--button-color, var(--color-text));
     cursor: var(--button-cursor, pointer);
     display: var(--button-display, inline-flex);
     font-weight: var(--button-font-weight, 400);
@@ -15,60 +15,72 @@
     justify-content: var(--button-justify-content, center);
     line-height: var(--button-line-height, 1);
     outline: var(--button-outline, 0);
-    padding: var(--button-padding-top, var(--size-3))
-      var(--button-padding-right, var(--size-5))
-      var(--button-padding-bottom, var(--size-3))
-      var(--button-padding-left, var(--size-5));
+
+    padding-block-start: var(--button-padding-top, var(--size-3));
+    padding-inline-end: var(--button-padding-right, var(--size-5));
+    padding-block-end: var(--button-padding-bottom, var(--size-3));
+    padding-inline-start: var(--button-padding-left, var(--size-5));
+
     text-align: var(--button-text-align, center);
     text-decoration: var(--button-text-decoration, none);
     user-select: var(--button-user-select, none);
     vertical-align: var(--button-vertical-align, middle);
     white-space: var(--button-white-space, nowrap);
-    transition: var(--button-transition, all 0.2s ease-in-out);
+    transition: var(
+      --button-transition,
+      transform 0.1s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease
+    );
 
     &:disabled {
-      opacity: var(--button-disabled-opacity, 0.75);
+      opacity: var(--button-disabled-opacity, 0.6);
       cursor: var(--button-disabled-cursor, not-allowed);
     }
 
     &:not(:disabled) {
       &[aria-current="page"] {
-        background: var(--button-current-background, WhiteSmoke);
-        border-color: var(--button-current-border-color, DarkGray);
+        background: var(
+          --button-current-background,
+          var(--color-neutral-hover)
+        );
+        border-color: var(--button-current-border-color, var(--color-primary));
         box-shadow: var(--button-current-box-shadow, none);
-        color: var(--button-current-color, inherit);
+        color: var(--button-current-color, var(--color-text));
         text-decoration: var(--button-current-text-decoration, none);
       }
 
       &:hover {
-        background: var(--button-hover-background, WhiteSmoke);
-        border-color: var(--button-hover-border-color, grey);
+        background: var(--button-hover-background, var(--color-neutral-hover));
+        border-color: var(--button-hover-border-color, var(--color-border));
         box-shadow: var(--button-hover-box-shadow, none);
-        color: var(--button-hover-color, inherit);
+        color: var(--button-hover-color, var(--color-text));
         text-decoration: var(--button-hover-text-decoration, none);
       }
 
       &:focus-visible,
       &:focus {
-        background: var(--button-focus-background, WhiteSmoke);
-        border-color: var(--button-focus-border-color, grey);
+        background: var(--button-focus-background, var(--color-background));
+        border-color: var(--button-focus-border-color, var(--color-primary));
         box-shadow: var(
           --button-focus-box-shadow,
-          0 0 0 0.25em rgba(0, 0, 0, 0.125)
+          0 0 0 0.25em hsl(from var(--color-primary) h s l / 15%)
         );
-        color: var(--button-focus-color, inherit);
+        color: var(--button-focus-color, var(--color-text));
         text-decoration: var(--button-focus-text-decoration, none);
       }
 
       &:active {
-        background: var(--button-active-background, WhiteSmoke);
-        border-color: var(--button-active-border-color, grey);
+        background: var(--button-active-background, var(--color-neutral-hover));
+        border-color: var(--button-active-border-color, var(--color-primary));
         box-shadow: var(
           --button-active-box-shadow,
-          0 0 0 0.25em rgba(0, 0, 0, 0.25)
+          0 0 0 0.25em hsl(from var(--color-primary) h s l / 25%)
         );
-        color: var(--button-active-color, inherit);
+        color: var(--button-active-color, var(--color-text));
         text-decoration: var(--button-active-text-decoration, none);
+        transform: var(--button-active-transform, scale(0.98));
       }
     }
   }

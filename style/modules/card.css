@@ -1,40 +1,38 @@
 @layer cwf-modules {
   .card {
-    background: var(--card-background, white);
-    border-color: var(--card-border-color, LightGrey);
-    border-radius: var(--card-border-radius, var(--size-2));
+    --card-border-width: 1px;
+    --card-border-radius: var(--size-2);
+    --card-inner-border-radius: calc(
+      var(--card-border-radius) - var(--card-border-width)
+    );
+
+    background: var(--card-background, var(--color-background));
+    border-color: var(--card-border-color, var(--color-border));
+    border-radius: var(--card-border-radius);
     border-style: var(--card-border-style, solid);
-    border-width: var(--card-border-width, 1px);
+    border-width: var(--card-border-width);
     color: var(--card-color, inherit);
     display: var(--card-display, flex);
     flex-flow: var(--card-flex-flow, column nowrap);
-    margin: var(--card-margin-top, 0) var(--card-margin-right, 0)
-      var(--card-margin-bottom, var(--size-3)) var(--card-margin-left, 0);
+
+    margin-block-start: var(--card-margin-top, 0);
+    margin-inline-end: var(--card-margin-right, 0);
+    margin-block-end: var(--card-margin-bottom, var(--size-3));
+    margin-inline-start: var(--card-margin-left, 0);
+
     min-width: var(--card-min-width, 0);
     position: var(--card-position, relative);
     word-wrap: var(--card-word-wrap, break-word);
 
     & > * {
       &:first-child {
-        border-top-right-radius: var(
-          --card-inner-border-radius,
-          calc(var(--size-2) - 1px)
-        );
-        border-top-left-radius: var(
-          --card-inner-border-radius,
-          calc(var(--size-2) - 1px)
-        );
+        border-start-end-radius: var(--card-inner-border-radius);
+        border-start-start-radius: var(--card-inner-border-radius);
       }
 
       &:last-child {
-        border-bottom-right-radius: var(
-          --card-inner-border-radius,
-          calc(var(--size-2) - 1px)
-        );
-        border-bottom-left-radius: var(
-          --card-inner-border-radius,
-          calc(var(--size-2) - 1px)
-        );
+        border-end-end-radius: var(--card-inner-border-radius);
+        border-end-start-radius: var(--card-inner-border-radius);
       }
     }
 
@@ -43,18 +41,20 @@
       border-color: var(--card-header-border-color, inherit);
       border-style: var(--card-header-border-style, inherit);
       border-width: var(--card-header-border-width, 0 0 1px);
-      padding: var(--card-header-padding-top, var(--size-3))
-        var(--card-header-padding-right, var(--size-5))
-        var(--card-header-padding-bottom, var(--size-3))
-        var(--card-header-padding-left, var(--size-5));
+
+      padding-block-start: var(--card-header-padding-top, var(--size-3));
+      padding-inline-end: var(--card-header-padding-right, var(--size-5));
+      padding-block-end: var(--card-header-padding-bottom, var(--size-3));
+      padding-inline-start: var(--card-header-padding-left, var(--size-5));
     }
 
     & .card__body {
       flex: var(--card-body-flex, 1 1 auto);
-      padding: var(--card-body-padding-top, var(--size-3))
-        var(--card-body-padding-right, var(--size-5))
-        var(--card-body-padding-bottom, var(--size-3))
-        var(--card-body-padding-left, var(--size-5));
+
+      padding-block-start: var(--card-body-padding-top, var(--size-3));
+      padding-inline-end: var(--card-body-padding-right, var(--size-5));
+      padding-block-end: var(--card-body-padding-bottom, var(--size-3));
+      padding-inline-start: var(--card-body-padding-left, var(--size-5));
     }
 
     & .card__footer {
@@ -62,11 +62,15 @@
       border-color: var(--card-footer-border-color, inherit);
       border-style: var(--card-footer-border-style, inherit);
       border-width: var(--card-footer-border-width, 1px 0 0);
-      margin: var(--card-footer-margin, auto 0 0);
-      padding: var(--card-footer-padding-top, var(--size-3))
-        var(--card-footer-padding-right, var(--size-5))
-        var(--card-footer-padding-bottom, var(--size-3))
-        var(--card-footer-padding-left, var(--size-5));
+      margin-block-start: var(--card-footer-margin-top, auto);
+      margin-inline-end: var(--card-footer-margin-right, 0);
+      margin-block-end: var(--card-footer-margin-bottom, 0);
+      margin-inline-start: var(--card-footer-margin-left, 0);
+
+      padding-block-start: var(--card-footer-padding-top, var(--size-3));
+      padding-inline-end: var(--card-footer-padding-right, var(--size-5));
+      padding-block-end: var(--card-footer-padding-bottom, var(--size-3));
+      padding-inline-start: var(--card-footer-padding-left, var(--size-5));
     }
   }
 }

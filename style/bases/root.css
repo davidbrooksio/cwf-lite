@@ -6,19 +6,32 @@
   --breakpoint-lg: 1216px;
   --breakpoint-xl: 1408px;
 
+  /* Sizing / Spacing Scale (rem-based for font-family swap safety) */
   --size-0: 0;
-  --size-1: 0.25ch;
-  --size-2: 0.5ch;
-  --size-3: 1ch;
-  --size-4: 1.5ch;
-  --size-5: 2ch;
-  --size-6: 2.5ch;
-  --size-7: 3ch;
-  --size-8: 3.5ch;
-  --size-9: 4ch;
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-7: 2rem;
+  --size-8: 2.5rem;
+  --size-9: 3rem;
 
-  --body-background: white;
-  --html-color: DimGray;
+  /* Global Overridable Theme Tokens (Tier 1) */
+  --color-red: hsl(0 72% 50%);
+  --color-green: hsl(140 70% 45%);
+  --color-blue: hsl(220 90% 56%);
+  --color-yellow: hsl(49 100% 57%);
+
+  --color-primary: var(--color-blue);
+  --color-background: hsl(0 0% 100%);
+  --color-text: hsl(215 16% 16%);
+  --color-border: hsl(210 20% 90%);
+  --color-neutral-hover: hsl(210 20% 96%);
+
+  --body-background: var(--color-background);
+  --html-color: var(--color-text);
 
   color-scheme: light;
   --color-mode: "light";
@@ -31,6 +44,11 @@
 }
 
 :root[color-scheme="dark"] {
-  --body-background: DimGray;
-  --html-color: white;
+  color-scheme: dark;
+
+  /* Accessible Premium Dark Theme (Slate Palette) */
+  --color-background: hsl(222 47% 11%);
+  --color-text: hsl(210 40% 98%);
+  --color-border: hsl(217 32% 17%);
+  --color-neutral-hover: hsl(217 32% 15%);
 }
