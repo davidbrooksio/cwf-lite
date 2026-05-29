@@ -9,7 +9,7 @@
     border-style: var(--tag-border-style, solid);
     border-width: var(--tag-border-width, 1px);
     color: var(--tag-color, inherit);
-    font-size: var(--tag-font-size, 11px);
+    font-size: var(--tag-font-size, 12px);
     font-weight: var(--tag-font-weight, 400);
     line-height: var(--tag-line-height, 1);
     text-align: var(--tag-text-align, center);

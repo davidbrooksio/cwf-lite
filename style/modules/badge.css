@@ -1,0 +1,34 @@
+@layer cwf-modules {
+  .badge {
+    align-items: var(--badge-align-items, center);
+    display: var(--badge-display, inline-flex);
+    justify-content: var(--badge-justify-content, center);
+    background: var(--badge-background, var(--color-neutral-hover));
+    border-color: var(--badge-border-color, var(--color-border));
+    border-radius: var(--badge-border-radius, var(--size-1));
+    border-style: var(--badge-border-style, solid);
+    border-width: var(--badge-border-width, 1px);
+    color: var(--badge-color, inherit);
+    font-size: var(--badge-font-size, 12px);
+    font-weight: var(--badge-font-weight, 400);
+    line-height: var(--badge-line-height, 1);
+    text-align: var(--badge-text-align, center);
+    white-space: var(--badge-white-space, nowrap);
+    gap: var(--badge-gap, var(--size-2));
+    padding: var(--badge-padding-top, 0)
+      var(--badge-padding-right, var(--size-3)) var(--badge-padding-bottom, 0)
+      var(--badge-padding-left, var(--size-3));
+    min-height: var(--badge-min-height, 1rem);
+    min-width: var(--badge-min-width, 1rem);
+    user-select: var(--badge-user-select, none);
+    vertical-align: var(--badge-vertical-align, middle);
+
+    &.badge--pill {
+      border-radius: var(--badge-pill-border-radius, 9999px);
+      padding: var(--badge-pill-padding-top, 0)
+        var(--badge-pill-padding-right, var(--size-1))
+        var(--badge-pill-padding-bottom, 0)
+        var(--badge-pill-padding-left, var(--size-1));
+    }
+  }
+}
