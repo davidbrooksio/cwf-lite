@@ -135,8 +135,8 @@
           --nav-item-border-radius-top-right,
           var(--size-2)
         );
-        border-end-start-radius: 0;
-        border-end-end-radius: 0;
+        border-end-start-radius: var(--nav-item-border-radius-bottom-left, 0);
+        border-end-end-radius: var(--nav-item-border-radius-bottom-right, 0);
 
         border-width: var(--nav-item-border-width, 1px);
 
