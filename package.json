@@ -18,7 +18,7 @@
     "url": "git+ssh://git@github.com/davidbrooksio/cwf-lite.git"
   },
   "devDependencies": {
-    "vite": "^8.0.14"
+    "vite": "^8.0.16"
   },
   "dependencies": {
     "modern-normalize": "^3.0.1",
