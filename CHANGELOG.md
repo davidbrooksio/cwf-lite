@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.3](https://github.com/davidbrooksio/cwf-lite/compare/v1.6.2...v1.6.3) (2026-06-09)
+
+### Refactor
+
+- **nav.css**: Moved `.nav--stacked` and `.nav--tabs` modifier blocks inside `.nav { }` to establish correct CSS cascade nesting and variable scope.
+- **nav.css**: Added individual `border-start-*-radius` / `border-end-*-radius` longhand properties on `.nav__item` with per-corner CSS variable fallbacks (`--nav-item-border-radius-top-left`, `--nav-item-border-radius-top-right`, etc.) so that modifier classes can set corner radii independently.
+- **nav.css / dist**: Removed a nested `@layer cwf-modules { }` declaration from inside the compiled `dist/index.css` bundle to prevent double-layer wrapping when modules are concatenated.
+- **Web Component compatibility**: These changes allow the `--nav-item-border-radius-*` variables set on `.nav--tabs` to be consumed by `<cwf-nav-item>` elements living in a separate Shadow DOM root, since CSS custom properties inherit across shadow boundaries while traditional parent-child selectors do not.
+
 ### [1.5.3](https://github.com/davidbrooksio/cwf-lite/compare/v1.5.2...v1.5.3) (2026-01-20)
+
 
 ### [1.5.2](https://github.com/davidbrooksio/cwf-lite/compare/v1.5.1...v1.5.2) (2026-01-11)
 
