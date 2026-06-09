@@ -20,6 +20,64 @@
 
     padding: var(--nav-padding, 0);
     position: var(--nav-position, relative);
+
+    &.nav--stacked {
+      --nav-item-justify-content: flex-start;
+      --nav-item-width: 100%;
+
+      align-items: var(--nav-align-items, stretch);
+      flex-flow: var(--nav-flex-flow, wrap column);
+    }
+
+    &.nav--tabs {
+      --nav-item-border-color: inherit;
+      --nav-item-border-radius-top-left: var(--size-2);
+      --nav-item-border-radius-top-right: var(--size-2);
+      --nav-item-border-radius-bottom-left: 0;
+      --nav-item-border-radius-bottom-right: 0;
+      --nav-item-border-width: 1px;
+
+      --nav-item-margin-bottom: -1px;
+
+      --nav-item-current-background: var(--color-background);
+      --nav-item-current-border-color: var(--color-border) var(--color-border)
+        var(--color-background) var(--color-border);
+
+      --nav-item-hover-background: var(--color-neutral-hover);
+      --nav-item-hover-border-color: var(--color-border);
+      --nav-item-hover-color: var(--color-text);
+      --nav-item-hover-text-decoration: none;
+
+      --nav-item-focus-background: var(--color-neutral-hover);
+      --nav-item-focus-border-color: var(--color-border);
+      --nav-item-focus-color: var(--color-text);
+      --nav-item-focus-text-decoration: none;
+
+      --nav-item-active-background: var(--color-background);
+      --nav-item-active-border-color: var(--color-border) var(--color-border)
+        var(--color-background) var(--color-border);
+
+      --nav-item-selected-background: var(--color-background);
+      --nav-item-selected-border-color: var(--color-border) var(--color-border)
+        var(--color-background) var(--color-border);
+
+      --nav-item-disabled-background: transparent;
+      --nav-item-disabled-border-color: var(--color-border);
+      --nav-item-disabled-color: var(--color-text);
+      --nav-item-disabled-text-decoration: none;
+      --nav-item-disabled-pointer-events: none;
+      --nav-item-disabled-opacity: 0.5;
+
+      &:not(:empty) {
+        border-color: var(--nav-border-color, var(--color-border));
+        border-style: var(--nav-border-style, solid);
+        border-width: var(--nav-border-width, 0 0 1px);
+        gap: var(--nav-gap, var(--size-3));
+
+        padding-block: 0;
+        padding-inline: var(--nav-padding-x, var(--size-3));
+      }
+    }
   }
 
   .nav__item {
@@ -27,6 +85,22 @@
     background: var(--nav-item-background, transparent);
     border-color: var(--nav-item-border-color, transparent);
     border-radius: var(--nav-item-border-radius, 0);
+    border-start-start-radius: var(
+      --nav-item-border-radius-top-left,
+      var(--nav-item-border-radius, 0)
+    );
+    border-start-end-radius: var(
+      --nav-item-border-radius-top-right,
+      var(--nav-item-border-radius, 0)
+    );
+    border-end-start-radius: var(
+      --nav-item-border-radius-bottom-left,
+      var(--nav-item-border-radius, 0)
+    );
+    border-end-end-radius: var(
+      --nav-item-border-radius-bottom-right,
+      var(--nav-item-border-radius, 0)
+    );
     border-style: var(--nav-item-border-style, solid);
     border-width: var(--nav-item-border-width, 0);
     box-shadow: var(--nav-item-box-shadow, none);
@@ -97,64 +171,6 @@
       text-decoration: var(--nav-item-disabled-text-decoration, none);
       pointer-events: var(--nav-item-disabled-pointer-events, none);
       opacity: var(--nav-item-disabled-opacity, 0.5);
-    }
-  }
-
-  &.nav--stacked {
-    --nav-item-justify-content: flex-start;
-    --nav-item-width: 100%;
-
-    align-items: var(--nav-align-items, stretch);
-    flex-flow: var(--nav-flex-flow, wrap column);
-  }
-
-  &.nav--tabs {
-    --nav-item-border-color: inherit;
-    --nav-item-border-radius-top-left: var(--size-2);
-    --nav-item-border-radius-top-right: var(--size-2);
-    --nav-item-border-radius-bottom-left: 0;
-    --nav-item-border-radius-bottom-right: 0;
-    --nav-item-border-width: 1px;
-
-    --nav-item-margin-bottom: -1px;
-
-    --nav-item-current-background: var(--color-background);
-    --nav-item-current-border-color: var(--color-border) var(--color-border)
-      var(--color-background) var(--color-border);
-
-    --nav-item-hover-background: var(--color-neutral-hover);
-    --nav-item-hover-border-color: var(--color-border);
-    --nav-item-hover-color: var(--color-text);
-    --nav-item-hover-text-decoration: none;
-
-    --nav-item-focus-background: var(--color-neutral-hover);
-    --nav-item-focus-border-color: var(--color-border);
-    --nav-item-focus-color: var(--color-text);
-    --nav-item-focus-text-decoration: none;
-
-    --nav-item-active-background: var(--color-background);
-    --nav-item-active-border-color: var(--color-border) var(--color-border)
-      var(--color-background) var(--color-border);
-
-    --nav-item-selected-background: var(--color-background);
-    --nav-item-selected-border-color: var(--color-border) var(--color-border)
-      var(--color-background) var(--color-border);
-
-    --nav-item-disabled-background: transparent;
-    --nav-item-disabled-border-color: var(--color-border);
-    --nav-item-disabled-color: var(--color-text);
-    --nav-item-disabled-text-decoration: none;
-    --nav-item-disabled-pointer-events: none;
-    --nav-item-disabled-opacity: 0.5;
-
-    &:not(:empty) {
-      border-color: var(--nav-border-color, var(--color-border));
-      border-style: var(--nav-border-style, solid);
-      border-width: var(--nav-border-width, 0 0 1px);
-      gap: var(--nav-gap, var(--size-3));
-
-      padding-block: 0;
-      padding-inline: var(--nav-padding-x, var(--size-3));
     }
   }
 }
