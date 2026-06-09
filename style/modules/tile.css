@@ -42,42 +42,42 @@
         border-end-start-radius: var(--tile-inner-border-radius);
       }
     }
+  }
 
-    & .tile__header {
-      background: var(--tile-header-background, inherit);
-      border-color: var(--tile-header-border-color, inherit);
-      border-style: var(--tile-header-border-style, inherit);
-      border-width: var(--tile-header-border-width, 0 0 1px);
+  .tile__header {
+    background: var(--tile-header-background, inherit);
+    border-color: var(--tile-header-border-color, inherit);
+    border-style: var(--tile-header-border-style, inherit);
+    border-width: var(--tile-header-border-width, 0 0 1px);
 
-      padding-block-start: var(--tile-header-padding-top, var(--size-3));
-      padding-inline-end: var(--tile-header-padding-right, var(--size-5));
-      padding-block-end: var(--tile-header-padding-bottom, var(--size-3));
-      padding-inline-start: var(--tile-header-padding-left, var(--size-5));
-    }
+    padding-block-start: var(--tile-header-padding-top, var(--size-3));
+    padding-inline-end: var(--tile-header-padding-right, var(--size-5));
+    padding-block-end: var(--tile-header-padding-bottom, var(--size-3));
+    padding-inline-start: var(--tile-header-padding-left, var(--size-5));
+  }
 
-    & .tile__body {
-      flex: var(--tile-body-flex, 1 1 auto);
+  .tile__body {
+    flex: var(--tile-body-flex, 1 1 auto);
 
-      padding-block-start: var(--tile-body-padding-top, var(--size-3));
-      padding-inline-end: var(--tile-body-padding-right, var(--size-5));
-      padding-block-end: var(--tile-body-padding-bottom, var(--size-3));
-      padding-inline-start: var(--tile-body-padding-left, var(--size-5));
-    }
+    padding-block-start: var(--tile-body-padding-top, var(--size-3));
+    padding-inline-end: var(--tile-body-padding-right, var(--size-5));
+    padding-block-end: var(--tile-body-padding-bottom, var(--size-3));
+    padding-inline-start: var(--tile-body-padding-left, var(--size-5));
+  }
 
-    & .tile__footer {
-      background: var(--tile-footer-background, inherit);
-      border-color: var(--tile-footer-border-color, inherit);
-      border-style: var(--tile-footer-border-style, inherit);
-      border-width: var(--tile-footer-border-width, 1px 0 0);
-      margin-block-start: var(--tile-footer-margin-top, auto);
-      margin-inline-end: var(--tile-footer-margin-right, 0);
-      margin-block-end: var(--tile-footer-margin-bottom, 0);
-      margin-inline-start: var(--tile-footer-margin-left, 0);
+  .tile__footer {
+    background: var(--tile-footer-background, inherit);
+    border-color: var(--tile-footer-border-color, inherit);
+    border-style: var(--tile-footer-border-style, inherit);
+    border-width: var(--tile-footer-border-width, 1px 0 0);
+    margin-block-start: var(--tile-footer-margin-top, auto);
+    margin-inline-end: var(--tile-footer-margin-right, 0);
+    margin-block-end: var(--tile-footer-margin-bottom, 0);
+    margin-inline-start: var(--tile-footer-margin-left, 0);
 
-      padding-block-start: var(--tile-footer-padding-top, var(--size-3));
-      padding-inline-end: var(--tile-footer-padding-right, var(--size-5));
-      padding-block-end: var(--tile-footer-padding-bottom, var(--size-3));
-      padding-inline-start: var(--tile-footer-padding-left, var(--size-5));
-    }
+    padding-block-start: var(--tile-footer-padding-top, var(--size-3));
+    padding-inline-end: var(--tile-footer-padding-right, var(--size-5));
+    padding-block-end: var(--tile-footer-padding-bottom, var(--size-3));
+    padding-inline-start: var(--tile-footer-padding-left, var(--size-5));
   }
 }

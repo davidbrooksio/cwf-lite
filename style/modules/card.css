@@ -35,42 +35,42 @@
         border-end-start-radius: var(--card-inner-border-radius);
       }
     }
+  }
 
-    & .card__header {
-      background: var(--card-header-background, inherit);
-      border-color: var(--card-header-border-color, inherit);
-      border-style: var(--card-header-border-style, inherit);
-      border-width: var(--card-header-border-width, 0 0 1px);
+  .card__header {
+    background: var(--card-header-background, inherit);
+    border-color: var(--card-header-border-color, inherit);
+    border-style: var(--card-header-border-style, inherit);
+    border-width: var(--card-header-border-width, 0 0 1px);
 
-      padding-block-start: var(--card-header-padding-top, var(--size-3));
-      padding-inline-end: var(--card-header-padding-right, var(--size-5));
-      padding-block-end: var(--card-header-padding-bottom, var(--size-3));
-      padding-inline-start: var(--card-header-padding-left, var(--size-5));
-    }
+    padding-block-start: var(--card-header-padding-top, var(--size-3));
+    padding-inline-end: var(--card-header-padding-right, var(--size-5));
+    padding-block-end: var(--card-header-padding-bottom, var(--size-3));
+    padding-inline-start: var(--card-header-padding-left, var(--size-5));
+  }
 
-    & .card__body {
-      flex: var(--card-body-flex, 1 1 auto);
+  .card__body {
+    flex: var(--card-body-flex, 1 1 auto);
 
-      padding-block-start: var(--card-body-padding-top, var(--size-3));
-      padding-inline-end: var(--card-body-padding-right, var(--size-5));
-      padding-block-end: var(--card-body-padding-bottom, var(--size-3));
-      padding-inline-start: var(--card-body-padding-left, var(--size-5));
-    }
+    padding-block-start: var(--card-body-padding-top, var(--size-3));
+    padding-inline-end: var(--card-body-padding-right, var(--size-5));
+    padding-block-end: var(--card-body-padding-bottom, var(--size-3));
+    padding-inline-start: var(--card-body-padding-left, var(--size-5));
+  }
 
-    & .card__footer {
-      background: var(--card-footer-background, inherit);
-      border-color: var(--card-footer-border-color, inherit);
-      border-style: var(--card-footer-border-style, inherit);
-      border-width: var(--card-footer-border-width, 1px 0 0);
-      margin-block-start: var(--card-footer-margin-top, auto);
-      margin-inline-end: var(--card-footer-margin-right, 0);
-      margin-block-end: var(--card-footer-margin-bottom, 0);
-      margin-inline-start: var(--card-footer-margin-left, 0);
+  .card__footer {
+    background: var(--card-footer-background, inherit);
+    border-color: var(--card-footer-border-color, inherit);
+    border-style: var(--card-footer-border-style, inherit);
+    border-width: var(--card-footer-border-width, 1px 0 0);
+    margin-block-start: var(--card-footer-margin-top, auto);
+    margin-inline-end: var(--card-footer-margin-right, 0);
+    margin-block-end: var(--card-footer-margin-bottom, 0);
+    margin-inline-start: var(--card-footer-margin-left, 0);
 
-      padding-block-start: var(--card-footer-padding-top, var(--size-3));
-      padding-inline-end: var(--card-footer-padding-right, var(--size-5));
-      padding-block-end: var(--card-footer-padding-bottom, var(--size-3));
-      padding-inline-start: var(--card-footer-padding-left, var(--size-5));
-    }
+    padding-block-start: var(--card-footer-padding-top, var(--size-3));
+    padding-inline-end: var(--card-footer-padding-right, var(--size-5));
+    padding-block-end: var(--card-footer-padding-bottom, var(--size-3));
+    padding-inline-start: var(--card-footer-padding-left, var(--size-5));
   }
 }
