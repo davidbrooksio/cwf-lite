@@ -45,10 +45,7 @@
     &:not(:disabled) {
       &[aria-current="page"],
       &[data-active="true"] {
-        background: var(
-          --button-current-background,
-          var(--color-neutral-hover)
-        );
+        background: var(--button-current-background, var(--color-neutral-hover));
         border-color: var(--button-current-border-color, var(--color-primary));
         box-shadow: var(--button-current-box-shadow, none);
         color: var(--button-current-color, var(--color-text));

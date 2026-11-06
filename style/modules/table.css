@@ -79,17 +79,11 @@
       & tbody {
         & tr {
           &:nth-of-type(even) {
-            background: var(
-              --table-row-even-background,
-              var(--color-neutral-hover)
-            );
+            background: var(--table-row-even-background, var(--color-neutral-hover));
           }
 
           &:nth-of-type(odd) {
-            background: var(
-              --table-row-odd-background,
-              var(--color-background)
-            );
+            background: var(--table-row-odd-background, var(--color-background));
           }
         }
       }
@@ -100,10 +94,7 @@
         & tr {
           &:hover {
             & > * {
-              background: var(
-                --table-row-hover-background,
-                var(--color-border)
-              );
+              background: var(--table-row-hover-background, var(--color-border));
             }
           }
         }

@@ -2,9 +2,7 @@
   .tile {
     --tile-border-width: 1px;
     --tile-border-radius: 0;
-    --tile-inner-border-radius: calc(
-      var(--tile-border-radius) - var(--tile-border-width)
-    );
+    --tile-inner-border-radius: calc(var(--tile-border-radius) - var(--tile-border-width));
 
     background: var(--tile-background, var(--color-background));
     border-color: var(--tile-border-color, var(--color-border));
@@ -12,10 +10,7 @@
     border-style: var(--tile-border-style, solid);
     border-width: var(--tile-border-width);
 
-    border-inline-start-color: var(
-      --tile-border-left-color,
-      var(--color-border)
-    );
+    border-inline-start-color: var(--tile-border-left-color, var(--color-border));
     border-inline-start-width: var(--tile-border-left-width, var(--size-2));
 
     color: var(--tile-color, inherit);

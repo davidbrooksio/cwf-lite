@@ -1,7 +1,6 @@
 @layer cwf-utilities {
-  @each $value in none, initial, inline, inline-block, block, table-row,
-    table-cell, flex, inline-flex, grid
-  {
+  @each $value in none, initial, inline, inline-block, block, table-row, table-cell, flex,
+    inline-flex, grid {
     .display--$(value) {
       display: $(value) !important;
     }

@@ -1,6 +1,7 @@
 {
   "name": "cwf-lite",
   "version": "1.6.3",
+  "type": "module",
   "description": "The lightweight but modern css framework.",
   "keywords": [
     "css"
@@ -11,13 +12,22 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/davidbrooksio/cwf-lite.git"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.14.0",
+    "prettier": "^3.9.10",
     "vite": "^8.3.6"
   },
   "dependencies": {

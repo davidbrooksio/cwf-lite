@@ -83,8 +83,7 @@
     }
   }
 
-  @each $value in flex-start, flex-end, center, space-between, space-around,
-    space-evenly, stretch {
+  @each $value in flex-start, flex-end, center, space-between, space-around, space-evenly, stretch {
     .justify-content--$(value) {
       justify-content: $(value) !important;
     }
@@ -154,8 +153,7 @@
     }
   }
 
-  @each $value in flex-start, flex-end, center, space-between, space-around,
-    stretch {
+  @each $value in flex-start, flex-end, center, space-between, space-around, stretch {
     .align-content--$(value) {
       align-content: $(value) !important;
     }

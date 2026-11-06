@@ -133,10 +133,7 @@
 
     &[aria-current="page"],
     &[data-active="true"] {
-      background: var(
-        --nav-item-current-background,
-        var(--color-neutral-hover)
-      );
+      background: var(--nav-item-current-background, var(--color-neutral-hover));
       border-color: var(--nav-item-current-border-color, transparent);
       color: var(--nav-item-current-color, var(--color-text));
       text-decoration: var(--nav-item-current-text-decoration, none);

@@ -2,9 +2,7 @@
   .card {
     --card-border-width: 1px;
     --card-border-radius: var(--size-2);
-    --card-inner-border-radius: calc(
-      var(--card-border-radius) - var(--card-border-width)
-    );
+    --card-inner-border-radius: calc(var(--card-border-radius) - var(--card-border-width));
 
     background: var(--card-background, var(--color-background));
     border-color: var(--card-border-color, var(--color-border));

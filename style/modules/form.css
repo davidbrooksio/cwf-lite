@@ -52,17 +52,11 @@
     width: var(--input-width, 100%);
 
     &::placeholder {
-      color: var(
-        --input-placeholder-color,
-        hsl(from var(--color-text) h s l / 45%)
-      );
+      color: var(--input-placeholder-color, hsl(from var(--color-text) h s l / 45%));
     }
 
     &:hover {
-      background-color: var(
-        --input-hover-background-color,
-        var(--color-background)
-      );
+      background-color: var(--input-hover-background-color, var(--color-background));
       border-color: var(--input-hover-border-color, var(--color-border));
       box-shadow: var(--input-hover-box-shadow, none);
       color: var(--input-hover-color, var(--color-text));
@@ -70,10 +64,7 @@
 
     &:focus-visible,
     &:focus {
-      background-color: var(
-        --input-focus-background-color,
-        var(--color-background)
-      );
+      background-color: var(--input-focus-background-color, var(--color-background));
       border-color: var(--input-focus-border-color, var(--color-primary));
       box-shadow: var(
         --input-focus-box-shadow,
@@ -83,10 +74,7 @@
     }
 
     &:disabled {
-      background-color: var(
-        --input-disabled-background-color,
-        var(--color-neutral-hover)
-      );
+      background-color: var(--input-disabled-background-color, var(--color-neutral-hover));
       pointer-events: var(--input-disabled-pointer-events, none);
     }
 
@@ -109,10 +97,7 @@
           --input-select-background-image,
           url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e")
         );
-        background-position: var(
-          --input-select-background-position,
-          right 0.5em center
-        );
+        background-position: var(--input-select-background-position, right 0.5em center);
         background-size: var(--input-select-background-size, 1em);
       }
 
@@ -176,10 +161,7 @@
       background-size: var(--input-checkbox-checked-background-size, 100%);
 
       &:checked {
-        background-color: var(
-          --input-checkbox-checked-background-color,
-          var(--color-primary)
-        );
+        background-color: var(--input-checkbox-checked-background-color, var(--color-primary));
         background-image: var(
           --input-checkbox-checked-background-image,
           url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e")
@@ -205,10 +187,7 @@
           --input-radio-checked-background-image,
           url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
         );
-        background-color: var(
-          --input-radio-checked-background-color,
-          var(--color-primary)
-        );
+        background-color: var(--input-radio-checked-background-color, var(--color-primary));
       }
     }
 
@@ -222,48 +201,21 @@
         -webkit-appearance: button;
         -webkit-margin-end: var(--input-file-button-margin-end, var(--size-4));
 
-        padding-block-start: var(
-          --input-file-button-padding-top,
-          var(--size-3)
-        );
-        padding-inline-end: var(
-          --input-file-button-padding-right,
-          var(--size-4)
-        );
-        padding-block-end: var(
-          --input-file-button-padding-bottom,
-          var(--size-3)
-        );
-        padding-inline-start: var(
-          --input-file-button-padding-left,
-          var(--size-4)
-        );
+        padding-block-start: var(--input-file-button-padding-top, var(--size-3));
+        padding-inline-end: var(--input-file-button-padding-right, var(--size-4));
+        padding-block-end: var(--input-file-button-padding-bottom, var(--size-3));
+        padding-inline-start: var(--input-file-button-padding-left, var(--size-4));
 
-        margin-block: var(
-          --input-file-button-margin-y,
-          calc(var(--size-3) * -1)
-        );
-        margin-inline: var(
-          --input-file-button-margin-x,
-          calc(var(--size-4) * -1)
-        );
-        margin-inline-end: var(
-          --input-file-button-margin-inline-end,
-          var(--size-4)
-        );
+        margin-block: var(--input-file-button-margin-y, calc(var(--size-3) * -1));
+        margin-inline: var(--input-file-button-margin-x, calc(var(--size-4) * -1));
+        margin-inline-end: var(--input-file-button-margin-inline-end, var(--size-4));
         color: var(--input-file-button-color, inherit);
-        background: var(
-          --input-file-button-background,
-          var(--color-neutral-hover)
-        );
+        background: var(--input-file-button-background, var(--color-neutral-hover));
         pointer-events: var(--input-file-button-pointer-events, none);
         border-color: var(--input-file-button-border-color, inherit);
         border-style: var(--input-file-button-border-style, solid);
         border-width: var(--input-file-button-border-width, 0);
-        border-inline-end-width: var(
-          --input-file-button-border-inline-end-width,
-          1px
-        );
+        border-inline-end-width: var(--input-file-button-border-inline-end-width, 1px);
         border-radius: var(--input-file-button-border-radius, 0);
       }
     }
@@ -295,10 +247,7 @@
         --input-list-background-image,
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e")
       );
-      background-position: var(
-        --input-list-background-position,
-        right 0.5em center
-      );
+      background-position: var(--input-list-background-position, right 0.5em center);
       background-size: var(--input-list-background-size, 1em);
 
       &::-webkit-calendar-picker-indicator {

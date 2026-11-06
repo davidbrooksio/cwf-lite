@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import postcssEach from "postcss-each";
-import pkg from "./package.json"; // Import your package.json
+import pkg from "./package.json" with { type: "json" }; // Import your package.json
 
 // Define your banner template
 // Note: We use /*! to ensure minifiers don't strip the comment
